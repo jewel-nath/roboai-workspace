@@ -26,4 +26,4 @@ Dependencies point **inward**: infrastructure and application depend on domain; 
 - Define interfaces (ports) in domain; implement them in infrastructure (e.g. `MotionController` interface, `ROS2MotionController` implementation).
 - Keep nodes thin: subscribe/publish, convert messages to/from domain types, call use cases.
 
-For full templates and directory layout see reference `references/ros2-claude-code-template/.claude/skills/`.
+For full templates and directory layout see [ros2-claude-code-template](https://github.com/harunkurtdev/ros2-claude-code-template) (Apache 2.0), which these rules are adapted from.

@@ -8,7 +8,7 @@ Take a ROS 2 robot that works in development and deploy it reliably to a product
 
 ## Prerequisites
 
-- **Skills needed:** `robot_bringup`, `docker_ros2_development`, `ros2_diagnostics`, `safety_systems`
+- **Skills needed:** `robot-bringup`, `docker-ros2-ci`, `deployment-fleet`, `safety-systems`
 - **Hardware:** Target robot with SSH access, matching a staging robot for pre-deploy testing
 - **Software:** Docker, Ansible (or SSH access), a container registry (GHCR, Docker Hub, or self-hosted), Grafana + Loki (optional but recommended)
 - **Assumed:** Robot nodes start via systemd using a `ros2 launch` command wrapped in a service unit
@@ -489,7 +489,7 @@ ros2 topic echo /orbibot/system_status_enriched --once
 # This topic has cpu_percent, memory_percent, cpu_temp — export these
 
 # Simple Prometheus push (add to robot startup)
-# See skills/ros2_diagnostics for full diagnostics_to_prometheus bridge
+# See skills/deployment-fleet/SKILL.md for diagnostics and central monitoring
 ```
 
 ### 6.3 Grafana Dashboard Setup
@@ -679,14 +679,14 @@ After successful production deployment:
 1. **Automate the pipeline** — Add a GitHub Actions workflow that builds, pushes, and deploys on each merge to `main`
 2. **Add alerting** — Configure Grafana alerts for critical metrics (no scan, high CPU, temperature)
 3. **Expand fleet** — See `skills/deployment-fleet` for multi-robot orchestration at scale
-4. **Harden security** — See `skills/robotics_security` for SROS2 and network segmentation
+4. **Harden security** — See `skills/safety-systems/SKILL.md` for SROS2 and network segmentation
 5. **Test recovery** — See `guides/testing-strategy.md` for hardware-in-the-loop and field testing
 
 ---
 
 ## Resources
 
-- Related skills: `robot_bringup`, `docker_ros2_development`, `ros2_diagnostics`, `safety_systems`
+- Related skills: `robot-bringup`, `docker-ros2-ci`, `deployment-fleet`, `safety-systems`
 - Related guides: `hardware-integration.md`, `testing-strategy.md`
 - Ansible docs: https://docs.ansible.com/
 - Grafana Loki: https://grafana.com/docs/loki/

@@ -207,7 +207,7 @@ When the user releases the joystick or closes the page, send cmd_vel (0, 0) so t
 ## Workflow Integration
 
 - For ROS2 nodes and QoS see `skills/ros2/SKILL.md`; for production deployment and security see `safety-systems` and `robot-bringup`.
-- For a WebSocket CLI that talks to rosbridge (e.g. from scripts), see the `references/ros-skill` reference; this skill focuses on web dashboards and production bridges.
+- This skill focuses on web dashboards and production bridges.
 
 ---
 

@@ -1,4 +1,4 @@
-# Contributing to Robotics Agent Skills
+# Contributing to Agentic Robotics
 
 Thank you for your interest in contributing! This guide will help you add new skills or improve existing ones.
 
@@ -103,9 +103,9 @@ Upgrading from older versions or migrating from related tools.
 
 ### Per-Skill Requirements
 
-- [ ] YAML frontmatter validates against schema
+- [ ] Frontmatter has name, description, category, tags and version, as above
 - [ ] All required sections present
-- [ ] Every code block is syntactically valid (tested)
+- [ ] Every code block is syntactically valid
 - [ ] At least 3 anti-patterns documented
 - [ ] Troubleshooting table has 5+ entries
 - [ ] Size is within 500-3000 lines
@@ -127,16 +127,17 @@ python scripts/validate-skills.py skills/your-skill/
 ```
 
 This checks:
-- YAML frontmatter format
+- The frontmatter block, its name, description and category fields, and a valid category
 - Required sections present
-- No broken internal links
 - Size within limits
+
+It doesn't check links or run the code blocks, so check those yourself.
 
 ## Style Guide
 
 ### Code Examples
 
-- Use **working, tested code** — no pseudocode
+- Use **working code** — no pseudocode
 - Include **comments** explaining non-obvious parts
 - Show **imports** at the top of each example
 - Use **realistic variable names** (not `foo`, `bar`)
@@ -169,8 +170,8 @@ Use these exact category values in the YAML frontmatter:
 | `hardware` | Serial, CAN, EtherCAT, GPIO, drivers |
 | `embedded` | MCUs, RTOS, micro-ROS, firmware |
 | `ai` | Machine learning, RL, imitation learning |
-| `architecture` | Design patterns, state estimation, multi-robot |
-| `devops` | Docker, CI/CD, testing, deployment, safety |
+| `architecture` | Design patterns, state estimation, multi-robot, safety |
+| `devops` | Docker, CI/CD, testing, deployment |
 
 ## Submitting Changes
 
@@ -188,7 +189,7 @@ Brief description of what this PR adds or changes.
 
 ## Checklist
 - [ ] Skill validates with `validate-skills.py`
-- [ ] All code examples tested
+- [ ] Code examples checked
 - [ ] Anti-patterns documented
 - [ ] Size within 500-3000 lines
 - [ ] Related skills cross-referenced
@@ -199,15 +200,13 @@ How did you test these changes?
 
 ### Review Process
 
-1. **Automated checks** must pass (validation script)
+1. **The validator** must pass (`python scripts/validate-skills.py --all`)
 2. **Maintainer review** for content accuracy
-3. **Community feedback** welcome for 48 hours
-4. **Merge** when approved
+3. **Merge** when approved
 
 ## Questions?
 
 - Open an issue for discussion before major changes
-- Join our [Discord/Slack] for real-time chat
 - Check existing skills for examples
 
 ## License

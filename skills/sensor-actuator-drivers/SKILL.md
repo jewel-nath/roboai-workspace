@@ -1255,7 +1255,7 @@ def _timer_cb(self):
 - `sensor-fusion-slam` — fuse IMU, encoder, and LiDAR data with EKF/UKF
 - `realtime-motor-control` — add real-time PID loops above the motor HAL
 - `ros2-control` — use `hardware_interface::ActuatorInterface` for ros2_control integration
-- `ros2_diagnostics` — extend driver diagnostics with aggregator and rqt_runtime_monitor
+- `deployment-fleet` — extend driver diagnostics with aggregator and rqt_runtime_monitor
 
 **Typical workflow for a new sensor:**
 1. Read the hardware datasheet and identify the communication protocol

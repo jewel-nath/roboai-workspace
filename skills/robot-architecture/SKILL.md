@@ -1165,16 +1165,16 @@ robot-architecture
        │                            BehaviorTree.CPP v4 is bundled with Nav2 Jazzy;
        │                            NavigateToPose / NavigateThroughPoses are BT-driven
        │
-       ├──► sensor_fusion_slam    — state estimation (EKF, Madgwick) feeds the
+       ├──► sensor-fusion-slam    — state estimation (EKF, Madgwick) feeds the
        │                            robot_pose blackboard entry consumed by BT
        │                            GoalReached conditions
        │
-       ├──► safety_systems        — emergency-stop events trigger FSM 'fault'
+       ├──► safety-systems        — emergency-stop events trigger FSM 'fault'
        │                            transitions; watchdog timers are
        │                            HealthCheckMixin pattern above
        │
-       └──► ros2_diagnostics      — HealthCheckMixin publishes to /diagnostics;
-                                    use ros2_diagnostics skill for aggregator setup
+       └──► deployment-fleet      — HealthCheckMixin publishes to /diagnostics;
+                                    see the deployment-fleet skill for aggregation
 ```
 
 ### How to Integrate with Nav2 (ROS 2 Jazzy)
@@ -1225,7 +1225,7 @@ def generate_launch_description():
     ])
 ```
 
-### How to Integrate with sensor_fusion_slam
+### How to Integrate with sensor-fusion-slam
 
 The EKF from `robot_localization` publishes `/odometry/filtered`. Feed this into
 the BT blackboard via a small bridge node so BT conditions can check pose:
@@ -1265,7 +1265,7 @@ class BTPoseBridge(Node):
     threshold="0.15"/>
 ```
 
-### How to Integrate with safety_systems
+### How to Integrate with safety-systems
 
 ```python
 # safety_bridge.py — converts safety events into FSM transitions
@@ -1273,7 +1273,7 @@ from std_msgs.msg import String, Bool
 
 
 class SafetyBridge(Node):
-    """Bridges safety_systems estop signals to FSM event topic."""
+    """Bridges safety-systems estop signals to FSM event topic."""
 
     def __init__(self):
         super().__init__('safety_bridge')
@@ -1300,10 +1300,10 @@ class SafetyBridge(Node):
 |------|--------------|-----------------|
 | Implement BT action nodes | **robot-architecture** | `ros2_node_creation` |
 | Configure Nav2 BT plugins | **robot-architecture** | `nav2` |
-| Set up EKF for pose | `sensor_fusion_slam` | **robot-architecture** |
-| Add watchdog / e-stop | `safety_systems` | **robot-architecture** |
-| Publish diagnostics | `ros2_diagnostics` | **robot-architecture** |
-| Test FSM transitions | `robotics_testing` | **robot-architecture** |
+| Set up EKF for pose | `sensor-fusion-slam` | **robot-architecture** |
+| Add watchdog / e-stop | `safety-systems` | **robot-architecture** |
+| Publish diagnostics | `deployment-fleet` | **robot-architecture** |
+| Test FSM transitions | `guides/testing-strategy.md` | **robot-architecture** |
 | Wrap in Lifecycle node | `ros2_lifecycle` | **robot-architecture** |
 
 ## Changelog
@@ -1314,4 +1314,4 @@ class SafetyBridge(Node):
 ### v1.1.0 (2026-03-27)
 - Added Common Patterns: hierarchical BT with safety layer, pure-Python FSM, component lifecycle, blackboard data flow, health-check mixin
 - Added Anti-Patterns: god node, spaghetti callbacks, tight coupling, missing watchdog, flat FSM state explosion, blocking callbacks
-- Added Workflow Integration: nav2, sensor_fusion_slam, safety_systems, ros2_diagnostics cross-references with working code
+- Added Workflow Integration: nav2, sensor-fusion-slam, safety-systems, deployment-fleet cross-references with working code

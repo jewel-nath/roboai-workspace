@@ -1400,11 +1400,11 @@ def _check_health(self) -> dict:
 **Before this skill:**
 - `robot-bringup` — configure systemd services and ordered startup that the deployment pipeline manages
 - `docker-ros2-development` — build the Docker images that the deployment pipeline pushes
-- `ros2_diagnostics` — instrument nodes with `/diagnostics` before aggregating them centrally
+- `robot-bringup` — instrument nodes with `/diagnostics` before aggregating them centrally
 
 **After this skill:**
 - `safety-systems` — validate safety requirements (watchdog, E-stop) are verified in the health check
-- `robotics-security` — extend the SSH hardening and firewall rules from this skill with SROS2 and DDS security
+- `safety-systems` — extend the SSH hardening and firewall rules from this skill with SROS2 and DDS security
 
 **Typical production deployment lifecycle:**
 1. Developer merges to `main` → CI builds and tests Docker image

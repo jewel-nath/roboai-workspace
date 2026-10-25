@@ -1105,11 +1105,11 @@ This skill sits at the intersection of several other skills. Use the following m
 |---|---|
 | Designing the individual ROS 2 nodes launched here | `ros2_node_creation` |
 | Writing or composing the individual `.launch.py` files | `ros2_launch_config` |
-| Adding `/diagnostics` publishers and health aggregators | `ros2_diagnostics` |
-| Configuring functional safety (e-stop, watchdog timers) | `safety_systems` |
+| Adding `/diagnostics` publishers and health aggregators | `deployment-fleet` |
+| Configuring functional safety (e-stop, watchdog timers) | `safety-systems` |
 | Deploying to a fleet of robots | `deployment-fleet` |
-| Securing DDS traffic and limiting node permissions | `robotics_security` |
-| Packaging the full stack as a Docker image | `docker_ros2_development` |
+| Securing DDS traffic and limiting node permissions | `safety-systems` |
+| Packaging the full stack as a Docker image | `docker-ros2-ci` |
 
 ### Typical Bring-Up Workflow on Ubuntu 22.04 + ROS 2 Jazzy / Raspberry Pi 5
 
@@ -1156,7 +1156,7 @@ ros2 topic hz /scan
 ros2 topic hz /odom
 ```
 
-### Integration with ros2_diagnostics
+### Integration with diagnostics aggregators
 
 Add a `DiagnosticUpdater` to your hardware node so `robot_monitor` can surface systemd service health alongside ROS topic health:
 
@@ -1178,11 +1178,11 @@ def _check_serial_health(self, stat: DiagnosticStatusWrapper):
     return stat
 ```
 
-See the `ros2_diagnostics` skill for the full aggregator and `robot_monitor` setup.
+See the `deployment-fleet` skill for central aggregation and monitoring across robots.
 
-### Connecting to safety_systems
+### Connecting to safety-systems
 
-The watchdog pattern in Concept 6 feeds systemd's watchdog. For application-level safety (e-stop, velocity limits, liveliness checking), combine it with the `safety_systems` skill which covers:
+The watchdog pattern in Concept 6 feeds systemd's watchdog. For application-level safety (e-stop, velocity limits, liveliness checking), combine it with the `safety-systems` skill which covers:
 - Software e-stop with latched state
 - `/cmd_vel` supervision (zero on timeout)
 - Liveliness QoS for critical publishers

@@ -103,7 +103,7 @@ def validate_skill(skill_path):
         return False
     
     # Read content
-    content = skill_file.read_text()
+    content = skill_file.read_text(encoding='utf-8')
     
     # Run validations
     all_errors = []
@@ -131,6 +131,8 @@ def validate_skill(skill_path):
 
 
 def main():
+    # The results use emoji, which Windows consoles can't print in their default encoding.
+    sys.stdout.reconfigure(encoding='utf-8')
     if len(sys.argv) < 2:
         print("Usage: python scripts/validate-skills.py <skill-path> [skill-path...]")
         print("       python scripts/validate-skills.py --all")
@@ -138,7 +140,7 @@ def main():
     
     if sys.argv[1] == '--all':
         # Validate all skills
-        skills_dir = Path('skills')
+        skills_dir = Path(__file__).resolve().parent.parent / 'skills'
         if not skills_dir.exists():
             print("❌ Error: skills/ directory not found")
             sys.exit(1)

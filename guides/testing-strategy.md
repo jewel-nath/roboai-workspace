@@ -8,7 +8,7 @@ Build a test suite that catches bugs at the cheapest layer possible: unit tests 
 
 ## Prerequisites
 
-- **Skills needed:** `ros2_testing`, `robotics_testing`, `gazebo`, `sim_to_real`, `safety_systems`
+- **Skills needed:** `ros2`, `gazebo`, `sim-to-real`, `safety-systems`, and the rules in `rules/robotics-testing.md`
 - **Hardware:** Robot with USB sensors (for HIL), a development machine for unit/integration/sim tests
 - **Software:** ROS 2 Jazzy, pytest, colcon, Gazebo Sim (Harmonic), GitHub Actions (for CI)
 - **Assumed:** Python-based ROS 2 packages following the project's Clean Architecture conventions
@@ -45,7 +45,7 @@ The testing pyramid defines where you invest testing effort. Each layer is cheap
 - HIL tests: run before every production deploy, requires robot
 - Field tests: run on milestone releases
 
-**Skill reference:** See `skills/ros2_testing` and `skills/robotics_testing` for detailed patterns.
+**Skill reference:** See `skills/ros2/SKILL.md` and `rules/robotics-testing.md` for detailed patterns.
 
 ---
 
@@ -948,7 +948,7 @@ colcon test-result --packages-select orbibot_hardware --verbose
 After implementing the full testing pyramid:
 
 1. **Automate HIL** — See `guides/production-deployment.md` for integrating HIL tests into the deploy gate
-2. **Sim-to-real gap analysis** — See `skills/sim_to_real` for domain randomization and reality gap measurement
+2. **Sim-to-real gap analysis** — See `skills/sim-to-real/SKILL.md` for domain randomization and reality gap measurement
 3. **Mutation testing** — Use `mutmut` to verify your unit tests actually catch bugs
 4. **Performance benchmarking** — Add `pytest-benchmark` to track kinematics computation time across commits
 5. **Hardware fault injection** — Simulate sensor failures in HIL by unplugging and re-plugging devices mid-test
@@ -957,7 +957,7 @@ After implementing the full testing pyramid:
 
 ## Resources
 
-- Related skills: `ros2_testing`, `robotics_testing`, `gazebo`, `sim_to_real`, `safety_systems`
+- Related skills: `ros2`, `gazebo`, `sim-to-real`, `safety-systems`; rules: `rules/robotics-testing.md`
 - Related guides: `production-deployment.md`, `hardware-integration.md`
 - pytest docs: https://docs.pytest.org/
 - launch_testing: https://github.com/ros2/launch/tree/rolling/launch_testing

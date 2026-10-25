@@ -4,7 +4,7 @@ description: Robotics testing — unit, integration, launch tests; pytest and la
 
 # Robotics Testing Standards
 
-Use when writing or reviewing tests for ROS2/robotics packages. See `skills/ros2/SKILL.md` and (if present) `skills/robotics-testing/SKILL.md` for full patterns.
+Use when writing or reviewing tests for ROS2/robotics packages. See `skills/ros2/SKILL.md` and `guides/testing-strategy.md` for full patterns.
 
 ## Test Layout
 

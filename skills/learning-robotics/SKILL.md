@@ -1091,12 +1091,12 @@ robot.send_velocity(action)
 
 This skill connects to the following skills in the robot development lifecycle:
 
-- **`gazebo`** — train RL policies in simulation before real-robot deployment; use `gymnasium` wrappers around Gazebo environments for SB3 compatibility; randomise physics parameters (`sim_to_real`) to close the reality gap.
-- **`sim_to_real`** — after training in Gazebo, apply domain randomisation (sensor noise, actuator delays, floor friction) and fine-tune with a small set of real demonstrations collected via the DemoCollector node above.
-- **`edge_ml_deployment`** — export trained policies to ONNX with `PolicyEvaluator.export_onnx()`, then quantise and deploy using TensorRT or ONNX Runtime on the Raspberry Pi 5 or Jetson; wrap the ONNX session in `ONNXPolicyNode` for ROS 2 integration.
-- **`sensor_fusion_slam`** — define the observation space using EKF-filtered odometry (`/odometry/filtered`) and LiDAR scans; fused observations reduce noise and improve policy generalisation compared to raw sensor readings.
-- **`ros2_diagnostics`** — publish policy inference latency and action magnitude as diagnostics; alert if inference exceeds 50 ms (would miss a 20 Hz control loop).
-- **`safety_systems`** — wrap the learned policy's action output in the safety FSM; if the policy commands a velocity that would violate workspace limits or trigger a proximity stop, the safety layer clips or overrides it before sending to the motor driver.
+- **`gazebo`** — train RL policies in simulation before real-robot deployment; use `gymnasium` wrappers around Gazebo environments for SB3 compatibility; randomise physics parameters (`sim-to-real`) to close the reality gap.
+- **`sim-to-real`** — after training in Gazebo, apply domain randomisation (sensor noise, actuator delays, floor friction) and fine-tune with a small set of real demonstrations collected via the DemoCollector node above.
+- **`edge-ml-deployment`** — export trained policies to ONNX with `PolicyEvaluator.export_onnx()`, then quantise and deploy using TensorRT or ONNX Runtime on the Raspberry Pi 5 or Jetson; wrap the ONNX session in `ONNXPolicyNode` for ROS 2 integration.
+- **`sensor-fusion-slam`** — define the observation space using EKF-filtered odometry (`/odometry/filtered`) and LiDAR scans; fused observations reduce noise and improve policy generalisation compared to raw sensor readings.
+- **`deployment-fleet`** — publish policy inference latency and action magnitude as diagnostics; alert if inference exceeds 50 ms (would miss a 20 Hz control loop).
+- **`safety-systems`** — wrap the learned policy's action output in the safety FSM; if the policy commands a velocity that would violate workspace limits or trigger a proximity stop, the safety layer clips or overrides it before sending to the motor driver.
 
 ### Typical Integration Sequence
 
@@ -1121,7 +1121,7 @@ This skill connects to the following skills in the robot development lifecycle:
 6. Deploy via ONNXPolicyNode in the ROS 2 stack:
    ros2 run orbibot_agent learned_policy_node --ros-args -p model:=nav_policy.onnx
 
-7. Monitor via ros2_diagnostics; safety_systems provides velocity clipping backstop.
+7. Monitor via deployment-fleet; safety-systems provides velocity clipping backstop.
 ```
 
 ---

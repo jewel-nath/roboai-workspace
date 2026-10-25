@@ -1,7 +1,7 @@
 # 🤖 Agentic Robotics
 
 > A curated skill library for AI assistants helping robotics engineers.
-> Works with Cursor, Claude Code, Windsurf, or any tool that consumes markdown skill files.
+> Works with Claude Code, Cursor, or any AI tool that can read Markdown files.
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -9,11 +9,10 @@
 
 ```bash
 # Clone the repository
-https://github.com/devjewel01/Agentic-Robotics
+git clone https://github.com/jewel-nath/agentic-robotics.git
 cd agentic-robotics
 
-# Use with Cursor IDE
-# In Cursor settings, add skill paths:
+# Use with Cursor: list skill paths in a rule, .cursor/rules/robotics.mdc
 # /path/to/agentic-robotics/skills/ros2/SKILL.md
 # /path/to/agentic-robotics/skills/nav2/SKILL.md
 
@@ -24,16 +23,16 @@ cd agentic-robotics
 
 ## What is This?
 
-A comprehensive skill library covering the full robotics engineering stack:
+A skill library covering the robotics stack, from ROS 2 and simulation to embedded and deployment:
 
 - **29 consolidated skills** — Each skill is substantial (500-3000 lines), covering a complete domain
 - **Tool-agnostic** — Plain markdown with YAML frontmatter, consumable by any AI tool
-- **Real-world focus** — Anti-patterns and failure modes alongside working code
+- **Real-world focus** — Anti-patterns and failure modes alongside example code
 - **Progressive disclosure** — Quick start at top, deep reference below
 
 ## Project Status
 
-This project is actively being developed. Below is the current status:
+Status as of March 2026, when the skills were last updated:
 
 ### ✅ Completed (Phase 1-5)
 - **Phase 1** (Foundation): ros2, robot-modeling, gazebo, camera-vision, ros2-control ✓
@@ -87,7 +86,7 @@ This project is actively being developed. Below is the current status:
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [control-systems](skills/control-systems/SKILL.md) | PID, LQR, MPC, state-space, system identification, trajectories | ✅ |
-| [realtime-motor-control](skills/realtime-motor-control/SKILL.md) | Motor drivers, PID tuning, loops, PREEMPT_RT, determinism | ✅ |
+| [realtime-motor-control](skills/realtime-motor-control/SKILL.md) | Motor types, PID tuning, FOC, encoders, PREEMPT_RT, deterministic loops | ✅ |
 
 ### Hardware Interfaces
 | Skill | Description | Status |
@@ -99,7 +98,7 @@ This project is actively being developed. Below is the current status:
 ### Embedded Systems
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [microcontrollers](skills/microcontrollers/SKILL.md) | STM32, ESP32, Arduino, bare-metal firmware, HAL patterns | ✅ |
+| [microcontrollers](skills/microcontrollers/SKILL.md) | STM32, ESP32, nRF52, HAL patterns, DMA, interrupts, bootloaders | ✅ |
 | [rtos-micro-ros](skills/rtos-micro-ros/SKILL.md) | FreeRTOS task scheduling, micro-ROS on STM32/ESP32, real-time patterns | ✅ |
 
 ### AI & Learning
@@ -112,7 +111,7 @@ This project is actively being developed. Below is the current status:
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [robot-architecture](skills/robot-architecture/SKILL.md) | Design patterns, BT/FSM, state estimation, multi-robot | ✅ |
-| [safety-systems](skills/safety-systems/SKILL.md) | Watchdogs, SROS2, functional safety (ISO 10218, IEC 61508) | ✅ |
+| [safety-systems](skills/safety-systems/SKILL.md) | Watchdogs, E-stops, SROS2, ISO 10218 risk assessment, IEC 60204 stop categories and ISO 13849 levels | ✅ |
 
 ### DevOps & Production
 | Skill | Description | Status |
@@ -146,10 +145,14 @@ Project-wide conventions and always-on rules for ROS2 and robotics projects. Use
 
 ### With Cursor IDE
 
-Add skills in Cursor settings or create `.cursor/rules/robotics.md`:
+Create a rule, `.cursor/rules/robotics.mdc`, in your project (Cursor reads `.mdc` rules only):
 
 ```markdown
-When working on ROS2 navigation, reference:
+---
+description: ROS 2 and Nav2 work
+alwaysApply: false
+---
+When working on ROS 2 navigation, read:
 - /path/to/agentic-robotics/skills/ros2/SKILL.md
 - /path/to/agentic-robotics/skills/nav2/SKILL.md
 ```
@@ -206,15 +209,31 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
 4. **Real-world focus** — Anti-patterns and failure modes documented
 5. **Progressive disclosure** — Quick start at top, deep reference below
 
+## Credits
+
+Parts of this library are adapted from two Apache 2.0 projects:
+
+- [robotics-agent-skills](https://github.com/arpitg1304/robotics-agent-skills),
+  by arpitg1304 and its contributors: material in the `ros2`,
+  `camera-vision`, `lidar-pointcloud`, `safety-systems`,
+  `robot-architecture`, `robot-bringup`, `ros2-web-bridge` and
+  `docker-ros2-ci` skills.
+- [ros2-claude-code-template](https://github.com/harunkurtdev/ros2-claude-code-template),
+  by harunkurtdev: `commands/ros2.md` and the files in `rules/`.
+
+The material was renamed, merged into larger skills and rewritten in
+places. [NOTICE](NOTICE) lists what came from where. Many of the worked
+examples use my robot, OrbiBot V1.
+
 ## License
 
-Apache 2.0 — See [LICENSE](LICENSE)
+Apache 2.0: see [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 ## References
 
 - [ROS2](https://github.com/ros2)
-- [MoveIt2](https://moveit.ros.org)
-- [Nav2](https://ros-planning.github.io/navigation2)
+- [MoveIt 2](https://moveit.ai)
+- [Nav2](https://docs.nav2.org)
 - [OpenCV](https://opencv.org)
 - [PCL](https://pointclouds.org)
 - [Gazebo](https://gazebosim.org)

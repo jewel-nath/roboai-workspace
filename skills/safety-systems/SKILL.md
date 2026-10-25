@@ -1096,9 +1096,9 @@ class SafeMotorController(Node):
 
 This skill sits at the intersection of hardware control and software architecture. Use it together with the following skills:
 
-- **`robot_bringup`** — configure `systemd` service restart policies for safety-critical nodes (`Restart=always`, `RestartSec=0.5`); the e-stop chain node and hardware watchdog must start before any motion-capable node.
-- **`ros2_diagnostics`** — publish `DiagnosticStatus` from the `SafetyFSM` and `HeartbeatMonitor` so that the robot dashboard shows safety state in real time; use `diagnostic_updater.Updater` to report per-channel e-stop status.
-- **`robotics_security`** — apply SROS2 enclaves to the safety topic namespace (`/safety/*`); set `governance.xml` to `ENCRYPT` for `/safety/estop_active` and `/cmd_vel` so these cannot be spoofed over the network.
+- **`robot-bringup`** — configure `systemd` service restart policies for safety-critical nodes (`Restart=always`, `RestartSec=0.5`); the e-stop chain node and hardware watchdog must start before any motion-capable node.
+- **`deployment-fleet`** — publish `DiagnosticStatus` from the `SafetyFSM` and `HeartbeatMonitor` so that the robot dashboard shows safety state in real time; use `diagnostic_updater.Updater` to report per-channel e-stop status.
+- **SROS2, above** — apply SROS2 enclaves to the safety topic namespace (`/safety/*`); set `governance.xml` to `ENCRYPT` for `/safety/estop_active` and `/cmd_vel` so these cannot be spoofed over the network.
 - **`realtime_motor_control`** — run the e-stop GPIO polling loop under `SCHED_FIFO` (PREEMPT_RT) to guarantee sub-millisecond response time; pin the watchdog thread to an isolated CPU core to prevent scheduler jitter.
 - **`ros2_lifecycle`** — model the motor driver as a Lifecycle Node; on `on_deactivate()` publish zero velocity and de-energise the safety relay; reject `on_activate()` if the SafetyFSM is not in `OPERATIONAL` state.
 - **`microcontrollers`** — implement a firmware-level watchdog in the STM32 (`IWDG`) that cuts PWM output if the host fails to send a keep-alive byte within 500 ms; this provides a hardware backstop independent of the Linux OS.
@@ -1106,9 +1106,9 @@ This skill sits at the intersection of hardware control and software architectur
 ### Typical Integration Sequence
 
 ```
-1. robot_bringup launches safety_monitor and estop_chain first (ordered startup).
+1. robot-bringup launches safety_monitor and estop_chain first (ordered startup).
 2. SafetyFSM initialises in INIT state — no motion commands forwarded.
-3. robot_bringup waits for /safety/state == "OPERATIONAL" before launching nav stack.
+3. robot-bringup waits for /safety/state == "OPERATIONAL" before launching nav stack.
 4. HeartbeatMonitor confirms hardware_node and navigation_node are alive.
 5. Operator confirms workspace clear, sends /safety/command = "OPERATIONAL".
 6. Normal operation. Watchdog pets firmware IWDG every 200 ms.
