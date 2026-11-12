@@ -1,0 +1,179 @@
+# Source registry: every outside source we take a skill, tool or resource from.
+# Fields and words are defined in sources/README.md. Baselines were read from the GitHub API on
+# the date in `baseline.as_of`. Keep entries sorted by area, then id.
+
+sources:
+
+  # ---- legacy: the sources of the old skills (see NOTICE) ----
+
+  - id: robotics-agent-skills
+    url: https://github.com/arpitg1304/robotics-agent-skills
+    kind: skill
+    area: ros2
+    relation: distilled
+    status: in-use
+    license: Apache-2.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: f9bc546, commit_date: 2026-08-12, release: , stars: 401, archived: false}
+    used_in: [legacy/skills/ros2, legacy/skills/camera-vision, legacy/skills/lidar-pointcloud, legacy/skills/safety-systems, legacy/skills/robot-architecture, legacy/skills/robot-bringup, legacy/skills/ros2-web-bridge, legacy/skills/docker-ros2-ci]
+    benchmark:
+    last_checked: 2026-11-12
+    notes: The commit the old skills were adapted from was never recorded; this baseline is the upstream head at registration.
+    history:
+      - {date: 2026-11-12, event: registered, note: from NOTICE during the Phase 0 legacy audit}
+
+  - id: ros2-claude-code-template
+    url: https://github.com/harunkurtdev/ros2-claude-code-template
+    kind: skill
+    area: ros2
+    relation: distilled
+    status: in-use
+    license: Apache-2.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 5b3a43d, commit_date: 2026-06-03, release: , stars: 215, archived: false}
+    used_in: [legacy/rules, legacy/commands/ros2.md]
+    benchmark:
+    last_checked: 2026-11-12
+    notes: Licence stated in its README only; the repo has no licence file GitHub recognises. Commit taken was never recorded.
+    history:
+      - {date: 2026-11-12, event: registered, note: from NOTICE during the Phase 0 legacy audit}
+
+  # ---- cad and pcb: MCP servers used by OrbiBot (guides move to mcp/ in Phase 2) ----
+
+  - id: freecad-mcp
+    url: https://github.com/neka-nat/freecad-mcp
+    kind: mcp
+    area: cad
+    relation: installed
+    status: in-use
+    license: MIT
+    pinned: {version: 0.1.28, commit: }
+    baseline: {as_of: 2026-11-12, commit: ec8abf2, commit_date: 2026-11-07, release: , stars: 3304, archived: false}
+    used_in: [.mcp.example.json]
+    benchmark:
+    install: uvx freecad-mcp@0.1.28, plus the FreeCADMCP addon 0.1.28 in FreeCAD's Mod folder
+    last_checked: 2026-11-12
+    notes: Version pinned in OrbiBot since 2026-11-03. No GitHub releases; uvx installs the version from PyPI.
+    history:
+      - {date: 2026-11-03, event: adopted, note: in OrbiBot, pinned at 0.1.28}
+      - {date: 2026-11-12, event: registered, note: workspace MCP config}
+
+  - id: konnect
+    url: https://github.com/mixelpixx/Konnect
+    kind: mcp
+    area: pcb
+    relation: installed
+    status: in-use
+    license: AGPL-3.0
+    pinned: {version: v0.13.0, commit: }
+    baseline: {as_of: 2026-11-12, commit: 676efce, commit_date: 2026-11-02, release: v0.13.0, stars: 1459, archived: true}
+    used_in: [.mcp.example.json]
+    benchmark:
+    install: KiCad plugin; the konnect binary from its last release
+    last_checked: 2026-11-12
+    notes: Upstream archived on 2026-11-02, so v0.13.0 is final. Successor and open fallbacks are watched in OrbiBot's toolkit page; they move here in Phase 2.
+    history:
+      - {date: 2026-11-03, event: adopted, note: in OrbiBot, pinned at v0.13.0}
+      - {date: 2026-11-12, event: registered, note: workspace MCP config}
+
+  # ---- video: reviewed 2026-11-12 (plan section 10) ----
+
+  - id: explainroo
+    url: https://github.com/vincentsch/explainroo
+    kind: tool
+    area: video
+    relation: installed
+    status: planned
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 733b194, commit_date: 2026-11-10, release: v0.6.0, stars: 1246, archived: false}
+    used_in: []
+    benchmark: {path: benchmarks/pid-60s/, status: planned}
+    install: /plugin marketplace add vincentsch/explainroo, then /plugin install explainroo@explainroo; npx --yes explainroo doctor --fetch (~400 MB models)
+    last_checked: 2026-11-12
+    notes: Core video tool for narrated explainers and tutorials. Node 20.11+, ffmpeg, Chrome. Tests run on Windows. Adds an explainroo.com corner mark unless "watermark" is false.
+    history:
+      - {date: 2026-11-12, event: planned, note: core; video track V1 pilot}
+
+  - id: video-director
+    url: https://github.com/win4r/video-director
+    kind: skill
+    area: video
+    relation: installed
+    status: planned
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 02d1912, commit_date: 2026-11-07, release: , stars: 457, archived: false}
+    used_in: []
+    benchmark: {path: benchmarks/pid-60s/, status: planned}
+    install: copy its video-director/ folder into the user's Claude skills; Python with numpy and Pillow, ffmpeg
+    last_checked: 2026-11-12
+    notes: Core directing method and QA scripts (check_timeline.py, qa_video.py), for any renderer.
+    history:
+      - {date: 2026-11-12, event: planned, note: core; video track V1 pilot}
+
+  - id: huashu-motion
+    url: https://github.com/alchaincyf/huashu-motion
+    kind: tool
+    area: video
+    relation: installed
+    status: planned
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 0272906, commit_date: 2026-11-10, release: v0.4.0, stars: 2661, archived: false}
+    used_in: []
+    benchmark:
+    install: npx skills add alchaincyf/huashu-motion; om doctor
+    last_checked: 2026-11-12
+    notes: Trial for promo and 3D showcase films. Node 22+, Chrome, ffmpeg. Tested on macOS only. Bundles GSAP under the GSAP licence; ends films with a "Made with huashu-motion" mark unless turned off.
+    history:
+      - {date: 2026-11-12, event: planned, note: trial; video track V2}
+
+  - id: earshot
+    url: https://github.com/Leonxlnx/earshot
+    kind: tool
+    area: video
+    relation: installed
+    status: planned
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 4ac3d2a, commit_date: 2026-11-06, release: v0.4.1, stars: 4576, archived: false}
+    used_in: []
+    benchmark:
+    install: uv tool install "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot"; earshot doctor --fetch (~1.1 GB models)
+    last_checked: 2026-11-12
+    notes: Later, for sound checks and code-made sound effects; has an MCP server. Check that torch installs on this machine's Python before adopting.
+    history:
+      - {date: 2026-11-12, event: planned, note: later; video track V5}
+
+  - id: reanimate
+    url: https://github.com/NiazMorshed2007/reanimate
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 3f7a55a, commit_date: 2026-10-31, release: , stars: 1581, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-12
+    notes: Clones web UI animations into code; it does not make videos. Needs Bun; Windows untested.
+    history:
+      - {date: 2026-11-12, event: rejected, note: not a video maker}
+
+  - id: take-one
+    url: https://github.com/talsiach/take-one
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-12, commit: 43fd27b, commit_date: 2026-11-09, release: , stars: 271, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-12
+    notes: Overlaps huashu-motion; aimed at product ads; 1-2 hours and 0.4-0.7M tokens per 30 s film; suggests paid services through affiliate links; tested on macOS only.
+    history:
+      - {date: 2026-11-12, event: rejected, note: overlap with huashu-motion}

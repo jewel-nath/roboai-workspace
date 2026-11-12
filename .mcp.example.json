@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "freecad": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "freecad-mcp@0.1.28",
+        "--freecadcmd",
+        "<path to freecadcmd, for example C:/Program Files/FreeCAD 1.1/bin/freecadcmd.exe>"
+      ]
+    },
+    "konnect": {
+      "command": "<KiCad 3rd-party plugins folder>/com_github_mixelpixx_konnect/bin/konnect.exe",
+      "env": {
+        "KICAD_API_SOCKET": "<KiCad IPC socket, for example ipc://<temp folder>/kicad/api.sock>"
+      }
+    }
+  }
+}

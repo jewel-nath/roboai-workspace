@@ -1,4 +1,4 @@
-Agentic Robotics
+RoboAI Workspace (formerly Agentic Robotics)
 Copyright 2026 Jewel Nath
 
 This library includes material adapted from two projects under the Apache
@@ -6,19 +6,23 @@ License 2.0:
 
 - robotics-agent-skills, by arpitg1304 and its contributors
   (https://github.com/arpitg1304/robotics-agent-skills).
-  Parts of skills/ros2, skills/camera-vision, skills/lidar-pointcloud and
-  skills/safety-systems are adapted from its ros2, robot-perception and
-  robotics-security skills, and skills/robot-architecture draws on its
-  robotics-design-patterns skill. Parts of skills/robot-bringup,
-  skills/ros2-web-bridge and skills/docker-ros2-ci are adapted from its
-  robot-bringup, ros2-web-integration and docker-ros2-development skills.
+  Parts of legacy/skills/ros2, legacy/skills/camera-vision,
+  legacy/skills/lidar-pointcloud and legacy/skills/safety-systems are adapted
+  from its ros2, robot-perception and robotics-security skills, and
+  legacy/skills/robot-architecture draws on its robotics-design-patterns
+  skill. Parts of legacy/skills/robot-bringup, legacy/skills/ros2-web-bridge
+  and legacy/skills/docker-ros2-ci are adapted from its robot-bringup,
+  ros2-web-integration and docker-ros2-development skills.
 
 - ros2-claude-code-template, by harunkurtdev
   (https://github.com/harunkurtdev/ros2-claude-code-template), whose README
   states the Apache License 2.0.
-  commands/ros2.md and the files in rules/ are adapted from its
+  legacy/commands/ros2.md and the files in legacy/rules/ are adapted from its
   .claude/commands and .claude/rules files.
 
 Changes: the material was renamed, merged into larger skills, reorganised
 around this library's skill format, and rewritten and extended in places,
-with OrbiBot as the worked example.
+with OrbiBot as the worked example. When these files are re-filed out of
+legacy/, this notice follows them to their new paths.
+
+Every outside source is recorded in sources/registry.yaml.

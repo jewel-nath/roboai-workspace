@@ -1,2 +1,26 @@
+# Projects: each one is its own git repo (see projects/README.md)
+projects/*
+!projects/README.md
+
+# Machine-specific config and secrets
+.mcp.json
+.env
+.env.*
+!.env.example
+
+# Originals fetched from other repos; we link to them, never commit them
+vendor/
+
+# Rendered media: video sources are committed, renders are not
+*.mp4
+*.mov
+*.webm
+
+# Local scratch
 .archive/
 references/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

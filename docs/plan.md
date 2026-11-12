@@ -1,7 +1,8 @@
 # RoboAI Workspace — Plan
 
-Status: **draft, 2026-11-12.** This plan replaces the old "Agentic Robotics" layout. Nothing in it is
-built yet; the [roadmap](#12-roadmap) says in what order it will be.
+Status: **Phase 0 done, 2026-11-12.** This plan replaces the old "Agentic Robotics" layout. Phase 0
+built the structure, templates, frontmatter and source registry; the [roadmap](#12-roadmap) says
+what comes next.
 
 ## Contents
 
@@ -89,6 +90,7 @@ roboai-workspace/
 ├── tools/                   ← runnable scripts: calculators, index generator, lint, source checks
 ├── .claude/                 ← commands, agents, rules for this workspace
 ├── docs/                    ← this plan and other docs about the workspace itself
+├── legacy/                  ← the old layout, until Phase 2 re-files it
 └── projects/                ← gitignored; each project is its own git repo
 ```
 
@@ -293,6 +295,7 @@ credits stay correct.
 
 - **Video tools** (2026-11-12): explainroo, video-director, huashu-motion, earshot as `planned`;
   take-one and reanimate as `rejected` (reasons in [Video track](#10-video-track)).
+- **MCP servers in `.mcp.example.json`** (2026-11-12): freecad-mcp and Konnect, as used by OrbiBot.
 - **Sources of the legacy skills**, from `NOTICE`: `arpitg1304/robotics-agent-skills` and
   `harunkurtdev/ros2-claude-code-template`, both Apache-2.0. No commit was recorded when they were
   taken, so their baseline starts at registration.
@@ -356,26 +359,9 @@ This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 
 
 ### Legacy content of this repo
 
-Everything in the old layout is audited in Phase 0 and re-filed, merged or dropped. Draft mapping,
-confirmed by the audit:
-
-| Old | New (draft) |
-|---|---|
-| `skills/ros2`, `ros2-control`, `ros2-web-bridge`, `robot-modeling` | `skills/ros2-core`, `ros2-control`, `ros2-web-bridge`, `ros2-robot-description` |
-| `skills/gazebo`, `mujoco`, `sim-to-real` | `skills/sim-gazebo`, `sim-mujoco` (merged with OrbiBot's), `sim-to-real` |
-| `skills/isaac-sim` | `wiki/tools/isaac-sim.md` (documented tier) |
-| `skills/camera-vision`, `lidar-pointcloud`, `sensor-fusion-slam` | `skills/perception-camera`, `perception-lidar`, `perception-slam` |
-| `skills/nav2`, `path-planning` | `skills/nav-nav2`, `nav-planning` |
-| `skills/moveit2`, `grasping-force-control` | `skills/manip-moveit2`, `manip-grasping` |
-| `skills/microcontrollers`, `gpio-i2c-spi`, `serial-can-protocols`, `rtos-micro-ros`, `sensor-actuator-drivers`, `realtime-motor-control` | `skills/fw-mcu`, `fw-peripherals`, `fw-serial-can`, `fw-rtos-micro-ros`, `fw-drivers`, `fw-motor-control` |
-| `skills/control-systems` | `skills/control-systems` + `wiki/concepts/` pages |
-| `skills/learning-robotics`, `edge-ml-deployment` | `skills/learn-robot-learning`, `learn-edge-deployment` |
-| `skills/robot-architecture`, `safety-systems` | `skills/arch-robot-architecture`, `arch-safety` |
-| `skills/robot-bringup`, `deployment-fleet`, `docker-ros2-ci` | `skills/ops-bringup`, `ops-fleet`, `ops-docker-ci` |
-| `guides/*.md` | `playbooks/` |
-| `rules/*.md`, `commands/ros2.md` | `.claude/rules/`, `.claude/commands/` |
-| `scripts/validate-skills.py` | `tools/lint/`, extended to the wiki and registry |
-| `README.md` (still "Agentic Robotics") | rewritten for RoboAI Workspace |
+In Phase 0 the old layout (skills, guides, rules, commands, scripts, README, CONTRIBUTING) was moved
+into `legacy/` with `git mv` and audited. [legacy-audit.md](legacy-audit.md) records the findings
+and maps every file to its destination; Phase 2 re-files, merges or drops each one from there.
 
 ### OrbiBot
 
@@ -402,7 +388,7 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 
 | Phase | Goal | Done when |
 |---|---|---|
-| **0. Redesign** | Skeleton; templates (robot, part, tool, source); frontmatter schema; CLAUDE.md and AGENTS.md; projects setup; registry schema and first entries; legacy audit; new README | An agent opening the repo knows where everything goes |
+| **0. Redesign** ✅ 2026-11-12 | Skeleton; templates (robot, part, tool, concept, guide, source, skill, project); frontmatter schema; CLAUDE.md and AGENTS.md; projects setup; registry schema and first entries; legacy audit; new README | An agent opening the repo knows where everything goes |
 | **1. Tooling** | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint | Research and reviews produce consistent, checked output |
 | **2. OrbiBot** | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries; legacy skills re-filed | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
 | **3. Robot Atlas** | awesome-robot-descriptions, robotics-projects, mobile-robotics, ros-mobile-robot, manipulation, social robots | Tier A/B/C profiles with generated comparison tables |
@@ -428,6 +414,9 @@ All dated 2026-11-12.
 - **Video:** explainroo and video-director are core, huashu-motion is a trial, earshot comes later;
   take-one and reanimate are rejected. Plan only — nothing is installed yet.
 - **Every outside source** goes into the source registry with its version, condition and benchmark.
+- **The old layout moved into `legacy/`** in Phase 0, so the new structure starts clean and nothing
+  is lost; Phase 2 re-files it.
+- **AGENTS.md is the agent guide** for every tool; CLAUDE.md imports it and adds Claude Code notes.
 
 ## 14. Open questions
 

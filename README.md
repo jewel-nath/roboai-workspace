@@ -1,239 +1,57 @@
-# 🤖 Agentic Robotics
+# RoboAI Workspace
 
-> A curated skill library for AI assistants helping robotics engineers.
-> Works with Claude Code, Cursor, or any AI tool that can read Markdown files.
+> **The open-source LLM Wiki for robotics.**
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+Every robotics developer re-researches the same things: which open robot to copy, what it costs,
+which motor, which MCU, which simulator. RoboAI Workspace does that research once, carefully, in a
+form AI agents can read, and pairs it with the skills and tool setups that let an agent help you
+build your own robot: planning, mechanical design, electronics, firmware, ROS 2, simulation, robot
+learning, and the videos that explain it.
 
-## Quick Start
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+## Status
+
+**Being redesigned (November 2026).** Phase 0 is done: the structure, templates, frontmatter and
+source registry. Content arrives phase by phase; the [roadmap](docs/plan.md#12-roadmap) says in
+what order. The previous skill library is kept in [legacy/](legacy/) until it is re-filed.
+
+## What it will hold
+
+| Part | What | Where |
+|---|---|---|
+| Robot Atlas | A researched profile of every notable open-source robot: specs, how it works, uses, cost, build effort, what to reuse | [wiki/robots/](wiki/robots/) |
+| Parts and tools | Actuators, MCUs, drivers, sensors, compute, power; CAD, EDA, simulators, ROS 2 | [wiki/](wiki/) |
+| Knowledge | Software, robot learning, concepts, decision guides | [wiki/](wiki/) |
+| Skills and MCP | How an agent does the work, and the MCP servers that let it drive the tools | [skills/](skills/), [mcp/](mcp/) |
+| Playbooks | Idea → requirements → design → build → simulation → bringup → learning | [playbooks/](playbooks/) |
+| Video studio | Turning robots, concepts, CAD and tutorials into narrated videos | [docs/plan.md](docs/plan.md#10-video-track) |
+
+Everything taken from outside is recorded in the [source registry](sources/README.md), with its
+version and condition.
+
+## Use it
 
 ```bash
-# Clone the repository
-git clone https://github.com/jewel-nath/agentic-robotics.git
-cd agentic-robotics
-
-# Use with Cursor: list skill paths in a rule, .cursor/rules/robotics.mdc
-# /path/to/agentic-robotics/skills/ros2/SKILL.md
-# /path/to/agentic-robotics/skills/nav2/SKILL.md
-
-# Use with Claude Code
-# Reference in your project's CLAUDE.md:
-# When working on ROS2, read /path/to/agentic-robotics/skills/ros2/SKILL.md
+git clone https://github.com/jewel-nath/roboai-workspace.git
 ```
 
-## What is This?
-
-A skill library covering the robotics stack, from ROS 2 and simulation to embedded and deployment:
-
-- **29 consolidated skills** — Each skill is substantial (500-3000 lines), covering a complete domain
-- **Tool-agnostic** — Plain markdown with YAML frontmatter, consumable by any AI tool
-- **Real-world focus** — Anti-patterns and failure modes alongside example code
-- **Progressive disclosure** — Quick start at top, deep reference below
-
-## Project Status
-
-Status as of March 2026, when the skills were last updated:
-
-### ✅ Completed (Phase 1-5)
-- **Phase 1** (Foundation): ros2, robot-modeling, gazebo, camera-vision, ros2-control ✓
-- **Phase 2** (Navigation): nav2, sensor-fusion-slam, path-planning, lidar-pointcloud, control-systems ✓
-- **Phase 3** (Manipulation & Hardware): moveit2, grasping-force-control, serial-can-protocols, microcontrollers, realtime-motor-control ✓
-- **Phase 4** (AI & Advanced): isaac-sim, mujoco, sim-to-real, learning-robotics, edge-ml-deployment, robot-architecture, safety-systems ✓
-- **Phase 5** (Embedded, DevOps & Production): gpio-i2c-spi, sensor-actuator-drivers, rtos-micro-ros, deployment-fleet, robot-bringup, ros2-web-bridge, docker-ros2-ci ✓
-- **Phase 5 Guides**: production-deployment.md, testing-strategy.md ✓
-
-### 🚧 Remaining
-- **Templates**: Starter templates for ROS2 packages, URDF, Docker
-
-## Skill Catalog
-
-### Core Middleware
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [ros2](skills/ros2/SKILL.md) | ROS2 development: nodes, topics, services, actions, launch files, QoS, lifecycle, DDS | ✅ |
-| [ros2-control](skills/ros2-control/SKILL.md) | ros2_control framework: hardware interfaces, controllers, transmissions | ✅ |
-| [ros2-web-bridge](skills/ros2-web-bridge/SKILL.md) | Web integration: rosbridge, FastAPI, WebSocket streaming, REST APIs | ✅ |
-| [robot-modeling](skills/robot-modeling/SKILL.md) | URDF, Xacro, TF2 transforms, robot state publisher | ✅ |
-
-### Simulation
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [gazebo](skills/gazebo/SKILL.md) | Gazebo Classic & Sim: SDF worlds, plugins, physics, sensor models | ✅ |
-| [isaac-sim](skills/isaac-sim/SKILL.md) | NVIDIA Isaac Sim: USD format, photorealistic rendering, synthetic data | ✅ |
-| [mujoco](skills/mujoco/SKILL.md) | MuJoCo physics: contact modeling, MJCF, optimal control | ✅ |
-| [sim-to-real](skills/sim-to-real/SKILL.md) | Domain transfer: reality gap, domain adaptation, validation | ✅ |
-
-### Perception
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [camera-vision](skills/camera-vision/SKILL.md) | Camera calibration, OpenCV, detection, tracking, depth pipelines | ✅ |
-| [lidar-pointcloud](skills/lidar-pointcloud/SKILL.md) | PCL, Open3D, filtering, registration, ICP, segmentation | ✅ |
-| [sensor-fusion-slam](skills/sensor-fusion-slam/SKILL.md) | Multi-sensor fusion, EKF, ORB-SLAM3, RTAB-Map, Cartographer | ✅ |
-
-### Navigation
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [nav2](skills/nav2/SKILL.md) | Nav2 stack: behavior trees, planners, controllers, recovery | ✅ |
-| [path-planning](skills/path-planning/SKILL.md) | A*, RRT, costmaps, waypoint following, coverage planning | ✅ |
-
-### Manipulation
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [moveit2](skills/moveit2/SKILL.md) | Motion planning, collision checking, trajectory execution | ✅ |
-| [grasping-force-control](skills/grasping-force-control/SKILL.md) | Grasp synthesis, F/T sensing, impedance control, pick-and-place | ✅ |
-
-### Control
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [control-systems](skills/control-systems/SKILL.md) | PID, LQR, MPC, state-space, system identification, trajectories | ✅ |
-| [realtime-motor-control](skills/realtime-motor-control/SKILL.md) | Motor types, PID tuning, FOC, encoders, PREEMPT_RT, deterministic loops | ✅ |
-
-### Hardware Interfaces
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [serial-can-protocols](skills/serial-can-protocols/SKILL.md) | UART, RS485, CAN 2.0, CANopen, J1939, EtherCAT | ✅ |
-| [gpio-i2c-spi](skills/gpio-i2c-spi/SKILL.md) | GPIO, PWM, interrupts, I2C, SPI protocols on Linux/RPi | ✅ |
-| [sensor-actuator-drivers](skills/sensor-actuator-drivers/SKILL.md) | Custom ROS2 driver development: IMU, encoder, motor, servo | ✅ |
-
-### Embedded Systems
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [microcontrollers](skills/microcontrollers/SKILL.md) | STM32, ESP32, nRF52, HAL patterns, DMA, interrupts, bootloaders | ✅ |
-| [rtos-micro-ros](skills/rtos-micro-ros/SKILL.md) | FreeRTOS task scheduling, micro-ROS on STM32/ESP32, real-time patterns | ✅ |
-
-### AI & Learning
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [learning-robotics](skills/learning-robotics/SKILL.md) | Imitation learning, RL for robotics, VLA models | ✅ |
-| [edge-ml-deployment](skills/edge-ml-deployment/SKILL.md) | TensorRT, ONNX, quantization, Jetson, data pipelines | ✅ |
-
-### Architecture & Safety
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [robot-architecture](skills/robot-architecture/SKILL.md) | Design patterns, BT/FSM, state estimation, multi-robot | ✅ |
-| [safety-systems](skills/safety-systems/SKILL.md) | Watchdogs, E-stops, SROS2, ISO 10218 risk assessment, IEC 60204 stop categories and ISO 13849 levels | ✅ |
-
-### DevOps & Production
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [robot-bringup](skills/robot-bringup/SKILL.md) | systemd, layered launch, udev, watchdog, production bringup | ✅ |
-| [docker-ros2-ci](skills/docker-ros2-ci/SKILL.md) | Docker builds, docker-compose, DDS in containers, CI with colcon | ✅ |
-| [deployment-fleet](skills/deployment-fleet/SKILL.md) | OTA updates, fleet management, centralized logging, diagnostics | ✅ |
-
-## Commands
-
-Quick CLI reference for daily use and AI-assisted workflows:
-
-| File | Description |
-|------|-------------|
-| [commands/ros2.md](commands/ros2.md) | colcon build/test, `ros2 node/topic/service/action/param`, rqt, tf2_tools, ros2 doctor |
-
-## Rules
-
-Project-wide conventions and always-on rules for ROS2 and robotics projects. Use in Cursor rules, Claude project instructions, or as team standards:
-
-| File | Description |
-|------|-------------|
-| [rules/ros2-general.md](rules/ros2-general.md) | Package naming, file structure, launch, params, logging |
-| [rules/ros2-nodes.md](rules/ros2-nodes.md) | Node design: parameters first, pub/sub order, QoS, lifecycle |
-| [rules/ros2-communication.md](rules/ros2-communication.md) | Topic naming, QoS selection, message/service packages, TF2 |
-| [rules/robotics-testing.md](rules/robotics-testing.md) | Unit, integration, launch tests; pytest, launch_testing |
-| [rules/clean-architecture.md](rules/clean-architecture.md) | Optional: domain / application / infrastructure layers |
-| [rules/robot-specific.md](rules/robot-specific.md) | Optional: URDF, TF tree, Nav2, sensor/motor patterns |
-
-## Usage
-
-### With Cursor IDE
-
-Create a rule, `.cursor/rules/robotics.mdc`, in your project (Cursor reads `.mdc` rules only):
-
-```markdown
----
-description: ROS 2 and Nav2 work
-alwaysApply: false
----
-When working on ROS 2 navigation, read:
-- /path/to/agentic-robotics/skills/ros2/SKILL.md
-- /path/to/agentic-robotics/skills/nav2/SKILL.md
+```bash
+cd roboai-workspace
 ```
 
-### With Claude Code
+Open the folder in Claude Code (or any agent that reads `AGENTS.md`) and brainstorm. Start your
+own robot as a project in [projects/](projects/README.md): each project is its own git repo, so
+your work stays yours while the workspace stays the shared brain.
 
-Reference skills in your project's `CLAUDE.md`:
+## For agents and contributors
 
-```markdown
-## ROS2 Development Guidelines
-
-When the user asks about ROS2, read and follow:
-- /path/to/agentic-robotics/skills/ros2/SKILL.md
-
-When working on robot perception:
-- /path/to/agentic-robotics/skills/camera-vision/SKILL.md
-- /path/to/agentic-robotics/skills/sensor-fusion-slam/SKILL.md
-```
-
-### With Any AI Tool
-
-Skills are plain markdown. Copy the content into your context, or configure your tool to read the file when relevant topics come up.
-
-### Manual Reference
-
-Skills are well-structured documentation. Engineers can read them directly.
-
-## Guides
-
-Multi-skill workflow guides:
-
-| Guide | Description | Status |
-|-------|-------------|--------|
-| [Robot Bringup](guides/robot-bringup.md) | First power-on checklist | ✅ |
-| [Sensor Calibration](guides/sensor-calibration.md) | End-to-end calibration workflow | ✅ |
-| [Hardware Integration](guides/hardware-integration.md) | Wiring to first ROS2 topic | ✅ |
-| [Sim-to-Real Pipeline](guides/sim-to-real-pipeline.md) | Full sim-to-real transfer | ✅ |
-| [Production Deployment](guides/production-deployment.md) | Pre-deployment checklist, staging, rollback | ✅ |
-| [Testing Strategy](guides/testing-strategy.md) | Unit → integration → sim → HIL → field testing | ✅ |
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for:
-- Skill format specification
-- How to add a new skill
-- Code review process
-- Style guide
-
-## Design Principles
-
-1. **Flat and discoverable** — Two-level hierarchy (`skills/<name>/SKILL.md`)
-2. **Consolidated skills** — Substantial references (~500-3000 lines), no thin stubs
-3. **Tool-agnostic** — Plain markdown with YAML frontmatter
-4. **Real-world focus** — Anti-patterns and failure modes documented
-5. **Progressive disclosure** — Quick start at top, deep reference below
-
-## Credits
-
-Parts of this library are adapted from two Apache 2.0 projects:
-
-- [robotics-agent-skills](https://github.com/arpitg1304/robotics-agent-skills),
-  by arpitg1304 and its contributors: material in the `ros2`,
-  `camera-vision`, `lidar-pointcloud`, `safety-systems`,
-  `robot-architecture`, `robot-bringup`, `ros2-web-bridge` and
-  `docker-ros2-ci` skills.
-- [ros2-claude-code-template](https://github.com/harunkurtdev/ros2-claude-code-template),
-  by harunkurtdev: `commands/ros2.md` and the files in `rules/`.
-
-The material was renamed, merged into larger skills and rewritten in
-places. [NOTICE](NOTICE) lists what came from where. Many of the worked
-examples use my robot, OrbiBot V1.
+- [AGENTS.md](AGENTS.md) — how the repo works and where everything goes
+- [docs/plan.md](docs/plan.md) — the design and roadmap
+- [docs/frontmatter.md](docs/frontmatter.md) — page fields
+- [templates/](templates/) — page, skill and project templates
+- [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-Apache 2.0: see [LICENSE](LICENSE) and [NOTICE](NOTICE).
-
-## References
-
-- [ROS2](https://github.com/ros2)
-- [MoveIt 2](https://moveit.ai)
-- [Nav2](https://docs.nav2.org)
-- [OpenCV](https://opencv.org)
-- [PCL](https://pointclouds.org)
-- [Gazebo](https://gazebosim.org)
+[Apache License 2.0](LICENSE). Credits for adapted material are in [NOTICE](NOTICE).
