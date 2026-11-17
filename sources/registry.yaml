@@ -93,6 +93,76 @@ sources:
       - {date: 2026-11-03, event: adopted, note: in OrbiBot, pinned at v0.13.0}
       - {date: 2026-11-12, event: registered, note: workspace MCP config}
 
+  # ---- robots: awesome lists read for the Robot Atlas (Phase 3) ----
+
+  - id: awesome-robot-descriptions
+    url: https://github.com/robot-descriptions/awesome-robot-descriptions
+    kind: research-source
+    area: robots
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-17, commit: "bb41b10", commit_date: 2026-10-11, release: , stars: 1702, archived: false}
+    used_in: [sources/awesome-robot-descriptions.md]
+    benchmark:
+    last_checked: 2026-11-17
+    notes: URDF, MJCF and Xacro models of about 160 robots, by type, with each model's licence. Feeds the Atlas and each profile's sim_models.
+    history:
+      - {date: 2026-11-17, event: ingested, note: Phase 3 Robot Atlas}
+      - {date: 2026-11-17, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-projects
+    url: https://github.com/mjyc/awesome-robotics-projects
+    kind: research-source
+    area: robots
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-17, commit: "9943f0e", commit_date: 2026-02-13, release: , stars: 1842, archived: false}
+    used_in: [sources/awesome-robotics-projects.md]
+    benchmark:
+    last_checked: 2026-11-17
+    notes: Open-source and affordable robot projects, plus robotics software and companies. Phase 3 triages its robot sections; the rest waits for Phase 4.
+    history:
+      - {date: 2026-11-17, event: ingested, note: Phase 3 Robot Atlas, robot sections only}
+      - {date: 2026-11-17, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-ros-mobile-robot
+    url: https://github.com/shannon112/awesome-ros-mobile-robot
+    kind: research-source
+    area: robots
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-17, commit: "a405fbf", commit_date: 2025-10-31, release: , stars: 502, archived: false}
+    used_in: [sources/awesome-ros-mobile-robot.md]
+    benchmark:
+    last_checked: 2026-11-17
+    notes: ROS mobile robot resources; CC0 stated in its README only. Phase 3 triages its Robotic Platform section; sensing, SLAM, navigation and the rest wait for Phase 4.
+    history:
+      - {date: 2026-11-17, event: ingested, note: Phase 3 Robot Atlas, platform section only}
+      - {date: 2026-11-17, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-social-robots
+    url: https://github.com/jcarolinares/awesome-social-robots
+    kind: research-source
+    area: robots
+    relation: referenced
+    status: in-use
+    license: GPL-3.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-17, commit: "01e8eba", commit_date: 2026-08-25, release: , stars: 174, archived: false}
+    used_in: [sources/awesome-social-robots.md]
+    benchmark:
+    last_checked: 2026-11-17
+    notes: Open and closed social and companion robots, virtual pets, and learning material. Phase 3 triages its robot sections.
+    history:
+      - {date: 2026-11-17, event: ingested, note: Phase 3 Robot Atlas, robot sections only}
+      - {date: 2026-11-17, event: rebaselined, note: upstream state recorded as the new baseline}
+
   # ---- video: reviewed 2026-11-12 (plan section 10) ----
 
   - id: explainroo

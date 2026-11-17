@@ -234,12 +234,15 @@ def sources_summary() -> str:
                 [
                     f"[{cell(data.get('name') or path.stem)}]({path.name})",
                     cell(data.get("read_on")),
+                    cell(dig(data, "counts", "entries")),
                     cell(dig(data, "counts", "pages")),
+                    cell(dig(data, "counts", "waiting")),
                     cell(dig(data, "counts", "index_only")),
+                    cell(dig(data, "counts", "deferred")),
                     cell(dig(data, "counts", "rejected")),
                 ]
             )
-    headers = ["Source", "Read on", "Pages", "Index only", "Rejected"]
+    headers = ["Source", "Read on", "Entries", "Pages", "Waiting", "Index only", "Deferred", "Rejected"]
     blocks.append("### Triage notes\n\n" + table(headers, notes, empty="_None yet._"))
     return "\n\n".join(blocks)
 

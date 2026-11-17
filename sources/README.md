@@ -20,7 +20,7 @@ sources/
 | `id` | Short kebab-case name, used by skills and wiki pages to refer to it |
 | `url` | Upstream repo or site (never a mirror) |
 | `kind` | `skill`, `mcp`, `tool`, `research-source`, `dataset`, `model` |
-| `area` | As in [docs/frontmatter.md](../docs/frontmatter.md) |
+| `area` | As for tools in [docs/frontmatter.md](../docs/frontmatter.md), plus `robots` for sources that feed the Robot Atlas |
 | `relation` | How we use it — see below |
 | `status` | `planned`, `trial`, `in-use`, `watching`, `rejected`, `retired` |
 | `license` | SPDX id, as upstream states it |
@@ -70,12 +70,16 @@ for more than 60 API requests an hour.
 ## Summary
 
 <!-- index:start -->
-### In use (4)
+### In use (8)
 
 | Source | Kind | Area | Relation | Licence | Pinned | Checked | Notes |
 |---|---|---|---|---|---|---|---|
 | [freecad-mcp](https://github.com/neka-nat/freecad-mcp) | mcp | cad | installed | MIT | 0.1.28 | 2026-11-17 | Version pinned in OrbiBot since 2026-11-03. |
 | [konnect](https://github.com/mixelpixx/Konnect) | mcp | pcb | installed | AGPL-3.0 | v0.13.0 | 2026-11-17 | Upstream archived on 2026-11-02, so v0.13.0 is final. |
+| [awesome-robot-descriptions](https://github.com/robot-descriptions/awesome-robot-descriptions) | research-source | robots | referenced | CC0-1.0 | — | 2026-11-17 | URDF, MJCF and Xacro models of about 160 robots, by type, with each model's licence. |
+| [awesome-robotics-projects](https://github.com/mjyc/awesome-robotics-projects) | research-source | robots | referenced | CC0-1.0 | — | 2026-11-17 | Open-source and affordable robot projects, plus robotics software and companies. |
+| [awesome-ros-mobile-robot](https://github.com/shannon112/awesome-ros-mobile-robot) | research-source | robots | referenced | CC0-1.0 | — | 2026-11-17 | ROS mobile robot resources; CC0 stated in its README only. |
+| [awesome-social-robots](https://github.com/jcarolinares/awesome-social-robots) | research-source | robots | referenced | GPL-3.0 | — | 2026-11-17 | Open and closed social and companion robots, virtual pets, and learning material. |
 | [robotics-agent-skills](https://github.com/arpitg1304/robotics-agent-skills) | skill | ros2 | distilled | Apache-2.0 | — | 2026-11-17 | The commit the old skills were adapted from was never recorded; this baseline is the upstream head at registration. |
 | [ros2-claude-code-template](https://github.com/harunkurtdev/ros2-claude-code-template) | skill | ros2 | distilled | Apache-2.0 | — | 2026-11-17 | Licence stated in its README only; the repo has no licence file GitHub recognises. |
 
@@ -97,5 +101,10 @@ for more than 60 API requests an hour.
 
 ### Triage notes
 
-_None yet._
+| Source | Read on | Entries | Pages | Waiting | Index only | Deferred | Rejected |
+|---|---|---|---|---|---|---|---|
+| [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 9 | 45 | 54 | 0 | 4 |
+| [Awesome Robotics Projects](awesome-robotics-projects.md) | 2026-11-17 | 63 | 5 | 12 | 26 | 17 | 3 |
+| [awesome-ros-mobile-robot](awesome-ros-mobile-robot.md) | 2026-11-17 | 23 | 2 | 8 | 7 | 3 | 2 |
+| [Awesome Social Robots](awesome-social-robots.md) | 2026-11-17 | 61 | 3 | 8 | 17 | 1 | 32 |
 <!-- index:end -->

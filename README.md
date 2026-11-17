@@ -13,7 +13,8 @@ learning, and the videos that explain it.
 ## Status
 
 **Being redesigned (November 2026).** The structure, templates, source registry, scripts and
-commands are done (Phases 0 and 1). Content arrives phase by phase; the
+commands are done (Phases 0 and 1). The [Robot Atlas](wiki/robots/README.md) has its first 17
+profiles (Phase 3, in progress). Content arrives phase by phase; the
 [roadmap](docs/plan.md#12-roadmap) says in what order. The previous skill library is kept in
 [legacy/](legacy/) until it is re-filed.
 

@@ -1,6 +1,7 @@
 # RoboAI Workspace — Plan
 
-Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred.** This plan replaces the old "Agentic
+Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 in progress (17 of 79
+Atlas pages).** This plan replaces the old "Agentic
 Robotics" layout. Phase 0 built the structure, templates, frontmatter and source registry; Phase 1
 built the scripts and commands that keep them consistent. The [roadmap](#12-roadmap) says what
 comes next.
@@ -264,7 +265,7 @@ tools/check_sources.py       ← compares each source today against what we reco
 | installed | Used as-is at a pinned version | explainroo, huashu-motion, earshot, freecad-mcp, Konnect | Move the pin, re-run the benchmark, compare |
 | distilled | We wrote our own skill from it | `freecad-scripting-reference`, the legacy ROS 2 skills | Diff upstream since our commit, carry over improvements |
 | copied | Files kept as-is under their licence | diagram-design's reference files | Diff, re-copy, re-run the checks |
-| referenced | Only summarised and linked | awesome lists, Atlas robots | Health check only |
+| referenced | Only summarised and linked | awesome lists | Health check only |
 
 ### Present condition
 
@@ -397,8 +398,8 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 | **0. Redesign** ✅ 2026-11-12 | Skeleton; templates (robot, part, tool, concept, guide, source, skill, project); frontmatter schema; CLAUDE.md and AGENTS.md; projects setup; registry schema and first entries; legacy audit; new README | An agent opening the repo knows where everything goes |
 | **1. Tooling** ✅ 2026-11-17 | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint and CI | Research and reviews produce consistent, checked output |
 | **2. OrbiBot** — deferred 2026-11-17 | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries. Legacy re-filing moved to Phases 4–5 | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
-| **3. Robot Atlas** | awesome-robot-descriptions, robotics-projects, mobile-robotics, ros-mobile-robot, manipulation, social robots | Tier A/B/C profiles with generated comparison tables |
-| **4. Software and learning** | ros2, robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, the general awesome-robotics list; re-file the legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills | Software and learning pages with decision guides; those legacy skills re-filed |
+| **3. Robot Atlas** | The robot entries of awesome-robot-descriptions, robotics-projects, ros-mobile-robot and social-robots | Every robot entry triaged; tier A/B profiles with generated comparison tables |
+| **4. Software and learning** | ros2, robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; re-file the legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills | Software and learning pages with decision guides; those legacy skills re-filed |
 | **5. Gaps** | Parts catalog, PCB, firmware and MCU, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware and control skills | The areas the awesome lists miss are covered; `legacy/` is empty |
 | **6. Playbooks** | The idea-to-robot lifecycle with a checklist per stage | A new project can follow it end to end |
 | **7. Distribution** | Claude Code plugin, docs site, contributor guide | Others can install and contribute |
@@ -428,6 +429,14 @@ All dated 2026-11-12.
 - **2026-11-17: scripts run with `uv run`.** Each declares its dependencies inline (PEP 723), so
   there is nothing to install beyond uv. Allowed frontmatter values live in `tools/schema.yaml`.
 - **2026-11-17: NOTICE is generated** from the registry's `notice` fields.
+- **2026-11-17: Phase 3 covers robots only.** awesome-mobile-robotics and
+  Awesome-Robotics-Manipulation hold courses, software, papers and datasets but no robots, so they
+  move to Phase 4, as do the software sections of the Phase 3 lists. Their triage notes say which
+  sections are still open. Registry sources that feed the Atlas use the area `robots`.
+- **2026-11-17: Atlas robots are not registry entries.** A robot page's own frontmatter (`links`,
+  `license`, `maturity`) is its baseline, so a registry entry per robot would only repeat it. The
+  registry keeps the lists they came from. A page health check (repo moved, archived, licence
+  changed, stale `maturity`) is to be added to `tools/check_sources.py`.
 
 ## 14. Open questions
 

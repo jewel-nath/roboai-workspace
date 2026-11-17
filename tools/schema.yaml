@@ -69,7 +69,8 @@ registry:
   required: [id, url, kind, area, relation, status, license, last_checked, history]
   enums:
     kind: [skill, mcp, tool, research-source, dataset, model]
-    area: *areas
+    # The page areas, plus `robots` for sources that feed the Robot Atlas.
+    area: [cad, pcb, sim, ros2, firmware, perception, nav, manip, control, learning, video, docs, robots]
     relation: [installed, distilled, copied, referenced]
     status: [planned, trial, in-use, watching, rejected, retired]
   # Entries in trial or in use that were not checked for this many days get a warning.

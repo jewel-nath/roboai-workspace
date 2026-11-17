@@ -103,7 +103,7 @@ One per research source in [sources/](../sources/), such as an awesome list.
 | `url` | upstream URL (the GitHub repo, not a mirror) |
 | `commit` | the commit read |
 | `read_on` | date |
-| `counts` | `{entries, pages, index_only, rejected}` |
+| `counts` | `{entries, pages, waiting, index_only, deferred, rejected}`: entries triaged; pages written; pages earned but not written yet; index rows; entries left to a later phase; rejected |
 
 ## Skills
 

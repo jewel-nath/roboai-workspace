@@ -5,7 +5,7 @@ registry:          # its id in sources/registry.yaml
 url:               # the upstream repo, not a mirror
 commit:
 read_on:
-counts: {entries: , pages: , index_only: , rejected: }
+counts: {entries: , pages: , waiting: , index_only: , deferred: , rejected: }
 ---
 
 # <Source name>: what it gives RoboAI
@@ -14,12 +14,21 @@ counts: {entries: , pages: , index_only: , rejected: }
 
 ## How it was read
 
-<!-- Who read what, how entries were dated and licences checked, what was re-read by hand. -->
+<!-- Who read what, how entries were dated and licences checked, what was re-read by hand, and
+     which sections are left to a later phase. -->
 
 ## Pages made
 
 | Entry | Page | Tier |
 |---|---|---|
+
+## Waiting for a page
+
+<!-- Earned a page (tier A or B) that is not written yet. A row moves to Pages made when its page
+     is written. -->
+
+| Entry | Page | Tier | Why it matters |
+|---|---|---|---|
 
 ## Index only
 
@@ -27,6 +36,13 @@ counts: {entries: , pages: , index_only: , rejected: }
 
 | Entry | What it is | Last commit | Licence |
 |---|---|---|---|
+
+## Deferred
+
+<!-- Outside this phase: software, parts or learning resources, with the phase that triages them. -->
+
+| Entry | What it is | Phase |
+|---|---|---|
 
 ## Rejected
 

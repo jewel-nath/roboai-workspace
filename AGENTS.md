@@ -6,7 +6,9 @@ agent how the repo works. The full design is in [docs/plan.md](docs/plan.md).
 
 **Status:** Phases 0 and 1 are done: the structure, templates, frontmatter, source registry, and
 the scripts and commands that keep them consistent. Phase 2 (bringing OrbiBot in) is deferred.
-Content arrives phase by phase (see the roadmap in the plan). The old skill library waits in
+Phase 3 (the Robot Atlas) is in progress: four robot lists are triaged and the first 17 tier-A
+profiles are written; the rest wait in each triage note's "Waiting for a page" table. Content
+arrives phase by phase (see the roadmap in the plan). The old skill library waits in
 `legacy/`.
 
 ## Map
