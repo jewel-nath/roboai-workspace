@@ -62,10 +62,24 @@ Commit ids are quoted (`commit: "0272906"`), so YAML never reads one as a number
 uv run tools/check_sources.py --report --record
 ```
 
-It compares each GitHub source with its baseline (new commits and releases, archived, moved,
-licence changes, no push for 180 days), writes `reports/<date>.md`, and sets `last_checked`.
-`--rebaseline <id>` records today's upstream state once a change is accepted. Set `GITHUB_TOKEN`
-for more than 60 API requests an hour.
+```bash
+uv run tools/check_sources.py --pages --report
+```
+
+The first compares each GitHub source with its baseline (new commits and releases, archived,
+moved, licence changes, no push for 180 days), writes `reports/<date>.md`, and sets
+`last_checked`. `--rebaseline <id>` records today's upstream state once a change is accepted.
+
+Robot Atlas pages are not registry entries: a page's own frontmatter is its baseline. The second
+command checks each page in `wiki/robots/` against its `links.repo`: moved or deleted, archived, a
+GitHub licence that is neither the page's `license.software` nor `license.hardware` (`NOASSERTION`
+is ignored), commits newer than `maturity.last_commit`, and `maturity.active` against the last
+push. It adds its own section to the same report and changes no page unless given
+`--record-pages`, which writes today's `maturity.last_commit`, `stars` and `active`;
+`last_verified` stays for a person to set once the page's facts are re-checked.
+
+Set `GITHUB_TOKEN` for more than 60 API requests an hour. Without it the page check stops near the
+limit and lists the pages it skipped.
 
 ## Summary
 

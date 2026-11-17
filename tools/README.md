@@ -6,7 +6,7 @@ Runnable scripts, so the agent runs the numbers and the checks instead of guessi
 |---|---|
 | [build_index.py](build_index.py) | Writes the generated sections: each wiki section's index table, the summary in `sources/README.md`, and `NOTICE` |
 | [lint.py](lint.py) | Checks frontmatter against [schema.yaml](schema.yaml), file names, links and anchors, the source registry, skills and their two-way links with the registry, and that generated sections are current |
-| [check_sources.py](check_sources.py) | Compares each registry entry with its GitHub upstream: new commits and releases, archived, moved, licence changes, no recent push |
+| [check_sources.py](check_sources.py) | Compares each registry entry with its GitHub upstream: new commits and releases, archived, moved, licence changes, no recent push. With `--pages`, checks each Robot Atlas page against its repo: moved, archived, licence, and a stale `maturity` |
 | [common.py](common.py) | Shared helpers for the scripts above |
 | `calc/` | Calculators: torque sizing, battery runtime, power budget, wire gauge (Phase 5) |
 
@@ -25,6 +25,10 @@ uv run tools/lint.py
 
 ```bash
 uv run tools/check_sources.py --report --record
+```
+
+```bash
+uv run tools/check_sources.py --pages --report
 ```
 
 Each takes `--help`.

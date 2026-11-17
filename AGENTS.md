@@ -102,7 +102,7 @@ leaves it, as [docs/legacy-audit.md](docs/legacy-audit.md) maps.
 | `/new-project <name>` | Starts a project in `projects/<name>/` from the template |
 | `/promote <project>` | Moves a general lesson from a project into the wiki |
 | `/compare <slugs or question>` | Compares pages from their frontmatter |
-| `/review-sources` | Checks every outside source against upstream; a person decides what changes |
+| `/review-sources` | Checks every outside source and Robot Atlas page against upstream; a person decides what changes |
 
 Scripts run with [uv](https://docs.astral.sh/uv/), which installs their dependencies itself:
 
