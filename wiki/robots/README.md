@@ -19,5 +19,5 @@ is to build, and what is worth reusing. Template: [templates/robot.md](../../tem
 ## Index
 
 <!-- index:start -->
-_Generated from the profiles' frontmatter by the index generator (Phase 1)._
+_No pages yet._
 <!-- index:end -->

@@ -1,0 +1,85 @@
+# Allowed frontmatter fields and values. docs/frontmatter.md explains them; tools/lint.py
+# enforces them from this file, so change both together.
+
+areas: &areas [cad, pcb, sim, ros2, firmware, perception, nav, manip, control, learning, video, docs]
+robot_categories: &robot_categories [arm, mobile-base, mobile-manipulator, humanoid, legged, social, gripper, other]
+
+common:
+  # Every wiki page also needs at least one entry in `sources`, each with a url.
+  required: [type, name, summary, evidence, last_verified]
+  evidence: [built, researched, vendor-claim]
+
+# Which page types may live in which wiki section.
+sections:
+  robots: [robot]
+  parts: [part]
+  tools: [tool]
+  software: [tool]
+  learning: [tool]
+  concepts: [concept]
+  guides: [guide]
+
+types:
+  robot:
+    required: [category, tier, openness]
+    enums:
+      category: *robot_categories
+      tier: [A, B]
+      openness: [full, partial, software-only, closed-reference]
+  part:
+    required: [category]
+    enums:
+      category: [actuator, mcu, driver, sensor, compute, power, material]
+  tool:
+    required: [kind, area]
+    enums:
+      kind: [tool, library, framework, policy, model, dataset]
+      area: *areas
+      support: [first-class, documented]
+      agent_access: [script, mcp, cli, api, gui-only]
+  concept:
+    required: [area]
+    enums:
+      area: *areas
+  guide:
+    required: [question]
+    enums: {}
+
+# A part's folder under wiki/parts/ must match its category.
+part_folders:
+  actuators: actuator
+  mcu: mcu
+  drivers: driver
+  sensors: sensor
+  compute: compute
+  power: power
+  materials: material
+
+# Pages not verified for this many days are reported as stale (a warning).
+stale_days:
+  default: 365
+  tools: 180
+  software: 180
+  learning: 120
+
+source_note:
+  required: [type, name, registry, url, commit, read_on]
+
+registry:
+  required: [id, url, kind, area, relation, status, license, last_checked, history]
+  enums:
+    kind: [skill, mcp, tool, research-source, dataset, model]
+    area: *areas
+    relation: [installed, distilled, copied, referenced]
+    status: [planned, trial, in-use, watching, rejected, retired]
+  # Entries in trial or in use that were not checked for this many days get a warning.
+  stale_check_days: 45
+
+skill:
+  required: [name, description]
+  evidence: [built, researched]
+  prefixes: [ros2, sim, cad, pcb, fw, perception, nav, manip, control, learn, arch, ops, video, diagram]
+
+project:
+  stage: [idea, requirements, design, build, bringup, learning, deployed, paused]
+  visibility: [private, public]

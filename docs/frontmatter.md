@@ -2,7 +2,9 @@
 
 Every wiki page, triage note, skill and project card starts with YAML frontmatter. It is what makes
 pages comparable and indexes generatable, so its fields and words are fixed here. The templates in
-[templates/](../templates/) carry these fields; the Phase 1 lint checks them.
+[templates/](../templates/) carry these fields. The allowed values live in
+[tools/schema.yaml](../tools/schema.yaml), which `uv run tools/lint.py` enforces; change this page
+and the schema together.
 
 ## Conventions
 
@@ -55,7 +57,9 @@ pages comparable and indexes generatable, so its fields and words are fixed here
 | `where_to_buy` | list of `{seller, url, as_of}` |
 | `datasheet` | URL |
 | `alternatives` | list of part slugs |
-| `used_in` | generated from robot pages; leave empty |
+
+The parts index lists the robots that use each part, read from the robot pages' `stack`, so a
+part page does not list them itself. Parts live in the folder that matches their `category`.
 
 ## `type: tool`
 

@@ -28,5 +28,5 @@ How an agent does the work. Each skill is a folder with a `SKILL.md` in the
 - Keep `SKILL.md` short; move long reference material into `references/` beside it.
 - Skills that only one project needs live in that project's `.claude/skills/`, not here.
 
-The old skills wait in [legacy/skills/](../legacy/skills/) until Phase 2 re-files them, as
+The old skills wait in [legacy/skills/](../legacy/skills/) until Phases 4 and 5 re-file them, as
 [docs/legacy-audit.md](../docs/legacy-audit.md) records.

@@ -1,28 +1,25 @@
 RoboAI Workspace (formerly Agentic Robotics)
 Copyright 2026 Jewel Nath
 
-This library includes material adapted from two projects under the Apache
-License 2.0:
+This product includes material adapted from the projects below.
 
-- robotics-agent-skills, by arpitg1304 and its contributors
-  (https://github.com/arpitg1304/robotics-agent-skills).
-  Parts of legacy/skills/ros2, legacy/skills/camera-vision,
-  legacy/skills/lidar-pointcloud and legacy/skills/safety-systems are adapted
-  from its ros2, robot-perception and robotics-security skills, and
+- robotics-agent-skills
+  (https://github.com/arpitg1304/robotics-agent-skills), Apache-2.0.
+  By arpitg1304 and its contributors. Parts of legacy/skills/ros2,
+  camera-vision, lidar-pointcloud and safety-systems are adapted from its
+  ros2, robot-perception and robotics-security skills, and
   legacy/skills/robot-architecture draws on its robotics-design-patterns
-  skill. Parts of legacy/skills/robot-bringup, legacy/skills/ros2-web-bridge
-  and legacy/skills/docker-ros2-ci are adapted from its robot-bringup,
-  ros2-web-integration and docker-ros2-development skills.
+  skill. Parts of legacy/skills/robot-bringup, ros2-web-bridge and
+  docker-ros2-ci are adapted from its robot-bringup, ros2-web-integration
+  and docker-ros2-development skills. The material was renamed, merged into
+  larger skills, reorganised, and rewritten and extended in places.
 
-- ros2-claude-code-template, by harunkurtdev
-  (https://github.com/harunkurtdev/ros2-claude-code-template), whose README
-  states the Apache License 2.0.
-  legacy/commands/ros2.md and the files in legacy/rules/ are adapted from its
-  .claude/commands and .claude/rules files.
+- ros2-claude-code-template
+  (https://github.com/harunkurtdev/ros2-claude-code-template), Apache-2.0.
+  By harunkurtdev; its README states the Apache License 2.0.
+  legacy/commands/ros2.md and the files in legacy/rules/ are adapted from
+  its .claude/commands and .claude/rules files, renamed, reorganised and
+  rewritten in places.
 
-Changes: the material was renamed, merged into larger skills, reorganised
-around this library's skill format, and rewritten and extended in places,
-with OrbiBot as the worked example. When these files are re-filed out of
-legacy/, this notice follows them to their new paths.
-
-Every outside source is recorded in sources/registry.yaml.
+Every outside source is recorded in sources/registry.yaml. This file is
+generated from it by tools/build_index.py: edit the registry, not this file.

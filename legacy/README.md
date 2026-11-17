@@ -1,5 +1,5 @@
 > **Legacy.** This is the README of the old "Agentic Robotics" layout, kept with its content while
-> RoboAI Workspace is redesigned. Each item here is re-filed, merged or dropped in Phase 2, as
+> RoboAI Workspace is redesigned. Each item here is re-filed, merged or dropped in Phases 4–5, as
 > [docs/legacy-audit.md](../docs/legacy-audit.md) records. Do not add to this folder.
 
 # 🤖 Agentic Robotics

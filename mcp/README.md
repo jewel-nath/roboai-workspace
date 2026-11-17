@@ -19,4 +19,5 @@ Each guide says:
 `<…>` placeholders. MCP servers are set up at the workspace root because every project uses the
 same tools; a project's own `.mcp.json` would not load when you open the workspace.
 
-The FreeCAD and Konnect guides move here from OrbiBot in Phase 2.
+The FreeCAD and Konnect guides are written in Phase 5, or move here from OrbiBot if it comes in
+first.

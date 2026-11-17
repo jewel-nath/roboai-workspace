@@ -16,7 +16,7 @@ projects/
 
 ## Start a project
 
-`/new-project <name>` does this from Phase 1. Until then:
+In Claude Code, run `/new-project <name> [what it is for]`. By hand, or in another agent:
 
 1. Copy [templates/project/](../templates/project/) to `projects/<name>/`.
 2. Fill in `PROJECT.md`.
@@ -36,7 +36,7 @@ before archiving the old folder. Moving the folder instead breaks paths stored b
 | Machine-specific config | nowhere (gitignored) |
 
 Before committing, check which repo each changed file belongs to. A general lesson found in a
-project is promoted to the wiki with the project's names removed (`/promote`, Phase 1).
+project is promoted to the wiki with the project's names removed (`/promote`).
 
 Open the **workspace root** to work: workspace skills, wiki and MCP servers are then all loaded, and
 the project's own `CLAUDE.md` loads when you work on its files.

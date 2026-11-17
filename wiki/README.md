@@ -21,6 +21,6 @@ The knowledge half of RoboAI Workspace: **one entity per page**, each with front
   go in.
 - **Our own words.** Summarise facts; link to other people's files instead of copying them.
 - **Index sections are generated.** Text between `<!-- index:start -->` and `<!-- index:end -->`
-  is rewritten by the index generator (Phase 1); do not edit it by hand.
+  is rewritten by `uv run tools/build_index.py`; do not edit it by hand.
 - What does not earn a page goes in the triage note of its source in [sources/](../sources/), as
   an index row or a Rejected entry.

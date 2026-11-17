@@ -12,9 +12,10 @@ learning, and the videos that explain it.
 
 ## Status
 
-**Being redesigned (November 2026).** Phase 0 is done: the structure, templates, frontmatter and
-source registry. Content arrives phase by phase; the [roadmap](docs/plan.md#12-roadmap) says in
-what order. The previous skill library is kept in [legacy/](legacy/) until it is re-filed.
+**Being redesigned (November 2026).** The structure, templates, source registry, scripts and
+commands are done (Phases 0 and 1). Content arrives phase by phase; the
+[roadmap](docs/plan.md#12-roadmap) says in what order. The previous skill library is kept in
+[legacy/](legacy/) until it is re-filed.
 
 ## What it will hold
 

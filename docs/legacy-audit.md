@@ -3,7 +3,7 @@
 Audited 2026-11-12, in Phase 0 of the [plan](plan.md). The old "Agentic Robotics" layout now sits in
 [`legacy/`](../legacy/), moved with `git mv` so its history follows it. This page records what is
 there, what is wrong with it today, and where each piece goes. The re-filing itself happens in
-Phase 2; nothing new is added to `legacy/`.
+Phases 4 and 5 (Phase 2, which first held it, is deferred); nothing new is added to `legacy/`.
 
 ## How it was audited
 
@@ -87,5 +87,5 @@ Lines and distros as found. "Source" is the outside project a skill was partly a
 
 All `rules/` files and `commands/ros2.md` were adapted from ros2-claude-code-template.
 | `commands/ros2.md` | 74 | `wiki/tools/ros2.md` (CLI reference) | re-file |
-| `scripts/validate-skills.py` | 184 | `tools/lint/` | replaced by the Phase 1 lint |
+| `scripts/validate-skills.py` | 184 | `tools/lint.py` | replaced by `tools/lint.py` (Phase 1); delete on re-filing |
 | `README.md`, `CONTRIBUTING.md` | — | — | superseded by the new README, AGENTS.md and CONTRIBUTING.md |

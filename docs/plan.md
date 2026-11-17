@@ -1,8 +1,9 @@
 # RoboAI Workspace — Plan
 
-Status: **Phase 0 done, 2026-11-12.** This plan replaces the old "Agentic Robotics" layout. Phase 0
-built the structure, templates, frontmatter and source registry; the [roadmap](#12-roadmap) says
-what comes next.
+Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred.** This plan replaces the old "Agentic
+Robotics" layout. Phase 0 built the structure, templates, frontmatter and source registry; Phase 1
+built the scripts and commands that keep them consistent. The [roadmap](#12-roadmap) says what
+comes next.
 
 ## Contents
 
@@ -90,7 +91,7 @@ roboai-workspace/
 ├── tools/                   ← runnable scripts: calculators, index generator, lint, source checks
 ├── .claude/                 ← commands, agents, rules for this workspace
 ├── docs/                    ← this plan and other docs about the workspace itself
-├── legacy/                  ← the old layout, until Phase 2 re-files it
+├── legacy/                  ← the old layout, until Phases 4–5 re-file it
 └── projects/                ← gitignored; each project is its own git repo
 ```
 
@@ -299,7 +300,8 @@ credits stay correct.
 - **Sources of the legacy skills**, from `NOTICE`: `arpitg1304/robotics-agent-skills` and
   `harunkurtdev/ros2-claude-code-template`, both Apache-2.0. No commit was recorded when they were
   taken, so their baseline starts at registration.
-- **OrbiBot's toolkit page**: 6 sources taken, 8 watched, 10 rejected — moved in Phase 2.
+- **OrbiBot's toolkit page**: 6 sources taken, 8 watched, 10 rejected — moved when OrbiBot moves
+  in (deferred).
 - **The 14 awesome lists** as `referenced`, each added when it is researched.
 
 ## 10. Video track
@@ -361,9 +363,13 @@ This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 
 
 In Phase 0 the old layout (skills, guides, rules, commands, scripts, README, CONTRIBUTING) was moved
 into `legacy/` with `git mv` and audited. [legacy-audit.md](legacy-audit.md) records the findings
-and maps every file to its destination; Phase 2 re-files, merges or drops each one from there.
+and maps every file to its destination. Re-filing was part of Phase 2; with Phase 2 deferred, it
+moves into the phases that cover the same topics: ROS 2, simulation, perception, navigation,
+manipulation, learning and operations skills in Phase 4, firmware and control skills in Phase 5.
 
 ### OrbiBot
+
+**Deferred on 2026-11-17:** OrbiBot stays in its own folder for now. When it moves, this is how.
 
 OrbiBot moves into `projects/orbibot/`: push everything, fresh-clone it there, verify, then archive
 the old folder (moving it directly would break its `.claude/worktrees` paths). Renaming the GitHub
@@ -389,14 +395,14 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 | Phase | Goal | Done when |
 |---|---|---|
 | **0. Redesign** ✅ 2026-11-12 | Skeleton; templates (robot, part, tool, concept, guide, source, skill, project); frontmatter schema; CLAUDE.md and AGENTS.md; projects setup; registry schema and first entries; legacy audit; new README | An agent opening the repo knows where everything goes |
-| **1. Tooling** | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint | Research and reviews produce consistent, checked output |
-| **2. OrbiBot** | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries; legacy skills re-filed | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
+| **1. Tooling** ✅ 2026-11-17 | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint and CI | Research and reviews produce consistent, checked output |
+| **2. OrbiBot** — deferred 2026-11-17 | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries. Legacy re-filing moved to Phases 4–5 | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
 | **3. Robot Atlas** | awesome-robot-descriptions, robotics-projects, mobile-robotics, ros-mobile-robot, manipulation, social robots | Tier A/B/C profiles with generated comparison tables |
-| **4. Software and learning** | ros2, robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, the general awesome-robotics list | Software and learning pages with decision guides |
-| **5. Gaps** | Parts catalog, PCB, firmware and MCU, CAD-to-MuJoCo, known-good combinations | The areas the awesome lists miss are covered |
+| **4. Software and learning** | ros2, robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, the general awesome-robotics list; re-file the legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills | Software and learning pages with decision guides; those legacy skills re-filed |
+| **5. Gaps** | Parts catalog, PCB, firmware and MCU, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware and control skills | The areas the awesome lists miss are covered; `legacy/` is empty |
 | **6. Playbooks** | The idea-to-robot lifecycle with a checklist per stage | A new project can follow it end to end |
 | **7. Distribution** | Claude Code plugin, docs site, contributor guide | Others can install and contribute |
-| **Video track** | V1 PID pilot (explainroo + video-director) → V2 huashu-motion trial with an OrbiBot teaser → V3 `video-cad-exploded` (after Phase 2) → V4 robot explainers (after Phase 3) → V5 earshot | Starts after Phase 1, so its first benchmark lands in the registry |
+| **Video track** | V1 PID pilot (explainroo + video-director) → V2 huashu-motion trial with an OrbiBot teaser → V3 `video-cad-exploded` (after the FreeCAD skills, Phase 5) → V4 robot explainers (after Phase 3) → V5 earshot | Starts after Phase 1, so its first benchmark lands in the registry |
 
 ## 13. Decisions
 
@@ -415,8 +421,13 @@ All dated 2026-11-12.
   take-one and reanimate are rejected. Plan only — nothing is installed yet.
 - **Every outside source** goes into the source registry with its version, condition and benchmark.
 - **The old layout moved into `legacy/`** in Phase 0, so the new structure starts clean and nothing
-  is lost; Phase 2 re-files it.
+  is lost; Phases 4–5 re-file it.
 - **AGENTS.md is the agent guide** for every tool; CLAUDE.md imports it and adds Claude Code notes.
+- **2026-11-17: Phase 2 is deferred.** OrbiBot is not brought into `projects/` for now. The FreeCAD,
+  KiCad and MuJoCo skills are written in Phase 5 instead of being taken from OrbiBot first.
+- **2026-11-17: scripts run with `uv run`.** Each declares its dependencies inline (PEP 723), so
+  there is nothing to install beyond uv. Allowed frontmatter values live in `tools/schema.yaml`.
+- **2026-11-17: NOTICE is generated** from the registry's `notice` fields.
 
 ## 14. Open questions
 
