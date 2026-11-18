@@ -400,11 +400,53 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 | **1. Tooling** ✅ 2026-11-17 | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint and CI | Research and reviews produce consistent, checked output |
 | **2. OrbiBot** — deferred 2026-11-17 | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries. Legacy re-filing moved to Phases 4–5 | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
 | **3. Robot Atlas** ✅ 2026-11-18 | The robot entries of awesome-robot-descriptions, robotics-projects, ros-mobile-robot and social-robots | Every robot entry triaged; tier A/B profiles with generated comparison tables |
-| **4. Software and learning** | ros2, robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; re-file the legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills | Software and learning pages with decision guides; those legacy skills re-filed |
+| **4. Software and learning** | robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; ROS 2 from its official docs; re-file the 21 legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills ([Phase 4 plan](#phase-4-plan)) | Every Phase 4 list triaged; software and learning pages with a decision guide per topic; those legacy skills re-filed |
 | **5. Gaps** | Parts catalog, PCB, firmware and MCU, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware and control skills | The areas the awesome lists miss are covered; `legacy/` is empty |
 | **6. Playbooks** | The idea-to-robot lifecycle with a checklist per stage | A new project can follow it end to end |
 | **7. Distribution** | Claude Code plugin, docs site, contributor guide | Others can install and contribute |
 | **Video track** | V1 PID pilot (explainroo + video-director) → V2 huashu-motion trial with an OrbiBot teaser → V3 `video-cad-exploded` (after the FreeCAD skills, Phase 5) → V4 robot explainers (after Phase 3) → V5 earshot | Starts after Phase 1, so its first benchmark lands in the registry |
+
+### Phase 4 plan
+
+Planned 2026-11-18. Sizes are rough counts of linked lines in each README on that day.
+
+| List | Upstream | Last commit | Size | Holds |
+|---|---|---|---|---|
+| awesome-robotic-tooling | protontypes/awesome-robotic-tooling | 2023-04-30 | ~940 | Development tools, ROS, simulation, perception, ops |
+| awesome-mobile-robotics | mathiasmantelli/awesome-mobile-robotics | 2026-08-03 | ~530 | Courses, software, papers, datasets |
+| Awesome-Robotics-Manipulation | BaiShuanghao/Awesome-Robotics-Manipulation | 2026-10-29 | ~340 papers | Manipulation papers with code links |
+| awesome-robotics-libraries | jslee02/awesome-robotics-libraries | 2026-10-26 | ~230 | Simulators, kinematics, planning, math libraries |
+| awesome-robotics | kiloreux/awesome-robotics | 2024-09-22 | ~150 | General: courses, books, software, competitions |
+| Awesome-Robotics-Foundation-Models | robotics-survey/Awesome-Robotics-Foundation-Models | 2024-10-07 | ~110 papers | Foundation-model papers |
+| Awesome-Robotics-3D | zubair-irshad/Awesome-Robotics-3D | 2025-12-17 | ~95 papers | 3D vision for robotics |
+| awesome-robotics-datasets | mint-lab/awesome-robotics-datasets | 2021-08-27 | ~80 | Datasets |
+| Awesome-Robot-Learning | RayYoh/Awesome-Robot-Learning | 2026-08-20 | ~75 | Surveys, policies, benchmarks |
+
+Plus the sections each Phase 3 triage note left for Phase 4. ROS 2 pages come from docs.ros.org
+and ROS Index instead of a list (see Decisions).
+
+**Steps.**
+
+1. **Triage every list** with `/ingest`, in parallel by list, before writing any page. Sections
+   that hold only papers get one index row each, with the paper count; models, policies, datasets,
+   benchmarks, tools and code repos get their own rows. Each "Waiting for a page" row names its
+   topic batch.
+2. **Write by topic.** Each batch writes its pages (tools and libraries in `wiki/tools/` and
+   `wiki/software/`, policies, models and datasets in `wiki/learning/`, ideas in
+   `wiki/concepts/`), one decision guide in `wiki/guides/`, and re-files its legacy skills:
+
+   | Batch | Legacy skills re-filed |
+   |---|---|
+   | ROS 2 core and tooling | `ros2-core`, `ros2-control`, `ros2-web-bridge`, `ros2-robot-description`, `ops-docker-ci` |
+   | Simulation | `sim-gazebo`, `sim-to-real`; Isaac Sim to `wiki/tools/` |
+   | Perception and SLAM | `perception-camera`, `perception-lidar`, `perception-slam` |
+   | Navigation | `nav-nav2`, `nav-planning` |
+   | Manipulation | `manip-moveit2`, `manip-grasping` |
+   | Learning: policies, foundation models, datasets | `learn-robot-learning`, `learn-edge-deployment` |
+   | Operations and architecture | `ops-bringup`, `ops-fleet`, `arch-robot-architecture`, `arch-safety` |
+
+3. **Each batch** ends with the index generator, the lint and one commit. The MuJoCo, control and
+   firmware skills stay in `legacy/` for Phase 5.
 
 ## 13. Decisions
 
@@ -438,6 +480,16 @@ All dated 2026-11-12.
   `license`, `maturity`) is its baseline, so a registry entry per robot would only repeat it. The
   registry keeps the lists they came from. `tools/check_sources.py --pages` is the page health
   check (repo moved, archived, licence changed, stale `maturity`), run by `/review-sources`.
+- **2026-11-18: awesome-ros2 is dropped.** Its upstream, fkromer/awesome-ros2, returned 404 on
+  2026-11-18, and the live fork (floesche) has had no commit since 2021. ROS 2 pages are written
+  from docs.ros.org, ROS Index and the ROS sections of awesome-ros-mobile-robot.
+- **2026-11-18: paper sections are triaged by section.** A section that holds only papers is one
+  index row with its paper count. Entries with a model, policy, dataset, benchmark, tool or code
+  repo are still triaged one by one.
+- **2026-11-18: re-filed skills default to ROS 2 Jazzy** (LTS to May 2029) and note where Lyrical
+  (the May 2026 LTS) differs.
+- **2026-11-18: the architecture and safety skills join Phase 4's operations batch;** the legacy
+  audit gave them no phase.
 
 ## 14. Open questions
 

@@ -25,6 +25,10 @@ they say.
 
    Variants of one design share one page; reuse the slugs already used in other triage notes.
 
+   A section that holds only papers is one "Index only" row with its paper count. A paper that
+   ships a model, policy, dataset, benchmark, tool or code repo a builder would use is still
+   triaged on its own.
+
    Check whether a page already exists before planning a new one. For a long list, split the
    triage by section across subagents; each returns rows in the triage table's format. If more
    than about 15 new pages would come out of it, show the user the list of candidate pages and
