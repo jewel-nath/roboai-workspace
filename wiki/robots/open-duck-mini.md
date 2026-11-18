@@ -14,7 +14,7 @@ specs: {dof: 16, payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , ru
 stack: {actuators: "14 Feetech STS3215 serial-bus servos (7.4 V) and 2 9 g hobby servos", mcu: , compute: "Raspberry Pi Zero 2W", sensors: ["BNO055 IMU", "4 foot contact switches"], sim_models: ["URDF (Open_Duck_Mini repo)", "MJCF (Open_Duck_Mini repo and Open_Duck_Playground)"], ros2: none}
 cost: {type: bom, usd: 437, as_of: 2026-11-17, source: "https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit?usp=sharing"}
 build: {difficulty: 3, hours: , print_hours: }
-maturity: {last_commit: 2026-01-31, stars: 4746, active: true}
+maturity: {last_commit: 2026-01-31, stars: 4753, active: false}
 use_cases: [reinforcement-learning, locomotion, hobby]
 evidence: researched
 last_verified: 2026-11-17

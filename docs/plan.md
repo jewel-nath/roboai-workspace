@@ -1,6 +1,6 @@
 # RoboAI Workspace — Plan
 
-Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 in progress (17 of 79
+Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 in progress (36 of 79
 Atlas pages).** This plan replaces the old "Agentic
 Robotics" layout. Phase 0 built the structure, templates, frontmatter and source registry; Phase 1
 built the scripts and commands that keep them consistent. The [roadmap](#12-roadmap) says what

@@ -5,7 +5,7 @@ registry: awesome-robot-descriptions
 url: https://github.com/robot-descriptions/awesome-robot-descriptions
 commit: "bb41b10"
 read_on: 2026-11-17
-counts: {entries: 161, pages: 9, waiting: 45, index_only: 54, deferred: 0, rejected: 4}
+counts: {entries: 161, pages: 25, waiting: 29, index_only: 54, deferred: 0, rejected: 4}
 ---
 
 # Awesome Robot Descriptions: what it gives RoboAI
@@ -50,34 +50,34 @@ are few, and several of them live in repos the list does not link.
 | Microban (Rhoban) | [Microban](../wiki/robots/microban.md) | A |
 | ToddlerBot 2XC, ToddlerBot 2XM (Stanford) | [ToddlerBot](../wiki/robots/toddlerbot.md) | A |
 | RSK omnidirectional (Robot Soccer Kit) | [Robot Soccer Kit (RSK)](../wiki/robots/robot-soccer-kit.md) | A |
+| Koch v1.1, Low-Cost Robot Arm (Alexander Koch) | [Koch v1.1](../wiki/robots/koch-v1-1.md) | B |
+| FingerEdu, TriFingerEdu (ODRI) | [TriFinger](../wiki/robots/trifinger.md) | B |
+| UMI Gripper (UMI project) | [UMI gripper (Universal Manipulation Interface)](../wiki/robots/umi-gripper.md) | B |
+| LEAP Hand v1 (Carnegie Mellon University) | [LEAP Hand](../wiki/robots/leap-hand.md) | B |
+| Panda, FR3, FR3 v2 (Franka Robotics) | [Franka Emika Panda and Franka Research 3](../wiki/robots/franka-panda.md) | B |
+| UR3, UR3e, UR5, UR5e, UR10, UR10e (Universal Robots) | [Universal Robots UR3, UR5, UR10 and e-Series](../wiki/robots/universal-robots.md) | B |
+| Gen2, Gen3, Gen3 Lite (Kinova) | [Kinova Gen3, Gen3 lite and Gen2](../wiki/robots/kinova-gen3.md) | B |
+| iiwa 7, iiwa 14, Med 7, Med 14, Dual iiwa 14 (KUKA) | [KUKA LBR iiwa and LBR Med](../wiki/robots/kuka-lbr-iiwa.md) | B |
+| Lite 6, xArm5, xArm6, xArm7 (UFACTORY) | [UFACTORY xArm and Lite 6](../wiki/robots/ufactory-xarm.md) | B |
+| ViperX 300, WidowX 250 (Trossen Robotics) | [Interbotix X-Series arms (ViperX 300 S, WidowX 250 S)](../wiki/robots/interbotix-x-series-arms.md) | B |
+| PiPER (AgileX) | [AgileX PiPER](../wiki/robots/agilex-piper.md) | B |
+| Sawyer (Rethink Robotics) | [Sawyer](../wiki/robots/sawyer.md) | B |
+| Baxter (Rethink Robotics) | [Baxter](../wiki/robots/baxter.md) | B |
+| Allegro Hand (Wonik Robotics) | [Allegro Hand](../wiki/robots/allegro-hand.md) | B |
+| Robotiq 2F-85 (Robotiq) | [Robotiq 2F-85](../wiki/robots/robotiq-2f-85.md) | B |
+| Shadow Hand E3M5 (The Shadow Robot Company) | [Shadow Dexterous Hand](../wiki/robots/shadow-dexterous-hand.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
 | Pupper v3 (Stanford) | `pupper-v3` | B | Brushless teaching quadruped with CAD and a sourcing guide; A once a hardware licence is found |
-| Koch v1.1, Low-Cost Robot Arm (Alexander Koch) | `koch-v1-1` | B | The first LeRobot arm, with full CAD and BOM; no commit since September 2024 |
 | Mini Cheetah (MIT) | `mini-cheetah` | B | Its actuator and control design shaped most low-cost quadrupeds; control software open |
 | Solo (ODRI) | `odri-solo` | B | Open torque-controlled research quadruped with full CAD and BOM, sold by PAL; idle since 2022 |
-| FingerEdu, TriFingerEdu (ODRI) | `trifinger` | B | Open dexterity platform of the Real Robot Challenge, used in many papers |
-| UMI Gripper (UMI project) | `umi-gripper` | B | Hand-held data-collection gripper behind many imitation-learning papers; no hardware licence stated |
-| LEAP Hand v1 (Carnegie Mellon University) | `leap-hand` | B | Widely used low-cost 16-DoF research hand; CAD on request, non-commercial API licence |
 | iCub (IIT) | `icub` | B | Landmark open research humanoid; part of its CAD is public (CERN-OHL-W-2.0) |
 | AgiBot X1 (AgibotTech) | `agibot-x1` | B | Rare full-size humanoid with published STEP, BOM and assembly guide, but no hardware licence |
 | OP3 (ROBOTIS) | `robotis-op3` | B | Kid-size Dynamixel humanoid with open ROS software; RoboCup and research use |
 | Crazyflie 1.0, Crazyflie 2.0 (Bitcraze) | `crazyflie` | B | The standard nano-drone for swarm and learning research; open firmware |
-| Panda, FR3, FR3 v2 (Franka Robotics) | `franka-panda` | B | The most used research arm family of the decade; ROS 2 driver, Menagerie models |
-| UR3, UR3e, UR5, UR5e, UR10, UR10e (Universal Robots) | `universal-robots` | B | The most widespread cobots, CB3 and e-Series; official ROS 2 driver |
-| Gen2, Gen3, Gen3 Lite (Kinova) | `kinova-gen3` | B | Common lightweight research arm with an official ROS 2 driver |
-| iiwa 7, iiwa 14, Med 7, Med 14, Dual iiwa 14 (KUKA) | `kuka-lbr-iiwa` | B | Torque-sensing arm standard in Drake and many manipulation papers |
-| Lite 6, xArm5, xArm6, xArm7 (UFACTORY) | `ufactory-xarm` | B | Affordable cobot line with ROS 2 driver and Menagerie models |
-| ViperX 300, WidowX 250 (Trossen Robotics) | `interbotix-x-series-arms` | B | Dynamixel arms behind ALOHA and BridgeData V2 |
-| PiPER (AgileX) | `agilex-piper` | B | Cheap commercial 6-DoF arm with an MIT SDK and ROS drivers |
-| Sawyer (Rethink Robotics) | `sawyer` | B | Historic research cobot, still simulated in robosuite and Meta-World |
-| Baxter (Rethink Robotics) | `baxter` | B | Landmark early cobot and long-running ROS research platform |
-| Allegro Hand (Wonik Robotics) | `allegro-hand` | B | Long-standing standard dexterous research hand |
-| Robotiq 2F-85 (Robotiq) | `robotiq-2f-85` | B | Default gripper on many research arms |
-| Shadow Hand E3M5 (The Shadow Robot Company) | `shadow-dexterous-hand` | B | Benchmark dexterous hand (OpenAI Dactyl); reference for open hands |
 | Cassie (Agility Robotics) | `cassie` | B | Landmark platform for bipedal RL research; discontinued |
 | Digit (Agility Robotics) | `agility-digit` | B | Commercial bipedal humanoid in many RL papers and in deployment |
 | Atlas DRC v3, Atlas v4 (Boston Dynamics) | `boston-dynamics-atlas` | B | The defining hydraulic humanoid; DRC teams shared it |

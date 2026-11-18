@@ -23,6 +23,11 @@ sources: []        # - {url: , title: , accessed: }
 
 # <Robot name>
 
+<!-- Tier A keeps every section. A tier-B short card keeps the opening, Specs, How it works (a few
+paragraphs, no subsections), What it is used for, Cost and BOM, What is open, Strengths and limits,
+Related robots and Sources; it adds Building it and What to reuse only when there is something
+real to say. -->
+
 <!-- Three lines: what it is, who made it, why a builder should care. -->
 
 ## Specs

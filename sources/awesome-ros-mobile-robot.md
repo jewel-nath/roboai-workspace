@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 23, pages: 2, waiting: 8, index_only: 7, deferred: 3, rejected: 2}
+counts: {entries: 23, pages: 4, waiting: 6, index_only: 7, deferred: 3, rejected: 2}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -36,6 +36,8 @@ projects; its real weight is the software sections, which Phase 4 reads.
 |---|---|---|
 | "Penn" race car (F1TENTH, now RoboRacer) | [F1TENTH (RoboRacer)](../wiki/robots/f1tenth.md) | A |
 | "turtlebot3" (ROBOTIS) | [TurtleBot3](../wiki/robots/turtlebot3.md) | A |
+| "Franka Emika panda" | [Franka Emika Panda and Franka Research 3](../wiki/robots/franka-panda.md) | B |
+| "Universal Robot 3/5/10/e" | [Universal Robots UR3, UR5, UR10 and e-Series](../wiki/robots/universal-robots.md) | B |
 
 ## Waiting for a page
 
@@ -47,8 +49,6 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "Personal Robot 2 (PR2)" | `pr2` | B | The robot ROS grew up on |
 | "kuka youbot" | `kuka-youbot` | B | Classic teaching mobile manipulator, standard in Webots and CoppeliaSim; discontinued |
 | "fetch robotics" | `fetch` | B | Long a standard ROS research mobile manipulator |
-| "Franka Emika panda" | `franka-panda` | B | Among the most common arms in manipulation research |
-| "Universal Robot 3/5/10/e" | `universal-robots` | B | The most widespread cobots, with standard ROS drivers |
 
 ## Index only
 

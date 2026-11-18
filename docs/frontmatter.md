@@ -41,7 +41,7 @@ and the schema together.
 | `stack` | `{actuators, mcu, compute, sensors, sim_models, ros2}`; part slugs where pages exist |
 | `cost` | `{type: bom \| kit \| retail, usd, as_of, source}` |
 | `build` | `{difficulty: 1–5, hours, print_hours}` |
-| `maturity` | `{last_commit, stars, active: true \| false}` |
+| `maturity` | `{last_commit, stars, active: true \| false}` for `links.repo`; `active` means a push in the last 180 days and not archived. `check_sources.py --pages --record-pages` fills it |
 | `use_cases` | list, for example `teleop`, `imitation-learning`, `education`, `research` |
 
 ## `type: part`

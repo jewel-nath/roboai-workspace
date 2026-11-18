@@ -14,7 +14,7 @@ specs: {dof: 24, payload_kg: , reach_mm: , mass_kg: 16, size_mm: , speed_mps: , 
 stack: {actuators: "22 printed cycloidal actuators (10 x 6512 on MAD M6C12 150KV, 12 x 5010 on MAD 5010 110KV) and 2 servo grippers", mcu: "ST B-G431B-ESC1 per actuator (Recoil firmware), Arduino for the IMU", compute: "Intel N95 mini PC", sensors: ["BNO085 IMU", "AS5600 magnetic encoder per actuator"], sim_models: ["URDF (Berkeley-Humanoid-Lite-Assets)", "MJCF (Berkeley-Humanoid-Lite-Assets)", "USD (Berkeley-Humanoid-Lite-Assets)"], ros2: none}
 cost: {type: bom, usd: 4351, as_of: 2026-11-17, source: "https://docs.google.com/spreadsheets/d/1AQEHcH_nPkXYfor2-h7bwNIUMmsePtAm53epnsWgZXc/edit?usp=sharing"}
 build: {difficulty: 4, hours: , print_hours: }
-maturity: {last_commit: 2026-03-10, stars: 2014, active: true}
+maturity: {last_commit: 2026-03-10, stars: 2016, active: false}
 use_cases: [research, reinforcement-learning, locomotion, teleop, education]
 evidence: researched
 last_verified: 2026-11-17
