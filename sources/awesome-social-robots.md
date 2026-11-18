@@ -5,7 +5,7 @@ registry: awesome-social-robots
 url: https://github.com/jcarolinares/awesome-social-robots
 commit: "01e8eba"
 read_on: 2026-11-17
-counts: {entries: 61, pages: 5, waiting: 6, index_only: 17, deferred: 1, rejected: 32}
+counts: {entries: 61, pages: 11, waiting: 0, index_only: 17, deferred: 1, rejected: 32}
 ---
 
 # Awesome Social Robots: what it gives RoboAI
@@ -45,17 +45,17 @@ Its licence claims are often loose and were checked one by one.
 | Coglet (Will Cogley) | [Coglet](../wiki/robots/coglet.md) | A |
 | InMoov (Gaël Langevin) | [InMoov](../wiki/robots/inmoov.md) | B |
 | Kayra | [Kayra](../wiki/robots/kayra.md) | B |
+| Reachy Mini (Pollen Robotics) | [Reachy Mini](../wiki/robots/reachy-mini.md) | B |
+| Reachy (Pollen Robotics) | [Reachy and Reachy 2](../wiki/robots/reachy.md) | B |
+| Blossom (Cornell) | [Blossom](../wiki/robots/blossom.md) | B |
+| ElectronBot (Peng Zhihui) | [ElectronBot](../wiki/robots/electronbot.md) | B |
+| Jibo (Jibo Inc.) | [Jibo](../wiki/robots/jibo.md) | B |
+| Vector (Anki, then Digital Dream Labs) | [Vector (Anki, Digital Dream Labs)](../wiki/robots/anki-vector.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| Reachy Mini (Pollen Robotics) | `reachy-mini` | B | Widely sold open-software desktop robot from Hugging Face; only STLs so far, non-commercial hardware licence |
-| Reachy (Pollen Robotics) | `reachy` | B | Research humanoid torso with an open ROS 2 stack, supported in LeRobot |
-| Blossom (Cornell) | `blossom` | B | Influential handmade soft social robot for HRI research; cheap to build; inactive since 2022 |
-| ElectronBot (Peng Zhihui) | `electronbot` | B | Hugely popular desktop robot, fully open (STEP, PCB, firmware), many clones; inactive since early 2025 |
-| Jibo (Jibo Inc.) | `jibo` | B | Landmark consumer social robot and a reference for expressive motion; the company folded in 2018-19 |
-| Vector (Anki, then Digital Dream Labs) | `anki-vector` | B | Mass-market reference for small expressive robots; hackable through its SDK and the wire-pod server |
 
 ## Index only
 

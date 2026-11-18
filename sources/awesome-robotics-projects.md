@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 63, pages: 15, waiting: 2, index_only: 26, deferred: 17, rejected: 3}
+counts: {entries: 63, pages: 17, waiting: 0, index_only: 26, deferred: 17, rejected: 3}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -51,13 +51,13 @@ software sections belong to Phase 4.
 | Poppy Project | [Poppy Humanoid](../wiki/robots/poppy-humanoid.md) | B |
 | Stanford Doggo | [Stanford Doggo](../wiki/robots/stanford-doggo.md) | B |
 | Thor (AngelLM) | [Thor (AngelLM)](../wiki/robots/angellm-thor.md) | B |
+| Reachy 2 (Pollen Robotics) | [Reachy and Reachy 2](../wiki/robots/reachy.md) | B |
+| TurtleBot | [TurtleBot (1, 2 and 4)](../wiki/robots/turtlebot.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| Reachy 2 (Pollen Robotics) | `reachy` | B | Research humanoid with an open ROS 2 stack, supported in LeRobot |
-| TurtleBot | `turtlebot` | B | The standard ROS teaching and Nav2 reference robot line |
 
 ## Index only
 

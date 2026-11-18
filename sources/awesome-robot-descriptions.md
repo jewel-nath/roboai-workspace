@@ -5,7 +5,7 @@ registry: awesome-robot-descriptions
 url: https://github.com/robot-descriptions/awesome-robot-descriptions
 commit: "bb41b10"
 read_on: 2026-11-17
-counts: {entries: 161, pages: 44, waiting: 10, index_only: 54, deferred: 0, rejected: 4}
+counts: {entries: 161, pages: 54, waiting: 0, index_only: 54, deferred: 0, rejected: 4}
 ---
 
 # Awesome Robot Descriptions: what it gives RoboAI
@@ -85,21 +85,21 @@ are few, and several of them live in repos the list does not link.
 | Go1, Go2 (Unitree) | [Unitree Go1 and Go2](../wiki/robots/unitree-go2.md) | B |
 | ANYmal B, ANYmal C, ANYmal D (ANYbotics) | [ANYmal B, C, D and X](../wiki/robots/anymal.md) | B |
 | Spot (Boston Dynamics) | [Boston Dynamics Spot](../wiki/robots/boston-dynamics-spot.md) | B |
+| Crazyflie 1.0, Crazyflie 2.0 (Bitcraze) | [Bitcraze Crazyflie 2.x](../wiki/robots/crazyflie.md) | B |
+| Fetch (Fetch Robotics) | [Fetch Robotics Fetch and Freight](../wiki/robots/fetch.md) | B |
+| Google Robot (Everyday Robots) | [Google Robot (Everyday Robots mobile manipulator)](../wiki/robots/google-robot.md) | B |
+| Pepper (SoftBank Robotics) | [Pepper](../wiki/robots/pepper.md) | B |
+| PR2 (Willow Garage) | [Willow Garage PR2](../wiki/robots/pr2.md) | B |
+| Reachy (Pollen Robotics) | [Reachy and Reachy 2](../wiki/robots/reachy.md) | B |
+| Stretch RE1, Stretch 2, Stretch 3 (Hello Robot) | [Hello Robot Stretch (RE1, Stretch 2, Stretch 3, Stretch 4)](../wiki/robots/hello-robot-stretch.md) | B |
+| TIAGo (PAL Robotics) | [PAL Robotics TIAGo, TIAGo++ and TIAGo Pro](../wiki/robots/tiago.md) | B |
+| Tidybot (Stanford) | [Stanford TidyBot and TidyBot++](../wiki/robots/tidybot.md) | B |
+| Boxer, Dingo, Husky, Jackal, Ridgeback (Clearpath Robotics) | [Clearpath research bases (Husky, Jackal, Dingo, Ridgeback, Boxer)](../wiki/robots/clearpath-robots.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| Crazyflie 1.0, Crazyflie 2.0 (Bitcraze) | `crazyflie` | B | The standard nano-drone for swarm and learning research; open firmware |
-| Fetch (Fetch Robotics) | `fetch` | B | Long a standard ROS research mobile manipulator |
-| Google Robot (Everyday Robots) | `google-robot` | B | The robot behind RT-1, RT-2 and SayCan; common in VLA benchmarks |
-| Pepper (SoftBank Robotics) | `pepper` | B | Widely used human-robot interaction platform |
-| PR2 (Willow Garage) | `pr2` | B | The robot ROS grew up on |
-| Reachy (Pollen Robotics) | `reachy` | B | Open-software research humanoid, supported in LeRobot |
-| Stretch RE1, Stretch 2, Stretch 3 (Hello Robot) | `hello-robot-stretch` | B | Popular home-robotics research platform with open software and accessory CAD |
-| TIAGo (PAL Robotics) | `tiago` | B | Common European research mobile manipulator |
-| Tidybot (Stanford) | `tidybot` | B | Open holonomic base (TidyBot++) with CAD and BOM; idle since March 2025 |
-| Boxer, Dingo, Husky, Jackal, Ridgeback (Clearpath Robotics) | `clearpath-robots` | B | The most common commercial ROS research bases |
 
 ## Index only
 

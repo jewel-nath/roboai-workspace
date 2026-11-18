@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 23, pages: 4, waiting: 6, index_only: 7, deferred: 3, rejected: 2}
+counts: {entries: 23, pages: 10, waiting: 0, index_only: 7, deferred: 3, rejected: 2}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -38,17 +38,17 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "turtlebot3" (ROBOTIS) | [TurtleBot3](../wiki/robots/turtlebot3.md) | A |
 | "Franka Emika panda" | [Franka Emika Panda and Franka Research 3](../wiki/robots/franka-panda.md) | B |
 | "Universal Robot 3/5/10/e" | [Universal Robots UR3, UR5, UR10 and e-Series](../wiki/robots/universal-robots.md) | B |
+| "Georgia Tech" race car (AutoRally) | [AutoRally](../wiki/robots/autorally.md) | B |
+| "turtlebot" (GitHub org) | [TurtleBot (1, 2 and 4)](../wiki/robots/turtlebot.md) | B |
+| "clearpath husky", "clearpath jackel" | [Clearpath research bases (Husky, Jackal, Dingo, Ridgeback, Boxer)](../wiki/robots/clearpath-robots.md) | B |
+| "Personal Robot 2 (PR2)" | [Willow Garage PR2](../wiki/robots/pr2.md) | B |
+| "kuka youbot" | [KUKA youBot](../wiki/robots/kuka-youbot.md) | B |
+| "fetch robotics" | [Fetch Robotics Fetch and Freight](../wiki/robots/fetch.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| "Georgia Tech" race car (AutoRally) | `autorally` | B | 1:5 off-road autonomous rally car with an open build guide; platform of the MPPI driving papers |
-| "turtlebot" (GitHub org) | `turtlebot` | B | TurtleBot 2 and 4, the ROS reference robot line |
-| "clearpath husky", "clearpath jackel" | `clearpath-robots` | B | The best-known commercial ROS research bases |
-| "Personal Robot 2 (PR2)" | `pr2` | B | The robot ROS grew up on |
-| "kuka youbot" | `kuka-youbot` | B | Classic teaching mobile manipulator, standard in Webots and CoppeliaSim; discontinued |
-| "fetch robotics" | `fetch` | B | Long a standard ROS research mobile manipulator |
 
 ## Index only
 

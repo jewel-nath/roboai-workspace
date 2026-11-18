@@ -13,8 +13,8 @@ learning, and the videos that explain it.
 ## Status
 
 **Being redesigned (November 2026).** The structure, templates, source registry, scripts and
-commands are done (Phases 0 and 1). The [Robot Atlas](wiki/robots/README.md) has its first 61
-pages (Phase 3, in progress). Content arrives phase by phase; the
+commands are done (Phases 0 and 1). The [Robot Atlas](wiki/robots/README.md) has 79 robots:
+17 full profiles and 62 short cards (Phase 3). Content arrives phase by phase; the
 [roadmap](docs/plan.md#12-roadmap) says in what order. The previous skill library is kept in
 [legacy/](legacy/) until it is re-filed.
 

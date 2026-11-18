@@ -56,6 +56,7 @@ is to build, and what is worth reusing. Template: [templates/robot.md](../../tem
 | [NAO](nao.md) | humanoid | B | software-only | 25 | — | 16990 retail (2026-11-18) | researched | 2026-11-18 |
 | [PAL Robotics TALOS](pal-talos.md) | humanoid | B | software-only | 32 | 6 | — | researched | 2026-11-18 |
 | [Poppy Humanoid](poppy-humanoid.md) | humanoid | B | full | 25 | — | 8000 bom (2015-02-16) | researched | 2026-11-18 |
+| [Reachy and Reachy 2](reachy.md) | humanoid | B | software-only | 21 | 3 | 70000 retail (2025-04-14) | researched | 2026-11-18 |
 | [ROBOTIS OP3](robotis-op3.md) | humanoid | B | partial | 20 | — | — | researched | 2026-11-18 |
 | [ToddlerBot](toddlerbot.md) | humanoid | A | full | 30 | 1.48 | 5728 bom (2026-11-17) | researched | 2026-11-17 |
 | [Unitree G1](unitree-g1.md) | humanoid | B | software-only | 29 | 3 | 53900 retail (2026-11-18) | researched | 2026-11-18 |
@@ -73,13 +74,30 @@ is to build, and what is worth reusing. Template: [templates/robot.md](../../tem
 | [Unitree A1, Aliengo and Laikago](unitree-a1.md) | legged | B | software-only | 12 | 5 | — | researched | 2026-11-18 |
 | [Unitree Go1 and Go2](unitree-go2.md) | legged | B | software-only | 12 | — | — | vendor-claim | 2026-11-18 |
 | [Upkie](upkie.md) | legged | A | full | 6 | — | — | researched | 2026-11-17 |
+| [AutoRally](autorally.md) | mobile-base | B | partial | 3 | — | 14635.25 bom (2018-03-01) | researched | 2026-11-18 |
+| [Clearpath research bases (Husky, Jackal, Dingo, Ridgeback, Boxer)](clearpath-robots.md) | mobile-base | B | software-only | 4 | 100 | — | vendor-claim | 2026-11-18 |
 | [F1TENTH (RoboRacer)](f1tenth.md) | mobile-base | A | partial | 2 | — | 3022.29 bom (2026-05-15) | researched | 2026-11-17 |
 | [JPL Open Source Rover](jpl-open-source-rover.md) | mobile-base | A | full | 10 | — | 1421.18 bom (2026-11-17) | researched | 2026-11-17 |
 | [NanoSaur](nanosaur.md) | mobile-base | A | full | 2 | — | — | researched | 2026-11-17 |
 | [OpenBot](openbot.md) | mobile-base | A | full | 2 | — | 50 bom (2021-03-10) | researched | 2026-11-17 |
 | [Robot Soccer Kit (RSK)](robot-soccer-kit.md) | mobile-base | A | full | 3 | — | — | researched | 2026-11-17 |
+| [TurtleBot (1, 2 and 4)](turtlebot.md) | mobile-base | B | partial | 2 | 9 | 2708.0 retail (2026-11-18) | researched | 2026-11-18 |
 | [TurtleBot3](turtlebot3.md) | mobile-base | A | partial | 2 | 15 | 783.5 kit (2026-11-17) | researched | 2026-11-17 |
+| [Fetch Robotics Fetch and Freight](fetch.md) | mobile-manipulator | B | software-only | 11 | 6 | — | researched | 2026-11-18 |
+| [Google Robot (Everyday Robots mobile manipulator)](google-robot.md) | mobile-manipulator | B | closed-reference | 8 | — | — | researched | 2026-11-18 |
+| [Hello Robot Stretch (RE1, Stretch 2, Stretch 3, Stretch 4)](hello-robot-stretch.md) | mobile-manipulator | B | partial | 8 | 2 | 24950 retail (2024-02-15) | researched | 2026-11-18 |
+| [KUKA youBot](kuka-youbot.md) | mobile-manipulator | B | software-only | 10 | 0.5 | 24200 retail (2010-06-11) | researched | 2026-11-18 |
+| [PAL Robotics TIAGo, TIAGo++ and TIAGo Pro](tiago.md) | mobile-manipulator | B | software-only | 11 | 3 | 57000 retail (2015-02-04) | researched | 2026-11-18 |
+| [Stanford TidyBot and TidyBot++](tidybot.md) | mobile-manipulator | B | partial | 16 | — | 5379.63 bom (2024-10-01) | researched | 2026-11-18 |
+| [Willow Garage PR2](pr2.md) | mobile-manipulator | B | partial | 19 | — | 400000 retail (2010-09-08) | researched | 2026-11-18 |
+| [Bitcraze Crazyflie 2.x](crazyflie.md) | other | B | partial | 4 | 0.015 | 262.2 retail (2026-11-18) | researched | 2026-11-18 |
 | [TriFinger](trifinger.md) | other | B | full | 9 | — | 5000 bom (2020-08-08) | researched | 2026-11-18 |
+| [Blossom](blossom.md) | social | B | full | 5 | — | 250 bom (2019-05-21) | researched | 2026-11-18 |
 | [Coglet](coglet.md) | social | A | partial | 9 | — | 189.38 kit (2026-11-17) | researched | 2026-11-17 |
+| [ElectronBot](electronbot.md) | social | B | full | 6 | — | — | researched | 2026-11-18 |
+| [Jibo](jibo.md) | social | B | closed-reference | 3 | — | 899 retail (2017-10-25) | researched | 2026-11-18 |
+| [Pepper](pepper.md) | social | B | software-only | 20 | — | 32000 retail (2026-11-18) | researched | 2026-11-18 |
+| [Reachy Mini](reachy-mini.md) | social | B | partial | 9 | — | 499 retail (2026-11-18) | researched | 2026-11-18 |
 | [Stack-chan](stack-chan.md) | social | A | full | 2 | — | 99 retail (2026-11-17) | researched | 2026-11-17 |
+| [Vector (Anki, Digital Dream Labs)](anki-vector.md) | social | B | software-only | 4 | — | 265.98 retail (2026-11-18) | researched | 2026-11-18 |
 <!-- index:end -->
