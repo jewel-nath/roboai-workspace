@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 63, pages: 9, waiting: 8, index_only: 26, deferred: 17, rejected: 3}
+counts: {entries: 63, pages: 15, waiting: 2, index_only: 26, deferred: 17, rejected: 3}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -45,18 +45,18 @@ software sections belong to Phase 4.
 | Openmanipulator (ROBOTIS) | [OpenManipulator-X](../wiki/robots/openmanipulator-x.md) | B |
 | RUKA (NYU) | [RUKA](../wiki/robots/ruka.md) | B |
 | TriFinger | [TriFinger](../wiki/robots/trifinger.md) | B |
+| ANYmal C (ANYbotics) | [ANYmal B, C, D and X](../wiki/robots/anymal.md) | B |
+| Nybble (Petoi) | [Petoi Nybble and Bittle](../wiki/robots/petoi-nybble-bittle.md) | B |
+| Open Dynamic Robot Initiative | [ODRI Solo-8, Solo-12 and Bolt](../wiki/robots/odri-solo.md) | B |
+| Poppy Project | [Poppy Humanoid](../wiki/robots/poppy-humanoid.md) | B |
+| Stanford Doggo | [Stanford Doggo](../wiki/robots/stanford-doggo.md) | B |
+| Thor (AngelLM) | [Thor (AngelLM)](../wiki/robots/angellm-thor.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| ANYmal C (ANYbotics) | `anymal` | B | Common research quadruped and legged-RL baseline |
-| Nybble (Petoi) | `petoi-nybble-bittle` | B | Popular servo robot-cat kit on open OpenCat firmware; a first step into legged gaits |
-| Open Dynamic Robot Initiative | `odri-solo` | B | Open torque-controlled actuator and the Solo quadrupeds |
-| Poppy Project | `poppy-humanoid` | B | Historically important open printed humanoid and teaching platform; dormant |
 | Reachy 2 (Pollen Robotics) | `reachy` | B | Research humanoid with an open ROS 2 stack, supported in LeRobot |
-| Stanford Doggo | `stanford-doggo` | B | Landmark open jumping quadruped with Fusion 360 CAD and BOM; its team later made Pupper |
-| Thor (AngelLM) | `angellm-thor` | B | Well-known printable 6-DoF arm designed in FreeCAD |
 | TurtleBot | `turtlebot` | B | The standard ROS teaching and Nav2 reference robot line |
 
 ## Index only

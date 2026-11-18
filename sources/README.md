@@ -117,8 +117,8 @@ limit and lists the pages it skipped.
 
 | Source | Read on | Entries | Pages | Waiting | Index only | Deferred | Rejected |
 |---|---|---|---|---|---|---|---|
-| [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 25 | 29 | 54 | 0 | 4 |
-| [Awesome Robotics Projects](awesome-robotics-projects.md) | 2026-11-17 | 63 | 9 | 8 | 26 | 17 | 3 |
+| [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 44 | 10 | 54 | 0 | 4 |
+| [Awesome Robotics Projects](awesome-robotics-projects.md) | 2026-11-17 | 63 | 15 | 2 | 26 | 17 | 3 |
 | [awesome-ros-mobile-robot](awesome-ros-mobile-robot.md) | 2026-11-17 | 23 | 4 | 6 | 7 | 3 | 2 |
-| [Awesome Social Robots](awesome-social-robots.md) | 2026-11-17 | 61 | 3 | 8 | 17 | 1 | 32 |
+| [Awesome Social Robots](awesome-social-robots.md) | 2026-11-17 | 61 | 5 | 6 | 17 | 1 | 32 |
 <!-- index:end -->

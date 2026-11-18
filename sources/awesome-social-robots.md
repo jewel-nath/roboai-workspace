@@ -5,7 +5,7 @@ registry: awesome-social-robots
 url: https://github.com/jcarolinares/awesome-social-robots
 commit: "01e8eba"
 read_on: 2026-11-17
-counts: {entries: 61, pages: 3, waiting: 8, index_only: 17, deferred: 1, rejected: 32}
+counts: {entries: 61, pages: 5, waiting: 6, index_only: 17, deferred: 1, rejected: 32}
 ---
 
 # Awesome Social Robots: what it gives RoboAI
@@ -43,6 +43,8 @@ Its licence claims are often loose and were checked one by one.
 | Stackchan | [Stack-chan](../wiki/robots/stack-chan.md) | A |
 | Sesame | [Sesame](../wiki/robots/sesame.md) | A |
 | Coglet (Will Cogley) | [Coglet](../wiki/robots/coglet.md) | A |
+| InMoov (Gaël Langevin) | [InMoov](../wiki/robots/inmoov.md) | B |
+| Kayra | [Kayra](../wiki/robots/kayra.md) | B |
 
 ## Waiting for a page
 
@@ -52,8 +54,6 @@ Its licence claims are often loose and were checked one by one.
 | Reachy (Pollen Robotics) | `reachy` | B | Research humanoid torso with an open ROS 2 stack, supported in LeRobot |
 | Blossom (Cornell) | `blossom` | B | Influential handmade soft social robot for HRI research; cheap to build; inactive since 2022 |
 | ElectronBot (Peng Zhihui) | `electronbot` | B | Hugely popular desktop robot, fully open (STEP, PCB, firmware), many clones; inactive since early 2025 |
-| InMoov (Gaël Langevin) | `inmoov` | B | The first open printable life-size humanoid, with a large community; non-commercial licence |
-| Kayra | `kayra` | B | Active printable community humanoid with FreeCAD sources and a MuJoCo model; no BOM yet |
 | Jibo (Jibo Inc.) | `jibo` | B | Landmark consumer social robot and a reference for expressive motion; the company folded in 2018-19 |
 | Vector (Anki, then Digital Dream Labs) | `anki-vector` | B | Mass-market reference for small expressive robots; hackable through its SDK and the wire-pod server |
 

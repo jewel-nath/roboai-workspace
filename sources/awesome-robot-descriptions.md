@@ -5,7 +5,7 @@ registry: awesome-robot-descriptions
 url: https://github.com/robot-descriptions/awesome-robot-descriptions
 commit: "bb41b10"
 read_on: 2026-11-17
-counts: {entries: 161, pages: 25, waiting: 29, index_only: 54, deferred: 0, rejected: 4}
+counts: {entries: 161, pages: 44, waiting: 10, index_only: 54, deferred: 0, rejected: 4}
 ---
 
 # Awesome Robot Descriptions: what it gives RoboAI
@@ -66,31 +66,31 @@ are few, and several of them live in repos the list does not link.
 | Allegro Hand (Wonik Robotics) | [Allegro Hand](../wiki/robots/allegro-hand.md) | B |
 | Robotiq 2F-85 (Robotiq) | [Robotiq 2F-85](../wiki/robots/robotiq-2f-85.md) | B |
 | Shadow Hand E3M5 (The Shadow Robot Company) | [Shadow Dexterous Hand](../wiki/robots/shadow-dexterous-hand.md) | B |
+| Pupper v3 (Stanford) | [Stanford Pupper v3](../wiki/robots/pupper-v3.md) | B |
+| Mini Cheetah (MIT) | [MIT Mini Cheetah](../wiki/robots/mini-cheetah.md) | B |
+| Solo (ODRI) | [ODRI Solo-8, Solo-12 and Bolt](../wiki/robots/odri-solo.md) | B |
+| iCub (IIT) | [iCub](../wiki/robots/icub.md) | B |
+| AgiBot X1 (AgibotTech) | [AgiBot X1 (Lingxi X1)](../wiki/robots/agibot-x1.md) | B |
+| OP3 (ROBOTIS) | [ROBOTIS OP3](../wiki/robots/robotis-op3.md) | B |
+| Cassie (Agility Robotics) | [Agility Robotics Cassie](../wiki/robots/cassie.md) | B |
+| Digit (Agility Robotics) | [Agility Digit](../wiki/robots/agility-digit.md) | B |
+| Atlas DRC v3, Atlas v4 (Boston Dynamics) | [Boston Dynamics Atlas](../wiki/robots/boston-dynamics-atlas.md) | B |
+| Booster T1 (Booster Robotics) | [Booster T1](../wiki/robots/booster-t1.md) | B |
+| G1 (Unitree) | [Unitree G1](../wiki/robots/unitree-g1.md) | B |
+| H1 (Unitree) | [Unitree H1 and H1-2](../wiki/robots/unitree-h1.md) | B |
+| GR-1 (Fourier) | [Fourier GR-1 and GR-2](../wiki/robots/fourier-gr-1.md) | B |
+| NAO (Aldebaran, formerly SoftBank Robotics) | [NAO](../wiki/robots/nao.md) | B |
+| TALOS (PAL Robotics) | [PAL Robotics TALOS](../wiki/robots/pal-talos.md) | B |
+| A1, Aliengo, Laikago (Unitree) | [Unitree A1, Aliengo and Laikago](../wiki/robots/unitree-a1.md) | B |
+| Go1, Go2 (Unitree) | [Unitree Go1 and Go2](../wiki/robots/unitree-go2.md) | B |
+| ANYmal B, ANYmal C, ANYmal D (ANYbotics) | [ANYmal B, C, D and X](../wiki/robots/anymal.md) | B |
+| Spot (Boston Dynamics) | [Boston Dynamics Spot](../wiki/robots/boston-dynamics-spot.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Why it matters |
 |---|---|---|---|
-| Pupper v3 (Stanford) | `pupper-v3` | B | Brushless teaching quadruped with CAD and a sourcing guide; A once a hardware licence is found |
-| Mini Cheetah (MIT) | `mini-cheetah` | B | Its actuator and control design shaped most low-cost quadrupeds; control software open |
-| Solo (ODRI) | `odri-solo` | B | Open torque-controlled research quadruped with full CAD and BOM, sold by PAL; idle since 2022 |
-| iCub (IIT) | `icub` | B | Landmark open research humanoid; part of its CAD is public (CERN-OHL-W-2.0) |
-| AgiBot X1 (AgibotTech) | `agibot-x1` | B | Rare full-size humanoid with published STEP, BOM and assembly guide, but no hardware licence |
-| OP3 (ROBOTIS) | `robotis-op3` | B | Kid-size Dynamixel humanoid with open ROS software; RoboCup and research use |
 | Crazyflie 1.0, Crazyflie 2.0 (Bitcraze) | `crazyflie` | B | The standard nano-drone for swarm and learning research; open firmware |
-| Cassie (Agility Robotics) | `cassie` | B | Landmark platform for bipedal RL research; discontinued |
-| Digit (Agility Robotics) | `agility-digit` | B | Commercial bipedal humanoid in many RL papers and in deployment |
-| Atlas DRC v3, Atlas v4 (Boston Dynamics) | `boston-dynamics-atlas` | B | The defining hydraulic humanoid; DRC teams shared it |
-| Booster T1 (Booster Robotics) | `booster-t1` | B | Compact research humanoid with open RL training code |
-| G1 (Unitree) | `unitree-g1` | B | Among the most used research humanoids now |
-| H1 (Unitree) | `unitree-h1` | B | Widely used full-size research humanoid |
-| GR-1 (Fourier) | `fourier-gr-1` | B | Full-size reference body in many humanoid-learning projects |
-| NAO (Aldebaran, formerly SoftBank Robotics) | `nao` | B | RoboCup Standard Platform League and education robot |
-| TALOS (PAL Robotics) | `pal-talos` | B | Common torque-controlled research humanoid in Europe |
-| A1, Aliengo, Laikago (Unitree) | `unitree-a1` | B | The legged-RL workhorses of the legged_gym era; discontinued |
-| Go1, Go2 (Unitree) | `unitree-go2` | B | The common entry-level research quadruped; ROS 2 SDK |
-| ANYmal B, ANYmal C, ANYmal D (ANYbotics) | `anymal` | B | Anchor of legged research at ETH and beyond |
-| Spot (Boston Dynamics) | `boston-dynamics-spot` | B | The most deployed commercial quadruped; ROS 2 driver and SDK |
 | Fetch (Fetch Robotics) | `fetch` | B | Long a standard ROS research mobile manipulator |
 | Google Robot (Everyday Robots) | `google-robot` | B | The robot behind RT-1, RT-2 and SayCan; common in VLA benchmarks |
 | Pepper (SoftBank Robotics) | `pepper` | B | Widely used human-robot interaction platform |

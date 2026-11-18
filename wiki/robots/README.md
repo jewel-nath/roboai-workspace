@@ -33,6 +33,7 @@ is to build, and what is worth reusing. Template: [templates/robot.md](../../tem
 | [Sawyer](sawyer.md) | arm | B | software-only | 8 | 4 | 29000 retail (2015-03-19) | researched | 2026-11-18 |
 | [SO-101](so-101.md) | arm | A | full | 6 | — | 229.88 bom (2026-11-17) | researched | 2026-11-17 |
 | [SO-ARM 102](so-arm-102.md) | arm | A | full | 6 | 0.3 | 388.4 bom (2026-11-17) | researched | 2026-11-17 |
+| [Thor (AngelLM)](angellm-thor.md) | arm | B | full | 7 | 0.75 | — | researched | 2026-11-18 |
 | [UFACTORY xArm and Lite 6](ufactory-xarm.md) | arm | B | software-only | 6 | 5 | 9175.86 retail (2026-11-18) | researched | 2026-11-18 |
 | [Universal Robots UR3, UR5, UR10 and e-Series](universal-robots.md) | arm | B | software-only | 6 | 5 | — | researched | 2026-11-18 |
 | [Aero Hand Open](aero-hand-open.md) | gripper | A | full | 7 | — | 316.48 bom (2026-11-17) | researched | 2026-11-17 |
@@ -42,11 +43,35 @@ is to build, and what is worth reusing. Template: [templates/robot.md](../../tem
 | [RUKA](ruka.md) | gripper | B | partial | 11 | 6 | 1307.11 bom (2025-02-19) | researched | 2026-11-18 |
 | [Shadow Dexterous Hand](shadow-dexterous-hand.md) | gripper | B | software-only | 20 | — | — | vendor-claim | 2026-11-18 |
 | [UMI gripper (Universal Manipulation Interface)](umi-gripper.md) | gripper | B | partial | 1 | — | 371 bom (2024-03-06) | researched | 2026-11-18 |
+| [AgiBot X1 (Lingxi X1)](agibot-x1.md) | humanoid | B | partial | 31 | 0.5 | — | researched | 2026-11-18 |
+| [Agility Digit](agility-digit.md) | humanoid | B | closed-reference | 20 | 16 | — | researched | 2026-11-18 |
 | [Berkeley Humanoid Lite](berkeley-humanoid-lite.md) | humanoid | A | full | 24 | — | 4351 bom (2026-11-17) | researched | 2026-11-17 |
+| [Booster T1](booster-t1.md) | humanoid | B | software-only | 23 | — | 41224 retail (2026-11-18) | researched | 2026-11-18 |
+| [Boston Dynamics Atlas](boston-dynamics-atlas.md) | humanoid | B | closed-reference | 28 | — | — | researched | 2026-11-18 |
+| [Fourier GR-1 and GR-2](fourier-gr-1.md) | humanoid | B | software-only | 44 | 3 | — | researched | 2026-11-18 |
+| [iCub](icub.md) | humanoid | B | partial | 53 | — | — | researched | 2026-11-18 |
+| [InMoov](inmoov.md) | humanoid | B | partial | — | — | — | researched | 2026-11-18 |
+| [Kayra](kayra.md) | humanoid | B | full | 16 | — | — | researched | 2026-11-18 |
 | [Microban](microban.md) | humanoid | A | full | 19 | — | 567 bom (2026-11-17) | researched | 2026-11-17 |
+| [NAO](nao.md) | humanoid | B | software-only | 25 | — | 16990 retail (2026-11-18) | researched | 2026-11-18 |
+| [PAL Robotics TALOS](pal-talos.md) | humanoid | B | software-only | 32 | 6 | — | researched | 2026-11-18 |
+| [Poppy Humanoid](poppy-humanoid.md) | humanoid | B | full | 25 | — | 8000 bom (2015-02-16) | researched | 2026-11-18 |
+| [ROBOTIS OP3](robotis-op3.md) | humanoid | B | partial | 20 | — | — | researched | 2026-11-18 |
 | [ToddlerBot](toddlerbot.md) | humanoid | A | full | 30 | 1.48 | 5728 bom (2026-11-17) | researched | 2026-11-17 |
+| [Unitree G1](unitree-g1.md) | humanoid | B | software-only | 29 | 3 | 53900 retail (2026-11-18) | researched | 2026-11-18 |
+| [Unitree H1 and H1-2](unitree-h1.md) | humanoid | B | software-only | 19 | — | 90000 retail (2024-05-15) | researched | 2026-11-18 |
+| [Agility Robotics Cassie](cassie.md) | legged | B | software-only | 10 | — | 250000 retail (2017-05-04) | researched | 2026-11-18 |
+| [ANYmal B, C, D and X](anymal.md) | legged | B | software-only | 12 | 10 | — | researched | 2026-11-18 |
+| [Boston Dynamics Spot](boston-dynamics-spot.md) | legged | B | closed-reference | 12 | 20.43 | 74500 retail (2020-06-16) | researched | 2026-11-18 |
+| [MIT Mini Cheetah](mini-cheetah.md) | legged | B | partial | 12 | — | — | researched | 2026-11-18 |
+| [ODRI Solo-8, Solo-12 and Bolt](odri-solo.md) | legged | B | full | 12 | — | — | researched | 2026-11-18 |
 | [Open Duck Mini v2](open-duck-mini.md) | legged | A | full | 16 | — | 437 bom (2026-11-17) | researched | 2026-11-17 |
+| [Petoi Nybble and Bittle](petoi-nybble-bittle.md) | legged | B | partial | 9 | — | 319 kit (2026-11-18) | researched | 2026-11-18 |
 | [Sesame](sesame.md) | legged | A | full | 8 | — | 60 bom (2026-11-17) | researched | 2026-11-17 |
+| [Stanford Doggo](stanford-doggo.md) | legged | B | partial | 8 | — | 2971.02 bom (2026-11-18) | researched | 2026-11-18 |
+| [Stanford Pupper v3](pupper-v3.md) | legged | B | partial | 12 | — | 2158.91 bom (2026-11-18) | researched | 2026-11-18 |
+| [Unitree A1, Aliengo and Laikago](unitree-a1.md) | legged | B | software-only | 12 | 5 | — | researched | 2026-11-18 |
+| [Unitree Go1 and Go2](unitree-go2.md) | legged | B | software-only | 12 | — | — | vendor-claim | 2026-11-18 |
 | [Upkie](upkie.md) | legged | A | full | 6 | — | — | researched | 2026-11-17 |
 | [F1TENTH (RoboRacer)](f1tenth.md) | mobile-base | A | partial | 2 | — | 3022.29 bom (2026-05-15) | researched | 2026-11-17 |
 | [JPL Open Source Rover](jpl-open-source-rover.md) | mobile-base | A | full | 10 | — | 1421.18 bom (2026-11-17) | researched | 2026-11-17 |
