@@ -412,9 +412,9 @@ Planned 2026-11-18. Sizes are rough counts of linked lines in each README on tha
 
 | List | Upstream | Last commit | Size | Holds |
 |---|---|---|---|---|
-| awesome-robotic-tooling | protontypes/awesome-robotic-tooling | 2023-04-30 | ~940 | Development tools, ROS, simulation, perception, ops |
+| awesome-robotic-tooling | Ly0n/awesome-robotic-tooling | 2023-04-30 | ~940 | Development tools, ROS, simulation, perception, ops |
 | awesome-mobile-robotics | mathiasmantelli/awesome-mobile-robotics | 2026-08-03 | ~530 | Courses, software, papers, datasets |
-| Awesome-Robotics-Manipulation | BaiShuanghao/Awesome-Robotics-Manipulation | 2026-10-29 | ~340 papers | Manipulation papers with code links |
+| Awesome-Robotics-Manipulation | BaiShuanghao/Awesome-Robotics-Manipulation | 2026-10-29 | ~4,100 papers | Manipulation papers with code links, in the README and five `contents/` files |
 | awesome-robotics-libraries | jslee02/awesome-robotics-libraries | 2026-10-26 | ~230 | Simulators, kinematics, planning, math libraries |
 | awesome-robotics | kiloreux/awesome-robotics | 2024-09-22 | ~150 | General: courses, books, software, competitions |
 | Awesome-Robotics-Foundation-Models | robotics-survey/Awesome-Robotics-Foundation-Models | 2024-10-07 | ~110 papers | Foundation-model papers |

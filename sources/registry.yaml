@@ -163,6 +163,161 @@ sources:
       - {date: 2026-11-17, event: ingested, note: Phase 3 Robot Atlas, robot sections only}
       - {date: 2026-11-17, event: rebaselined, note: upstream state recorded as the new baseline}
 
+  # ---- software and learning: awesome lists read in Phase 4 ----
+
+  - id: awesome-robotic-tooling
+    url: https://github.com/Ly0n/awesome-robotic-tooling
+    kind: research-source
+    area: ros2
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "dc73ead", commit_date: 2023-04-30, release: , stars: 3925, archived: false}
+    used_in: [sources/awesome-robotic-tooling.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Development tooling for robotics in C++ and Python, with ROS, simulation, perception, autonomous driving and operations sections. No commit since April 2023.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-mobile-robotics
+    url: https://github.com/mathiasmantelli/awesome-mobile-robotics
+    kind: research-source
+    area: nav
+    relation: referenced
+    status: in-use
+    license: none
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "03a0871", commit_date: 2026-08-03, release: , stars: 787, archived: false}
+    used_in: [sources/awesome-mobile-robotics.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Mobile robotics courses, books, software, papers and datasets. No licence file; summarised and linked only.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-manipulation
+    url: https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation
+    kind: research-source
+    area: manip
+    relation: referenced
+    status: in-use
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "14f72df", commit_date: 2026-10-29, release: , stars: 1185, archived: false}
+    used_in: [sources/awesome-robotics-manipulation.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Robot manipulation papers with code and project links, grouped by method.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-libraries
+    url: https://github.com/jslee02/awesome-robotics-libraries
+    kind: research-source
+    area: control
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "98c7b97", commit_date: 2026-10-26, release: , stars: 3116, archived: false}
+    used_in: [sources/awesome-robotics-libraries.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Robotics libraries and software - simulators, dynamics, kinematics, motion planning, optimisation, SLAM and vision.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics
+    url: https://github.com/kiloreux/awesome-robotics
+    kind: research-source
+    area: docs
+    relation: referenced
+    status: in-use
+    license: custom
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "067f76e", commit_date: 2024-09-22, release: , stars: 7315, archived: false}
+    used_in: [sources/awesome-robotics.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: General robotics list - courses, books, software, competitions and companies. Its LICENSE.md is a custom permissive notice ("do what you want to").
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-foundation-models
+    url: https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models
+    kind: research-source
+    area: learning
+    relation: referenced
+    status: in-use
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "58ebfc2", commit_date: 2024-10-07, release: , stars: 1426, archived: false}
+    used_in: [sources/awesome-robotics-foundation-models.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Papers on foundation models in robotics, the list behind the survey "Foundation Models in Robotics" (2023).
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-3d
+    url: https://github.com/zubair-irshad/Awesome-Robotics-3D
+    kind: research-source
+    area: perception
+    relation: referenced
+    status: in-use
+    license: none
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "6a8573c", commit_date: 2025-12-17, release: , stars: 825, archived: false}
+    used_in: [sources/awesome-robotics-3d.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Papers on 3D vision for robotics - policies, representations, pretraining and simulation. No licence file; summarised and linked only.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robotics-datasets
+    url: https://github.com/mint-lab/awesome-robotics-datasets
+    kind: research-source
+    area: learning
+    relation: referenced
+    status: in-use
+    license: none
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "9178fbf", commit_date: 2021-08-26, release: , stars: 519, archived: false}
+    used_in: [sources/awesome-robotics-datasets.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Robotics datasets, mostly navigation, driving and SLAM. No commit since August 2021 and no licence file.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
+  - id: awesome-robot-learning
+    url: https://github.com/RayYoh/Awesome-Robot-Learning
+    kind: research-source
+    area: learning
+    relation: referenced
+    status: in-use
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-18, commit: "41eb274", commit_date: 2026-08-20, release: , stars: 209, archived: false}
+    used_in: [sources/awesome-robot-learning.md]
+    benchmark:
+    last_checked: 2026-11-18
+    notes: Robot learning resources, mainly for manipulation - surveys, policies, benchmarks and datasets.
+    history:
+      - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
+      - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
+
   # ---- video: reviewed 2026-11-12 (plan section 10) ----
 
   - id: explainroo

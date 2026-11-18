@@ -25,10 +25,10 @@ counts: {entries: , pages: , waiting: , index_only: , deferred: , rejected: }
 ## Waiting for a page
 
 <!-- Earned a page (tier A or B) that is not written yet. A row moves to Pages made when its page
-     is written. -->
+     is written. Batch: the phase's topic batch that will write it, or — when the phase has none. -->
 
-| Entry | Page | Tier | Why it matters |
-|---|---|---|---|
+| Entry | Page | Tier | Batch | Why it matters |
+|---|---|---|---|---|
 
 ## Index only
 

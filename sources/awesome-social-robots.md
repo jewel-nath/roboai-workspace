@@ -5,7 +5,7 @@ registry: awesome-social-robots
 url: https://github.com/jcarolinares/awesome-social-robots
 commit: "01e8eba"
 read_on: 2026-11-17
-counts: {entries: 61, pages: 11, waiting: 0, index_only: 17, deferred: 1, rejected: 32}
+counts: {entries: 92, pages: 11, waiting: 0, index_only: 45, deferred: 0, rejected: 36}
 ---
 
 # Awesome Social Robots: what it gives RoboAI
@@ -20,8 +20,13 @@ Its licence claims are often loose and were checked one by one.
 
 - Read at commit `01e8eba` on 2026-11-17. Phase 3 covers the four robot sections (Open-Source
   Robots, Not Open-Source Robots, To do more social, Virtual Pets): 61 entries.
-- **Left for Phase 4:** Libraries, Books, Articles, Blogs, Documentaries, Tutorials and Video
-  Tutorials.
+- **Phase 4** read Libraries, Books, Articles, Blogs, Documentaries, Tutorials and Video
+  Tutorials on 2026-11-18 at the same commit, and decided the Cardboard Robots row Phase 3
+  deferred: 32 entries, none earning a page. They are small eye-animation and voice libraries for
+  social-robot faces, two books, articles and short tutorials. Every link was checked with an HTTP
+  request; licences in Libraries are the list's own claims. The Pocket link to the dementia
+  article now redirects to Wired, and one library link is dead. Nothing in the README addresses
+  agents.
 - Repos were checked with shallow git clones; Hackster, Instructables and Arduino Project Hub
   pages were read for files and a stated licence. Instructables builds its pages with JavaScript,
   so four of its licences stay `unknown`; Thingiverse and Printables refuse automated reads.
@@ -54,13 +59,25 @@ Its licence claims are often loose and were checked one by one.
 
 ## Waiting for a page
 
-| Entry | Page | Tier | Why it matters |
-|---|---|---|---|
+| Entry | Page | Tier | Batch | Why it matters |
+|---|---|---|---|---|
 
 ## Index only
 
 | Entry | What it is | Last commit | Licence |
 |---|---|---|---|
+| IrisOLED | Arduino library for animated robot eyes on small OLEDs | — | MIT |
+| ESP32_Faces | Robot faces on two 8x8 LED matrices | — | GPL-3.0 |
+| Robot_eyes | Robot face animations for ESP32 displays | — | GPL-3.0 |
+| Spchcat | Offline speech-to-text command-line tool for Linux and Raspberry Pi | 2022-03-03 | MPL-2.0 |
+| Googly_Eye | CircuitPython googly eye for a round display with an accelerometer | — | MIT |
+| Oled Eye Display | Animated eye library for OLED displays (Intellar) | — | Apache-2.0 |
+| (ES) Animación de Ojos Robóticos en Arduino Uno | Spanish-language Arduino library for animated robot eyes | — | none stated |
+| Snowboy | Community fork of the discontinued Kitt.AI wake-word engine | 2021-05-02 | Apache-2.0 |
+| M5Stack Avatar MIC | M5Stack avatar faces that lip-sync to microphone input | — | MIT |
+| M5Stack Avatar | Face library for M5Stack screens, by Stack-chan's creator | — | MIT |
+| Voice ChatGPT | Raspberry Pi voice chat with ChatGPT | — | CC-BY-NC (version not stated) |
+| Grobot_Animations | Physics-based eye animation library for TFT displays | — | MIT |
 | Stack-chan minimal | Gachapon-sized Stack-chan variant with an English voice; on the `stack-chan` page | 2025-08-22 | AGPL-3.0 |
 | Wally | M5StickC servo robot for young cancer patients, a contest build | — | CC-BY-NC-SA-4.0 |
 | Robot Butterfly | Outdoor companion butterfly kit with KiCad and STEP files, no BOM | 2026-11-13 | CERN-OHL-P-2.0, MIT, CC-BY-SA-4.0 |
@@ -76,19 +93,37 @@ Its licence claims are often loose and were checked one by one.
 | SkoBots (STEAM Connection) | Shoulder-worn robot that speaks Anishinaabemowin; not sold | — | — |
 | ElliQ (Intuition Robotics) | Tabletop eldercare companion | — | — |
 | Misa (Misa Robotics) | Wheeled companion robot for children | — | — |
+| Cardboard Robots (LOFI Robot) | Classroom cardboard-robot ideas; free plans, paid templates, not open source | — | — |
 | PLEN2 | Small printable humanoid with Fusion files; inactive since 2018 | 2018-12-10 | MIT (firmware), CC-BY-4.0 (3D) |
 | MiniPlan V6 | Small printed ESP8266 servo robot; inactive, no licence file | 2019-10-17 | none found |
+| Human-Robot Interaction in Social Robotics | Book on HRI with social robots (Kanda and Ishiguro) | — | — |
+| Designing Sociable Robots | Cynthia Breazeal's book on the Kismet sociable robot | — | — |
+| Dogs Obey Commands Given by Social Robots | IEEE Spectrum news on a dog and robot study | — | — |
+| Is It Ever OK to Bash a Robot? | Essay on how people treat robots | — | — |
+| My Parents' Dementia Felt Like the End of Joy. Then Came the Robots | Wired feature on companion robots in dementia care | — | — |
+| Olfactory Puppetry (1 paper) | Paper on smell in social robots and puppetry (DIS 2024) | — | — |
+| Vanessa The Robot | Write-up of building a modern animatronic figure | — | — |
+| Good night Oppy | Documentary about the Opportunity Mars rover | — | — |
+| Retro Tech: Robots | Video on retro consumer robots and people's expectations | — | — |
+| Arduino OLED Eyes Animation for Robotics Projects | CircuitDigest round-up of OLED eye libraries for Arduino | — | — |
+| Eye animation on OLED display with Arduino Nano | Intellar's tutorial for its OLED eye library | — | — |
+| My digital cat - Blinking and making cat's noises | Beginner Arduino tutorial: blinking LED eyes and cat sounds | — | — |
+| Doll Blinking Eyes using Arduino UNO Board | Video: blinking doll eyes driven by coils | — | — |
+| Oled Moving Eyes Arduino Tutorial | Video: animated OLED eyes on Arduino | — | — |
+| Robot eyes animation - Arduino Uno | Video: robot eye animation on Arduino | — | — |
 
 ## Deferred
 
 | Entry | What it is | Phase |
 |---|---|---|
-| Cardboard Robots (LOFI Robot) | Classroom cardboard-robot plans and paid templates | 4 |
 
 ## Rejected
 
 | Entry | Why | Date |
 |---|---|---|
+| Cozmo Eyes | One Arduino sketch file; too thin to help a builder | 2026-11-18 |
+| Oled Simple Animated Eye | One script, and the list gives no licence | 2026-11-18 |
+| OLED-Moving-Eyes-Arduino | Dead link (404) | 2026-11-18 |
 | Gus 2.0 | Air-quality monitor with a face: no actuators, no licence | 2026-11-17 |
 | Omicro Flux | No licence and no files, only a story page | 2026-11-17 |
 | Smart Signage Sentient | A smart sign with no actuators | 2026-11-17 |
@@ -121,3 +156,4 @@ Its licence claims are often loose and were checked one by one.
 | Arduino Nano Tamagotchi | Port of ArduinoGotchi; not a robot | 2026-11-17 |
 | Deskbuddy 2.0 | ESP32 desk pet with a screen face and no licence | 2026-11-17 |
 | Plant Monitor Pet | Plant monitor with an animated screen face | 2026-11-17 |
+| (ES) Creando un Tamagotchi desde cero | A virtual pet build, not a robot, as in Phase 3 | 2026-11-18 |

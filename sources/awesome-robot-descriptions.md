@@ -98,8 +98,8 @@ are few, and several of them live in repos the list does not link.
 
 ## Waiting for a page
 
-| Entry | Page | Tier | Why it matters |
-|---|---|---|---|
+| Entry | Page | Tier | Batch | Why it matters |
+|---|---|---|---|---|
 
 ## Index only
 
