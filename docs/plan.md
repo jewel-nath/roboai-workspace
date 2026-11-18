@@ -270,8 +270,9 @@ tools/check_sources.py       ← compares each source today against what we reco
 ### Present condition
 
 `tools/check_sources.py` reports for each source: new releases or commits since our pin; archived,
-moved or deleted repos; licence changes; no activity for more than 6 months; the star trend. It reads
-a GitHub token from an environment variable, which is never committed.
+moved or deleted repos; licence changes; no activity for more than 6 months; the star trend. With
+`--pages` it checks each Robot Atlas page against its `links.repo` the same way. It reads a GitHub
+token from an environment variable, which is never committed.
 
 ### Is it better?
 
@@ -435,8 +436,8 @@ All dated 2026-11-12.
   sections are still open. Registry sources that feed the Atlas use the area `robots`.
 - **2026-11-17: Atlas robots are not registry entries.** A robot page's own frontmatter (`links`,
   `license`, `maturity`) is its baseline, so a registry entry per robot would only repeat it. The
-  registry keeps the lists they came from. A page health check (repo moved, archived, licence
-  changed, stale `maturity`) is to be added to `tools/check_sources.py`.
+  registry keeps the lists they came from. `tools/check_sources.py --pages` is the page health
+  check (repo moved, archived, licence changed, stale `maturity`), run by `/review-sources`.
 
 ## 14. Open questions
 
