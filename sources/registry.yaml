@@ -420,3 +420,264 @@ sources:
     notes: Overlaps huashu-motion; aimed at product ads; 1-2 hours and 0.4-0.7M tokens per 30 s film; suggests paid services through affiliate links; tested on macOS only.
     history:
       - {date: 2026-11-12, event: rejected, note: overlap with huashu-motion}
+
+  # ---- video: reviewed 2026-11-19 (ten repos, one of them an awesome list) ----
+  # Baselines on this date come from git and the github.com page; stars are the page's rounded figure.
+
+  - id: awesome-claude-video-skills
+    url: https://github.com/zhuyansen/awesome-claude-video-skills
+    kind: research-source
+    area: video
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "579887c", commit_date: 2026-11-18, release: , stars: 2400, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: A catalogue of 526 agent video skills, regenerated every 8 hours by its maintainer's Agent Skills Hub, so partly self-promotion. Triaged in awesome-claude-video-skills.md; its six candidates are registered below.
+    history:
+      - {date: 2026-11-19, event: ingested, note: video track}
+
+  - id: hyperframes
+    url: https://github.com/heygen-com/hyperframes
+    kind: tool
+    area: video
+    relation: installed
+    status: planned
+    license: Apache-2.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "def770e", commit_date: 2026-11-19, release: "0.9.70 (npm)", stars: 86800, archived: false}
+    used_in: []
+    benchmark:
+    install: claude plugin marketplace add heygen-com/hyperframes, then claude plugin install hyperframes@hyperframes; npx hyperframes telemetry disable
+    last_checked: 2026-11-19
+    notes: Trial as the renderer for video-cad-exploded. Renders HTML with GSAP and Three.js to MP4 frame by frame, so a FreeCAD GLB can be stepped deterministically; Windows render CI. Node 22+, ffmpeg, Chrome. Pre-1.0 and changes daily. PostHog telemetry is on by default. Its Pro skills need HeyGen's paid models; the core is free and local. Overlaps huashu-motion, so the trial compares the two on one GLB.
+    history:
+      - {date: 2026-11-19, event: planned, note: trial against huashu-motion for exploded views}
+
+  - id: claude-video
+    url: https://github.com/bradautomates/claude-video
+    kind: skill
+    area: video
+    relation: installed
+    status: planned
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "03ceb42", commit_date: 2026-09-25, release: v0.3.2, stars: 21300, archived: false}
+    used_in: []
+    benchmark:
+    install: /plugin marketplace add bradautomates/claude-video, then /plugin install watch@claude-video; run it with --engine local and no Gemini key
+    last_checked: 2026-11-19
+    notes: Later, so an agent can watch a video, for a visual check of our renders and for reading robot demo videos as sources. Frames from ffmpeg, captions or local WhisperX for the transcript; CI on Windows. With a Gemini key set it uploads the video to Google, and its setup asks for API keys in chat; keep to the local engine.
+    history:
+      - {date: 2026-11-19, event: planned, note: later; visual QA and video sources}
+
+  - id: claude-video-vision
+    url: https://github.com/jordanrendric/claude-video-vision
+    kind: mcp
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "4a4f990", commit_date: 2026-10-06, release: v1.4.0, stars: 1500, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Same job as claude-video (an agent watches a video), as an MCP server. Needs Node 24 (this machine has 22); the server starts as npx claude-video-vision@latest, so it cannot be pinned; CI on Ubuntu and macOS only.
+    history:
+      - {date: 2026-11-19, event: watching, note: claude-video preferred}
+
+  - id: video-use
+    url: https://github.com/browser-use/video-use
+    kind: skill
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "43cfc56", commit_date: 2026-10-08, release: , stars: 31300, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Edits real footage from word-level transcripts, with an edit list and a filmstrip-and-waveform check at each cut. Transcription needs an ElevenLabs key, with no local path; Windows untested; unpinned npx at render time; its bundled manim-video skill names no source. Its ffmpeg rules are worth taking into our own footage skill. Revisit if it gains local transcription.
+    history:
+      - {date: 2026-11-19, event: watching, note: ideas only until it transcribes locally}
+
+  - id: manim-skill
+    url: https://github.com/awesome-skills/manim-skill
+    kind: skill
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "f8479fa", commit_date: 2026-10-30, release: , stars: 19, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: The lead for kinematics clips (frames, transforms, 3D orbits) in video-control-explainer, which explainroo cannot draw. A small project; Manim Community Edition (MIT) is the real tool and pins through uv. Typst avoids a TeX install.
+    history:
+      - {date: 2026-11-19, event: watching, note: from awesome-claude-video-skills}
+
+  - id: claude-animation-skills
+    url: https://github.com/artemnovitckii/claude-animation-skills
+    kind: skill
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "86f7010", commit_date: 2026-11-17, release: , stars: 937, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Its /breakdown skill is a labelled 3D exploded view (parts lift apart, leader lines to numbered labels) rendered through HyperFrames, a pattern for video-cad-exploded. Parts are primitives, not a loaded GLB; vertical video only; macOS and Linux only; bundled fonts are OFL. Adapting it would make this a copied entry with an upstream.md.
+    history:
+      - {date: 2026-11-19, event: watching, note: from awesome-claude-video-skills}
+
+  - id: make-blender-education-video-skill
+    url: https://github.com/sunxiayi/make-blender-education-video-skill
+    kind: skill
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "8fcc209", commit_date: 2026-07-24, release: , stars: 72, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Mechanism explainers rendered in Blender, with a claim ledger for facts and one approved frame before the full render. The Blender path if Three.js exploded views look too plain. English Kokoro voice only; heavy 4K renders; Windows not stated; activity has slowed.
+    history:
+      - {date: 2026-11-19, event: watching, note: from awesome-claude-video-skills}
+
+  - id: agent-screenplay
+    url: https://github.com/gmpetrov/agent-screenplay
+    kind: tool
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "b1a5da3", commit_date: 2026-11-12, release: "0.1.7 (npm)", stars: 128, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Scripted screen recordings from a JSON scenario, with zooms, callouts and captions, so a tutorial can be re-recorded when a ROS 2 distro changes. Records browsers and Windows desktop apps; needs X11 on Linux, not Wayland. Its init edits agent configs, so add the MCP server by hand. Overlaps explainroo record.
+    history:
+      - {date: 2026-11-19, event: watching, note: from awesome-claude-video-skills}
+
+  - id: makemyclip-editor
+    url: https://github.com/MakeMyClip/editor
+    kind: tool
+    area: video
+    relation: referenced
+    status: watching
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "e090b42", commit_date: 2026-11-15, release: v0.5.0, stars: 18, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Local footage clean-up (silences, retakes, transcript cuts, captions, loudness) with FCPXML export for the free DaVinci Resolve; no telemetry or account. Needs Node 24 (this machine has 22); CI on Ubuntu only. Compare with explainroo cut when builder footage needs it.
+    history:
+      - {date: 2026-11-19, event: watching, note: from awesome-claude-video-skills}
+
+  - id: video-editor-skills
+    url: https://github.com/appariciojunior/video-editor-skills
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: CC-BY-NC-4.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "6709678", commit_date: 2026-10-23, release: , stars: 465, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Twelve prose skills for editing talking-head videos through DaVinci Resolve Studio, which is paid (the free Resolve has no external scripting). The licence is non-commercial. Tells the agent to append learned facts to the user's CLAUDE.md. Its pacing figures are noted in the plan's video track.
+    history:
+      - {date: 2026-11-19, event: rejected, note: needs paid Resolve Studio; non-commercial licence}
+
+  - id: remotion-skills
+    url: https://github.com/remotion-dev/skills
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: none
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "6f55706", commit_date: 2026-11-18, release: , stars: 7500, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Remotion's official skills, mirrored from the Remotion repo with no licence file of their own. Remotion is source-available under the Remotion License, and any for-profit company of 4 or more people needs a paid Company License, so it cannot be a core tool in a workspace any builder uses. One idea kept; drive 3D animation from the frame number, never a clock.
+    history:
+      - {date: 2026-11-19, event: rejected, note: Remotion License}
+
+  - id: claude-remotion-skill
+    url: https://github.com/haidrrrry/claude-remotion-skill
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "1dcbe5e", commit_date: 2026-08-12, release: , stars: 1100, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Ten motion-design rules for Remotion films and a render-stills-and-look loop. Built on Remotion (see remotion-skills); no commit since August; its description claims every video request. Its rules are noted for the RoboAI look.
+    history:
+      - {date: 2026-11-19, event: rejected, note: Remotion; overlaps huashu-motion}
+
+  - id: video-shotcraft
+    url: https://github.com/Vincentwei1021/video-shotcraft
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: Apache-2.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "075b548", commit_date: 2026-11-19, release: , stars: 21600, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Promo films of web and desktop products from 124 shot cards, built on Remotion. Its skill starts a dev server unasked after each film and has the agent suggest tagging the author's social accounts; the README carries a sponsor referral code. Overlaps huashu-motion. Its shot-card format (intent, motion core, parameter table) is a good model for our own skills.
+    history:
+      - {date: 2026-11-19, event: rejected, note: Remotion; UI promos; self-promotion in the skill}
+
+  - id: claude-code-video-toolkit
+    url: https://github.com/digitalsamba/claude-code-video-toolkit
+    kind: tool
+    area: video
+    relation: referenced
+    status: rejected
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "a89a320", commit_date: 2026-11-17, release: v0.29.1, stars: 2700, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: A workspace you clone and work inside, from script to MP4, built on Remotion with voices and models on paid cloud GPUs (Modal, RunPod, ElevenLabs). Without Cloudflare R2 it uploads files to public hosts (catbox, 0x0.st); it ships a watermark remover. A whole parallel stack to explainroo. Its optional Blender stage films an imported GLB or STL, untested on Windows.
+    history:
+      - {date: 2026-11-19, event: rejected, note: Remotion and paid cloud; uploads to public hosts}
+
+  - id: fal-skills
+    url: https://github.com/fal-ai-community/skills
+    kind: skill
+    area: video
+    relation: referenced
+    status: rejected
+    license: MIT
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-19, commit: "ca79376", commit_date: 2026-11-06, release: v0.1.0, stars: 273, archived: false}
+    used_in: []
+    benchmark:
+    last_checked: 2026-11-19
+    notes: Thirty-six skills for generating images, video, audio and 3D on fal.ai's paid hosted models; no local path; the genmedia CLI installs by curl piped to a shell and updates itself. Generated footage cannot show a real robot and breaks the rule that every fact has a source.
+    history:
+      - {date: 2026-11-19, event: rejected, note: paid generative media only}

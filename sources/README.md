@@ -84,7 +84,7 @@ limit and lists the pages it skipped.
 ## Summary
 
 <!-- index:start -->
-### In use (17)
+### In use (18)
 
 | Source | Kind | Area | Relation | Licence | Pinned | Checked | Notes |
 |---|---|---|---|---|---|---|---|
@@ -105,27 +105,49 @@ limit and lists the pages it skipped.
 | [awesome-robotic-tooling](https://github.com/Ly0n/awesome-robotic-tooling) | research-source | ros2 | referenced | CC0-1.0 | — | 2026-11-18 | Development tooling for robotics in C++ and Python, with ROS, simulation, perception, autonomous driving and operations sections. |
 | [robotics-agent-skills](https://github.com/arpitg1304/robotics-agent-skills) | skill | ros2 | distilled | Apache-2.0 | — | 2026-11-17 | The commit the old skills were adapted from was never recorded; this baseline is the upstream head at registration. |
 | [ros2-claude-code-template](https://github.com/harunkurtdev/ros2-claude-code-template) | skill | ros2 | distilled | Apache-2.0 | — | 2026-11-17 | Licence stated in its README only; the repo has no licence file GitHub recognises. |
+| [awesome-claude-video-skills](https://github.com/zhuyansen/awesome-claude-video-skills) | research-source | video | referenced | CC0-1.0 | — | 2026-11-19 | A catalogue of 526 agent video skills, regenerated every 8 hours by its maintainer's Agent Skills Hub, so partly self-promotion. |
 
-### Planned (4)
+### Planned (6)
 
 | Source | Kind | Area | Relation | Licence | Pinned | Checked | Notes |
 |---|---|---|---|---|---|---|---|
+| [claude-video](https://github.com/bradautomates/claude-video) | skill | video | installed | MIT | — | 2026-11-19 | Later, so an agent can watch a video, for a visual check of our renders and for reading robot demo videos as sources. |
 | [earshot](https://github.com/Leonxlnx/earshot) | tool | video | installed | MIT | — | 2026-11-17 | Later, for sound checks and code-made sound effects; has an MCP server. |
 | [explainroo](https://github.com/vincentsch/explainroo) | tool | video | installed | MIT | — | 2026-11-17 | Core video tool for narrated explainers and tutorials. |
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | tool | video | installed | MIT | — | 2026-11-17 | Trial for promo and 3D showcase films. |
+| [hyperframes](https://github.com/heygen-com/hyperframes) | tool | video | installed | Apache-2.0 | — | 2026-11-19 | Trial as the renderer for video-cad-exploded. |
 | [video-director](https://github.com/win4r/video-director) | skill | video | installed | MIT | — | 2026-11-17 | Core directing method and QA scripts (check_timeline.py, qa_video.py), for any renderer. |
 
-### Rejected (2)
+### Watching (7)
 
 | Source | Kind | Area | Relation | Licence | Pinned | Checked | Notes |
 |---|---|---|---|---|---|---|---|
+| [agent-screenplay](https://github.com/gmpetrov/agent-screenplay) | tool | video | referenced | MIT | — | 2026-11-19 | Scripted screen recordings from a JSON scenario, with zooms, callouts and captions, so a tutorial can be re-recorded when a ROS 2 distro ch… |
+| [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | skill | video | referenced | MIT | — | 2026-11-19 | Its /breakdown skill is a labelled 3D exploded view (parts lift apart, leader lines to numbered labels) rendered through HyperFrames, a pat… |
+| [claude-video-vision](https://github.com/jordanrendric/claude-video-vision) | mcp | video | referenced | MIT | — | 2026-11-19 | Same job as claude-video (an agent watches a video), as an MCP server. |
+| [make-blender-education-video-skill](https://github.com/sunxiayi/make-blender-education-video-skill) | skill | video | referenced | MIT | — | 2026-11-19 | Mechanism explainers rendered in Blender, with a claim ledger for facts and one approved frame before the full render. |
+| [makemyclip-editor](https://github.com/MakeMyClip/editor) | tool | video | referenced | MIT | — | 2026-11-19 | Local footage clean-up (silences, retakes, transcript cuts, captions, loudness) with FCPXML export for the free DaVinci Resolve; no telemet… |
+| [manim-skill](https://github.com/awesome-skills/manim-skill) | skill | video | referenced | MIT | — | 2026-11-19 | The lead for kinematics clips (frames, transforms, 3D orbits) in video-control-explainer, which explainroo cannot draw. |
+| [video-use](https://github.com/browser-use/video-use) | skill | video | referenced | MIT | — | 2026-11-19 | Edits real footage from word-level transcripts, with an edit list and a filmstrip-and-waveform check at each cut. |
+
+### Rejected (8)
+
+| Source | Kind | Area | Relation | Licence | Pinned | Checked | Notes |
+|---|---|---|---|---|---|---|---|
+| [claude-code-video-toolkit](https://github.com/digitalsamba/claude-code-video-toolkit) | tool | video | referenced | MIT | — | 2026-11-19 | A workspace you clone and work inside, from script to MP4, built on Remotion with voices and models on paid cloud GPUs (Modal, RunPod, Elev… |
+| [claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) | skill | video | referenced | MIT | — | 2026-11-19 | Ten motion-design rules for Remotion films and a render-stills-and-look loop. |
+| [fal-skills](https://github.com/fal-ai-community/skills) | skill | video | referenced | MIT | — | 2026-11-19 | Thirty-six skills for generating images, video, audio and 3D on fal.ai's paid hosted models; no local path; the genmedia CLI installs by cu… |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | skill | video | referenced | MIT | — | 2026-11-17 | Clones web UI animations into code; it does not make videos. |
+| [remotion-skills](https://github.com/remotion-dev/skills) | skill | video | referenced | none | — | 2026-11-19 | Remotion's official skills, mirrored from the Remotion repo with no licence file of their own. |
 | [take-one](https://github.com/talsiach/take-one) | skill | video | referenced | MIT | — | 2026-11-17 | Overlaps huashu-motion; aimed at product ads; 1-2 hours and 0.4-0.7M tokens per 30 s film; suggests paid services through affiliate links;… |
+| [video-editor-skills](https://github.com/appariciojunior/video-editor-skills) | skill | video | referenced | CC-BY-NC-4.0 | — | 2026-11-19 | Twelve prose skills for editing talking-head videos through DaVinci Resolve Studio, which is paid (the free Resolve has no external scripti… |
+| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | skill | video | referenced | Apache-2.0 | — | 2026-11-19 | Promo films of web and desktop products from 124 shot cards, built on Remotion. |
 
 ### Triage notes
 
 | Source | Read on | Entries | Pages | Waiting | Index only | Deferred | Rejected |
 |---|---|---|---|---|---|---|---|
+| [awesome-claude-video-skills](awesome-claude-video-skills.md) | 2026-11-19 | 526 | 0 | 0 | 64 | 7 | 455 |
 | [Awesome Mobile Robotics](awesome-mobile-robotics.md) | 2026-11-18 | 533 | 6 | 17 | 438 | 4 | 68 |
 | [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 54 | 0 | 54 | 0 | 4 |
 | [Awesome Robot Learning](awesome-robot-learning.md) | 2026-11-18 | 56 | 2 | 10 | 35 | 0 | 9 |

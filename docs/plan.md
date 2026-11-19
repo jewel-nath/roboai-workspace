@@ -200,7 +200,7 @@ sources: []
 |---|---|---|
 | **First-class** | Skills, tested setup, MCP where one exists | FreeCAD Python (headless `freecadcmd` build scripts; FreeCAD MCP for live GUI work), KiCad with the Konnect MCP, MuJoCo, Gazebo, ROS 2 |
 | **Documented** | A wiki page only | Fusion 360, EasyEDA, build123d, CadQuery, OpenSCAD, Isaac Sim |
-| **Video** | See [Video track](#10-video-track) | explainroo and video-director (core), huashu-motion (trial), earshot (later) |
+| **Video** | See [Video track](#10-video-track) | explainroo and video-director (core), huashu-motion and HyperFrames (trial), earshot and claude-video (later) |
 
 The FreeCAD standard is the pattern OrbiBot already uses: FreeCAD 1.1 Python scripts run headless,
 shared geometry in `params.py`, one module per part, explicit layout versions, guards and a build
@@ -321,10 +321,21 @@ part in exploded views, ROS 2 tutorials, and a way for builders to make videos o
 | [video-director](https://github.com/win4r/video-director) | Directing method and QA scripts (timeline check, render QA) for any renderer | planned, core | MIT; Python with numpy and Pillow, ffmpeg |
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | Promo and launch films as one HTML file (GSAP, Three.js), local music, point-at-frame editor, 12 templates | planned, trial | MIT (+ GSAP licence); Node 22+; tested on macOS only |
 | [earshot](https://github.com/Leonxlnx/earshot) | Sound critique, sync checks, 252 code-made sound effects, MCP server | planned, later | MIT; uv, ~1.1 GB models; check torch on Python 3.14 |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) | HTML, GSAP and Three.js rendered to MP4 frame by frame, so a GLB animation is deterministic | planned, trial (V3) | Apache-2.0; Node 22+, ffmpeg, Chrome; Windows render CI; telemetry on by default; pre-1.0 |
+| [claude-video](https://github.com/bradautomates/claude-video) | Lets an agent watch a video: frames plus a transcript, for a visual check of renders and for robot demo videos as sources | planned, later | MIT; Python, ffmpeg, yt-dlp; CI on Windows; local engine only, no Gemini key |
 | [take-one](https://github.com/talsiach/take-one) | One-line ad and music-video studio | rejected 2026-11-12 | Overlaps huashu-motion; product-ad focus; 1–2 h per 30 s; pushes paid services; macOS only |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | Clones web UI animations into code | rejected 2026-11-12 | Not a video maker; needs Bun; Windows untested |
 
 This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 2026-11-12).
+
+A second review on 2026-11-19 read ten more repos, one of them a list of 526 video skills
+([triage note](../sources/awesome-claude-video-skills.md)). Besides HyperFrames and claude-video
+above, seven are `watching` in the registry: manim-skill (kinematics clips),
+claude-animation-skills (a labelled exploded view), make-blender-education-video-skill (the Blender
+path), agent-screenplay (re-recordable tutorials), makemyclip-editor (builders' footage), and
+claude-video-vision and video-use. Six are rejected: the four built on Remotion (its licence),
+fal-skills (paid generated media) and video-editor-skills (paid DaVinci Resolve Studio,
+non-commercial licence). Nothing was installed.
 
 ### Video type → tool chain
 
@@ -332,7 +343,7 @@ This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 
 |---|---|
 | Open-source robot explainer | Atlas profile → script → explainroo (spec cards, how-it-works diagram, cost chart) → video-director QA |
 | Control concepts (PID, kinematics, filters) | explainroo with the math computed in `scenes.js`, so plots are real step responses |
-| OrbiBot exploded view | FreeCAD → one GLB per part → Three.js explode/assemble animation → clip inside an explainroo narration |
+| OrbiBot exploded view | FreeCAD → one GLB per part → Three.js explode/assemble animation (huashu-motion or HyperFrames, V3 decides) → clip inside an explainroo narration |
 | ROS 2 tutorial | Screen recording (`explainroo record` or OBS) → `explainroo cut` → narration with code steps |
 | A builder's project video | `/make-video` playbook reading `PROJECT.md`, CAD and photos; huashu-motion for promos |
 
@@ -345,6 +356,25 @@ This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 
 - `video-ros2-tutorial` — record, cut, narrate.
 - A **RoboAI look**: one explainroo look file (colours, fonts) so every video reads as one channel.
 
+Methods from the 2026-11-19 review to write into these skills in our own words (the registry
+entry named is where each came from):
+
+- Drive every animation from the frame number, never a clock, so renders do not flicker
+  (`remotion-skills`).
+- Keep a claim ledger: every fact on screen tied to a source, and one approved still before the
+  full render (`make-blender-education-video-skill`).
+- Cut by word timestamps, not loudness, with short pads around words and shorter pauses in
+  tutorials than in vlogs (`video-editor-skills`).
+- In ffmpeg, extract each segment, join them without re-encoding, fade briefly at cuts and burn
+  subtitles last, timed on the output; check a filmstrip-and-waveform image at each cut, with a cap
+  on retries (`video-use`).
+- Check a shot spec, cameras included, before rendering; after it, check for frozen frames,
+  loudness and layout (`claude-code-video-toolkit`).
+- Write each shot as a card: its intent, the motion, and a table of parameters with typical values
+  and what each changes (`video-shotcraft`).
+- For the RoboAI look: eased or spring motion, never linear; staggered entrances; one theme file
+  (`claude-remotion-skill`).
+
 ### Where things live
 
 - Third-party video tools are installed from upstream at user level, pinned, and recorded in the
@@ -355,11 +385,14 @@ This machine already has Node 22.23, ffmpeg 8.1, Chrome, uv and Python (checked 
 
 ### Caveats
 
-- All four tools are weeks old and change fast — pin versions and benchmark each bump.
+- These tools are weeks or months old and change fast — pin versions and benchmark each bump.
 - explainroo adds an "explainroo.com" corner mark (`"watermark": false` turns it off; its author asks
   to keep it). huashu-motion ends films with "Made with huashu-motion" (can be turned off).
 - Kokoro has no Bangla voice. Bangla narration needs a recorded voice (Whisper still times the words)
-  or a paid voice service that supports it — not yet checked.
+  or a paid voice service that supports it — not yet checked. Two leads from the 2026-11-19
+  review, also unchecked: OmniVoice (AGPL; Linux and an NVIDIA GPU) and Sarvam AI (paid).
+- Remotion is source-available, not open source: a for-profit company of four or more people needs a
+  paid Company License, so no core tool here may depend on it.
 
 ## 11. Migration
 
@@ -508,6 +541,10 @@ All dated 2026-11-12.
   the `sim-gazebo` skill, and the Nav2 and ros2_control tutorials run in it.
 - **2026-11-19: a legacy skill that falls to the documented tier becomes a wiki page** within the
   length limits above, not a copy of the long text: `isaac-sim` became `wiki/tools/isaac-sim.md`.
+- **2026-11-19: no core video tool depends on Remotion.** Its licence charges any for-profit
+  company of four or more people, and the video track is meant for any builder. HyperFrames is
+  added as a trial for exploded views and claude-video for later; nothing is installed before the
+  V1 pilot.
 
 ## 14. Open questions
 
