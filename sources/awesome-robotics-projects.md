@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 195, pages: 19, waiting: 15, index_only: 127, deferred: 1, rejected: 33}
+counts: {entries: 195, pages: 25, waiting: 9, index_only: 127, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -62,6 +62,12 @@ software sections belong to Phase 4.
 | TurtleBot | [TurtleBot (1, 2 and 4)](../wiki/robots/turtlebot.md) | B |
 | Pixi: Modern package management for Robotics | [Pixi (with RoboStack)](../wiki/tools/pixi.md) | B |
 | rerun.io | [Rerun](../wiki/tools/rerun.md) | B |
+| Gazebo | [Gazebo](../wiki/tools/gazebo.md) | A |
+| MuJoCo | [MuJoCo](../wiki/tools/mujoco.md) | A |
+| NVIDIA Isaac Sim | [Isaac Sim](../wiki/tools/isaac-sim.md) | A |
+| Webots | [Webots](../wiki/tools/webots.md) | B |
+| AI Habitat | [Habitat](../wiki/tools/habitat.md) | B |
+| CARLA | [CARLA](../wiki/tools/carla.md) | B |
 
 ## Waiting for a page
 
@@ -71,15 +77,9 @@ software sections belong to Phase 4.
 | Linorobot | `software/linorobot2` | B | nav | ROS 2 stack, firmware and configs for building DIY 2WD, 4WD and mecanum bases |
 | Robotics Middleware Framework | `software/open-rmf` | B | ops | Open-RMF, the ROS 2 framework for multi-vendor fleets sharing lifts, doors and corridors |
 | borglab/gtsam | `software/gtsam` | A | perception | Factor-graph library behind LIO-SAM and many sensor-fusion stacks; iSAM2 is part of it |
-| Gazebo | `tools/gazebo` | A | sim | The default open simulator for ROS 2 robots, with sensors and the ros_gz bridge |
 | LIBERO | `learning/libero` | B | learning | Simulated manipulation benchmark that most recent VLA and imitation-learning papers report on |
-| MuJoCo | `tools/mujoco` | A | sim | Fast, accurate contact physics; the standard simulator for robot learning and RL |
-| NVIDIA Isaac Sim | `tools/isaac-sim` | A | sim | NVIDIA's GPU simulator with photoreal sensors and the base of Isaac Lab; open source since 2025 |
-| Webots | `tools/webots` | B | sim | Mature open simulator with a large robot library, popular in teaching |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
 | autowarefoundation/autoware.universe | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |
-| AI Habitat | `tools/habitat` | B | sim | Meta's fast embodied-AI simulator for navigation and rearrangement; the standard in indoor-navigation research |
-| CARLA | `tools/carla` | B | sim | The main open simulator for self-driving research, with a ROS 2 bridge and scenario tools |
 | OmniGibson | `learning/behavior-1k` | B | learning | Same project as BEHAVIOR-1K: its repo now holds both the OmniGibson simulator and the benchmark |
 | SimplerEnv | `learning/simpler-env` | B | learning | Simulated evaluation matched to real Google Robot and WidowX setups; widely reported for VLAs |
 

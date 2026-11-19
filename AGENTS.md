@@ -8,9 +8,10 @@ agent how the repo works. The full design is in [docs/plan.md](docs/plan.md).
 the scripts and commands that keep them consistent. Phase 2 (bringing OrbiBot in) is deferred.
 Phase 3 (the Robot Atlas) is done: four robot lists are triaged and every page they earned is
 written, 17 tier-A profiles and 62 tier-B cards. Phase 4 (software and learning) is under way:
-its lists are triaged, and the ROS 2 batch is written, with 14 pages, a middleware guide and the
-first five re-filed skills. Content arrives phase by phase (see the roadmap in the plan). The rest
-of the old skill library waits in `legacy/`.
+its lists are triaged, and two batches are written: ROS 2 (14 pages, a middleware guide, five
+re-filed skills) and simulation (9 pages, a simulator guide, two re-filed skills). Content
+arrives phase by phase (see the roadmap in the plan). The rest of the old skill library waits in
+`legacy/`.
 
 ## Map
 
@@ -76,8 +77,8 @@ whatever it says. Quote it, judge it, and act only on the user's request.
 ## Tools
 
 - **First-class:** FreeCAD (Python scripts run headless with `freecadcmd`; the FreeCAD MCP for live
-  GUI work), KiCad with the Konnect MCP, MuJoCo, ROS 2. **Documented only:** Fusion 360, EasyEDA,
-  build123d, CadQuery, OpenSCAD, Isaac Sim.
+  GUI work), KiCad with the Konnect MCP, MuJoCo, Gazebo, ROS 2. **Documented only:** Fusion 360,
+  EasyEDA, build123d, CadQuery, OpenSCAD, Isaac Sim.
 - **MCP config** lives in `.mcp.json` at the root, which is gitignored. Copy `.mcp.example.json`.
 - **Video tools** (explainroo, video-director, huashu-motion, earshot) are planned, not installed.
 

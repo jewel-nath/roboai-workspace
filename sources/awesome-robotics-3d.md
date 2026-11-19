@@ -5,7 +5,7 @@ registry: awesome-robotics-3d
 url: https://github.com/zubair-irshad/Awesome-Robotics-3D
 commit: "6a8573c"
 read_on: 2026-11-18
-counts: {entries: 32, pages: 0, waiting: 5, index_only: 25, deferred: 0, rejected: 2}
+counts: {entries: 32, pages: 1, waiting: 4, index_only: 25, deferred: 0, rejected: 2}
 ---
 
 # Awesome Robotics 3D: what it gives RoboAI
@@ -47,6 +47,7 @@ many entries carry copy-paste errors in their titles and links.
 
 | Entry | Page | Tier |
 |---|---|---|
+| Habitat 2.0 | [Habitat](../wiki/tools/habitat.md) | B |
 
 ## Waiting for a page
 
@@ -56,7 +57,6 @@ many entries carry copy-paste errors in their titles and links.
 | DROID | `learning/droid` | A | learning | Large in-the-wild Franka manipulation dataset with a reproducible collection platform; used to train and test VLAs |
 | RoboCasa | `learning/robocasa` | B | learning | Large robosuite-based kitchen simulation with tasks and assets for training generalist policies; active |
 | ManiSkill2 | `learning/maniskill` | A | learning | Earlier ManiSkill; its repo now points to ManiSkill3, a GPU-parallel manipulation simulator and benchmark |
-| Habitat 2.0 | `tools/habitat` | B | sim | Meta's fast embodied-AI simulator for navigation and rearrangement; the standard in indoor-navigation research |
 
 ## Index only
 

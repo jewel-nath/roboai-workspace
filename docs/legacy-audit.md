@@ -47,10 +47,10 @@ it.
 | `ros2-control` | 621 | Humble | — | `skills/ros2-control` | re-filed 2026-11-18 |
 | `ros2-web-bridge` | 1072 | — | robotics-agent-skills | `skills/ros2-web-bridge` | re-filed 2026-11-18 |
 | `robot-modeling` | 594 | — | — | `skills/ros2-robot-description` | re-filed 2026-11-18 |
-| `gazebo` | 599 | Humble | — | `skills/sim-gazebo` | re-file; Classic → migration note |
+| `gazebo` | 599 | Humble | — | `skills/sim-gazebo` | re-filed 2026-11-19; Classic → migration note |
 | `mujoco` | 988 | — | — | `skills/sim-mujoco` | merge with OrbiBot's `mujoco-sim` |
-| `isaac-sim` | 676 | Humble | — | `wiki/tools/isaac-sim.md` | to wiki (documented tier) |
-| `sim-to-real` | 550 | Humble, Jazzy | — | `skills/sim-to-real` | merge with `guides/sim-to-real-pipeline.md`, neutral example |
+| `isaac-sim` | 676 | Humble | — | `wiki/tools/isaac-sim.md` | re-filed 2026-11-19 to the wiki (documented tier) |
+| `sim-to-real` | 550 | Humble, Jazzy | — | `skills/sim-to-real` | re-filed 2026-11-19, merged with `guides/sim-to-real-pipeline.md` |
 | `camera-vision` | 557 | Humble | robotics-agent-skills | `skills/perception-camera` | re-file |
 | `lidar-pointcloud` | 687 | — | robotics-agent-skills | `skills/perception-lidar` | re-file |
 | `sensor-fusion-slam` | 779 | — | — | `skills/perception-slam` | re-file |
@@ -80,7 +80,7 @@ it.
 | `guides/robot-bringup.md` | 390 | `playbooks/` + `skills/ops-bringup` | merge |
 | `guides/hardware-integration.md` | 675 | `playbooks/` | re-file |
 | `guides/sensor-calibration.md` | 424 | `playbooks/` | re-file |
-| `guides/sim-to-real-pipeline.md` | 311 | `skills/sim-to-real` | merge |
+| `guides/sim-to-real-pipeline.md` | 311 | `skills/sim-to-real` | re-filed 2026-11-19 (merged) |
 | `guides/production-deployment.md` | 692 | `playbooks/` | re-file; neutral example |
 | `guides/testing-strategy.md` | 965 | `playbooks/` | re-file; absorb `rules/robotics-testing.md`; neutral example |
 | `rules/ros2-general.md`, `ros2-nodes.md`, `ros2-communication.md` | 188 | `.claude/rules/` | re-file |

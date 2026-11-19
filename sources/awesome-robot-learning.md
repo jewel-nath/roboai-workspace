@@ -5,7 +5,7 @@ registry: awesome-robot-learning
 url: https://github.com/RayYoh/Awesome-Robot-Learning
 commit: "41eb274"
 read_on: 2026-11-18
-counts: {entries: 56, pages: 0, waiting: 12, index_only: 35, deferred: 0, rejected: 9}
+counts: {entries: 56, pages: 2, waiting: 10, index_only: 35, deferred: 0, rejected: 9}
 ---
 
 # Awesome Robot Learning: what it gives RoboAI
@@ -46,6 +46,8 @@ and four 2026 additions that promote their authors' own projects.
 
 | Entry | Page | Tier |
 |---|---|---|
+| mujoco_menagerie | [MuJoCo](../wiki/tools/mujoco.md) | A |
+| Genesis | [Genesis](../wiki/tools/genesis.md) | B |
 
 ## Waiting for a page
 
@@ -55,10 +57,8 @@ and four 2026 additions that promote their authors' own projects.
 | OmniGibson | `learning/behavior-1k` | B | learning | Same project as BEHAVIOR-1K: its repo now holds both the OmniGibson simulator and the benchmark |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation framework that robomimic, LIBERO and RoboCasa build on; maintained and MIT-licensed |
 | RoboCasa | `learning/robocasa` | B | learning | Large robosuite-based kitchen simulation with tasks and assets for training generalist policies; active |
-| mujoco_menagerie | `tools/mujoco` | A | sim | DeepMind's curated MuJoCo models of real robots; the first place to look for a robot's simulation model |
 | ManiSkill3 | `learning/maniskill` | A | learning | GPU-parallel SAPIEN simulator and benchmark for manipulation learning; fast, active and Apache-2.0 |
 | Calvin | `learning/calvin` | B | learning | Long-horizon, language-conditioned manipulation benchmark in PyBullet; a standard test for language policies and VLAs |
-| Genesis | `tools/genesis` | B | sim | GPU physics simulator with a Python API for robot learning; a newer alternative to Isaac Sim and MuJoCo |
 | RLBench | `learning/rlbench` | B | learning | CoppeliaSim manipulation benchmark behind PerAct, RVT and most 3D policies; licence allows non-commercial research only |
 | LeRobot | `learning/lerobot` | A | learning | Hugging Face's library of datasets, policies (ACT, Diffusion Policy, pi0) and low-cost arm support; the default hobby stack |
 | Open X-Embodiment | `learning/open-x-embodiment` | A | learning | Pooled multi-robot dataset and RT-X models; the pretraining mix behind Octo, OpenVLA and most open VLAs |

@@ -5,7 +5,7 @@ registry: awesome-robotics-manipulation
 url: https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation
 commit: "14f72df"
 read_on: 2026-11-18
-counts: {entries: 109, pages: 0, waiting: 28, index_only: 77, deferred: 0, rejected: 4}
+counts: {entries: 109, pages: 1, waiting: 27, index_only: 77, deferred: 0, rejected: 4}
 ---
 
 # Awesome-Robotics-Manipulation: what it gives RoboAI
@@ -58,6 +58,7 @@ X-Embodiment, DROID) and the simulators and benchmarks (robosuite, ManiSkill, Is
 
 | Entry | Page | Tier |
 |---|---|---|
+| GENESIS | [Genesis](../wiki/tools/genesis.md) | B |
 
 ## Waiting for a page
 
@@ -81,7 +82,6 @@ X-Embodiment, DROID) and the simulators and benchmarks (robosuite, ManiSkill, Is
 | Robomimic | `learning/robomimic` | B | learning | Imitation-learning framework and datasets on robosuite; MIT, maintained |
 | RLBench | `learning/rlbench` | B | learning | Historic CoppeliaSim benchmark used by PerAct and RVT; non-commercial research licence |
 | Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU-parallel RL and imitation framework on Isaac Sim; BSD-3-Clause, very active |
-| GENESIS | `tools/genesis` | B | sim | Fast Python physics platform for robot learning; Apache-2.0, very active |
 | RoboCasa | `learning/robocasa` | B | learning | Large household-kitchen simulation on robosuite for generalist policies; MIT, active |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation framework under robomimic, RoboCasa and many benchmarks; MIT, maintained |
 | DROID | `learning/droid` | A | learning | Large in-the-wild Franka teleoperation dataset with a reproducible robot platform; openpi trains on it |

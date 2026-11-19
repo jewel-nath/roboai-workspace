@@ -14,9 +14,10 @@ learning, and the videos that explain it.
 
 **Being redesigned (November 2026).** The structure, templates, source registry, scripts and
 commands are done (Phases 0 and 1). The [Robot Atlas](wiki/robots/README.md) has 79 robots:
-17 full profiles and 62 short cards (Phase 3). Phase 4 has begun with ROS 2: 14
-[tool](wiki/tools/README.md) and [software](wiki/software/README.md) pages, a
-[middleware guide](wiki/guides/choose-a-ros2-middleware.md) and five [skills](skills/). Content
+17 full profiles and 62 short cards (Phase 3). Phase 4 has covered ROS 2 and simulation: 23
+[tool](wiki/tools/README.md) and [software](wiki/software/README.md) pages, guides to
+[choosing a middleware](wiki/guides/choose-a-ros2-middleware.md) and
+[a simulator](wiki/guides/choose-a-simulator.md), and seven [skills](skills/). Content
 arrives phase by phase; the [roadmap](docs/plan.md#12-roadmap) says in what order. The rest of the
 previous skill library is kept in [legacy/](legacy/) until it is re-filed.
 

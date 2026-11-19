@@ -12,5 +12,6 @@ Template: [templates/guide.md](../../templates/guide.md).
 <!-- index:start -->
 | Guide | Question | Recommendation |
 |---|---|---|
+| [Choose a robot simulator](choose-a-simulator.md) | Which simulator should I use for my robot? | Gazebo (Harmonic on Jazzy, Jetty on Lyrical) for a ROS 2 robot; MuJoCo for contact-rich control and learning; Isaac Sim only for photoreal sensors on an RTX GPU; CARLA for cars, Webots for teaching, Habitat only for embodied-AI navigation benchmarks. |
 | [Choose a ROS 2 middleware](choose-a-ros2-middleware.md) | Which ROS 2 middleware (RMW) should my robot use? | Keep the default Fast DDS on one machine or a wired LAN; move the whole system to rmw_zenoh when nodes talk over Wi-Fi or across networks (Tier 1 from Kilted, so on Lyrical); use Cyclone DDS when the robot's SDK speaks it. |
 <!-- index:end -->

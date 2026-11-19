@@ -7,7 +7,7 @@ Every tool page says its **support tier** (plan §7):
 
 | Tier | Meaning | Tools |
 |---|---|---|
-| `first-class` | Skills, a tested setup, an MCP server where one exists | FreeCAD (Python), KiCad (with Konnect), MuJoCo, ROS 2 |
+| `first-class` | Skills, a tested setup, an MCP server where one exists | FreeCAD (Python), KiCad (with Konnect), MuJoCo, Gazebo, ROS 2 |
 | `documented` | This wiki page only | Fusion 360, EasyEDA, build123d, CadQuery, OpenSCAD, Isaac Sim |
 
 Video tools go in `video/` once the video track starts.
@@ -28,4 +28,13 @@ Video tools go in `video/` once the video track starts.
 | [PlotJuggler](plotjuggler.md) | tool | ros2 | documented | MPL-2.0 | — | gui-only | 2026-11-18 |
 | [Rerun](rerun.md) | tool | ros2 | documented | MIT OR Apache-2.0 | — | api | 2026-11-18 |
 | [ROS 2](ros2.md) | framework | ros2 | first-class | Apache-2.0 | — | cli | 2026-11-18 |
+| [CARLA](carla.md) | tool | sim | documented | MIT | — | script | 2026-11-19 |
+| [CoppeliaSim](coppeliasim.md) | tool | sim | documented | GPL-3.0-or-later | — | script | 2026-11-19 |
+| [Gazebo](gazebo.md) | tool | sim | first-class | Apache-2.0 | — | cli | 2026-11-19 |
+| [Genesis](genesis.md) | library | sim | documented | Apache-2.0 | — | script | 2026-11-19 |
+| [Habitat](habitat.md) | library | sim | documented | MIT | — | script | 2026-11-19 |
+| [Isaac Sim](isaac-sim.md) | tool | sim | documented | Apache-2.0 | — | script | 2026-11-19 |
+| [MuJoCo](mujoco.md) | library | sim | first-class | Apache-2.0 | — | script | 2026-11-19 |
+| [PyBullet](pybullet.md) | library | sim | documented | Zlib | — | script | 2026-11-19 |
+| [Webots](webots.md) | tool | sim | documented | Apache-2.0 | — | script | 2026-11-19 |
 <!-- index:end -->

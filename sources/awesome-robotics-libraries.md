@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 3, waiting: 28, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 12, waiting: 19, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -60,20 +60,22 @@ end of each section.
 | ROS 2 | [ROS 2](../wiki/tools/ros2.md) | A |
 | urdf | [URDF and xacro](../wiki/software/urdf.md) | A |
 | Foxglove Studio | [Foxglove](../wiki/tools/foxglove.md) | B |
+| Genesis | [Genesis](../wiki/tools/genesis.md) | B |
+| MuJoCo | [MuJoCo](../wiki/tools/mujoco.md) | A |
+| Bullet | [PyBullet](../wiki/tools/pybullet.md) | B |
+| Webots | [Webots](../wiki/tools/webots.md) | B |
+| Isaac Sim | [Isaac Sim](../wiki/tools/isaac-sim.md) | A |
+| Gazebo Sim | [Gazebo](../wiki/tools/gazebo.md) | A |
+| CoppeliaSim | [CoppeliaSim](../wiki/tools/coppeliasim.md) | B |
+| MuJoCo Menagerie | [MuJoCo](../wiki/tools/mujoco.md) | A |
+| CARLA | [CARLA](../wiki/tools/carla.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
 | pinocchio | `software/pinocchio` | A | manip | Fast rigid-body dynamics with analytical derivatives; the base of much legged and arm control code |
-| Genesis | `tools/genesis` | B | sim | Popular GPU-parallel simulator for robot learning; its speed claims need comparing with MuJoCo and Isaac |
-| MuJoCo | `tools/mujoco` | A | sim | The default physics engine for robot learning and control research; a first-class tool here |
-| Bullet | `tools/pybullet` | B | sim | PyBullet is still in many learning repos and tutorials, though newer simulators overtake it |
 | Drake | `software/drake` | A | manip | Planning, control and contact-rich simulation in one maintained toolbox; strong for manipulation |
-| Webots | `tools/webots` | B | sim | Mature open-source simulator with ROS 2 support; common in teaching and lighter than Gazebo |
-| Isaac Sim | `tools/isaac-sim` | A | sim | NVIDIA's GPU simulator with RTX sensors; the base of Isaac Lab and much sim-to-real work |
-| Gazebo Sim | `tools/gazebo` | A | sim | The simulator paired with ROS 2; the Nav2 and ros2_control tutorials run in it |
-| CoppeliaSim | `tools/coppeliasim` | B | sim | Long-standing simulator, formerly V-REP, used in teaching and research; free for education |
 | OMPL | `software/ompl` | A | manip | The sampling-based planner library behind MoveIt; the reference for RRT and PRM planners |
 | MoveIt! | `software/moveit2` | A | manip | The standard ROS arm motion-planning framework; MoveIt 2 is what builders use today |
 | cuRobo | `software/curobo` | B | manip | GPU collision-free motion generation, now Apache-2.0; a fast alternative to OMPL for arms |
@@ -87,8 +89,6 @@ end of each section.
 | Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim; the standard for locomotion RL and sim-to-real |
 | ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulation and benchmark on SAPIEN; widely used for robot learning |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
-| MuJoCo Menagerie | `tools/mujoco` | A | sim | DeepMind's curated MuJoCo models of real robots; the first place to look for a robot's simulation model |
-| CARLA | `tools/carla` | B | sim | The main open simulator for self-driving research, with a ROS 2 bridge and scenario tools |
 | ORB-SLAM2 | `software/orb-slam3` | B | perception | The classic feature-based visual SLAM and a baseline in papers; the ORB-SLAM3 page covers the family |
 | Contact-GraspNet | `learning/contact-graspnet` | B | manip | Common 6-DoF grasp generator from depth point clouds; NVIDIA non-commercial licence, quiet since 2024 |
 | Gymnasium | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |

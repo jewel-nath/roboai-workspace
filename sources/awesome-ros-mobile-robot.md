@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 185, pages: 13, waiting: 17, index_only: 119, deferred: 11, rejected: 25}
+counts: {entries: 185, pages: 14, waiting: 16, index_only: 119, deferred: 11, rejected: 25}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -53,12 +53,12 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | ROS2 (release list) | [ROS 2](../wiki/tools/ros2.md) | A |
 | "Bridge for Non-ROS Programs(JSON API)" (rosbridge_suite) | [rosbridge_suite](../wiki/software/rosbridge-suite.md) | B |
 | "ros_control" | [ros2_control](../wiki/software/ros2-control.md) | A |
+| Gazebo (release list) | [Gazebo](../wiki/tools/gazebo.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Gazebo (release list) | `tools/gazebo` | A | sim | The default open simulator for ROS 2 robots, with sensors and the ros_gz bridge |
 | "AprilTag" | `software/apriltag` | B | perception | The standard fiducial markers for pose, calibration and docking; maintained C library with ROS 2 nodes |
 | "YOLOv3" | `learning/yolo` | B | perception | The YOLO family is the usual real-time detector on robots; the linked darknet_ros is ROS 1 and stale |
 | Feature Matching (OpenCV feature2d tutorials) | `software/opencv` | A | perception | The base computer-vision library under most robot perception code, from calibration to features |

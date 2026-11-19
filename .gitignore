@@ -19,6 +19,8 @@ vendor/
 # Local scratch
 .archive/
 references/
+# A skill's references/ folder is part of the skill
+!skills/*/references/
 
 # Python
 __pycache__/

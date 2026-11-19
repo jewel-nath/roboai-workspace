@@ -62,10 +62,10 @@ Status as of March 2026, when the skills were last updated:
 ### Simulation
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [gazebo](skills/gazebo/SKILL.md) | Gazebo Classic & Sim: SDF worlds, plugins, physics, sensor models | ✅ |
-| [isaac-sim](skills/isaac-sim/SKILL.md) | NVIDIA Isaac Sim: USD format, photorealistic rendering, synthetic data | ✅ |
+| [gazebo](../skills/sim-gazebo/SKILL.md) (re-filed as `sim-gazebo`) | Gazebo Classic & Sim: SDF worlds, plugins, physics, sensor models | ✅ |
+| [isaac-sim](../wiki/tools/isaac-sim.md) (re-filed as a wiki page) | NVIDIA Isaac Sim: USD format, photorealistic rendering, synthetic data | ✅ |
 | [mujoco](skills/mujoco/SKILL.md) | MuJoCo physics: contact modeling, MJCF, optimal control | ✅ |
-| [sim-to-real](skills/sim-to-real/SKILL.md) | Domain transfer: reality gap, domain adaptation, validation | ✅ |
+| [sim-to-real](../skills/sim-to-real/SKILL.md) (re-filed) | Domain transfer: reality gap, domain adaptation, validation | ✅ |
 
 ### Perception
 | Skill | Description | Status |
@@ -193,7 +193,7 @@ Multi-skill workflow guides:
 | [Robot Bringup](guides/robot-bringup.md) | First power-on checklist | ✅ |
 | [Sensor Calibration](guides/sensor-calibration.md) | End-to-end calibration workflow | ✅ |
 | [Hardware Integration](guides/hardware-integration.md) | Wiring to first ROS2 topic | ✅ |
-| [Sim-to-Real Pipeline](guides/sim-to-real-pipeline.md) | Full sim-to-real transfer | ✅ |
+| [Sim-to-Real Pipeline](../skills/sim-to-real/SKILL.md) (merged into `sim-to-real`) | Full sim-to-real transfer | ✅ |
 | [Production Deployment](guides/production-deployment.md) | Pre-deployment checklist, staging, rollback | ✅ |
 | [Testing Strategy](guides/testing-strategy.md) | Unit → integration → sim → HIL → field testing | ✅ |
 

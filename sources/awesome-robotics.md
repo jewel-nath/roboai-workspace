@@ -5,7 +5,7 @@ registry: awesome-robotics
 url: https://github.com/kiloreux/awesome-robotics
 commit: "067f76e"
 read_on: 2026-11-18
-counts: {entries: 147, pages: 1, waiting: 6, index_only: 106, deferred: 1, rejected: 33}
+counts: {entries: 147, pages: 4, waiting: 3, index_only: 106, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics: what it gives RoboAI
@@ -54,14 +54,14 @@ resources (Linorobot and PythonRobotics), and a reading list worth keeping as in
 | Entry | Page | Tier |
 |---|---|---|
 | ROS2 | [ROS 2](../wiki/tools/ros2.md) | A |
+| Gazebo | [Gazebo](../wiki/tools/gazebo.md) | A |
+| V-REP | [CoppeliaSim](../wiki/tools/coppeliasim.md) | B |
+| Webots | [Webots](../wiki/tools/webots.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Gazebo | `tools/gazebo` | A | sim | The standard open simulator paired with ROS 2, with physics, sensors and the ros_gz bridge. |
-| V-REP | `tools/coppeliasim` | B | sim | Now CoppeliaSim: a full-featured simulator common in teaching, with a GPL core and free education build. |
-| Webots | `tools/webots` | B | sim | Apache-licensed simulator with official ROS 2 support; a lighter alternative to Gazebo. |
 | Drake | `software/drake` | A | manip | TRI's toolbox for dynamics, optimisation-based planning and simulation, common in manipulation research. |
 | Linorobot | `software/linorobot2` | B | nav | Open ROS 2 stack with Nav2 and SLAM wired in, plus a hardware guide for DIY wheeled bases. |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Readable Python samples of localisation, SLAM, planning and tracking algorithms; the usual place to learn them. |

@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 10, waiting: 30, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 13, waiting: 27, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -124,6 +124,9 @@ rejected.
 | Fast-RTPS | [Fast DDS](../wiki/software/fast-dds.md) | B |
 | cyclonedds | [Cyclone DDS](../wiki/software/cyclone-dds.md) | B |
 | rosbridge_suite | [rosbridge_suite](../wiki/software/rosbridge-suite.md) | B |
+| Webots | [Webots](../wiki/tools/webots.md) | B |
+| carla | [CARLA](../wiki/tools/carla.md) | B |
+| Ignition Robotics | [Gazebo](../wiki/tools/gazebo.md) | A |
 
 ## Waiting for a page
 
@@ -131,9 +134,6 @@ rejected.
 |---|---|---|---|---|
 | Autoware.Auto | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |
 | Drake | `software/drake` | A | manip | TRI's model-based dynamics, optimisation and planning toolbox; strong for manipulation and contact |
-| Webots | `tools/webots` | B | sim | Open-source simulator with many robot models; a common Gazebo alternative, strong in teaching |
-| carla | `tools/carla` | B | sim | The main open simulator for self-driving research, with a ROS 2 bridge and scenario tools |
-| Ignition Robotics | `tools/gazebo` | A | sim | Gazebo (renamed from Ignition in 2022) is the default ROS 2 simulator |
 | kalibr | `software/kalibr` | B | perception | The usual camera and camera-IMU calibration toolbox for visual-inertial systems; last commit March 2024 |
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |

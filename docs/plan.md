@@ -4,7 +4,8 @@ Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-
 under way.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
 templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
 consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 has triaged
-its lists and written its first batch, ROS 2 core and tooling ([progress](#phase-4-plan)). The
+its lists and written its first two batches, ROS 2 core and tooling, and simulation
+([progress](#phase-4-plan)). The
 [roadmap](#12-roadmap) says what comes next.
 
 ## Contents
@@ -197,7 +198,7 @@ sources: []
 
 | Tier | Meaning | Tools |
 |---|---|---|
-| **First-class** | Skills, tested setup, MCP where one exists | FreeCAD Python (headless `freecadcmd` build scripts; FreeCAD MCP for live GUI work), KiCad with the Konnect MCP, MuJoCo, ROS 2 |
+| **First-class** | Skills, tested setup, MCP where one exists | FreeCAD Python (headless `freecadcmd` build scripts; FreeCAD MCP for live GUI work), KiCad with the Konnect MCP, MuJoCo, Gazebo, ROS 2 |
 | **Documented** | A wiki page only | Fusion 360, EasyEDA, build123d, CadQuery, OpenSCAD, Isaac Sim |
 | **Video** | See [Video track](#10-video-track) | explainroo and video-director (core), huashu-motion (trial), earshot (later) |
 
@@ -455,6 +456,7 @@ and ROS Index instead of a list (see Decisions).
 |---|---|---|
 | Triage | 2026-11-18 | 2,488 new rows; 92 pages wait in seven batches |
 | ROS 2 core and tooling | 2026-11-18 | 14 pages (6 profiles, 8 cards, with rmw_zenoh from the ROS docs), the [middleware guide](../wiki/guides/choose-a-ros2-middleware.md), 5 skills re-filed |
+| Simulation | 2026-11-19 | 9 pages (Gazebo, MuJoCo and Isaac Sim profiles, 6 cards), the [simulator guide](../wiki/guides/choose-a-simulator.md), 2 skills re-filed, `isaac-sim` moved to the wiki |
 
 ## 13. Decisions
 
@@ -502,12 +504,13 @@ All dated 2026-11-12.
   packages and middleware go in `wiki/software/`.
 - **2026-11-18: tool pages have length limits:** a tier-A page at most 180 lines and 14 sources, a
   tier-B card at most 90 lines and 8 sources. `version.tested` stays empty until we run it.
+- **2026-11-19: Gazebo is first-class** beside MuJoCo: it is the simulator paired with ROS 2, has
+  the `sim-gazebo` skill, and the Nav2 and ros2_control tutorials run in it.
+- **2026-11-19: a legacy skill that falls to the documented tier becomes a wiki page** within the
+  length limits above, not a copy of the long text: `isaac-sim` became `wiki/tools/isaac-sim.md`.
 
 ## 14. Open questions
 
 - **Video language:** English, Bangla, or both?
 - **Review day** for `/review-sources` (OrbiBot uses Friday).
-- **Gazebo's tier:** first-class with ROS 2, or documented beside MuJoCo?
-- **Legacy skills that fall to the documented tier** (such as `isaac-sim`): keep the long text as a
-  wiki page, or trim it?
 - **GitHub token** for the source checks: which account, kept in an environment variable.
