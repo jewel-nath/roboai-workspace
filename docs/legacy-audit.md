@@ -38,13 +38,15 @@ Phases 4 and 5 (Phase 2, which first held it, is deferred); nothing new is added
 
 Lines and distros as found. "Source" is the outside project a skill was partly adapted from, per
 `NOTICE`. Destinations follow [plan §11](plan.md#11-migration) and may change during review.
+A row marked "re-filed" gives the date; the old file then leaves `legacy/`, and git history keeps
+it.
 
 | Old skill | Lines | Distros named | Source | Destination | Action |
 |---|---|---|---|---|---|
-| `ros2` | 704 | Humble | robotics-agent-skills | `skills/ros2-core` | re-file |
-| `ros2-control` | 621 | Humble | — | `skills/ros2-control` | re-file |
-| `ros2-web-bridge` | 1072 | — | robotics-agent-skills | `skills/ros2-web-bridge` | re-file, neutral example |
-| `robot-modeling` | 594 | — | — | `skills/ros2-robot-description` | re-file |
+| `ros2` | 704 | Humble | robotics-agent-skills | `skills/ros2-core` | re-filed 2026-11-18 |
+| `ros2-control` | 621 | Humble | — | `skills/ros2-control` | re-filed 2026-11-18 |
+| `ros2-web-bridge` | 1072 | — | robotics-agent-skills | `skills/ros2-web-bridge` | re-filed 2026-11-18 |
+| `robot-modeling` | 594 | — | — | `skills/ros2-robot-description` | re-filed 2026-11-18 |
 | `gazebo` | 599 | Humble | — | `skills/sim-gazebo` | re-file; Classic → migration note |
 | `mujoco` | 988 | — | — | `skills/sim-mujoco` | merge with OrbiBot's `mujoco-sim` |
 | `isaac-sim` | 676 | Humble | — | `wiki/tools/isaac-sim.md` | to wiki (documented tier) |
@@ -69,7 +71,7 @@ Lines and distros as found. "Source" is the outside project a skill was partly a
 | `safety-systems` | 1124 | Humble | robotics-agent-skills | `skills/arch-safety` | re-file, neutral example |
 | `robot-bringup` | 1190 | Humble, Jazzy | robotics-agent-skills | `skills/ops-bringup` | merge with `guides/robot-bringup.md`, neutral example |
 | `deployment-fleet` | 1417 | Jazzy | — | `skills/ops-fleet` | re-file; most OrbiBot examples |
-| `docker-ros2-ci` | 948 | Humble, Jazzy | robotics-agent-skills | `skills/ops-docker-ci` | re-file, neutral example |
+| `docker-ros2-ci` | 948 | Humble, Jazzy | robotics-agent-skills | `skills/ops-docker-ci` | re-filed 2026-11-18 |
 
 ## Guides, rules, commands, scripts
 
@@ -84,8 +86,8 @@ Lines and distros as found. "Source" is the outside project a skill was partly a
 | `rules/ros2-general.md`, `ros2-nodes.md`, `ros2-communication.md` | 188 | `.claude/rules/` | re-file |
 | `rules/robotics-testing.md` | 54 | `playbooks/` testing | merge |
 | `rules/clean-architecture.md`, `robot-specific.md` | 69 | `.claude/rules/` or drop | decide on review |
-
-All `rules/` files and `commands/ros2.md` were adapted from ros2-claude-code-template.
-| `commands/ros2.md` | 74 | `wiki/tools/ros2.md` (CLI reference) | re-file |
+| `commands/ros2.md` | 74 | `wiki/tools/ros2.md` (CLI reference) | re-filed 2026-11-18 |
 | `scripts/validate-skills.py` | 184 | `tools/lint.py` | replaced by `tools/lint.py` (Phase 1); delete on re-filing |
 | `README.md`, `CONTRIBUTING.md` | — | — | superseded by the new README, AGENTS.md and CONTRIBUTING.md |
+
+All `rules/` files and `commands/ros2.md` were adapted from ros2-claude-code-template.

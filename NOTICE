@@ -5,21 +5,20 @@ This product includes material adapted from the projects below.
 
 - robotics-agent-skills
   (https://github.com/arpitg1304/robotics-agent-skills), Apache-2.0.
-  By arpitg1304 and its contributors. Parts of legacy/skills/ros2,
-  camera-vision, lidar-pointcloud and safety-systems are adapted from its
-  ros2, robot-perception and robotics-security skills, and
-  legacy/skills/robot-architecture draws on its robotics-design-patterns
-  skill. Parts of legacy/skills/robot-bringup, ros2-web-bridge and
-  docker-ros2-ci are adapted from its robot-bringup, ros2-web-integration
-  and docker-ros2-development skills. The material was renamed, merged into
-  larger skills, reorganised, and rewritten and extended in places.
+  By arpitg1304 and its contributors. Parts of skills/ros2-core,
+  ros2-web-bridge and ops-docker-ci draw on its ros2, ros2-web-integration
+  and docker-ros2-development skills. Parts of legacy/skills/camera-vision,
+  lidar-pointcloud and safety-systems are adapted from its robot-perception
+  and robotics-security skills, legacy/skills/robot-architecture draws on
+  its robotics-design-patterns skill, and legacy/skills/robot-bringup on its
+  robot-bringup skill. The material was renamed, merged into larger skills,
+  reorganised, and rewritten and extended in places.
 
 - ros2-claude-code-template
   (https://github.com/harunkurtdev/ros2-claude-code-template), Apache-2.0.
-  By harunkurtdev; its README states the Apache License 2.0.
-  legacy/commands/ros2.md and the files in legacy/rules/ are adapted from
-  its .claude/commands and .claude/rules files, renamed, reorganised and
-  rewritten in places.
+  By harunkurtdev; its README states the Apache License 2.0. The files in
+  legacy/rules/ are adapted from its .claude/rules files, renamed,
+  reorganised and rewritten in places.
 
 Every outside source is recorded in sources/registry.yaml. This file is
 generated from it by tools/build_index.py: edit the registry, not this file.

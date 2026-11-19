@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 0, waiting: 31, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 3, waiting: 28, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -57,13 +57,14 @@ end of each section.
 
 | Entry | Page | Tier |
 |---|---|---|
+| ROS 2 | [ROS 2](../wiki/tools/ros2.md) | A |
+| urdf | [URDF and xacro](../wiki/software/urdf.md) | A |
+| Foxglove Studio | [Foxglove](../wiki/tools/foxglove.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| ROS 2 | `software/ros2` | A | ros2 | The standard robot middleware and tool ecosystem; most open robot software targets it |
-| urdf | `software/urdf` | A | ros2 | The robot model format that ROS, MoveIt, Gazebo and most simulators read; every ROS robot needs one |
 | pinocchio | `software/pinocchio` | A | manip | Fast rigid-body dynamics with analytical derivatives; the base of much legged and arm control code |
 | Genesis | `tools/genesis` | B | sim | Popular GPU-parallel simulator for robot learning; its speed claims need comparing with MuJoCo and Isaac |
 | MuJoCo | `tools/mujoco` | A | sim | The default physics engine for robot learning and control research; a first-class tool here |
@@ -86,7 +87,6 @@ end of each section.
 | Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim; the standard for locomotion RL and sim-to-real |
 | ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulation and benchmark on SAPIEN; widely used for robot learning |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
-| Foxglove Studio | `tools/foxglove` | B | ros2 | Widely used ROS 2 and MCAP data viewer; closed source since 2024, with a free account tier |
 | MuJoCo Menagerie | `tools/mujoco` | A | sim | DeepMind's curated MuJoCo models of real robots; the first place to look for a robot's simulation model |
 | CARLA | `tools/carla` | B | sim | The main open simulator for self-driving research, with a ROS 2 bridge and scenario tools |
 | ORB-SLAM2 | `software/orb-slam3` | B | perception | The classic feature-based visual SLAM and a baseline in papers; the ORB-SLAM3 page covers the family |

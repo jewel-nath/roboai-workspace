@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 195, pages: 17, waiting: 17, index_only: 127, deferred: 1, rejected: 33}
+counts: {entries: 195, pages: 19, waiting: 15, index_only: 127, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -60,6 +60,8 @@ software sections belong to Phase 4.
 | Thor (AngelLM) | [Thor (AngelLM)](../wiki/robots/angellm-thor.md) | B |
 | Reachy 2 (Pollen Robotics) | [Reachy and Reachy 2](../wiki/robots/reachy.md) | B |
 | TurtleBot | [TurtleBot (1, 2 and 4)](../wiki/robots/turtlebot.md) | B |
+| Pixi: Modern package management for Robotics | [Pixi (with RoboStack)](../wiki/tools/pixi.md) | B |
+| rerun.io | [Rerun](../wiki/tools/rerun.md) | B |
 
 ## Waiting for a page
 
@@ -69,8 +71,6 @@ software sections belong to Phase 4.
 | Linorobot | `software/linorobot2` | B | nav | ROS 2 stack, firmware and configs for building DIY 2WD, 4WD and mecanum bases |
 | Robotics Middleware Framework | `software/open-rmf` | B | ops | Open-RMF, the ROS 2 framework for multi-vendor fleets sharing lifts, doors and corridors |
 | borglab/gtsam | `software/gtsam` | A | perception | Factor-graph library behind LIO-SAM and many sensor-fusion stacks; iSAM2 is part of it |
-| Pixi: Modern package management for Robotics | `tools/pixi` | B | ros2 | Conda-based package manager for reproducible ROS 2 setups on Linux, macOS and Windows (RoboStack) |
-| rerun.io | `tools/rerun` | B | ros2 | Open visualiser for multimodal robot data; LeRobot uses it to browse datasets |
 | Gazebo | `tools/gazebo` | A | sim | The default open simulator for ROS 2 robots, with sensors and the ros_gz bridge |
 | LIBERO | `learning/libero` | B | learning | Simulated manipulation benchmark that most recent VLA and imitation-learning papers report on |
 | MuJoCo | `tools/mujoco` | A | sim | Fast, accurate contact physics; the standard simulator for robot learning and RL |

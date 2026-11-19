@@ -1,10 +1,11 @@
 # RoboAI Workspace — Plan
 
-Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-11-18.** This
-plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure, templates,
-frontmatter and source registry; Phase 1 built the scripts and commands that keep them consistent;
-Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). The [roadmap](#12-roadmap) says
-what comes next.
+Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-11-18; Phase 4
+under way.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
+templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
+consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 has triaged
+its lists and written its first batch, ROS 2 core and tooling ([progress](#phase-4-plan)). The
+[roadmap](#12-roadmap) says what comes next.
 
 ## Contents
 
@@ -448,6 +449,13 @@ and ROS Index instead of a list (see Decisions).
 3. **Each batch** ends with the index generator, the lint and one commit. The MuJoCo, control and
    firmware skills stay in `legacy/` for Phase 5.
 
+**Progress.**
+
+| Step | Done | Result |
+|---|---|---|
+| Triage | 2026-11-18 | 2,488 new rows; 92 pages wait in seven batches |
+| ROS 2 core and tooling | 2026-11-18 | 14 pages (6 profiles, 8 cards, with rmw_zenoh from the ROS docs), the [middleware guide](../wiki/guides/choose-a-ros2-middleware.md), 5 skills re-filed |
+
 ## 13. Decisions
 
 All dated 2026-11-12.
@@ -490,6 +498,10 @@ All dated 2026-11-12.
   (the May 2026 LTS) differs.
 - **2026-11-18: the architecture and safety skills join Phase 4's operations batch;** the legacy
   audit gave them no phase.
+- **2026-11-18: the ROS 2 page lives in `wiki/tools/`,** as §7 makes ROS 2 a first-class tool; its
+  packages and middleware go in `wiki/software/`.
+- **2026-11-18: tool pages have length limits:** a tier-A page at most 180 lines and 14 sources, a
+  tier-B card at most 90 lines and 8 sources. `version.tested` stays empty until we run it.
 
 ## 14. Open questions
 

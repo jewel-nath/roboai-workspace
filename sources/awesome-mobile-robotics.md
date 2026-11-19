@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 0, waiting: 23, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 2, waiting: 21, index_only: 438, deferred: 4, rejected: 68}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -60,6 +60,8 @@ tools. 23 of 533 entries earn a page.
 
 | Entry | Page | Tier |
 |---|---|---|
+| Robot Operating System (ROS) | [ROS 2](../wiki/tools/ros2.md) | A |
+| RobotWebTools | [rosbridge_suite](../wiki/software/rosbridge-suite.md) | B |
 
 ## Waiting for a page
 
@@ -68,14 +70,12 @@ tools. 23 of 533 entries earn a page.
 | KITTI Vision Benchmark Suite | `learning/kitti` | B | perception | The classic driving benchmark for odometry, SLAM and 3D detection; still cited everywhere |
 | TUM Dataset | `learning/tum-rgbd` | B | perception | The standard RGB-D benchmark with ground truth for visual odometry and SLAM |
 | ORB-SLAM2 | `software/orb-slam3` | B | perception | The classic feature-based visual SLAM and a baseline in papers; the ORB-SLAM3 page covers the family |
-| Robot Operating System (ROS) | `software/ros2` | A | ros2 | The standard robot middleware and tool ecosystem; ROS 1 has ended, so new work uses ROS 2 |
 | Gazebo | `tools/gazebo` | A | sim | The default ROS simulator for mobile robots and arms; actively developed, Apache-2.0 |
 | V-REP | `tools/coppeliasim` | B | sim | Now CoppeliaSim: a mature simulator often compared with Gazebo and Webots; commercial use needs a paid licence |
 | Webots | `tools/webots` | B | sim | Apache-2.0 simulator with many ready robot models and ROS 2 support; common in teaching |
 | Drake | `software/drake` | A | manip | Model-based planning, control and multibody dynamics toolbox from TRI and MIT; BSD-3-Clause |
 | Docker | `tools/docker` | B | ops | The usual way to package ROS 2 stacks and ship them to robots and CI |
 | ROS 2 Navigation | `software/nav2` | A | nav | The standard ROS 2 navigation stack: planners, controllers, costmaps and behaviour trees |
-| RobotWebTools | `software/rosbridge-suite` | B | ros2 | rosbridge and roslibjs connect ROS 2 to web pages; the usual base for robot web UIs |
 | NVidia Isaac Sim | `tools/isaac-sim` | A | sim | GPU simulator for photoreal sensors and robot learning; now open source under Apache-2.0 |
 | GTSAM | `software/gtsam` | A | perception | The factor-graph library behind many SLAM and VIO systems; BSD licence, actively maintained |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo-based manipulation framework under robomimic and LIBERO; MIT, maintained |

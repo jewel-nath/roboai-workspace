@@ -20,20 +20,21 @@ sources:
     license: Apache-2.0
     pinned: {version: , commit: }
     baseline: {as_of: 2026-11-12, commit: "f9bc546", commit_date: 2026-08-12, release: , stars: 401, archived: false}
-    used_in: [legacy/skills/ros2, legacy/skills/camera-vision, legacy/skills/lidar-pointcloud, legacy/skills/safety-systems, legacy/skills/robot-architecture, legacy/skills/robot-bringup, legacy/skills/ros2-web-bridge, legacy/skills/docker-ros2-ci]
+    used_in: [skills/ros2-core, skills/ros2-web-bridge, skills/ops-docker-ci, legacy/skills/camera-vision, legacy/skills/lidar-pointcloud, legacy/skills/safety-systems, legacy/skills/robot-architecture, legacy/skills/robot-bringup]
     benchmark:
     last_checked: 2026-11-17
     notes: The commit the old skills were adapted from was never recorded; this baseline is the upstream head at registration.
     notice: >
-      By arpitg1304 and its contributors. Parts of legacy/skills/ros2, camera-vision,
-      lidar-pointcloud and safety-systems are adapted from its ros2, robot-perception and
-      robotics-security skills, and legacy/skills/robot-architecture draws on its
-      robotics-design-patterns skill. Parts of legacy/skills/robot-bringup, ros2-web-bridge and
-      docker-ros2-ci are adapted from its robot-bringup, ros2-web-integration and
-      docker-ros2-development skills. The material was renamed, merged into larger skills,
-      reorganised, and rewritten and extended in places.
+      By arpitg1304 and its contributors. Parts of skills/ros2-core, ros2-web-bridge and
+      ops-docker-ci draw on its ros2, ros2-web-integration and docker-ros2-development skills.
+      Parts of legacy/skills/camera-vision, lidar-pointcloud and safety-systems are adapted from
+      its robot-perception and robotics-security skills, legacy/skills/robot-architecture draws
+      on its robotics-design-patterns skill, and legacy/skills/robot-bringup on its robot-bringup
+      skill. The material was renamed, merged into larger skills, reorganised, and rewritten and
+      extended in places.
     history:
       - {date: 2026-11-12, event: registered, note: from NOTICE during the Phase 0 legacy audit}
+      - {date: 2026-11-18, event: re-filed, note: "legacy ros2, ros2-web-bridge and docker-ros2-ci skills reviewed and rewritten as skills/ros2-core, ros2-web-bridge and ops-docker-ci (Phase 4)"}
 
   - id: ros2-claude-code-template
     url: https://github.com/harunkurtdev/ros2-claude-code-template
@@ -44,16 +45,16 @@ sources:
     license: Apache-2.0
     pinned: {version: , commit: }
     baseline: {as_of: 2026-11-12, commit: "5b3a43d", commit_date: 2026-06-03, release: , stars: 215, archived: false}
-    used_in: [legacy/rules, legacy/commands/ros2.md]
+    used_in: [legacy/rules]
     benchmark:
     last_checked: 2026-11-17
     notes: Licence stated in its README only; the repo has no licence file GitHub recognises. Commit taken was never recorded.
     notice: >
-      By harunkurtdev; its README states the Apache License 2.0. legacy/commands/ros2.md and the
-      files in legacy/rules/ are adapted from its .claude/commands and .claude/rules files,
-      renamed, reorganised and rewritten in places.
+      By harunkurtdev; its README states the Apache License 2.0. The files in legacy/rules/ are
+      adapted from its .claude/rules files, renamed, reorganised and rewritten in places.
     history:
       - {date: 2026-11-12, event: registered, note: from NOTICE during the Phase 0 legacy audit}
+      - {date: 2026-11-18, event: re-filed, note: "legacy/commands/ros2.md retired; wiki/tools/ros2.md gives its own CLI reference (Phase 4)"}
 
   # ---- cad and pcb: MCP servers used by OrbiBot (their guides come to mcp/ later) ----
 

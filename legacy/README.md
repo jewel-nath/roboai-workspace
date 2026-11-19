@@ -54,10 +54,10 @@ Status as of March 2026, when the skills were last updated:
 ### Core Middleware
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [ros2](skills/ros2/SKILL.md) | ROS2 development: nodes, topics, services, actions, launch files, QoS, lifecycle, DDS | ✅ |
-| [ros2-control](skills/ros2-control/SKILL.md) | ros2_control framework: hardware interfaces, controllers, transmissions | ✅ |
-| [ros2-web-bridge](skills/ros2-web-bridge/SKILL.md) | Web integration: rosbridge, FastAPI, WebSocket streaming, REST APIs | ✅ |
-| [robot-modeling](skills/robot-modeling/SKILL.md) | URDF, Xacro, TF2 transforms, robot state publisher | ✅ |
+| [ros2](../skills/ros2-core/SKILL.md) (re-filed as `ros2-core`) | ROS2 development: nodes, topics, services, actions, launch files, QoS, lifecycle, DDS | ✅ |
+| [ros2-control](../skills/ros2-control/SKILL.md) (re-filed) | ros2_control framework: hardware interfaces, controllers, transmissions | ✅ |
+| [ros2-web-bridge](../skills/ros2-web-bridge/SKILL.md) (re-filed) | Web integration: rosbridge, FastAPI, WebSocket streaming, REST APIs | ✅ |
+| [robot-modeling](../skills/ros2-robot-description/SKILL.md) (re-filed as `ros2-robot-description`) | URDF, Xacro, TF2 transforms, robot state publisher | ✅ |
 
 ### Simulation
 | Skill | Description | Status |
@@ -121,7 +121,7 @@ Status as of March 2026, when the skills were last updated:
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [robot-bringup](skills/robot-bringup/SKILL.md) | systemd, layered launch, udev, watchdog, production bringup | ✅ |
-| [docker-ros2-ci](skills/docker-ros2-ci/SKILL.md) | Docker builds, docker-compose, DDS in containers, CI with colcon | ✅ |
+| [docker-ros2-ci](../skills/ops-docker-ci/SKILL.md) (re-filed as `ops-docker-ci`) | Docker builds, docker-compose, DDS in containers, CI with colcon | ✅ |
 | [deployment-fleet](skills/deployment-fleet/SKILL.md) | OTA updates, fleet management, centralized logging, diagnostics | ✅ |
 
 ## Commands
@@ -130,7 +130,7 @@ Quick CLI reference for daily use and AI-assisted workflows:
 
 | File | Description |
 |------|-------------|
-| [commands/ros2.md](commands/ros2.md) | colcon build/test, `ros2 node/topic/service/action/param`, rqt, tf2_tools, ros2 doctor |
+| [commands/ros2.md](../wiki/tools/ros2.md) (re-filed into the ROS 2 page) | colcon build/test, `ros2 node/topic/service/action/param`, rqt, tf2_tools, ros2 doctor |
 
 ## Rules
 

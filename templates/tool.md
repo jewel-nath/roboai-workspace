@@ -19,6 +19,10 @@ sources: []        # - {url: , title: , accessed: }
 
 # <Name>
 
+<!-- Tier A keeps every section. A tier-B short card keeps the opening, When to use it, Setup,
+Traps, Alternatives and Sources; it adds How an agent works with it only when there is something
+real to say. -->
+
 <!-- Two lines: what it is and what a robot builder uses it for. -->
 
 ## When to use it

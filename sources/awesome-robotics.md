@@ -5,7 +5,7 @@ registry: awesome-robotics
 url: https://github.com/kiloreux/awesome-robotics
 commit: "067f76e"
 read_on: 2026-11-18
-counts: {entries: 147, pages: 0, waiting: 7, index_only: 106, deferred: 1, rejected: 33}
+counts: {entries: 147, pages: 1, waiting: 6, index_only: 106, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics: what it gives RoboAI
@@ -53,13 +53,13 @@ resources (Linorobot and PythonRobotics), and a reading list worth keeping as in
 
 | Entry | Page | Tier |
 |---|---|---|
+| ROS2 | [ROS 2](../wiki/tools/ros2.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
 | Gazebo | `tools/gazebo` | A | sim | The standard open simulator paired with ROS 2, with physics, sensors and the ros_gz bridge. |
-| ROS2 | `software/ros2` | A | ros2 | The middleware and tooling most open robots, and this wiki's skills, are built on. |
 | V-REP | `tools/coppeliasim` | B | sim | Now CoppeliaSim: a full-featured simulator common in teaching, with a GPL core and free education build. |
 | Webots | `tools/webots` | B | sim | Apache-licensed simulator with official ROS 2 support; a lighter alternative to Gazebo. |
 | Drake | `software/drake` | A | manip | TRI's toolbox for dynamics, optimisation-based planning and simulation, common in manipulation research. |

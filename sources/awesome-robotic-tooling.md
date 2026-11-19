@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 0, waiting: 40, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 10, waiting: 30, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -114,20 +114,26 @@ rejected.
 
 | Entry | Page | Tier |
 |---|---|---|
+| ROS | [ROS 2](../wiki/tools/ros2.md) | A |
+| colcon-core | [colcon](../wiki/tools/colcon.md) | A |
+| URDF | [URDF and xacro](../wiki/software/urdf.md) | A |
+| tf2 | [tf2](../wiki/software/tf2.md) | A |
+| PlotJuggler | [PlotJuggler](../wiki/tools/plotjuggler.md) | A |
+| marvros | [MAVROS](../wiki/software/mavros.md) | B |
+| Foxglove Studio | [Foxglove](../wiki/tools/foxglove.md) | B |
+| Fast-RTPS | [Fast DDS](../wiki/software/fast-dds.md) | B |
+| cyclonedds | [Cyclone DDS](../wiki/software/cyclone-dds.md) | B |
+| rosbridge_suite | [rosbridge_suite](../wiki/software/rosbridge-suite.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| ROS | `software/ros2` | A | ros2 | The standard robot middleware and tools; ROS 1 ended in May 2025, so the page covers ROS 2 |
 | Autoware.Auto | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |
-| colcon-core | `tools/colcon` | A | ros2 | The ROS 2 build tool every workspace uses; its flags and failures need explaining |
 | Drake | `software/drake` | A | manip | TRI's model-based dynamics, optimisation and planning toolbox; strong for manipulation and contact |
 | Webots | `tools/webots` | B | sim | Open-source simulator with many robot models; a common Gazebo alternative, strong in teaching |
 | carla | `tools/carla` | B | sim | The main open simulator for self-driving research, with a ROS 2 bridge and scenario tools |
 | Ignition Robotics | `tools/gazebo` | A | sim | Gazebo (renamed from Ignition in 2022) is the default ROS 2 simulator |
-| URDF | `software/urdf` | A | ros2 | The robot description format that ROS, MoveIt, Gazebo and most simulators read |
-| tf2 | `software/tf2` | A | ros2 | Every ROS robot tracks its coordinate frames over time with tf2 |
 | kalibr | `software/kalibr` | B | perception | The usual camera and camera-IMU calibration toolbox for visual-inertial systems; last commit March 2024 |
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
@@ -149,14 +155,8 @@ rejected.
 | ompl | `software/ompl` | A | manip | The sampling-based motion-planning library under MoveIt 2 and many other planners; BSD, maintained |
 | pinocchio | `software/pinocchio` | A | manip | Fast rigid-body kinematics and dynamics with derivatives; the base of many legged and arm control stacks |
 | rmf_core | `software/open-rmf` | B | ops | rmf_core is archived; its successor Open-RMF coordinates mixed robot fleets, doors and lifts in buildings |
-| PlotJuggler | `tools/plotjuggler` | A | ros2 | The usual time-series plotter for ROS 2 topics and bags; MPL-2.0, actively maintained |
-| marvros | `software/mavros` | B | ros2 | The MAVLink-to-ROS bridge for PX4 and ArduPilot drones; PX4 now also offers a native DDS link |
-| Foxglove Studio | `tools/foxglove` | B | ros2 | Widely used robotics visualiser; closed source since 2024, with Lichtblick continuing the last open code |
 | CloudCompare | `tools/cloudcompare` | B | perception | The common desktop tool to inspect, clean, align and compare point clouds and lidar maps |
 | jetson-containers | `tools/jetson-containers` | B | ops | Builds ROS 2, PyTorch and model containers for Jetson; the usual way to deploy ML on Jetson |
-| Fast-RTPS | `software/fast-dds` | B | ros2 | Fast DDS, formerly Fast-RTPS, the default ROS 2 middleware; its tuning matters for discovery and large data |
-| cyclonedds | `software/cyclone-dds` | B | ros2 | The other Tier 1 ROS 2 DDS middleware, often chosen for multi-machine robots |
-| rosbridge_suite | `software/rosbridge-suite` | B | ros2 | The JSON-over-WebSocket bridge that lets web pages and non-ROS programs talk to ROS 2 |
 | ros2_dds_security | `software/sros2` | B | ops | ROS 2's DDS security design, used through SROS2 for keys, encryption and access control |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
 

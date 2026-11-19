@@ -10,5 +10,7 @@ Template: [templates/guide.md](../../templates/guide.md).
 ## Index
 
 <!-- index:start -->
-_No pages yet._
+| Guide | Question | Recommendation |
+|---|---|---|
+| [Choose a ROS 2 middleware](choose-a-ros2-middleware.md) | Which ROS 2 middleware (RMW) should my robot use? | Keep the default Fast DDS on one machine or a wired LAN; move the whole system to rmw_zenoh when nodes talk over Wi-Fi or across networks (Tier 1 from Kilted, so on Lyrical); use Cyclone DDS when the robot's SDK speaks it. |
 <!-- index:end -->
