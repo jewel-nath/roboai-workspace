@@ -51,9 +51,9 @@ it.
 | `mujoco` | 988 | — | — | `skills/sim-mujoco` | merge with OrbiBot's `mujoco-sim` |
 | `isaac-sim` | 676 | Humble | — | `wiki/tools/isaac-sim.md` | re-filed 2026-11-19 to the wiki (documented tier) |
 | `sim-to-real` | 550 | Humble, Jazzy | — | `skills/sim-to-real` | re-filed 2026-11-19, merged with `guides/sim-to-real-pipeline.md` |
-| `camera-vision` | 557 | Humble | robotics-agent-skills | `skills/perception-camera` | re-file |
-| `lidar-pointcloud` | 687 | — | robotics-agent-skills | `skills/perception-lidar` | re-file |
-| `sensor-fusion-slam` | 779 | — | — | `skills/perception-slam` | re-file |
+| `camera-vision` | 557 | Humble | robotics-agent-skills | `skills/perception-camera` | re-filed 2026-11-23 |
+| `lidar-pointcloud` | 687 | — | robotics-agent-skills | `skills/perception-lidar` | re-filed 2026-11-23 |
+| `sensor-fusion-slam` | 779 | — | — | `skills/perception-slam` | re-filed 2026-11-23 |
 | `nav2` | 845 | — | — | `skills/nav-nav2` | re-file |
 | `path-planning` | 833 | — | — | `skills/nav-planning` | re-file |
 | `moveit2` | 947 | Humble | — | `skills/manip-moveit2` | re-file |

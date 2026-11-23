@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 6, waiting: 17, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 15, waiting: 8, index_only: 438, deferred: 4, rejected: 68}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -31,7 +31,7 @@ tools. 23 of 533 entries earn a page.
   2026-11-16, Apache-2.0; Drake 2026-11-17, BSD-3-Clause; moby 2026-11-18, Apache-2.0;
   navigation2 2026-11-17, Apache-2.0, BSD-3-Clause and LGPL-2.1-or-later by package;
   rosbridge_suite 2026-11-04, BSD-3-Clause; IsaacSim 2026-11-16, Apache-2.0; GTSAM 2026-11-18,
-  BSD-2-Clause; robosuite 2026-07-11, MIT; moveit2 2026-11-17, BSD-3-Clause; slam_toolbox
+  BSD-3-Clause; robosuite 2026-07-11, MIT; moveit2 2026-11-17, BSD-3-Clause; slam_toolbox
   2026-11-02, LGPL-2.1; PythonRobotics 2026-11-10, MIT; OctoMap 2026-09-26, BSD-3-Clause
   (octovis GPL-2.0); LIO-SAM 2023-04-17, BSD-3-Clause; open_vins 2025-11-30, GPL-3.0;
   BehaviorTree.CPP 2026-11-13, MIT; robotics-toolbox-python 2026-11-18, MIT; ORB_SLAM2
@@ -66,26 +66,26 @@ tools. 23 of 533 entries earn a page.
 | V-REP | [CoppeliaSim](../wiki/tools/coppeliasim.md) | B |
 | Webots | [Webots](../wiki/tools/webots.md) | B |
 | NVidia Isaac Sim | [Isaac Sim](../wiki/tools/isaac-sim.md) | A |
+| KITTI Vision Benchmark Suite | [KITTI and KITTI-360](../wiki/learning/datasets/kitti.md) | B |
+| TUM Dataset | [TUM RGB-D](../wiki/learning/datasets/tum-rgbd.md) | B |
+| ORB-SLAM2 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
+| GTSAM | [GTSAM](../wiki/software/gtsam.md) | A |
+| SLAM Toolbox | [SLAM Toolbox](../wiki/software/slam-toolbox.md) | A |
+| OctoMap | [OctoMap](../wiki/software/octomap.md) | B |
+| LIO-SAM | [LIO-SAM](../wiki/software/lio-sam.md) | B |
+| OpenVINS | [OpenVINS](../wiki/software/openvins.md) | B |
+| Segment Anything | [Segment Anything (SAM, SAM 2, SAM 3)](../wiki/learning/models/segment-anything.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| KITTI Vision Benchmark Suite | `learning/kitti` | B | perception | The classic driving benchmark for odometry, SLAM and 3D detection; still cited everywhere |
-| TUM Dataset | `learning/tum-rgbd` | B | perception | The standard RGB-D benchmark with ground truth for visual odometry and SLAM |
-| ORB-SLAM2 | `software/orb-slam3` | B | perception | The classic feature-based visual SLAM and a baseline in papers; the ORB-SLAM3 page covers the family |
 | Drake | `software/drake` | A | manip | Model-based planning, control and multibody dynamics toolbox from TRI and MIT; BSD-3-Clause |
 | Docker | `tools/docker` | B | ops | The usual way to package ROS 2 stacks and ship them to robots and CI |
 | ROS 2 Navigation | `software/nav2` | A | nav | The standard ROS 2 navigation stack: planners, controllers, costmaps and behaviour trees |
-| GTSAM | `software/gtsam` | A | perception | The factor-graph library behind many SLAM and VIO systems; BSD licence, actively maintained |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo-based manipulation framework under robomimic and LIBERO; MIT, maintained |
 | MoveIt | `software/moveit2` | A | manip | The standard ROS motion-planning framework for arms; the entry links ROS 1 MoveIt |
-| SLAM Toolbox | `software/slam-toolbox` | A | perception | The default 2D lidar SLAM in ROS 2 and Nav2: mapping, localisation and map merging |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
-| OctoMap | `software/octomap` | B | perception | Long-standing octree 3D occupancy map used by MoveIt and many aerial planners |
-| LIO-SAM | `software/lio-sam` | B | perception | Widely used lidar-inertial odometry and a common baseline; quiet since 2023 |
-| OpenVINS | `software/openvins` | B | perception | Well-documented filter-based visual-inertial estimator and a common VIO baseline; GPL-3.0 |
-| Segment Anything | `learning/segment-anything` | B | perception | Promptable segmentation models (SAM to SAM 3) used in many robot perception pipelines |
 | Groot 2 | `software/behaviortree-cpp` | A | nav | Groot 2 is BehaviorTree.CPP's editor; BT.CPP drives Nav2 and many robot task layers |
 | Robotics Toolbox for Python | `software/robotics-toolbox-python` | B | manip | Peter Corke's Python kinematics, dynamics and planning for teaching and prototyping; MIT, maintained |
 

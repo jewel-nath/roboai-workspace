@@ -148,17 +148,17 @@ limit and lists the pages it skipped.
 | Source | Read on | Entries | Pages | Waiting | Index only | Deferred | Rejected |
 |---|---|---|---|---|---|---|---|
 | [awesome-claude-video-skills](awesome-claude-video-skills.md) | 2026-11-19 | 526 | 0 | 0 | 64 | 7 | 455 |
-| [Awesome Mobile Robotics](awesome-mobile-robotics.md) | 2026-11-18 | 533 | 6 | 17 | 438 | 4 | 68 |
+| [Awesome Mobile Robotics](awesome-mobile-robotics.md) | 2026-11-18 | 533 | 15 | 8 | 438 | 4 | 68 |
 | [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 54 | 0 | 54 | 0 | 4 |
 | [Awesome Robot Learning](awesome-robot-learning.md) | 2026-11-18 | 56 | 2 | 10 | 35 | 0 | 9 |
-| [awesome-robotic-tooling](awesome-robotic-tooling.md) | 2026-11-18 | 938 | 13 | 27 | 577 | 71 | 250 |
+| [awesome-robotic-tooling](awesome-robotic-tooling.md) | 2026-11-18 | 938 | 27 | 13 | 577 | 71 | 250 |
 | [Awesome Robotics 3D](awesome-robotics-3d.md) | 2026-11-18 | 32 | 1 | 4 | 25 | 0 | 2 |
-| [Awesome Robotics Datasets](awesome-robotics-datasets.md) | 2026-11-18 | 77 | 0 | 2 | 52 | 0 | 23 |
-| [Awesome Robotics Foundation Models](awesome-robotics-foundation-models.md) | 2026-11-18 | 42 | 1 | 7 | 33 | 0 | 1 |
-| [Awesome Robotics Libraries](awesome-robotics-libraries.md) | 2026-11-18 | 229 | 12 | 19 | 124 | 33 | 41 |
+| [Awesome Robotics Datasets](awesome-robotics-datasets.md) | 2026-11-18 | 77 | 2 | 0 | 52 | 0 | 23 |
+| [Awesome Robotics Foundation Models](awesome-robotics-foundation-models.md) | 2026-11-18 | 42 | 4 | 4 | 33 | 0 | 1 |
+| [Awesome Robotics Libraries](awesome-robotics-libraries.md) | 2026-11-18 | 229 | 18 | 13 | 124 | 33 | 41 |
 | [Awesome-Robotics-Manipulation](awesome-robotics-manipulation.md) | 2026-11-18 | 109 | 1 | 27 | 77 | 0 | 4 |
-| [Awesome Robotics Projects](awesome-robotics-projects.md) | 2026-11-17 | 195 | 25 | 9 | 127 | 1 | 33 |
+| [Awesome Robotics Projects](awesome-robotics-projects.md) | 2026-11-17 | 195 | 26 | 8 | 127 | 1 | 33 |
 | [Awesome Robotics](awesome-robotics.md) | 2026-11-18 | 147 | 4 | 3 | 106 | 1 | 33 |
-| [awesome-ros-mobile-robot](awesome-ros-mobile-robot.md) | 2026-11-17 | 185 | 14 | 16 | 119 | 11 | 25 |
+| [awesome-ros-mobile-robot](awesome-ros-mobile-robot.md) | 2026-11-17 | 185 | 27 | 3 | 119 | 11 | 25 |
 | [Awesome Social Robots](awesome-social-robots.md) | 2026-11-17 | 92 | 11 | 0 | 45 | 0 | 36 |
 <!-- index:end -->

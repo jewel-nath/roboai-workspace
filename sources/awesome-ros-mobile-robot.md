@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 185, pages: 14, waiting: 16, index_only: 119, deferred: 11, rejected: 25}
+counts: {entries: 185, pages: 27, waiting: 3, index_only: 119, deferred: 11, rejected: 25}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -54,27 +54,27 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "Bridge for Non-ROS Programs(JSON API)" (rosbridge_suite) | [rosbridge_suite](../wiki/software/rosbridge-suite.md) | B |
 | "ros_control" | [ros2_control](../wiki/software/ros2-control.md) | A |
 | Gazebo (release list) | [Gazebo](../wiki/tools/gazebo.md) | A |
+| "AprilTag" | [AprilTag](../wiki/software/apriltag.md) | B |
+| "YOLOv3" | [YOLO](../wiki/learning/models/yolo.md) | B |
+| Feature Matching (OpenCV feature2d tutorials) | [OpenCV](../wiki/software/opencv.md) | A |
+| "VINS-Fusion" | [VINS-Fusion](../wiki/software/vins-fusion.md) | B |
+| "robot_localization" | [robot_localization](../wiki/software/robot-localization.md) | A |
+| GTSAM | [GTSAM](../wiki/software/gtsam.md) | A |
+| "Cartographer" | [Cartographer](../wiki/software/cartographer.md) | B |
+| "ORB-SLAM3" | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
+| "RTAB-Map" | [RTAB-Map](../wiki/software/rtab-map.md) | A |
+| "LIO-SAM" | [LIO-SAM](../wiki/software/lio-sam.md) | B |
+| "Octomap" | [OctoMap](../wiki/software/octomap.md) | B |
+| "KITTI" | [KITTI and KITTI-360](../wiki/learning/datasets/kitti.md) | B |
+| "TUM RGB-D SLAM Benchmark & Dataset" | [TUM RGB-D](../wiki/learning/datasets/tum-rgbd.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| "AprilTag" | `software/apriltag` | B | perception | The standard fiducial markers for pose, calibration and docking; maintained C library with ROS 2 nodes |
-| "YOLOv3" | `learning/yolo` | B | perception | The YOLO family is the usual real-time detector on robots; the linked darknet_ros is ROS 1 and stale |
-| Feature Matching (OpenCV feature2d tutorials) | `software/opencv` | A | perception | The base computer-vision library under most robot perception code, from calibration to features |
-| "VINS-Fusion" | `software/vins-fusion` | B | perception | A widely used visual-inertial odometry baseline for mono, stereo and GPS fusion; inactive since 2021 |
-| "robot_localization" | `software/robot-localization` | A | perception | The standard EKF/UKF package for fusing wheel odometry, IMU and GPS in ROS 2 |
-| GTSAM | `software/gtsam` | A | perception | Factor-graph library behind LIO-SAM and many sensor-fusion stacks; iSAM2 is part of it |
-| "Cartographer" | `software/cartographer` | B | perception | Google's 2D and 3D lidar SLAM, still common on ROS 2 robots; inactive since January 2024 |
-| "ORB-SLAM3" | `software/orb-slam3` | B | perception | The reference feature-based visual and visual-inertial SLAM; GPL-3.0, inactive since 2022 |
-| "RTAB-Map" | `software/rtab-map` | A | perception | Maintained RGB-D, stereo and lidar SLAM with ROS 2 support; a common default for 3D mapping |
-| "LIO-SAM" | `software/lio-sam` | B | perception | Widely used tightly coupled lidar-inertial SLAM built on GTSAM; inactive since 2023 |
-| "Octomap" | `software/octomap` | B | perception | Probabilistic octree 3D occupancy maps; MoveIt and many planners use them for collision checking |
 | ROS Navigation Stack (move_base architecture) | `software/nav2` | A | nav | This is the ROS 1 stack; its successor Nav2 is the standard ROS 2 navigation framework |
 | ROS Moveit (move_group architecture) | `software/moveit2` | A | manip | The standard ROS motion-planning framework; MoveIt 2 is its ROS 2 version |
 | "Open Motion Planning Library (OMPL)" | `software/ompl` | A | manip | The sampling-based planner library behind MoveIt; maintained |
-| "KITTI" | `learning/kitti` | B | perception | The classic driving benchmark for odometry, SLAM and 3D detection; still cited everywhere |
-| "TUM RGB-D SLAM Benchmark & Dataset" | `learning/tum-rgbd` | B | perception | The standard RGB-D benchmark with ground truth for visual odometry and SLAM |
 
 ## Index only
 

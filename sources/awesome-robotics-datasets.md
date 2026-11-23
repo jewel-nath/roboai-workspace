@@ -5,7 +5,7 @@ registry: awesome-robotics-datasets
 url: https://github.com/mint-lab/awesome-robotics-datasets
 commit: "9178fbf"
 read_on: 2026-11-18
-counts: {entries: 77, pages: 0, waiting: 2, index_only: 52, deferred: 0, rejected: 23}
+counts: {entries: 77, pages: 2, waiting: 0, index_only: 52, deferred: 0, rejected: 23}
 ---
 
 # Awesome Robotics Datasets: what it gives RoboAI
@@ -46,13 +46,13 @@ Newer College, Hilti).
 
 | Entry | Page | Tier |
 |---|---|---|
+| KITTI Vision Benchmark Suite and KITTI-360 | [KITTI and KITTI-360](../wiki/learning/datasets/kitti.md) | B |
+| TUM CVG Datasets | [TUM RGB-D](../wiki/learning/datasets/tum-rgbd.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| KITTI Vision Benchmark Suite and KITTI-360 | `learning/kitti` | B | perception | The standard lidar and visual odometry benchmark; still reported in 2026 papers, though non-commercial. |
-| TUM CVG Datasets | `learning/tum-rgbd` | B | perception | Hosts TUM RGB-D and TUM VI, standard indoor visual SLAM benchmarks whose trajectory format tools read. |
 
 ## Index only
 

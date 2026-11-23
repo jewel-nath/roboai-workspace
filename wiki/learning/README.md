@@ -15,5 +15,12 @@ Robot learning: policies, foundation models and datasets. Template:
 ## Index
 
 <!-- index:start -->
-_No pages yet._
+| Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
+|---|---|---|---|---|---|---|---|
+| [FoundationPose](models/foundationpose.md) | model | perception | — | LicenseRef-NVIDIA-Source-Code-License | — | script | 2026-11-23 |
+| [Grounding DINO](models/grounding-dino.md) | model | perception | — | Apache-2.0 | — | script | 2026-11-23 |
+| [KITTI and KITTI-360](datasets/kitti.md) | dataset | perception | — | CC-BY-NC-SA-3.0 | — | cli | 2026-11-23 |
+| [Segment Anything (SAM, SAM 2, SAM 3)](models/segment-anything.md) | model | perception | — | LicenseRef-SAM-License | — | script | 2026-11-23 |
+| [TUM RGB-D](datasets/tum-rgbd.md) | dataset | perception | — | CC-BY-4.0 | — | cli | 2026-11-23 |
+| [YOLO](models/yolo.md) | model | perception | — | AGPL-3.0-or-later | — | cli | 2026-11-23 |
 <!-- index:end -->

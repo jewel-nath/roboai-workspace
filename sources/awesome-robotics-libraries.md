@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 12, waiting: 19, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 18, waiting: 13, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -30,7 +30,7 @@ end of each section.
   commit, licence file). Notes from that check: cuRobo is now Apache-2.0; Isaac Sim's repo code is
   Apache-2.0 but it needs NVIDIA Omniverse components under other terms; CoppeliaSimLib on GitHub
   is GPL-3.0-or-later; OctoMap is BSD-3-Clause with its octovis viewer GPL-2.0; GTSAM is
-  BSD-2-Clause; `ros2/ros2` is a repos manifest with no licence file (licences are per package).
+  BSD-3-Clause; `ros2/ros2` is a repos manifest with no licence file (licences are per package).
   Cartographer's last commit is 2024-01-05. `foxglove/studio` now holds only a README (last
   commit 2024-03-11): the Foxglove app is closed source and needs an account.
 - "MoveIt!" links `moveit/moveit` (MoveIt 1, ROS 1); its page is MoveIt 2, checked at
@@ -69,6 +69,12 @@ end of each section.
 | CoppeliaSim | [CoppeliaSim](../wiki/tools/coppeliasim.md) | B |
 | MuJoCo Menagerie | [MuJoCo](../wiki/tools/mujoco.md) | A |
 | CARLA | [CARLA](../wiki/tools/carla.md) | B |
+| Cartographer | [Cartographer](../wiki/software/cartographer.md) | B |
+| RTAB-Map | [RTAB-Map](../wiki/software/rtab-map.md) | A |
+| GTSAM | [GTSAM](../wiki/software/gtsam.md) | A |
+| OctoMap | [OctoMap](../wiki/software/octomap.md) | B |
+| PCL | [PCL (Point Cloud Library)](../wiki/software/pcl.md) | A |
+| ORB-SLAM2 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
 
 ## Waiting for a page
 
@@ -79,17 +85,11 @@ end of each section.
 | OMPL | `software/ompl` | A | manip | The sampling-based planner library behind MoveIt; the reference for RRT and PRM planners |
 | MoveIt! | `software/moveit2` | A | manip | The standard ROS arm motion-planning framework; MoveIt 2 is what builders use today |
 | cuRobo | `software/curobo` | B | manip | GPU collision-free motion generation, now Apache-2.0; a fast alternative to OMPL for arms |
-| Cartographer | `software/cartographer` | B | perception | Google's 2D and 3D SLAM, still in many ROS robots; no commit since January 2024 |
-| RTAB-Map | `software/rtab-map` | A | perception | Maintained RGB-D and lidar graph SLAM with ROS 2 support; a common choice for 3D mapping |
-| GTSAM | `software/gtsam` | A | perception | Factor-graph library under many SLAM and visual-inertial systems; the tool for custom estimators |
-| OctoMap | `software/octomap` | B | perception | The standard probabilistic 3D occupancy map; MoveIt uses it to sense obstacles |
-| PCL | `software/pcl` | A | perception | The standard C++ point-cloud library for filtering, registration and segmentation |
 | LeRobot | `learning/lerobot` | A | learning | Hugging Face's datasets, policies and low-cost robot support; the entry point for imitation learning |
 | Stable-Baselines3 | `learning/stable-baselines3` | B | learning | The usual first RL library: reliable PyTorch algorithms behind a Gymnasium interface |
 | Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim; the standard for locomotion RL and sim-to-real |
 | ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulation and benchmark on SAPIEN; widely used for robot learning |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
-| ORB-SLAM2 | `software/orb-slam3` | B | perception | The classic feature-based visual SLAM and a baseline in papers; the ORB-SLAM3 page covers the family |
 | Contact-GraspNet | `learning/contact-graspnet` | B | manip | Common 6-DoF grasp generator from depth point clouds; NVIDIA non-commercial licence, quiet since 2024 |
 | Gymnasium | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |

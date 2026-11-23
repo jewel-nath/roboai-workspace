@@ -4,9 +4,8 @@ Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-
 under way.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
 templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
 consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 has triaged
-its lists and written its first two batches, ROS 2 core and tooling, and simulation
-([progress](#phase-4-plan)). The
-[roadmap](#12-roadmap) says what comes next.
+its lists and written its first three batches, ROS 2 core and tooling, simulation, and
+perception and SLAM ([progress](#phase-4-plan)). The [roadmap](#12-roadmap) says what comes next.
 
 ## Contents
 
@@ -490,6 +489,7 @@ and ROS Index instead of a list (see Decisions).
 | Triage | 2026-11-18 | 2,488 new rows; 92 pages wait in seven batches |
 | ROS 2 core and tooling | 2026-11-18 | 14 pages (6 profiles, 8 cards, with rmw_zenoh from the ROS docs), the [middleware guide](../wiki/guides/choose-a-ros2-middleware.md), 5 skills re-filed |
 | Simulation | 2026-11-19 | 9 pages (Gazebo, MuJoCo and Isaac Sim profiles, 6 cards), the [simulator guide](../wiki/guides/choose-a-simulator.md), 2 skills re-filed, `isaac-sim` moved to the wiki |
+| Perception and SLAM | 2026-11-23 | 24 pages (8 profiles, 16 cards: libraries, SLAM and odometry, calibration, four models and two datasets in `wiki/learning/`), the [SLAM guide](../wiki/guides/choose-a-slam-system.md), 3 skills re-filed |
 
 ## 13. Decisions
 

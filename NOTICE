@@ -7,12 +7,13 @@ This product includes material adapted from the projects below.
   (https://github.com/arpitg1304/robotics-agent-skills), Apache-2.0.
   By arpitg1304 and its contributors. Parts of skills/ros2-core,
   ros2-web-bridge and ops-docker-ci draw on its ros2, ros2-web-integration
-  and docker-ros2-development skills. Parts of legacy/skills/camera-vision,
-  lidar-pointcloud and safety-systems are adapted from its robot-perception
-  and robotics-security skills, legacy/skills/robot-architecture draws on
-  its robotics-design-patterns skill, and legacy/skills/robot-bringup on its
-  robot-bringup skill. The material was renamed, merged into larger skills,
-  reorganised, and rewritten and extended in places.
+  and docker-ros2-development skills, and parts of skills/perception-camera
+  and perception-lidar on its robot-perception skill. Parts of
+  legacy/skills/safety-systems are adapted from its robotics-security skill,
+  legacy/skills/robot-architecture draws on its robotics-design-patterns
+  skill, and legacy/skills/robot-bringup on its robot-bringup skill. The
+  material was renamed, merged into larger skills, reorganised, and
+  rewritten and extended in places.
 
 - ros2-claude-code-template
   (https://github.com/harunkurtdev/ros2-claude-code-template), Apache-2.0.

@@ -5,7 +5,7 @@ registry: awesome-robotics-foundation-models
 url: https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models
 commit: "58ebfc2"
 read_on: 2026-11-18
-counts: {entries: 42, pages: 1, waiting: 7, index_only: 33, deferred: 0, rejected: 1}
+counts: {entries: 42, pages: 4, waiting: 4, index_only: 33, deferred: 0, rejected: 1}
 ---
 
 # Awesome Robotics Foundation Models: what it gives RoboAI
@@ -49,6 +49,9 @@ benchmarks.
 | Entry | Page | Tier |
 |---|---|---|
 | Habitat | [Habitat](../wiki/tools/habitat.md) | B |
+| Grounding DINO | [Grounding DINO](../wiki/learning/models/grounding-dino.md) | B |
+| Segment Anything | [Segment Anything (SAM, SAM 2, SAM 3)](../wiki/learning/models/segment-anything.md) | B |
+| FoundationPose | [FoundationPose](../wiki/learning/models/foundationpose.md) | B |
 
 ## Waiting for a page
 
@@ -56,9 +59,6 @@ benchmarks.
 |---|---|---|---|---|
 | RT-1 | `learning/rt-1` | B | learning | Google's robot transformer that set the large-scale imitation baseline; RT-1-X ships with Open X-Embodiment. Code frozen since 2023 |
 | Rt-2 | `learning/rt-2` | B | learning | The first vision-language-action model, the idea OpenVLA and pi0 build on; its weights were never released |
-| Grounding DINO | `learning/grounding-dino` | B | perception | Open-vocabulary detector that finds objects from a text prompt; often paired with SAM in robot pipelines |
-| Segment Anything | `learning/segment-anything` | B | perception | Promptable segmentation models (SAM, SAM 2, SAM 3) used to mask objects for grasping and tracking |
-| FoundationPose | `learning/foundationpose` | B | perception | NVIDIA's 6D pose estimation and tracking of unseen objects from a CAD model; non-commercial licence |
 | BEHAVIOR-1k | `learning/behavior-1k` | B | learning | Stanford's 1,000-activity household benchmark on its own OmniGibson simulator; active and MIT-licensed |
 | LIBERO | `learning/libero` | B | learning | The usual simulated benchmark for fine-tuning and comparing VLAs such as OpenVLA and pi0 |
 

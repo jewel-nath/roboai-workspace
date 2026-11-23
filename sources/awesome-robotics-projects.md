@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 195, pages: 25, waiting: 9, index_only: 127, deferred: 1, rejected: 33}
+counts: {entries: 195, pages: 26, waiting: 8, index_only: 127, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -68,6 +68,7 @@ software sections belong to Phase 4.
 | Webots | [Webots](../wiki/tools/webots.md) | B |
 | AI Habitat | [Habitat](../wiki/tools/habitat.md) | B |
 | CARLA | [CARLA](../wiki/tools/carla.md) | B |
+| borglab/gtsam | [GTSAM](../wiki/software/gtsam.md) | A |
 
 ## Waiting for a page
 
@@ -76,7 +77,6 @@ software sections belong to Phase 4.
 | LeRobot | `learning/lerobot` | A | learning | Hugging Face's library of datasets, policies and low-cost arm support; the centre of hobby robot learning |
 | Linorobot | `software/linorobot2` | B | nav | ROS 2 stack, firmware and configs for building DIY 2WD, 4WD and mecanum bases |
 | Robotics Middleware Framework | `software/open-rmf` | B | ops | Open-RMF, the ROS 2 framework for multi-vendor fleets sharing lifts, doors and corridors |
-| borglab/gtsam | `software/gtsam` | A | perception | Factor-graph library behind LIO-SAM and many sensor-fusion stacks; iSAM2 is part of it |
 | LIBERO | `learning/libero` | B | learning | Simulated manipulation benchmark that most recent VLA and imitation-learning papers report on |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
 | autowarefoundation/autoware.universe | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |

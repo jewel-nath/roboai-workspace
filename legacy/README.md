@@ -70,9 +70,9 @@ Status as of March 2026, when the skills were last updated:
 ### Perception
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [camera-vision](skills/camera-vision/SKILL.md) | Camera calibration, OpenCV, detection, tracking, depth pipelines | ✅ |
-| [lidar-pointcloud](skills/lidar-pointcloud/SKILL.md) | PCL, Open3D, filtering, registration, ICP, segmentation | ✅ |
-| [sensor-fusion-slam](skills/sensor-fusion-slam/SKILL.md) | Multi-sensor fusion, EKF, ORB-SLAM3, RTAB-Map, Cartographer | ✅ |
+| [camera-vision](../skills/perception-camera/SKILL.md) (re-filed as `perception-camera`) | Camera calibration, OpenCV, detection, tracking, depth pipelines | ✅ |
+| [lidar-pointcloud](../skills/perception-lidar/SKILL.md) (re-filed as `perception-lidar`) | PCL, Open3D, filtering, registration, ICP, segmentation | ✅ |
+| [sensor-fusion-slam](../skills/perception-slam/SKILL.md) (re-filed as `perception-slam`) | Multi-sensor fusion, EKF, ORB-SLAM3, RTAB-Map, Cartographer | ✅ |
 
 ### Navigation
 | Skill | Description | Status |

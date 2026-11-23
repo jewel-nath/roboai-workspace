@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 13, waiting: 27, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 27, waiting: 13, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -127,6 +127,20 @@ rejected.
 | Webots | [Webots](../wiki/tools/webots.md) | B |
 | carla | [CARLA](../wiki/tools/carla.md) | B |
 | Ignition Robotics | [Gazebo](../wiki/tools/gazebo.md) | A |
+| kalibr | [Kalibr](../wiki/software/kalibr.md) | B |
+| image_pipeline | [image_pipeline](../wiki/software/image-pipeline.md) | A |
+| apriltag_ros | [AprilTag](../wiki/software/apriltag.md) | B |
+| open3d | [Open3D](../wiki/software/open3d.md) | A |
+| octomap | [OctoMap](../wiki/software/octomap.md) | B |
+| KISS-ICP | [KISS-ICP](../wiki/software/kiss-icp.md) | B |
+| robot_localization | [robot_localization](../wiki/software/robot-localization.md) | A |
+| LIO_SAM | [LIO-SAM](../wiki/software/lio-sam.md) | B |
+| cartographer_ros | [Cartographer](../wiki/software/cartographer.md) | B |
+| slam_toolbox | [SLAM Toolbox](../wiki/software/slam-toolbox.md) | A |
+| VINS-Fusion | [VINS-Fusion](../wiki/software/vins-fusion.md) | B |
+| open_vins | [OpenVINS](../wiki/software/openvins.md) | B |
+| ORB_SLAM3 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
+| CloudCompare | [CloudCompare](../wiki/tools/cloudcompare.md) | B |
 
 ## Waiting for a page
 
@@ -134,28 +148,14 @@ rejected.
 |---|---|---|---|---|
 | Autoware.Auto | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |
 | Drake | `software/drake` | A | manip | TRI's model-based dynamics, optimisation and planning toolbox; strong for manipulation and contact |
-| kalibr | `software/kalibr` | B | perception | The usual camera and camera-IMU calibration toolbox for visual-inertial systems; last commit March 2024 |
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
-| image_pipeline | `software/image-pipeline` | A | perception | The standard ROS 2 path from camera driver to rectified, calibrated images and depth |
-| apriltag_ros | `software/apriltag` | B | perception | Widely used fiducial markers for pose, calibration and docking; this ROS 1 wrapper is dormant, ROS 2 ports are active |
-| open3d | `software/open3d` | A | perception | Modern 3D data library with a Python API for registration, reconstruction and visualisation; a guide compares it with PCL |
 | grid_map | `software/grid-map` | B | nav | Widely used ROS library for 2.5D grid and elevation maps; maintained for ROS 2, used for rough-terrain navigation |
-| octomap | `software/octomap` | B | perception | Long-standing probabilistic 3D occupancy map; MoveIt and many planners use it |
-| KISS-ICP | `software/kiss-icp` | B | perception | Popular, maintained LiDAR odometry with few parameters and ROS 2 support; a common baseline |
-| robot_localization | `software/robot-localization` | A | perception | Standard ROS 2 EKF and UKF nodes fusing odometry, IMU and GPS; the fusion package Nav2's docs use |
-| LIO_SAM | `software/lio-sam` | B | perception | Widely used lidar-inertial SLAM, still a common baseline in papers and robot stacks; dormant since 2023 |
-| cartographer_ros | `software/cartographer` | B | perception | Google's 2D and 3D lidar SLAM, long a ROS default; still packaged for ROS 2, barely maintained |
-| slam_toolbox | `software/slam-toolbox` | A | perception | The default 2D lidar SLAM and localisation package for ROS 2 and Nav2; actively maintained |
-| VINS-Fusion | `software/vins-fusion` | B | perception | Standard camera-plus-IMU state estimator and a common baseline; dormant since 2021, GPL-3.0 |
-| open_vins | `software/openvins` | B | perception | Maintained MSCKF visual-inertial odometry with good docs and ROS 2 support; a common research platform |
-| ORB_SLAM3 | `software/orb-slam3` | B | perception | Reference feature-based visual and visual-inertial SLAM; dormant since 2022 and GPL-3.0, but met everywhere |
 | BehaviorTree.CPP | `software/behaviortree-cpp` | A | nav | The C++ behaviour-tree library behind Nav2 and many ROS 2 task layers; MIT, actively maintained |
 | moveit | `software/moveit2` | A | manip | The standard ROS 2 arm motion-planning framework: planning, kinematics, collision checking and servoing |
 | ompl | `software/ompl` | A | manip | The sampling-based motion-planning library under MoveIt 2 and many other planners; BSD, maintained |
 | pinocchio | `software/pinocchio` | A | manip | Fast rigid-body kinematics and dynamics with derivatives; the base of many legged and arm control stacks |
 | rmf_core | `software/open-rmf` | B | ops | rmf_core is archived; its successor Open-RMF coordinates mixed robot fleets, doors and lifts in buildings |
-| CloudCompare | `tools/cloudcompare` | B | perception | The common desktop tool to inspect, clean, align and compare point clouds and lidar maps |
 | jetson-containers | `tools/jetson-containers` | B | ops | Builds ROS 2, PyTorch and model containers for Jetson; the usual way to deploy ML on Jetson |
 | ros2_dds_security | `software/sros2` | B | ops | ROS 2's DDS security design, used through SROS2 for keys, encryption and access control |
 | PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |

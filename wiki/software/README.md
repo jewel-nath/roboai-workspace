@@ -15,6 +15,23 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
 | [ros2_control](ros2-control.md) | framework | control | — | Apache-2.0 | — | script | 2026-11-18 |
+| [AprilTag](apriltag.md) | library | perception | — | BSD-2-Clause | — | cli | 2026-11-23 |
+| [Cartographer](cartographer.md) | library | perception | — | Apache-2.0 | — | cli | 2026-11-23 |
+| [GTSAM](gtsam.md) | library | perception | — | BSD-3-Clause | — | script | 2026-11-23 |
+| [image_pipeline](image-pipeline.md) | library | perception | — | BSD-3-Clause AND Apache-2.0 | — | cli | 2026-11-23 |
+| [Kalibr](kalibr.md) | tool | perception | — | BSD-4-Clause AND LGPL-3.0-or-later | — | cli | 2026-11-23 |
+| [KISS-ICP](kiss-icp.md) | library | perception | — | MIT | — | cli | 2026-11-23 |
+| [LIO-SAM](lio-sam.md) | library | perception | — | BSD-3-Clause | — | cli | 2026-11-23 |
+| [OctoMap](octomap.md) | library | perception | — | BSD-3-Clause | — | cli | 2026-11-23 |
+| [Open3D](open3d.md) | library | perception | — | MIT | — | script | 2026-11-23 |
+| [OpenCV](opencv.md) | library | perception | — | Apache-2.0 | — | script | 2026-11-23 |
+| [OpenVINS](openvins.md) | library | perception | — | GPL-3.0-or-later | — | cli | 2026-11-23 |
+| [ORB-SLAM3](orb-slam3.md) | library | perception | — | GPL-3.0-or-later | — | cli | 2026-11-23 |
+| [PCL (Point Cloud Library)](pcl.md) | library | perception | — | BSD-3-Clause | — | cli | 2026-11-23 |
+| [robot_localization](robot-localization.md) | library | perception | — | BSD-3-Clause | — | cli | 2026-11-23 |
+| [RTAB-Map](rtab-map.md) | library | perception | — | BSD-3-Clause | — | cli | 2026-11-23 |
+| [SLAM Toolbox](slam-toolbox.md) | library | perception | — | LGPL-2.1-only AND LGPL-3.0-or-later | — | cli | 2026-11-23 |
+| [VINS-Fusion](vins-fusion.md) | library | perception | — | GPL-3.0-only | — | cli | 2026-11-23 |
 | [Cyclone DDS](cyclone-dds.md) | library | ros2 | — | EPL-2.0 OR BSD-3-Clause | — | cli | 2026-11-18 |
 | [Fast DDS](fast-dds.md) | library | ros2 | — | Apache-2.0 | — | cli | 2026-11-18 |
 | [MAVROS](mavros.md) | library | ros2 | — | BSD-3-Clause OR GPL-3.0-only OR LGPL-3.0-only | — | cli | 2026-11-18 |

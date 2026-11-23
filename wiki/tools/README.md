@@ -22,6 +22,7 @@ Video tools go in `video/` once the video track starts.
 <!-- index:start -->
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
+| [CloudCompare](cloudcompare.md) | tool | perception | documented | GPL-2.0-or-later | — | cli | 2026-11-23 |
 | [colcon](colcon.md) | tool | ros2 | documented | Apache-2.0 | — | cli | 2026-11-18 |
 | [Foxglove](foxglove.md) | tool | ros2 | documented | — | — | mcp | 2026-11-18 |
 | [Pixi (with RoboStack)](pixi.md) | tool | ros2 | documented | BSD-3-Clause | — | cli | 2026-11-18 |
