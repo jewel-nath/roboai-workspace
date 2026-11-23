@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 18, waiting: 13, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 19, waiting: 12, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -75,6 +75,7 @@ end of each section.
 | OctoMap | [OctoMap](../wiki/software/octomap.md) | B |
 | PCL | [PCL (Point Cloud Library)](../wiki/software/pcl.md) | A |
 | ORB-SLAM2 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
+| PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
 
 ## Waiting for a page
 
@@ -92,7 +93,6 @@ end of each section.
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
 | Contact-GraspNet | `learning/contact-graspnet` | B | manip | Common 6-DoF grasp generator from depth point clouds; NVIDIA non-commercial licence, quiet since 2024 |
 | Gymnasium | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
-| PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
 
 ## Index only
 

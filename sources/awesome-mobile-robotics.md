@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 15, waiting: 8, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 18, waiting: 5, index_only: 438, deferred: 4, rejected: 68}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -75,6 +75,9 @@ tools. 23 of 533 entries earn a page.
 | LIO-SAM | [LIO-SAM](../wiki/software/lio-sam.md) | B |
 | OpenVINS | [OpenVINS](../wiki/software/openvins.md) | B |
 | Segment Anything | [Segment Anything (SAM, SAM 2, SAM 3)](../wiki/learning/models/segment-anything.md) | B |
+| ROS 2 Navigation | [Nav2](../wiki/software/nav2.md) | A |
+| PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
+| Groot 2 | [BehaviorTree.CPP](../wiki/software/behaviortree-cpp.md) | A |
 
 ## Waiting for a page
 
@@ -82,11 +85,8 @@ tools. 23 of 533 entries earn a page.
 |---|---|---|---|---|
 | Drake | `software/drake` | A | manip | Model-based planning, control and multibody dynamics toolbox from TRI and MIT; BSD-3-Clause |
 | Docker | `tools/docker` | B | ops | The usual way to package ROS 2 stacks and ship them to robots and CI |
-| ROS 2 Navigation | `software/nav2` | A | nav | The standard ROS 2 navigation stack: planners, controllers, costmaps and behaviour trees |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo-based manipulation framework under robomimic and LIBERO; MIT, maintained |
 | MoveIt | `software/moveit2` | A | manip | The standard ROS motion-planning framework for arms; the entry links ROS 1 MoveIt |
-| PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
-| Groot 2 | `software/behaviortree-cpp` | A | nav | Groot 2 is BehaviorTree.CPP's editor; BT.CPP drives Nav2 and many robot task layers |
 | Robotics Toolbox for Python | `software/robotics-toolbox-python` | B | manip | Peter Corke's Python kinematics, dynamics and planning for teaching and prototyping; MIT, maintained |
 
 ## Index only

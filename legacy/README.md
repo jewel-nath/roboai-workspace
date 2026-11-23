@@ -77,8 +77,8 @@ Status as of March 2026, when the skills were last updated:
 ### Navigation
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [nav2](skills/nav2/SKILL.md) | Nav2 stack: behavior trees, planners, controllers, recovery | ✅ |
-| [path-planning](skills/path-planning/SKILL.md) | A*, RRT, costmaps, waypoint following, coverage planning | ✅ |
+| [nav2](../skills/nav-nav2/SKILL.md) (re-filed as `nav-nav2`) | Nav2 stack: behavior trees, planners, controllers, recovery | ✅ |
+| [path-planning](../skills/nav-planning/SKILL.md) (re-filed as `nav-planning`) | A*, RRT, costmaps, waypoint following, coverage planning | ✅ |
 
 ### Manipulation
 | Skill | Description | Status |

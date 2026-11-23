@@ -15,6 +15,12 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
 | [ros2_control](ros2-control.md) | framework | control | — | Apache-2.0 | — | script | 2026-11-18 |
+| [Autoware](autoware.md) | framework | nav | — | Apache-2.0 | — | cli | 2026-11-24 |
+| [BehaviorTree.CPP](behaviortree-cpp.md) | library | nav | — | MIT | — | cli | 2026-11-24 |
+| [grid_map](grid-map.md) | library | nav | — | BSD-3-Clause | — | cli | 2026-11-24 |
+| [linorobot2](linorobot2.md) | framework | nav | — | Apache-2.0 | — | cli | 2026-11-24 |
+| [Nav2](nav2.md) | framework | nav | — | Apache-2.0 AND BSD-3-Clause AND LGPL-2.1-or-later AND MIT | — | cli | 2026-11-24 |
+| [PythonRobotics](pythonrobotics.md) | library | nav | — | MIT | — | script | 2026-11-24 |
 | [AprilTag](apriltag.md) | library | perception | — | BSD-2-Clause | — | cli | 2026-11-23 |
 | [Cartographer](cartographer.md) | library | perception | — | Apache-2.0 | — | cli | 2026-11-23 |
 | [GTSAM](gtsam.md) | library | perception | — | BSD-3-Clause | — | script | 2026-11-23 |

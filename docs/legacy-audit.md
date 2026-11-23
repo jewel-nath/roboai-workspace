@@ -54,8 +54,8 @@ it.
 | `camera-vision` | 557 | Humble | robotics-agent-skills | `skills/perception-camera` | re-filed 2026-11-23 |
 | `lidar-pointcloud` | 687 | — | robotics-agent-skills | `skills/perception-lidar` | re-filed 2026-11-23 |
 | `sensor-fusion-slam` | 779 | — | — | `skills/perception-slam` | re-filed 2026-11-23 |
-| `nav2` | 845 | — | — | `skills/nav-nav2` | re-file |
-| `path-planning` | 833 | — | — | `skills/nav-planning` | re-file |
+| `nav2` | 845 | — | — | `skills/nav-nav2` | re-filed 2026-11-24 |
+| `path-planning` | 833 | — | — | `skills/nav-planning` | re-filed 2026-11-24 |
 | `moveit2` | 947 | Humble | — | `skills/manip-moveit2` | re-file |
 | `grasping-force-control` | 953 | Humble | — | `skills/manip-grasping` | re-file |
 | `control-systems` | 788 | — | — | `skills/control-systems` + `wiki/concepts/` | re-file; owns PID |

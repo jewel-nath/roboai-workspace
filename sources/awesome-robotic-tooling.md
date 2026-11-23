@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 27, waiting: 13, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 31, waiting: 9, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -141,24 +141,24 @@ rejected.
 | open_vins | [OpenVINS](../wiki/software/openvins.md) | B |
 | ORB_SLAM3 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
 | CloudCompare | [CloudCompare](../wiki/tools/cloudcompare.md) | B |
+| Autoware.Auto | [Autoware](../wiki/software/autoware.md) | B |
+| grid_map | [grid_map](../wiki/software/grid-map.md) | B |
+| BehaviorTree.CPP | [BehaviorTree.CPP](../wiki/software/behaviortree-cpp.md) | A |
+| PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Autoware.Auto | `software/autoware` | B | nav | Leading open ROS 2 self-driving stack; Autoware.Auto is archived, so the page covers Autoware Core and Universe |
 | Drake | `software/drake` | A | manip | TRI's model-based dynamics, optimisation and planning toolbox; strong for manipulation and contact |
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
-| grid_map | `software/grid-map` | B | nav | Widely used ROS library for 2.5D grid and elevation maps; maintained for ROS 2, used for rough-terrain navigation |
-| BehaviorTree.CPP | `software/behaviortree-cpp` | A | nav | The C++ behaviour-tree library behind Nav2 and many ROS 2 task layers; MIT, actively maintained |
 | moveit | `software/moveit2` | A | manip | The standard ROS 2 arm motion-planning framework: planning, kinematics, collision checking and servoing |
 | ompl | `software/ompl` | A | manip | The sampling-based motion-planning library under MoveIt 2 and many other planners; BSD, maintained |
 | pinocchio | `software/pinocchio` | A | manip | Fast rigid-body kinematics and dynamics with derivatives; the base of many legged and arm control stacks |
 | rmf_core | `software/open-rmf` | B | ops | rmf_core is archived; its successor Open-RMF coordinates mixed robot fleets, doors and lifts in buildings |
 | jetson-containers | `tools/jetson-containers` | B | ops | Builds ROS 2, PyTorch and model containers for Jetson; the usual way to deploy ML on Jetson |
 | ros2_dds_security | `software/sros2` | B | ops | ROS 2's DDS security design, used through SROS2 for keys, encryption and access control |
-| PythonRobotics | `software/pythonrobotics` | B | nav | Widely used, readable Python samples of planning, localisation and SLAM algorithms; MIT, maintained |
 
 ## Index only
 
