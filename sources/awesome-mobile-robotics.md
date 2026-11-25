@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 18, waiting: 5, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 21, waiting: 2, index_only: 438, deferred: 4, rejected: 68}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -78,16 +78,16 @@ tools. 23 of 533 entries earn a page.
 | ROS 2 Navigation | [Nav2](../wiki/software/nav2.md) | A |
 | PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
 | Groot 2 | [BehaviorTree.CPP](../wiki/software/behaviortree-cpp.md) | A |
+| Drake | [Drake](../wiki/software/drake.md) | A |
+| MoveIt | [MoveIt 2](../wiki/software/moveit2.md) | A |
+| Robotics Toolbox for Python | [Robotics Toolbox for Python](../wiki/software/robotics-toolbox-python.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Drake | `software/drake` | A | manip | Model-based planning, control and multibody dynamics toolbox from TRI and MIT; BSD-3-Clause |
 | Docker | `tools/docker` | B | ops | The usual way to package ROS 2 stacks and ship them to robots and CI |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo-based manipulation framework under robomimic and LIBERO; MIT, maintained |
-| MoveIt | `software/moveit2` | A | manip | The standard ROS motion-planning framework for arms; the entry links ROS 1 MoveIt |
-| Robotics Toolbox for Python | `software/robotics-toolbox-python` | B | manip | Peter Corke's Python kinematics, dynamics and planning for teaching and prototyping; MIT, maintained |
 
 ## Index only
 

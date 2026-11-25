@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 19, waiting: 12, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 25, waiting: 6, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -76,22 +76,22 @@ end of each section.
 | PCL | [PCL (Point Cloud Library)](../wiki/software/pcl.md) | A |
 | ORB-SLAM2 | [ORB-SLAM3](../wiki/software/orb-slam3.md) | B |
 | PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
+| pinocchio | [Pinocchio](../wiki/software/pinocchio.md) | A |
+| Drake | [Drake](../wiki/software/drake.md) | A |
+| OMPL | [OMPL](../wiki/software/ompl.md) | A |
+| MoveIt! | [MoveIt 2](../wiki/software/moveit2.md) | A |
+| cuRobo | [cuRobo](../wiki/software/curobo.md) | B |
+| Contact-GraspNet | [Contact-GraspNet](../wiki/learning/models/contact-graspnet.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| pinocchio | `software/pinocchio` | A | manip | Fast rigid-body dynamics with analytical derivatives; the base of much legged and arm control code |
-| Drake | `software/drake` | A | manip | Planning, control and contact-rich simulation in one maintained toolbox; strong for manipulation |
-| OMPL | `software/ompl` | A | manip | The sampling-based planner library behind MoveIt; the reference for RRT and PRM planners |
-| MoveIt! | `software/moveit2` | A | manip | The standard ROS arm motion-planning framework; MoveIt 2 is what builders use today |
-| cuRobo | `software/curobo` | B | manip | GPU collision-free motion generation, now Apache-2.0; a fast alternative to OMPL for arms |
 | LeRobot | `learning/lerobot` | A | learning | Hugging Face's datasets, policies and low-cost robot support; the entry point for imitation learning |
 | Stable-Baselines3 | `learning/stable-baselines3` | B | learning | The usual first RL library: reliable PyTorch algorithms behind a Gymnasium interface |
 | Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim; the standard for locomotion RL and sim-to-real |
 | ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulation and benchmark on SAPIEN; widely used for robot learning |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
-| Contact-GraspNet | `learning/contact-graspnet` | B | manip | Common 6-DoF grasp generator from depth point clouds; NVIDIA non-commercial licence, quiet since 2024 |
 | Gymnasium | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 
 ## Index only

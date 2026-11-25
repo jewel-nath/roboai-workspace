@@ -8,10 +8,11 @@ agent how the repo works. The full design is in [docs/plan.md](docs/plan.md).
 the scripts and commands that keep them consistent. Phase 2 (bringing OrbiBot in) is deferred.
 Phase 3 (the Robot Atlas) is done: four robot lists are triaged and every page they earned is
 written, 17 tier-A profiles and 62 tier-B cards. Phase 4 (software and learning) is under way:
-its lists are triaged, and four batches are written: ROS 2 (14 pages, a middleware guide, five
+its lists are triaged, and five batches are written: ROS 2 (14 pages, a middleware guide, five
 re-filed skills), simulation (9 pages, a simulator guide, two re-filed skills), perception
-(24 pages, a SLAM guide, three re-filed skills) and navigation (6 pages, a planner and
-controller guide, two re-filed skills). Content
+(24 pages, a SLAM guide, three re-filed skills), navigation (6 pages, a planner and
+controller guide, two re-filed skills) and manipulation (8 pages, an arm motion planner
+guide, two re-filed skills). Content
 arrives phase by phase (see the roadmap in the plan). The rest of the old skill library waits in
 `legacy/`.
 

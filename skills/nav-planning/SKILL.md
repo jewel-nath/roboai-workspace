@@ -31,8 +31,8 @@ Elsewhere: Nav2 bringup, costmap layers and inflation, footprint, AMCL, the beha
 waypoints in [nav-nav2](../nav-nav2/SKILL.md); footprint geometry from the URDF in
 [ros2-robot-description](../ros2-robot-description/SKILL.md); `cmd_vel` into the wheels in
 [ros2-control](../ros2-control/SKILL.md); maps in [perception-slam](../perception-slam/SKILL.md); the
-simulated robot in [sim-gazebo](../sim-gazebo/SKILL.md). Arm motion planning with MoveIt 2 and OMPL is the
-later `manip-moveit2` skill.
+simulated robot in [sim-gazebo](../sim-gazebo/SKILL.md). Arm motion planning with MoveIt 2 and OMPL is in
+[manip-moveit2](../manip-moveit2/SKILL.md).
 
 ## Pick the plugins
 
@@ -195,7 +195,8 @@ Before reporting planning and control done:
   [PlotJuggler](../../wiki/tools/plotjuggler.md), [Foxglove](../../wiki/tools/foxglove.md).
 - Skills: [nav-nav2](../nav-nav2/SKILL.md), [ros2-control](../ros2-control/SKILL.md),
   [ros2-robot-description](../ros2-robot-description/SKILL.md), [perception-slam](../perception-slam/SKILL.md),
-  [sim-gazebo](../sim-gazebo/SKILL.md), [ros2-core](../ros2-core/SKILL.md); later `manip-moveit2`.
+  [sim-gazebo](../sim-gazebo/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
+  [manip-moveit2](../manip-moveit2/SKILL.md).
 - Upstream: docs.nav2.org (tuning guide, plugin configuration pages, plugin tutorials, migration guides),
   the package READMEs on the navigation2 `jazzy` branch (Smac, MPPI, lattice primitive generator), the
   opennav_coverage README, PythonRobotics; LaValle, *Planning Algorithms* (lavalle.pl); Dolgov et al.,

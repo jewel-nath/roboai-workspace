@@ -83,8 +83,8 @@ Status as of March 2026, when the skills were last updated:
 ### Manipulation
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [moveit2](skills/moveit2/SKILL.md) | Motion planning, collision checking, trajectory execution | ✅ |
-| [grasping-force-control](skills/grasping-force-control/SKILL.md) | Grasp synthesis, F/T sensing, impedance control, pick-and-place | ✅ |
+| [moveit2](../skills/manip-moveit2/SKILL.md) (re-filed as `manip-moveit2`) | Motion planning, collision checking, trajectory execution | ✅ |
+| [grasping-force-control](../skills/manip-grasping/SKILL.md) (re-filed as `manip-grasping`) | Grasp synthesis, F/T sensing, impedance control, pick-and-place | ✅ |
 
 ### Control
 | Skill | Description | Status |

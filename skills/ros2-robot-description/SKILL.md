@@ -172,8 +172,8 @@ Before reporting the description done:
   [ros2_control](../../wiki/software/ros2-control.md), [ROS 2](../../wiki/tools/ros2.md),
   [Foxglove](../../wiki/tools/foxglove.md).
 - Skills: [ros2-control](../ros2-control/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
-  [ros2-web-bridge](../ros2-web-bridge/SKILL.md); later: `sim-gazebo`, `sim-mujoco`,
-  `manip-moveit2`, `cad-freecad`.
+  [ros2-web-bridge](../ros2-web-bridge/SKILL.md), [sim-gazebo](../sim-gazebo/SKILL.md),
+  [manip-moveit2](../manip-moveit2/SKILL.md); later `sim-mujoco`, `cad-freecad`.
 - Upstream: REP 103 and REP 105 (ros.org/reps); the Jazzy URDF tutorials on docs.ros.org, which
   also list CAD exporters (FreeCAD, Fusion 360, Onshape, SolidWorks, Blender); MuJoCo's
   "URDF extensions" in its modeling guide.

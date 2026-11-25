@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 31, waiting: 9, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 35, waiting: 5, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -145,17 +145,17 @@ rejected.
 | grid_map | [grid_map](../wiki/software/grid-map.md) | B |
 | BehaviorTree.CPP | [BehaviorTree.CPP](../wiki/software/behaviortree-cpp.md) | A |
 | PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
+| Drake | [Drake](../wiki/software/drake.md) | A |
+| moveit | [MoveIt 2](../wiki/software/moveit2.md) | A |
+| ompl | [OMPL](../wiki/software/ompl.md) | A |
+| pinocchio | [Pinocchio](../wiki/software/pinocchio.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Drake | `software/drake` | A | manip | TRI's model-based dynamics, optimisation and planning toolbox; strong for manipulation and contact |
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
-| moveit | `software/moveit2` | A | manip | The standard ROS 2 arm motion-planning framework: planning, kinematics, collision checking and servoing |
-| ompl | `software/ompl` | A | manip | The sampling-based motion-planning library under MoveIt 2 and many other planners; BSD, maintained |
-| pinocchio | `software/pinocchio` | A | manip | Fast rigid-body kinematics and dynamics with derivatives; the base of many legged and arm control stacks |
 | rmf_core | `software/open-rmf` | B | ops | rmf_core is archived; its successor Open-RMF coordinates mixed robot fleets, doors and lifts in buildings |
 | jetson-containers | `tools/jetson-containers` | B | ops | Builds ROS 2, PyTorch and model containers for Jetson; the usual way to deploy ML on Jetson |
 | ros2_dds_security | `software/sros2` | B | ops | ROS 2's DDS security design, used through SROS2 for keys, encryption and access control |

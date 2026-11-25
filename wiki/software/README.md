@@ -15,6 +15,12 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
 | [ros2_control](ros2-control.md) | framework | control | — | Apache-2.0 | — | script | 2026-11-18 |
+| [cuRobo](curobo.md) | library | manip | — | Apache-2.0 | — | script | 2026-11-25 |
+| [Drake](drake.md) | library | manip | — | BSD-3-Clause | — | script | 2026-11-25 |
+| [MoveIt 2](moveit2.md) | framework | manip | — | BSD-3-Clause | — | cli | 2026-11-25 |
+| [OMPL](ompl.md) | library | manip | — | BSD-3-Clause | — | script | 2026-11-25 |
+| [Pinocchio](pinocchio.md) | library | manip | — | BSD-2-Clause | — | script | 2026-11-25 |
+| [Robotics Toolbox for Python](robotics-toolbox-python.md) | library | manip | — | MIT | — | script | 2026-11-25 |
 | [Autoware](autoware.md) | framework | nav | — | Apache-2.0 | — | cli | 2026-11-24 |
 | [BehaviorTree.CPP](behaviortree-cpp.md) | library | nav | — | MIT | — | cli | 2026-11-24 |
 | [grid_map](grid-map.md) | library | nav | — | BSD-3-Clause | — | cli | 2026-11-24 |

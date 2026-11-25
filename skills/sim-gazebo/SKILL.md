@@ -201,8 +201,9 @@ Before reporting the simulation working:
   [Choose a simulator](../../wiki/guides/choose-a-simulator.md).
 - Skills: [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [ros2-control](../ros2-control/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
-  [ops-docker-ci](../ops-docker-ci/SKILL.md), [sim-to-real](../sim-to-real/SKILL.md); later
-  `sim-mujoco`, `nav-nav2`, `manip-moveit2`, perception skills.
+  [ops-docker-ci](../ops-docker-ci/SKILL.md), [sim-to-real](../sim-to-real/SKILL.md),
+  [nav-nav2](../nav-nav2/SKILL.md), [manip-moveit2](../manip-moveit2/SKILL.md), the perception
+  skills; later `sim-mujoco`.
 - Upstream: gazebosim.org/docs/harmonic (ROS 2 integration, sensors, SDF worlds, Classic migration),
   gz-sim API tutorials (finding resources, server configuration, physics, headless rendering), the
   `ros_gz` and `gz_ros2_control` READMEs and demos on their `jazzy` branches, and

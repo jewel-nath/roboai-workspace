@@ -34,7 +34,8 @@ Elsewhere: lidar, point-cloud processing and lidar-camera extrinsics in
 [ros2-robot-description](../ros2-robot-description/SKILL.md); simulated cameras in
 [sim-gazebo](../sim-gazebo/references/sensors.md); video to a browser in
 [ros2-web-bridge](../ros2-web-bridge/references/camera-streaming.md); hand-eye calibration of arm
-cameras in `manip-moveit2` and the sensor calibration playbook (Phase 6); TensorRT and Jetsons in
+cameras in [manip-grasping](../manip-grasping/references/hand-eye.md) and the sensor calibration
+playbook (Phase 6); TensorRT and Jetsons in
 `learn-edge-deployment`.
 
 ## Quick start
@@ -206,8 +207,8 @@ Before reporting a camera pipeline working:
   [perception-slam](../perception-slam/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
   [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [sim-gazebo](../sim-gazebo/SKILL.md), [ros2-web-bridge](../ros2-web-bridge/SKILL.md),
-  [ops-docker-ci](../ops-docker-ci/SKILL.md); later `nav-nav2`, `manip-grasping`,
-  `learn-edge-deployment`, `ops-bringup`.
+  [ops-docker-ci](../ops-docker-ci/SKILL.md), [nav-nav2](../nav-nav2/SKILL.md),
+  [manip-grasping](../manip-grasping/SKILL.md); later `learn-edge-deployment`, `ops-bringup`.
 - Upstream: the `image_pipeline` docs on its `jazzy` branch (camera_calibration tutorials,
   image_proc and depth_image_proc components, camera_info), REP 103, REP 118, REP 2003, and the
   READMEs of usb_cam, v4l2_camera, camera_ros, realsense-ros, depthai-ros and apriltag_ros.

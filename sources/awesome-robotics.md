@@ -5,7 +5,7 @@ registry: awesome-robotics
 url: https://github.com/kiloreux/awesome-robotics
 commit: "067f76e"
 read_on: 2026-11-18
-counts: {entries: 147, pages: 6, waiting: 1, index_only: 106, deferred: 1, rejected: 33}
+counts: {entries: 147, pages: 7, waiting: 0, index_only: 106, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics: what it gives RoboAI
@@ -59,12 +59,12 @@ resources (Linorobot and PythonRobotics), and a reading list worth keeping as in
 | Webots | [Webots](../wiki/tools/webots.md) | B |
 | Linorobot | [linorobot2](../wiki/software/linorobot2.md) | B |
 | PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
+| Drake | [Drake](../wiki/software/drake.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Drake | `software/drake` | A | manip | TRI's toolbox for dynamics, optimisation-based planning and simulation, common in manipulation research. |
 
 ## Index only
 

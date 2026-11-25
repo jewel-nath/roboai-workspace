@@ -56,8 +56,8 @@ it.
 | `sensor-fusion-slam` | 779 | — | — | `skills/perception-slam` | re-filed 2026-11-23 |
 | `nav2` | 845 | — | — | `skills/nav-nav2` | re-filed 2026-11-24 |
 | `path-planning` | 833 | — | — | `skills/nav-planning` | re-filed 2026-11-24 |
-| `moveit2` | 947 | Humble | — | `skills/manip-moveit2` | re-file |
-| `grasping-force-control` | 953 | Humble | — | `skills/manip-grasping` | re-file |
+| `moveit2` | 947 | Humble | — | `skills/manip-moveit2` | re-filed 2026-11-25 |
+| `grasping-force-control` | 953 | Humble | — | `skills/manip-grasping` | re-filed 2026-11-25 |
 | `control-systems` | 788 | — | — | `skills/control-systems` + `wiki/concepts/` | re-file; owns PID |
 | `realtime-motor-control` | 909 | Humble | — | `skills/fw-motor-control` | re-file; PID → link to `control-systems` |
 | `microcontrollers` | 886 | — | — | `skills/fw-mcu` | re-file |

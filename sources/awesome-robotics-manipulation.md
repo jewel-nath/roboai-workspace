@@ -5,7 +5,7 @@ registry: awesome-robotics-manipulation
 url: https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation
 commit: "14f72df"
 read_on: 2026-11-18
-counts: {entries: 109, pages: 1, waiting: 27, index_only: 77, deferred: 0, rejected: 4}
+counts: {entries: 109, pages: 3, waiting: 25, index_only: 77, deferred: 0, rejected: 4}
 ---
 
 # Awesome-Robotics-Manipulation: what it gives RoboAI
@@ -59,13 +59,13 @@ X-Embodiment, DROID) and the simulators and benchmarks (robosuite, ManiSkill, Is
 | Entry | Page | Tier |
 |---|---|---|
 | GENESIS | [Genesis](../wiki/tools/genesis.md) | B |
+| Contact-GraspNet | [Contact-GraspNet](../wiki/learning/models/contact-graspnet.md) | B |
+| GraspNet-1Billion | [GraspNet-1Billion](../wiki/learning/datasets/graspnet-1billion.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Contact-GraspNet | `learning/contact-graspnet` | B | manip | Common 6-DoF grasp generator from depth point clouds; NVIDIA non-commercial licence, quiet since 2024 |
-| GraspNet-1Billion | `learning/graspnet-1billion` | B | manip | Standard 6-DoF grasp benchmark and dataset; MIT API, non-commercial baseline code |
 | GR00T N1 | `learning/gr00t` | A | learning | NVIDIA's open foundation model for humanoids and other robots; Apache-2.0 code, commercially usable weights, very active |
 | Octo | `learning/octo` | B | learning | Open generalist policy trained on Open X-Embodiment; a frequent baseline, repo quiet since 2024 |
 | RT-1 | `learning/rt-1` | B | learning | Google's landmark Robotics Transformer and dataset; still a baseline and part of Open X-Embodiment |

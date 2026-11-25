@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 185, pages: 28, waiting: 2, index_only: 119, deferred: 11, rejected: 25}
+counts: {entries: 185, pages: 30, waiting: 0, index_only: 119, deferred: 11, rejected: 25}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -68,13 +68,13 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "KITTI" | [KITTI and KITTI-360](../wiki/learning/datasets/kitti.md) | B |
 | "TUM RGB-D SLAM Benchmark & Dataset" | [TUM RGB-D](../wiki/learning/datasets/tum-rgbd.md) | B |
 | ROS Navigation Stack (move_base architecture) | [Nav2](../wiki/software/nav2.md) | A |
+| ROS Moveit (move_group architecture) | [MoveIt 2](../wiki/software/moveit2.md) | A |
+| "Open Motion Planning Library (OMPL)" | [OMPL](../wiki/software/ompl.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| ROS Moveit (move_group architecture) | `software/moveit2` | A | manip | The standard ROS motion-planning framework; MoveIt 2 is its ROS 2 version |
-| "Open Motion Planning Library (OMPL)" | `software/ompl` | A | manip | The sampling-based planner library behind MoveIt; maintained |
 
 ## Index only
 

@@ -17,7 +17,7 @@ written for this skill and not run.
 | Grid sweep coverage | `PathPlanning/GridBasedSweepCPP/` | opennav_coverage, [coverage.md](coverage.md) |
 
 Sampling planners (RRT, RRT*, PRM) pay off in high-dimensional spaces such as arms; for arms use MoveIt 2
-with OMPL (the later `manip-moveit2` skill). On a 2D costmap the search-based Smac planners are the
+with OMPL ([manip-moveit2](../../manip-moveit2/SKILL.md)). On a 2D costmap the search-based Smac planners are the
 maintained path.
 
 ## PythonRobotics
