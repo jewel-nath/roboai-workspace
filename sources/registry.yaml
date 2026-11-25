@@ -20,7 +20,7 @@ sources:
     license: Apache-2.0
     pinned: {version: , commit: }
     baseline: {as_of: 2026-11-12, commit: "f9bc546", commit_date: 2026-08-12, release: , stars: 401, archived: false}
-    used_in: [skills/ros2-core, skills/ros2-web-bridge, skills/ops-docker-ci, skills/perception-camera, skills/perception-lidar, legacy/skills/safety-systems, legacy/skills/robot-architecture, legacy/skills/robot-bringup]
+    used_in: [skills/ros2-core, skills/ros2-web-bridge, skills/ops-docker-ci, skills/perception-camera, skills/perception-lidar, skills/arch-safety, skills/arch-robot-architecture, skills/ops-bringup]
     benchmark:
     last_checked: 2026-11-17
     notes: The commit the old skills were adapted from was never recorded; this baseline is the upstream head at registration.
@@ -28,14 +28,15 @@ sources:
       By arpitg1304 and its contributors. Parts of skills/ros2-core, ros2-web-bridge and
       ops-docker-ci draw on its ros2, ros2-web-integration and docker-ros2-development skills,
       and parts of skills/perception-camera and perception-lidar on its robot-perception skill.
-      Parts of legacy/skills/safety-systems are adapted from its robotics-security skill,
-      legacy/skills/robot-architecture draws on its robotics-design-patterns skill, and
-      legacy/skills/robot-bringup on its robot-bringup skill. The material was renamed, merged
+      Parts of skills/arch-safety are adapted from its robotics-security skill,
+      skills/arch-robot-architecture draws on its robotics-design-patterns skill, and
+      skills/ops-bringup on its robot-bringup skill. The material was renamed, merged
       into larger skills, reorganised, and rewritten and extended in places.
     history:
       - {date: 2026-11-12, event: registered, note: from NOTICE during the Phase 0 legacy audit}
       - {date: 2026-11-18, event: re-filed, note: "legacy ros2, ros2-web-bridge and docker-ros2-ci skills reviewed and rewritten as skills/ros2-core, ros2-web-bridge and ops-docker-ci (Phase 4)"}
       - {date: 2026-11-23, event: re-filed, note: "legacy camera-vision and lidar-pointcloud skills reviewed and rewritten as skills/perception-camera and perception-lidar (Phase 4)"}
+      - {date: 2026-11-25, event: re-filed, note: "legacy safety-systems, robot-architecture and robot-bringup skills reviewed and rewritten as skills/arch-safety, arch-robot-architecture and ops-bringup (Phase 4)"}
 
   - id: ros2-claude-code-template
     url: https://github.com/harunkurtdev/ros2-claude-code-template

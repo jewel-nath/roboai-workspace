@@ -210,7 +210,8 @@ Before reporting Nav2 working on a robot:
   [perception-lidar](../perception-lidar/SKILL.md), [perception-camera](../perception-camera/SKILL.md),
   [ros2-core](../ros2-core/SKILL.md), [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [ros2-control](../ros2-control/SKILL.md), [sim-gazebo](../sim-gazebo/SKILL.md),
-  [ops-docker-ci](../ops-docker-ci/SKILL.md); later `ops-bringup`, `ops-fleet` (multi-robot, Open-RMF),
-  `arch-safety` (safety-rated stops, which the collision monitor is not).
+  [ops-docker-ci](../ops-docker-ci/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md),
+  [ops-fleet](../ops-fleet/SKILL.md) (multi-robot, Open-RMF), [arch-safety](../arch-safety/SKILL.md)
+  (safety-rated stops, which the collision monitor is not).
 - Upstream: docs.nav2.org (first-time robot setup, configuration guide, tuning guide, tutorials, migration
   guides), the `navigation2` `jazzy` branch (`nav2_bringup`, `nav2_docking/README.md`), REP 103 and REP 105.

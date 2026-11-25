@@ -4,8 +4,9 @@ Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-
 under way.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
 templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
 consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 has triaged
-its lists and written its first five batches, ROS 2 core and tooling, simulation,
-perception and SLAM, navigation, and manipulation ([progress](#phase-4-plan)). The [roadmap](#12-roadmap) says what comes next.
+its lists and written six of its seven batches: ROS 2 core and tooling, simulation,
+perception and SLAM, navigation, manipulation, and operations and architecture
+([progress](#phase-4-plan)). The [roadmap](#12-roadmap) says what comes next.
 
 ## Contents
 
@@ -492,6 +493,7 @@ and ROS Index instead of a list (see Decisions).
 | Perception and SLAM | 2026-11-23 | 24 pages (8 profiles, 16 cards: libraries, SLAM and odometry, calibration, four models and two datasets in `wiki/learning/`), the [SLAM guide](../wiki/guides/choose-a-slam-system.md), 3 skills re-filed |
 | Navigation | 2026-11-24 | 6 pages (Nav2 and BehaviorTree.CPP profiles; grid_map, linorobot2, Autoware and PythonRobotics cards), the [planner and controller guide](../wiki/guides/choose-a-nav2-planner-and-controller.md), 2 skills re-filed |
 | Manipulation | 2026-11-25 | 8 pages (MoveIt 2, OMPL, Drake and Pinocchio profiles; cuRobo, Robotics Toolbox for Python, Contact-GraspNet and GraspNet-1Billion cards), the [arm motion planner guide](../wiki/guides/choose-an-arm-motion-planner.md), 2 skills re-filed |
+| Operations and architecture | 2026-11-25 | 4 cards (Docker, jetson-containers, Open-RMF, SROS2), the [deployment guide](../wiki/guides/choose-a-deployment-method.md), 4 skills re-filed |
 
 ## 13. Decisions
 

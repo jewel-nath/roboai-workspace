@@ -9,11 +9,11 @@ This product includes material adapted from the projects below.
   ros2-web-bridge and ops-docker-ci draw on its ros2, ros2-web-integration
   and docker-ros2-development skills, and parts of skills/perception-camera
   and perception-lidar on its robot-perception skill. Parts of
-  legacy/skills/safety-systems are adapted from its robotics-security skill,
-  legacy/skills/robot-architecture draws on its robotics-design-patterns
-  skill, and legacy/skills/robot-bringup on its robot-bringup skill. The
-  material was renamed, merged into larger skills, reorganised, and
-  rewritten and extended in places.
+  skills/arch-safety are adapted from its robotics-security skill,
+  skills/arch-robot-architecture draws on its robotics-design-patterns
+  skill, and skills/ops-bringup on its robot-bringup skill. The material was
+  renamed, merged into larger skills, reorganised, and rewritten and
+  extended in places.
 
 - ros2-claude-code-template
   (https://github.com/harunkurtdev/ros2-claude-code-template), Apache-2.0.

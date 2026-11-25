@@ -67,17 +67,17 @@ it.
 | `sensor-actuator-drivers` | 1267 | Jazzy | — | `skills/fw-drivers` | re-file; PID → link |
 | `learning-robotics` | 1131 | — | — | `skills/learn-robot-learning` | re-file, neutral example |
 | `edge-ml-deployment` | 1080 | Jazzy | — | `skills/learn-edge-deployment` | re-file, neutral example |
-| `robot-architecture` | 1316 | Humble, Jazzy | robotics-agent-skills | `skills/arch-robot-architecture` | re-file, neutral example |
-| `safety-systems` | 1124 | Humble | robotics-agent-skills | `skills/arch-safety` | re-file, neutral example |
-| `robot-bringup` | 1190 | Humble, Jazzy | robotics-agent-skills | `skills/ops-bringup` | merge with `guides/robot-bringup.md`, neutral example |
-| `deployment-fleet` | 1417 | Jazzy | — | `skills/ops-fleet` | re-file; most OrbiBot examples |
+| `robot-architecture` | 1316 | Humble, Jazzy | robotics-agent-skills | `skills/arch-robot-architecture` | re-filed 2026-11-25 |
+| `safety-systems` | 1124 | Humble | robotics-agent-skills | `skills/arch-safety` | re-filed 2026-11-25 |
+| `robot-bringup` | 1190 | Humble, Jazzy | robotics-agent-skills | `skills/ops-bringup` | re-filed 2026-11-25, with the agent steps of `guides/robot-bringup.md` |
+| `deployment-fleet` | 1417 | Jazzy | — | `skills/ops-fleet` | re-filed 2026-11-25 |
 | `docker-ros2-ci` | 948 | Humble, Jazzy | robotics-agent-skills | `skills/ops-docker-ci` | re-filed 2026-11-18 |
 
 ## Guides, rules, commands, scripts
 
 | Old file | Lines | Destination | Action |
 |---|---|---|---|
-| `guides/robot-bringup.md` | 390 | `playbooks/` + `skills/ops-bringup` | merge |
+| `guides/robot-bringup.md` | 390 | `playbooks/` + `skills/ops-bringup` | agent steps merged into `skills/ops-bringup` 2026-11-25; the checklist waits for Phase 6 |
 | `guides/hardware-integration.md` | 675 | `playbooks/` | re-file |
 | `guides/sensor-calibration.md` | 424 | `playbooks/` | re-file |
 | `guides/sim-to-real-pipeline.md` | 311 | `skills/sim-to-real` | re-filed 2026-11-19 (merged) |

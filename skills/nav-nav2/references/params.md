@@ -189,7 +189,7 @@ Services: `/reinitialize_global_localization` (`std_srvs/srv/Empty`, spreads par
 
 ## Collision monitor
 
-Sits last on `/cmd_vel`. It is a software check, not a safety-rated stop (`arch-safety`).
+Sits last on `/cmd_vel`. It is a software check, not a safety-rated stop ([arch-safety](../../arch-safety/SKILL.md)).
 
 ```yaml
 collision_monitor:

@@ -114,15 +114,15 @@ Status as of March 2026, when the skills were last updated:
 ### Architecture & Safety
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [robot-architecture](skills/robot-architecture/SKILL.md) | Design patterns, BT/FSM, state estimation, multi-robot | ✅ |
-| [safety-systems](skills/safety-systems/SKILL.md) | Watchdogs, E-stops, SROS2, ISO 10218 risk assessment, IEC 60204 stop categories and ISO 13849 levels | ✅ |
+| [robot-architecture](../skills/arch-robot-architecture/SKILL.md) (re-filed as `arch-robot-architecture`) | Design patterns, BT/FSM, state estimation, multi-robot | ✅ |
+| [safety-systems](../skills/arch-safety/SKILL.md) (re-filed as `arch-safety`) | Watchdogs, E-stops, SROS2, ISO 10218 risk assessment, IEC 60204 stop categories and ISO 13849 levels | ✅ |
 
 ### DevOps & Production
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [robot-bringup](skills/robot-bringup/SKILL.md) | systemd, layered launch, udev, watchdog, production bringup | ✅ |
+| [robot-bringup](../skills/ops-bringup/SKILL.md) (re-filed as `ops-bringup`) | systemd, layered launch, udev, watchdog, production bringup | ✅ |
 | [docker-ros2-ci](../skills/ops-docker-ci/SKILL.md) (re-filed as `ops-docker-ci`) | Docker builds, docker-compose, DDS in containers, CI with colcon | ✅ |
-| [deployment-fleet](skills/deployment-fleet/SKILL.md) | OTA updates, fleet management, centralized logging, diagnostics | ✅ |
+| [deployment-fleet](../skills/ops-fleet/SKILL.md) (re-filed as `ops-fleet`) | OTA updates, fleet management, centralized logging, diagnostics | ✅ |
 
 ## Commands
 

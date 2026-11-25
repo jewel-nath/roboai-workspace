@@ -208,7 +208,8 @@ Before reporting a camera pipeline working:
   [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [sim-gazebo](../sim-gazebo/SKILL.md), [ros2-web-bridge](../ros2-web-bridge/SKILL.md),
   [ops-docker-ci](../ops-docker-ci/SKILL.md), [nav-nav2](../nav-nav2/SKILL.md),
-  [manip-grasping](../manip-grasping/SKILL.md); later `learn-edge-deployment`, `ops-bringup`.
+  [manip-grasping](../manip-grasping/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md); later
+  `learn-edge-deployment`.
 - Upstream: the `image_pipeline` docs on its `jazzy` branch (camera_calibration tutorials,
   image_proc and depth_image_proc components, camera_info), REP 103, REP 118, REP 2003, and the
   READMEs of usb_cam, v4l2_camera, camera_ros, realsense-ros, depthai-ros and apriltag_ros.

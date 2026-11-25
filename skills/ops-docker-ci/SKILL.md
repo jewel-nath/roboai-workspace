@@ -24,7 +24,7 @@ Lyrical and Humble differences are at the end. The recipes were researched, not 
 - Nodes in different containers, or a container and the host, do not see each other or get no data.
 - A container needs a display, a GPU, a serial port or a camera; or an ARM64 image is needed.
 - Not for: writing packages and nodes ([ros2-core](../ros2-core/SKILL.md)); starting the robot at
-  boot with systemd (the later `bringup` skill).
+  boot with systemd ([ops-bringup](../ops-bringup/SKILL.md)).
 
 ## Quick start
 
@@ -209,9 +209,10 @@ credential; workflows set `permissions:` explicitly.
 
 - Skills: [ros2-core](../ros2-core/SKILL.md) (packages, colcon, tests),
   [ros2-web-bridge](../ros2-web-bridge/SKILL.md) (rosbridge in a container),
-  [ros2-control](../ros2-control/SKILL.md) (hardware interfaces in driver containers). Later:
-  `bringup` (systemd and launch on the robot), micro-ROS (agent container), Gazebo.
-- Wiki: [ROS 2](../../wiki/tools/ros2.md), [colcon](../../wiki/tools/colcon.md),
+  [ros2-control](../ros2-control/SKILL.md) (driver containers), [sim-gazebo](../sim-gazebo/SKILL.md),
+  [ops-bringup](../ops-bringup/SKILL.md) (systemd on the robot), [ops-fleet](../ops-fleet/SKILL.md)
+  (rollouts to many robots); later micro-ROS (agent container).
+- Wiki: [Docker](../../wiki/tools/docker.md), [ROS 2](../../wiki/tools/ros2.md), [colcon](../../wiki/tools/colcon.md),
   [Pixi](../../wiki/tools/pixi.md) (environments without Docker),
   [Fast DDS](../../wiki/software/fast-dds.md), [Cyclone DDS](../../wiki/software/cyclone-dds.md),
   [rmw_zenoh](../../wiki/software/rmw-zenoh.md).

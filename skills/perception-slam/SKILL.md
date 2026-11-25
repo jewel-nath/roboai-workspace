@@ -201,8 +201,8 @@ Before reporting localization or a map done:
 - Skills: [perception-camera](../perception-camera/SKILL.md), [perception-lidar](../perception-lidar/SKILL.md),
   [ros2-robot-description](../ros2-robot-description/SKILL.md), [ros2-control](../ros2-control/SKILL.md),
   [ros2-core](../ros2-core/SKILL.md), [sim-gazebo](../sim-gazebo/SKILL.md),
-  [ops-docker-ci](../ops-docker-ci/SKILL.md); later `nav-nav2`, `ops-bringup`, the sensor calibration
-  playbook (Phase 6).
+  [ops-docker-ci](../ops-docker-ci/SKILL.md), [nav-nav2](../nav-nav2/SKILL.md),
+  [ops-bringup](../ops-bringup/SKILL.md); later the sensor calibration playbook (Phase 6).
 - Upstream: REP 103, REP 105, REP 145; robot_localization docs (`jazzy-devel`); slam_toolbox README
   (`jazzy`); `rtabmap_slam/doc/rtabmap.md` (`jazzy-devel`); the OpenVINS calibration guide; the Kalibr wiki;
   the rosbag2 README (`jazzy`); evo README and wiki.

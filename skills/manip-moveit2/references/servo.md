@@ -125,8 +125,8 @@ This drives real joints continuously. What limits motion: `scale` (the commanded
 (and, with the acceleration or Ruckig filters, acceleration) limits in `joint_limits.yaml`,
 `joint_limit_margins`, the singularity thresholds, and collision checks against the objects in the planning
 scene only. None of these is a safety function: keep a hardware emergency stop in reach, start with
-`scale` at a few cm/s in simulation, then on the arm with nothing in reach. System-level safety belongs to the
-later `arch-safety` skill.
+`scale` at a few cm/s in simulation, then on the arm with nothing in reach. System-level safety belongs to
+[arch-safety](../../arch-safety/SKILL.md).
 
 ## Checks
 

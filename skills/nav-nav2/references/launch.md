@@ -141,7 +141,7 @@ ros2 lifecycle get /amcl
 
 `use_namespace:=True namespace:=robot1` pushes every node into `/robot1` and rewrites the parameter file under that
 root key; `/tf` and `/tf_static` are remapped to relative names. The robot's own drivers and TF must use the same
-namespace. Several robots on one network belong to `ops-fleet`.
+namespace. Several robots on one network belong to [ops-fleet](../../ops-fleet/SKILL.md).
 
 ## In simulation
 

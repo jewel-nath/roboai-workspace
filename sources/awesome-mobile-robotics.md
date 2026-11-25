@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 21, waiting: 2, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 22, waiting: 1, index_only: 438, deferred: 4, rejected: 68}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -81,12 +81,12 @@ tools. 23 of 533 entries earn a page.
 | Drake | [Drake](../wiki/software/drake.md) | A |
 | MoveIt | [MoveIt 2](../wiki/software/moveit2.md) | A |
 | Robotics Toolbox for Python | [Robotics Toolbox for Python](../wiki/software/robotics-toolbox-python.md) | B |
+| Docker | [Docker](../wiki/tools/docker.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Docker | `tools/docker` | B | ops | The usual way to package ROS 2 stacks and ship them to robots and CI |
 | robosuite | `learning/robosuite` | A | learning | MuJoCo-based manipulation framework under robomimic and LIBERO; MIT, maintained |
 
 ## Index only

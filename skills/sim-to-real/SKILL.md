@@ -211,8 +211,9 @@ Before reporting a transfer step done:
   [Foxglove](../../wiki/tools/foxglove.md), [PlotJuggler](../../wiki/tools/plotjuggler.md).
 - Skills: [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [ros2-control](../ros2-control/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
-  [sim-gazebo](../sim-gazebo/SKILL.md), [ops-docker-ci](../ops-docker-ci/SKILL.md); later:
-  `sim-mujoco`, Isaac Lab, LeRobot, `ops-bringup`, the `learn-` skills.
+  [sim-gazebo](../sim-gazebo/SKILL.md), [ops-docker-ci](../ops-docker-ci/SKILL.md),
+  [ops-bringup](../ops-bringup/SKILL.md); later `sim-mujoco`, Isaac Lab, LeRobot, the `learn-`
+  skills.
 - Papers: Tobin et al., domain randomisation, IROS 2017 (arXiv:1703.06907); Peng et al., dynamics
   randomisation, ICRA 2018 (arXiv:1710.06537); Tan et al., RSS 2018 (arXiv:1804.10332); Hwangbo et
   al., actuator networks, Science Robotics 2019 (arXiv:1901.08652); OpenAI et al., automatic domain

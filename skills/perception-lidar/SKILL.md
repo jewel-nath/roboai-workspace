@@ -206,7 +206,7 @@ Before reporting the lidar working:
   [perception-slam](../perception-slam/SKILL.md) (lidar odometry in its
   [lidar-odometry.md](../perception-slam/references/lidar-odometry.md)),
   [ros2-robot-description](../ros2-robot-description/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
-  [sim-gazebo](../sim-gazebo/SKILL.md); later `nav-nav2`, `ops-bringup`, the sensor calibration
-  playbook (Phase 6).
+  [sim-gazebo](../sim-gazebo/SKILL.md), [nav-nav2](../nav-nav2/SKILL.md),
+  [ops-bringup](../ops-bringup/SKILL.md); later the sensor calibration playbook (Phase 6).
 - Upstream: the `perception_pcl`, `laser_filters`, `pointcloud_to_laserscan`, `octomap_mapping` and
   driver repos on their Jazzy branches; REP 103, 105 and 117; pointclouds.org and open3d.org docs.

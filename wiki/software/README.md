@@ -26,6 +26,7 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | [grid_map](grid-map.md) | library | nav | — | BSD-3-Clause | — | cli | 2026-11-24 |
 | [linorobot2](linorobot2.md) | framework | nav | — | Apache-2.0 | — | cli | 2026-11-24 |
 | [Nav2](nav2.md) | framework | nav | — | Apache-2.0 AND BSD-3-Clause AND LGPL-2.1-or-later AND MIT | — | cli | 2026-11-24 |
+| [Open-RMF](open-rmf.md) | framework | nav | — | Apache-2.0 | — | script | 2026-11-25 |
 | [PythonRobotics](pythonrobotics.md) | library | nav | — | MIT | — | script | 2026-11-24 |
 | [AprilTag](apriltag.md) | library | perception | — | BSD-2-Clause | — | cli | 2026-11-23 |
 | [Cartographer](cartographer.md) | library | perception | — | Apache-2.0 | — | cli | 2026-11-23 |
@@ -49,6 +50,7 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | [MAVROS](mavros.md) | library | ros2 | — | BSD-3-Clause OR GPL-3.0-only OR LGPL-3.0-only | — | cli | 2026-11-18 |
 | [rmw_zenoh](rmw-zenoh.md) | library | ros2 | — | Apache-2.0 | — | cli | 2026-11-18 |
 | [rosbridge_suite](rosbridge-suite.md) | library | ros2 | — | BSD-3-Clause | — | api | 2026-11-18 |
+| [SROS2](sros2.md) | tool | ros2 | — | Apache-2.0 | — | cli | 2026-11-25 |
 | [tf2](tf2.md) | library | ros2 | — | BSD-3-Clause | — | cli | 2026-11-18 |
 | [URDF and xacro](urdf.md) | library | ros2 | — | BSD-3-Clause | — | script | 2026-11-18 |
 <!-- index:end -->

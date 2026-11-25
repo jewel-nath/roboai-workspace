@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 35, waiting: 5, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 38, waiting: 2, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -149,6 +149,9 @@ rejected.
 | moveit | [MoveIt 2](../wiki/software/moveit2.md) | A |
 | ompl | [OMPL](../wiki/software/ompl.md) | A |
 | pinocchio | [Pinocchio](../wiki/software/pinocchio.md) | A |
+| rmf_core | [Open-RMF](../wiki/software/open-rmf.md) | B |
+| jetson-containers | [jetson-containers](../wiki/tools/jetson-containers.md) | B |
+| ros2_dds_security | [SROS2](../wiki/software/sros2.md) | B |
 
 ## Waiting for a page
 
@@ -156,9 +159,6 @@ rejected.
 |---|---|---|---|---|
 | gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 | TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
-| rmf_core | `software/open-rmf` | B | ops | rmf_core is archived; its successor Open-RMF coordinates mixed robot fleets, doors and lifts in buildings |
-| jetson-containers | `tools/jetson-containers` | B | ops | Builds ROS 2, PyTorch and model containers for Jetson; the usual way to deploy ML on Jetson |
-| ros2_dds_security | `software/sros2` | B | ops | ROS 2's DDS security design, used through SROS2 for keys, encryption and access control |
 
 ## Index only
 

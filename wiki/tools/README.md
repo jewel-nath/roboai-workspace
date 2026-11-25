@@ -24,7 +24,9 @@ Video tools go in `video/` once the video track starts.
 |---|---|---|---|---|---|---|---|
 | [CloudCompare](cloudcompare.md) | tool | perception | documented | GPL-2.0-or-later | — | cli | 2026-11-23 |
 | [colcon](colcon.md) | tool | ros2 | documented | Apache-2.0 | — | cli | 2026-11-18 |
+| [Docker](docker.md) | tool | ros2 | documented | Apache-2.0 | — | cli | 2026-11-25 |
 | [Foxglove](foxglove.md) | tool | ros2 | documented | — | — | mcp | 2026-11-18 |
+| [jetson-containers](jetson-containers.md) | tool | ros2 | documented | MIT | — | cli | 2026-11-25 |
 | [Pixi (with RoboStack)](pixi.md) | tool | ros2 | documented | BSD-3-Clause | — | cli | 2026-11-18 |
 | [PlotJuggler](plotjuggler.md) | tool | ros2 | documented | MPL-2.0 | — | gui-only | 2026-11-18 |
 | [Rerun](rerun.md) | tool | ros2 | documented | MIT OR Apache-2.0 | — | api | 2026-11-18 |
