@@ -1,12 +1,13 @@
 # RoboAI Workspace — Plan
 
 Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-11-18; Phase 4
-done, 2026-11-25.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
-templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
-consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 triaged
-its lists and wrote all seven batches: ROS 2 core and tooling, simulation, perception and
-SLAM, navigation, manipulation, operations and architecture, and learning
-([progress](#phase-4-plan)). The [roadmap](#12-roadmap) says what comes next.
+done, 2026-11-25; Phase 5 planned, 2026-11-26.** This plan replaces the old "Agentic Robotics"
+layout. Phase 0 built the structure, templates, frontmatter and source registry; Phase 1 built
+the scripts and commands that keep them consistent; Phase 3 wrote the Robot Atlas's 79 pages (17
+profiles, 62 cards). Phase 4 triaged its lists and wrote all seven batches: ROS 2 core and
+tooling, simulation, perception and SLAM, navigation, manipulation, operations and architecture,
+and learning ([progress](#phase-4-plan)). The [Phase 5 plan](#phase-5-plan) covers firmware, parts, control,
+CAD, PCB and CAD-to-sim. The [roadmap](#12-roadmap) says what comes after.
 
 ## Contents
 
@@ -402,7 +403,8 @@ In Phase 0 the old layout (skills, guides, rules, commands, scripts, README, CON
 into `legacy/` with `git mv` and audited. [legacy-audit.md](legacy-audit.md) records the findings
 and maps every file to its destination. Re-filing was part of Phase 2; with Phase 2 deferred, it
 moves into the phases that cover the same topics: ROS 2, simulation, perception, navigation,
-manipulation, learning and operations skills in Phase 4, firmware and control skills in Phase 5.
+manipulation, learning and operations skills in Phase 4, firmware, control and MuJoCo skills in
+Phase 5, and the old guides in Phase 6, which turns them into playbooks.
 
 ### OrbiBot
 
@@ -436,7 +438,7 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 | **2. OrbiBot** — deferred 2026-11-17 | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries. Legacy re-filing moved to Phases 4–5 | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
 | **3. Robot Atlas** ✅ 2026-11-18 | The robot entries of awesome-robot-descriptions, robotics-projects, ros-mobile-robot and social-robots | Every robot entry triaged; tier A/B profiles with generated comparison tables |
 | **4. Software and learning** ✅ 2026-11-25 | robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; ROS 2 from its official docs; re-file the 21 legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills ([Phase 4 plan](#phase-4-plan)) | Every Phase 4 list triaged; software and learning pages with a decision guide per topic; those legacy skills re-filed |
-| **5. Gaps** | Parts catalog, PCB, firmware and MCU, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware and control skills | The areas the awesome lists miss are covered; `legacy/` is empty |
+| **5. Gaps** | Firmware and MCUs, motors and controllers, sensor, compute and power parts, control, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware, control and MuJoCo skills ([Phase 5 plan](#phase-5-plan)) | Every deferred row and new list triaged; each batch's pages, guide and skills written; `legacy/` holds only the guides Phase 6 turns into playbooks |
 | **6. Playbooks** | The idea-to-robot lifecycle with a checklist per stage | A new project can follow it end to end |
 | **7. Distribution** | Claude Code plugin, docs site, contributor guide | Others can install and contribute |
 | **Video track** | V1 PID pilot (explainroo + video-director) → V2 huashu-motion trial with an OrbiBot teaser → V3 `video-cad-exploded` (after the FreeCAD skills, Phase 5) → V4 robot explainers (after Phase 3) → V5 earshot | Starts after Phase 1, so its first benchmark lands in the registry |
@@ -496,6 +498,88 @@ and ROS Index instead of a list (see Decisions).
 | Operations and architecture | 2026-11-25 | 4 cards (Docker, jetson-containers, Open-RMF, SROS2), the [deployment guide](../wiki/guides/choose-a-deployment-method.md), 4 skills re-filed |
 | Learning | 2026-11-25 | 28 pages (9 profiles, 19 cards: policies, VLA models, datasets, frameworks, benchmarks in `wiki/learning/`, and TensorRT), the [policy guide](../wiki/guides/choose-a-robot-learning-policy.md), 2 skills re-filed |
 
+### Phase 5 plan
+
+Planned 2026-11-26. Phase 5 covers what the Phase 4 lists only name or miss: firmware and MCUs,
+motors and their controllers, sensor, compute and power parts, control, CAD, PCB, and the way
+from CAD to a MuJoCo model. It ends with the part stacks that are known to work together.
+
+**Inputs.**
+
+| Input | What it gives |
+|---|---|
+| 121 rows that Phase 4 triage notes deferred | [awesome-robotic-tooling](../sources/awesome-robotic-tooling.md) 71 (firmware, CAD and EDA, CAN, EtherCAT, FPGA, optimisation, vendor sensor drivers); [awesome-robotics-libraries](../sources/awesome-robotics-libraries.md) 33 (control, optimisation, CAD exporters); [awesome-ros-mobile-robot](../sources/awesome-ros-mobile-robot.md) 11 and [awesome-mobile-robotics](../sources/awesome-mobile-robotics.md) 4 (parts and vendors); [awesome-robotics-projects](../sources/awesome-robotics-projects.md) and [awesome-robotics](../sources/awesome-robotics.md) 1 each |
+| The `stack` of the 79 Atlas pages | The parts builders really use. A keyword count on 2026-11-26: Raspberry Pi in 13 robots, Dynamixel X-series servos in 12, ESP32 boards, RealSense cameras and Jetson modules in 9 each, BNO055 or BNO08x IMUs in 8, Feetech serial-bus servos and hobby PWM servos in 6 each |
+| Upstream docs, datasheets and vendor pages | Versions, specs and dated prices, read upstream as in Phase 4 |
+| New lists | The areas no Phase 4 list covers (below) |
+| Eight legacy skills | `microcontrollers`, `gpio-i2c-spi`, `serial-can-protocols`, `rtos-micro-ros`, `sensor-actuator-drivers`, `realtime-motor-control`, `control-systems` and `mujoco`, about 8,400 lines |
+
+**New lists.** Checked on 2026-11-26 from their github.com pages (GitLab for KiCad's index); sizes
+are rough counts of list items. `/ingest` registers each one and records its commit.
+
+| List | Upstream | Last commit | Size | Licence | For |
+|---|---|---|---|---|---|
+| awesome-embedded-software | iDoka/awesome-embedded-software | 2026-11-17 | ~320 | CC0 | MCU libraries: RTOS, bootloaders, CAN, USB, sensor drivers |
+| awesome-canbus | iDoka/awesome-canbus | 2026-11-17 | ~290 | CC0 | CAN tools, DBC formats, CAN hardware; the "awesome CAN" row deferred above |
+| awesome-kicad | joanbono/awesome-kicad | 2026-11-25 | ~85 | GPL-3.0 | KiCad plugins, libraries and tools; linked, never copied |
+| KiCad PCM index | gitlab.com/kicad/addons/metadata | 2026-11-15 | 150 packages | GPL-3.0 | What installs through KiCad's Plugin and Content Manager |
+| FreeCAD Addons index | FreeCAD/Addons | 2026-11-19 | 182 addons | CC0 (data) | The live Addon Manager index |
+| cool-code-cad | kylegrover/cool-code-cad | 2026-09-06 | ~260 | CC0 | Code CAD (B-rep, CSG, SDF), CAM and G-code |
+| MuJoCo Menagerie | google-deepmind/mujoco_menagerie | 2026-11-23 | 73 models | per model (Apache-2.0, BSD, MIT) | Curated MJCF robot models |
+| list_of_robot_electronics | cajt/list_of_robot_electronics | 2025-07-26 | ~65 | BSD-2-Clause | Motor drivers, actuators, BMS and bus systems: the only parts list found |
+
+Checked and left out: nhivp/Awesome-Embedded (mostly courses and tutorials), the Zephyr lists (the
+official docs cover the core), the CadQuery, build123d and OpenSCAD lists (small, or no commit for
+15 months), gbionics/awesome-urdf (URDF libraries, one exporter), and older lists with no commit
+since 2024. No maintained list was found for EtherCAT, BLDC and FOC motor control, actuators,
+MuJoCo, FreeCAD or STM32 and RP2040 boards; those come from their official docs.
+
+**Steps.**
+
+1. **Triage first,** before any page. Each deferred row moves, in its own triage note, to
+   "Waiting for a page" (naming its batch), "Index only" or "Rejected", and the note's counts
+   follow; new lists go through `/ingest`. A vendor's sensor driver goes on its part's page when
+   the part earns one and is an index row otherwise; a tool that serves only ROS 1 is an index
+   row unless nothing replaces it.
+2. **Write by topic,** in this order. Page names are examples; triage sets the list.
+
+   | Batch | Pages | Guide | Skills |
+   |---|---|---|---|
+   | Firmware and MCU | micro-ROS, FreeRTOS, Zephyr, ESP-IDF, Arduino, PlatformIO; CAN and EtherCAT tools (can-utils, python-can, ros2_canopen, CANopenNode); PX4 and ArduPilot; MCU boards in `wiki/parts/mcu/` (ESP32-S3, RP2040, STM32, Teensy) | Choose an MCU and firmware stack | `microcontrollers` → `fw-mcu`, `rtos-micro-ros` → `fw-rtos-micro-ros`, `serial-can-protocols` → `fw-serial-can` |
+   | Control and optimisation | The deferred solvers and toolboxes (CasADi, OSQP, Ipopt, Crocoddyl, OCS2, ProxSuite); the first `wiki/concepts/` pages: PID, feedforward, state space and LQR, MPC, trajectory generation, system identification | Choose a controller: PID, LQR or MPC | `control-systems` → `control-systems`, which owns PID |
+   | Actuators and motor control | Smart servos (Dynamixel X, Feetech STS), hobby PWM servos, BLDC motors and controllers (ODrive, moteus, VESC, SimpleFOC), bus adapters (U2D2, Waveshare); the servo SDKs; a torque-sizing concept and calculator | Choose an actuator | `realtime-motor-control` → `fw-motor-control` |
+   | Sensors, compute and power | IMUs, depth cameras, 2D and 3D lidars, Raspberry Pi, Jetson modules, mini PCs; batteries, BMS, regulators, e-stop parts; power-budget, battery-runtime and wire-gauge concepts and calculators | Choose a robot computer | `gpio-i2c-spi` → `fw-peripherals`, `sensor-actuator-drivers` → `fw-drivers` |
+   | CAD | FreeCAD (first-class); OpenSCAD, CadQuery, build123d, Fusion 360 (documented); `mcp/freecad.md` | Choose a CAD tool | new: `cad-freecad-scripting`, `cad-freecad-build`, `cad-freecad-mcp` |
+   | PCB and electronics | KiCad (first-class), EasyEDA (documented), KiCad helpers (PcbDraw, KiBot), ngspice, WireViz; the `mcp/` guide for the chosen KiCad MCP server | Choose a KiCad MCP server | new: `pcb-kicad` |
+   | MuJoCo and CAD-to-sim | MuJoCo Menagerie, mjlab, MuJoCo MCP servers; CAD exporters (onshape-to-robot, phobos, a FreeCAD route) | Choose a way from CAD to a simulation model | `mujoco` → `sim-mujoco`, with the pipeline in [§7](#7-tool-support-tiers) |
+   | Known-good combinations | — | One guide per robot class (desktop arm, small mobile base, small legged robot), from the stacks Atlas robots prove | — |
+   | Legacy cleanup | — | — | `rules/` to `.claude/rules/` or dropped on review; `scripts/validate-skills.py` and the old README and CONTRIBUTING deleted |
+
+   Firmware goes first: it re-files three legacy skills and needs nothing else. Control comes
+   before motor control, which links to its PID; CAD before the CAD-to-sim pipeline, which uses
+   the FreeCAD skills; the parts batches before the known-good combinations. The CAD batch also
+   unblocks the video track's V3.
+3. **Parts.** A part earns a page when two or more Atlas robots use it or a Phase 5 guide
+   compares it. A page covers one model, or one product line when its models share a datasheet
+   and a protocol. Prices are retail, in USD, dated, from the maker or a main reseller. When a
+   part page is written, each Atlas page that uses the part gets its slug in `stack`, in a list
+   beside the free-text detail (`actuators: [feetech-sts3215, "6 per arm"]`), so the parts index
+   fills its "Used in" column.
+4. **Konnect.** Its upstream was archived on 2026-11-02, so v0.13.0 is final. The PCB batch
+   compares it with its successor and the other KiCad MCP servers before writing the guide, and
+   the registry records the choice.
+5. **Moved upstreams.** Cite the new homes: micro-ROS's docs moved to micro.vulcanexus.org
+   (micro.ros.org redirects there), xesscorp/kicad-3rd-party-tools to devbisme, and FreeCAD's
+   addon index to FreeCAD/Addons (FreeCAD-addons is the index from before FreeCAD 1.0). The
+   micro-ROS site and `micro_ros_setup` list different boards, so the firmware batch checks both.
+   `micro_ros_setup` lists Jazzy as supported, so the `fw-` skills default to Jazzy like the
+   other re-filed skills.
+6. **Each batch** ends with the index generator, the lint and one commit, as in Phase 4, with the
+   same rules for pages, guides and skills: the length limits, `evidence: researched` and an
+   empty `version.tested` until we run it.
+
+**Progress.** Nothing written yet; each batch adds a row here, as in Phase 4.
+
 ## 13. Decisions
 
 All dated 2026-11-12.
@@ -550,6 +634,15 @@ All dated 2026-11-12.
   company of four or more people, and the video track is meant for any builder. HyperFrames is
   added as a trial for exploded views and claude-video for later; nothing is installed before the
   V1 pilot.
+- **2026-11-26: Phase 5 is written from upstream docs, datasheets and vendor pages.** OrbiBot
+  stays out while Phase 2 is deferred, and so do its research and parts notes; its lessons come in
+  through `/promote` once they are cleared for publishing.
+- **2026-11-26: part pages are written in their topic batch,** not in one catalogue batch, so
+  each Phase 5 guide has its options as pages. A part earns a page when two or more Atlas robots
+  use it or a guide compares it; robot pages link to it by slug in `stack`.
+- **2026-11-26: the legacy guides wait for Phase 6,** which turns them into playbooks. Phase 5
+  ends with `legacy/` holding only them and `rules/robotics-testing.md`, which joins the testing
+  playbook.
 
 ## 14. Open questions
 

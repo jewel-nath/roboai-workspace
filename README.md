@@ -24,8 +24,8 @@ perception, navigation, manipulation, operations and learning: 93 [tool](wiki/to
 [an arm motion planner](wiki/guides/choose-an-arm-motion-planner.md),
 [a deployment method](wiki/guides/choose-a-deployment-method.md) and
 [a robot learning policy](wiki/guides/choose-a-robot-learning-policy.md), and twenty
-[skills](skills/). Content
-arrives phase by phase; the [roadmap](docs/plan.md#12-roadmap) says in what order. The rest of the
+[skills](skills/). Phase 5, [planned](docs/plan.md#phase-5-plan), covers firmware, parts,
+control, CAD, PCB and CAD-to-sim. Content arrives phase by phase; the [roadmap](docs/plan.md#12-roadmap) says in what order. The rest of the
 previous skill library is kept in [legacy/](legacy/) until it is re-filed.
 
 ## What it will hold

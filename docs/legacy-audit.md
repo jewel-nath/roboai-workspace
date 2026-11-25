@@ -3,7 +3,8 @@
 Audited 2026-11-12, in Phase 0 of the [plan](plan.md). The old "Agentic Robotics" layout now sits in
 [`legacy/`](../legacy/), moved with `git mv` so its history follows it. This page records what is
 there, what is wrong with it today, and where each piece goes. The re-filing itself happens in
-Phases 4 and 5 (Phase 2, which first held it, is deferred); nothing new is added to `legacy/`.
+Phases 4 and 5, and the old guides become playbooks in Phase 6 (Phase 2, which first held it, is
+deferred); nothing new is added to `legacy/`.
 
 ## How it was audited
 
@@ -48,7 +49,7 @@ it.
 | `ros2-web-bridge` | 1072 | — | robotics-agent-skills | `skills/ros2-web-bridge` | re-filed 2026-11-18 |
 | `robot-modeling` | 594 | — | — | `skills/ros2-robot-description` | re-filed 2026-11-18 |
 | `gazebo` | 599 | Humble | — | `skills/sim-gazebo` | re-filed 2026-11-19; Classic → migration note |
-| `mujoco` | 988 | — | — | `skills/sim-mujoco` | merge with OrbiBot's `mujoco-sim` |
+| `mujoco` | 988 | — | — | `skills/sim-mujoco` | re-file in Phase 5 from upstream; OrbiBot's `mujoco-sim` adds its lessons through `/promote` later |
 | `isaac-sim` | 676 | Humble | — | `wiki/tools/isaac-sim.md` | re-filed 2026-11-19 to the wiki (documented tier) |
 | `sim-to-real` | 550 | Humble, Jazzy | — | `skills/sim-to-real` | re-filed 2026-11-19, merged with `guides/sim-to-real-pipeline.md` |
 | `camera-vision` | 557 | Humble | robotics-agent-skills | `skills/perception-camera` | re-filed 2026-11-23 |
@@ -78,16 +79,16 @@ it.
 | Old file | Lines | Destination | Action |
 |---|---|---|---|
 | `guides/robot-bringup.md` | 390 | `playbooks/` + `skills/ops-bringup` | agent steps merged into `skills/ops-bringup` 2026-11-25; the checklist waits for Phase 6 |
-| `guides/hardware-integration.md` | 675 | `playbooks/` | re-file |
-| `guides/sensor-calibration.md` | 424 | `playbooks/` | re-file |
+| `guides/hardware-integration.md` | 675 | `playbooks/` | re-file in Phase 6 |
+| `guides/sensor-calibration.md` | 424 | `playbooks/` | re-file in Phase 6 |
 | `guides/sim-to-real-pipeline.md` | 311 | `skills/sim-to-real` | re-filed 2026-11-19 (merged) |
-| `guides/production-deployment.md` | 692 | `playbooks/` | re-file; neutral example |
-| `guides/testing-strategy.md` | 965 | `playbooks/` | re-file; absorb `rules/robotics-testing.md`; neutral example |
-| `rules/ros2-general.md`, `ros2-nodes.md`, `ros2-communication.md` | 188 | `.claude/rules/` | re-file |
-| `rules/robotics-testing.md` | 54 | `playbooks/` testing | merge |
-| `rules/clean-architecture.md`, `robot-specific.md` | 69 | `.claude/rules/` or drop | decide on review |
+| `guides/production-deployment.md` | 692 | `playbooks/` | re-file in Phase 6; neutral example |
+| `guides/testing-strategy.md` | 965 | `playbooks/` | re-file in Phase 6; absorb `rules/robotics-testing.md`; neutral example |
+| `rules/ros2-general.md`, `ros2-nodes.md`, `ros2-communication.md` | 188 | `.claude/rules/` | re-file in the Phase 5 cleanup |
+| `rules/robotics-testing.md` | 54 | `playbooks/` testing | merge in Phase 6 |
+| `rules/clean-architecture.md`, `robot-specific.md` | 69 | `.claude/rules/` or drop | decide on review in the Phase 5 cleanup |
 | `commands/ros2.md` | 74 | `wiki/tools/ros2.md` (CLI reference) | re-filed 2026-11-18 |
-| `scripts/validate-skills.py` | 184 | `tools/lint.py` | replaced by `tools/lint.py` (Phase 1); delete on re-filing |
-| `README.md`, `CONTRIBUTING.md` | — | — | superseded by the new README, AGENTS.md and CONTRIBUTING.md |
+| `scripts/validate-skills.py` | 184 | `tools/lint.py` | replaced by `tools/lint.py` (Phase 1); delete in the Phase 5 cleanup |
+| `README.md`, `CONTRIBUTING.md` | — | — | superseded by the new README, AGENTS.md and CONTRIBUTING.md; delete in the Phase 5 cleanup |
 
 All `rules/` files and `commands/ros2.md` were adapted from ros2-claude-code-template.
