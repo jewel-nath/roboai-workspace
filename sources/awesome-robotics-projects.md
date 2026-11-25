@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 195, pages: 30, waiting: 4, index_only: 127, deferred: 1, rejected: 33}
+counts: {entries: 195, pages: 34, waiting: 0, index_only: 127, deferred: 1, rejected: 33}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -73,15 +73,15 @@ software sections belong to Phase 4.
 | PythonRobotics | [PythonRobotics](../wiki/software/pythonrobotics.md) | B |
 | autowarefoundation/autoware.universe | [Autoware](../wiki/software/autoware.md) | B |
 | Robotics Middleware Framework | [Open-RMF](../wiki/software/open-rmf.md) | B |
+| LeRobot | [LeRobot](../wiki/learning/frameworks/lerobot.md) | A |
+| LIBERO | [LIBERO](../wiki/learning/benchmarks/libero.md) | B |
+| OmniGibson | [BEHAVIOR-1K (with OmniGibson)](../wiki/learning/benchmarks/behavior-1k.md) | B |
+| SimplerEnv | [SimplerEnv (SIMPLER)](../wiki/learning/benchmarks/simpler-env.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| LeRobot | `learning/lerobot` | A | learning | Hugging Face's library of datasets, policies and low-cost arm support; the centre of hobby robot learning |
-| LIBERO | `learning/libero` | B | learning | Simulated manipulation benchmark that most recent VLA and imitation-learning papers report on |
-| OmniGibson | `learning/behavior-1k` | B | learning | Same project as BEHAVIOR-1K: its repo now holds both the OmniGibson simulator and the benchmark |
-| SimplerEnv | `learning/simpler-env` | B | learning | Simulated evaluation matched to real Google Robot and WidowX setups; widely reported for VLAs |
 
 ## Index only
 

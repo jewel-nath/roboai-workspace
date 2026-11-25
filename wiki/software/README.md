@@ -15,6 +15,7 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
 | [ros2_control](ros2-control.md) | framework | control | — | Apache-2.0 | — | script | 2026-11-18 |
+| [TensorRT](tensorrt.md) | library | learning | — | Apache-2.0 | — | cli | 2026-11-25 |
 | [cuRobo](curobo.md) | library | manip | — | Apache-2.0 | — | script | 2026-11-25 |
 | [Drake](drake.md) | library | manip | — | BSD-3-Clause | — | script | 2026-11-25 |
 | [MoveIt 2](moveit2.md) | framework | manip | — | BSD-3-Clause | — | cli | 2026-11-25 |

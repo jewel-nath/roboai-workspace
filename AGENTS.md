@@ -7,13 +7,13 @@ agent how the repo works. The full design is in [docs/plan.md](docs/plan.md).
 **Status:** Phases 0 and 1 are done: the structure, templates, frontmatter, source registry, and
 the scripts and commands that keep them consistent. Phase 2 (bringing OrbiBot in) is deferred.
 Phase 3 (the Robot Atlas) is done: four robot lists are triaged and every page they earned is
-written, 17 tier-A profiles and 62 tier-B cards. Phase 4 (software and learning) is under way:
-its lists are triaged, and six of seven batches are written: ROS 2 (14 pages, a middleware
+written, 17 tier-A profiles and 62 tier-B cards. Phase 4 (software and learning) is done:
+its lists are triaged, and all seven batches are written: ROS 2 (14 pages, a middleware
 guide, five re-filed skills), simulation (9 pages, a simulator guide, two re-filed skills),
 perception (24 pages, a SLAM guide, three re-filed skills), navigation (6 pages, a planner and
 controller guide, two re-filed skills), manipulation (8 pages, an arm motion planner guide,
-two re-filed skills) and operations (4 pages, a deployment guide, four re-filed skills).
-Learning is the last batch. Content
+two re-filed skills), operations (4 pages, a deployment guide, four re-filed skills) and
+learning (28 pages, a policy guide, two re-filed skills). Content
 arrives phase by phase (see the roadmap in the plan). The rest of the old skill library waits in
 `legacy/`.
 

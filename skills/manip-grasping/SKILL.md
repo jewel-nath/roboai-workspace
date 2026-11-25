@@ -35,7 +35,7 @@ Elsewhere: MoveIt setup, SRDF, planners, MTC basics and Servo in
 [ros2-robot-description](../ros2-robot-description/SKILL.md); cameras, intrinsics and AprilTags in
 [perception-camera](../perception-camera/SKILL.md). Force and impedance control, insertion and
 assembly belong to the later `control-` skills (Phase 5); learned picking policies to
-`learn-robot-learning`; system-level safety to [arch-safety](../arch-safety/SKILL.md).
+[learn-robot-learning](../learn-robot-learning/SKILL.md); system safety to [arch-safety](../arch-safety/SKILL.md).
 
 ## Quick start
 
@@ -213,8 +213,8 @@ force) and record that it stopped the arm.
   [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [perception-camera](../perception-camera/SKILL.md), [perception-lidar](../perception-lidar/SKILL.md),
   [sim-gazebo](../sim-gazebo/SKILL.md), [sim-to-real](../sim-to-real/SKILL.md). Later: `control-`
-  skills (force and impedance control), `learn-robot-learning`. Also
-  [arch-safety](../arch-safety/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md).
+  skills (force and impedance control). Also [arch-safety](../arch-safety/SKILL.md),
+  [ops-bringup](../ops-bringup/SKILL.md), [learn-robot-learning](../learn-robot-learning/SKILL.md).
 - Upstream: control.ros.org Jazzy (parallel gripper, gripper, F/T broadcaster and admittance
   controller user docs), moveit.picknik.ai (MTC pick and place), easy_handeye2 and
   moveit_calibration READMEs.

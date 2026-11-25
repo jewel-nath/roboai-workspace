@@ -108,8 +108,8 @@ Status as of March 2026, when the skills were last updated:
 ### AI & Learning
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [learning-robotics](skills/learning-robotics/SKILL.md) | Imitation learning, RL for robotics, VLA models | ✅ |
-| [edge-ml-deployment](skills/edge-ml-deployment/SKILL.md) | TensorRT, ONNX, quantization, Jetson, data pipelines | ✅ |
+| [learning-robotics](../skills/learn-robot-learning/SKILL.md) (re-filed as `learn-robot-learning`) | Imitation learning, RL for robotics, VLA models | ✅ |
+| [edge-ml-deployment](../skills/learn-edge-deployment/SKILL.md) (re-filed as `learn-edge-deployment`) | TensorRT, ONNX, quantization, Jetson, data pipelines | ✅ |
 
 ### Architecture & Safety
 | Skill | Description | Status |

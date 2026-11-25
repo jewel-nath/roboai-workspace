@@ -20,7 +20,7 @@ adapter shown uses Ultralytics, whose licence is the first thing to check.
   commercial licence. Decide before the model is wired into a product.
 - Weights can carry terms apart from the code (check the model card), and so can the dataset they
   were trained on.
-- TensorRT, ONNX export and running on a Jetson are the later skill `learn-edge-deployment`;
+- TensorRT, ONNX export and running on a Jetson are in [learn-edge-deployment](../../learn-edge-deployment/SKILL.md);
   GPUs in containers are in [ops-docker-ci](../../ops-docker-ci/references/gpu-display.md).
 
 ## Python environment

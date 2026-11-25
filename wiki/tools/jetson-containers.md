@@ -74,8 +74,8 @@ Check: `python3 -c "import torch; print(torch.cuda.is_available())"` prints True
 
 ## Alternatives
 
-**Isaac ROS CLI**: NVIDIA's packages for ROS 2 Lyrical on Ubuntu 24.04 and JetPack 7.2 (Thor and
-Orin), in Docker (recommended), a venv or bare metal [8]. **NGC** images such as `l4t-jetpack` [7].
+**Isaac ROS CLI**: packages for ROS 2 Lyrical (4.6: Jazzy) on Ubuntu 24.04 and JetPack 7.2 (Thor
+and Orin), in Docker (recommended), a venv or bare metal [8]; **NGC** images like `l4t-jetpack` [7].
 Plain [Docker](docker.md) with the arm64 `ros` images, which carry no CUDA.
 
 ## Sources

@@ -5,7 +5,7 @@ registry: awesome-robotics-libraries
 url: https://github.com/jslee02/awesome-robotics-libraries
 commit: "98c7b97"
 read_on: 2026-11-18
-counts: {entries: 229, pages: 25, waiting: 6, index_only: 124, deferred: 33, rejected: 41}
+counts: {entries: 229, pages: 31, waiting: 0, index_only: 124, deferred: 33, rejected: 41}
 ---
 
 # Awesome Robotics Libraries: what it gives RoboAI
@@ -82,17 +82,17 @@ end of each section.
 | MoveIt! | [MoveIt 2](../wiki/software/moveit2.md) | A |
 | cuRobo | [cuRobo](../wiki/software/curobo.md) | B |
 | Contact-GraspNet | [Contact-GraspNet](../wiki/learning/models/contact-graspnet.md) | B |
+| LeRobot | [LeRobot](../wiki/learning/frameworks/lerobot.md) | A |
+| Stable-Baselines3 | [Stable-Baselines3](../wiki/learning/frameworks/stable-baselines3.md) | B |
+| Isaac Lab | [Isaac Lab](../wiki/learning/frameworks/isaac-lab.md) | A |
+| ManiSkill | [ManiSkill](../wiki/learning/frameworks/maniskill.md) | A |
+| robosuite | [robosuite](../wiki/learning/frameworks/robosuite.md) | A |
+| Gymnasium | [Gymnasium](../wiki/learning/frameworks/gymnasium.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| LeRobot | `learning/lerobot` | A | learning | Hugging Face's datasets, policies and low-cost robot support; the entry point for imitation learning |
-| Stable-Baselines3 | `learning/stable-baselines3` | B | learning | The usual first RL library: reliable PyTorch algorithms behind a Gymnasium interface |
-| Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim; the standard for locomotion RL and sim-to-real |
-| ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulation and benchmark on SAPIEN; widely used for robot learning |
-| robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation benchmark behind robomimic and many imitation-learning papers |
-| Gymnasium | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
 
 ## Index only
 

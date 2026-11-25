@@ -65,8 +65,8 @@ it.
 | `serial-can-protocols` | 1141 | Humble | — | `skills/fw-serial-can` | re-file |
 | `rtos-micro-ros` | 1140 | Jazzy | — | `skills/fw-rtos-micro-ros` | re-file, neutral example |
 | `sensor-actuator-drivers` | 1267 | Jazzy | — | `skills/fw-drivers` | re-file; PID → link |
-| `learning-robotics` | 1131 | — | — | `skills/learn-robot-learning` | re-file, neutral example |
-| `edge-ml-deployment` | 1080 | Jazzy | — | `skills/learn-edge-deployment` | re-file, neutral example |
+| `learning-robotics` | 1131 | — | — | `skills/learn-robot-learning` | re-filed 2026-11-25 |
+| `edge-ml-deployment` | 1080 | Jazzy | — | `skills/learn-edge-deployment` | re-filed 2026-11-25 |
 | `robot-architecture` | 1316 | Humble, Jazzy | robotics-agent-skills | `skills/arch-robot-architecture` | re-filed 2026-11-25 |
 | `safety-systems` | 1124 | Humble | robotics-agent-skills | `skills/arch-safety` | re-filed 2026-11-25 |
 | `robot-bringup` | 1190 | Humble, Jazzy | robotics-agent-skills | `skills/ops-bringup` | re-filed 2026-11-25, with the agent steps of `guides/robot-bringup.md` |

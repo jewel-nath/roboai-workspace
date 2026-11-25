@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 38, waiting: 2, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 40, waiting: 0, index_only: 577, deferred: 71, rejected: 250}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -152,13 +152,13 @@ rejected.
 | rmf_core | [Open-RMF](../wiki/software/open-rmf.md) | B |
 | jetson-containers | [jetson-containers](../wiki/tools/jetson-containers.md) | B |
 | ros2_dds_security | [SROS2](../wiki/software/sros2.md) | B |
+| gym | [Gymnasium](../wiki/learning/frameworks/gymnasium.md) | B |
+| TensorRT | [TensorRT](../wiki/software/tensorrt.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| gym | `learning/gymnasium` | B | learning | Gym's successor Gymnasium is the standard RL environment API; MuJoCo, ManiSkill and others use it |
-| TensorRT | `software/tensorrt` | B | learning | Standard inference optimiser on NVIDIA Jetson; runtime is proprietary, this repo holds its Apache-2.0 parts |
 
 ## Index only
 

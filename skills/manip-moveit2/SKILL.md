@@ -191,7 +191,8 @@ Before reporting MoveIt working on an arm:
   [ros2-robot-description](../ros2-robot-description/SKILL.md), [ros2-core](../ros2-core/SKILL.md),
   [sim-gazebo](../sim-gazebo/SKILL.md), [perception-camera](../perception-camera/SKILL.md),
   [sim-to-real](../sim-to-real/SKILL.md), [ops-docker-ci](../ops-docker-ci/SKILL.md),
-  [arch-safety](../arch-safety/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md); later
-  `learn-robot-learning` (learned policies instead of planned motions).
+  [arch-safety](../arch-safety/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md),
+  [learn-robot-learning](../learn-robot-learning/SKILL.md) (learned policies instead of planned
+  motions).
 - Upstream: moveit.picknik.ai (`main` docs track Rolling; there is no Jazzy edition), the `moveit2` `jazzy`
   branch (`MIGRATION.md`, `moveit_configs_utils`), moveit2_tutorials, moveit_task_constructor, control.ros.org.

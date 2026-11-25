@@ -5,7 +5,7 @@ registry: awesome-robotics-manipulation
 url: https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation
 commit: "14f72df"
 read_on: 2026-11-18
-counts: {entries: 109, pages: 3, waiting: 25, index_only: 77, deferred: 0, rejected: 4}
+counts: {entries: 109, pages: 28, waiting: 0, index_only: 77, deferred: 0, rejected: 4}
 ---
 
 # Awesome-Robotics-Manipulation: what it gives RoboAI
@@ -61,36 +61,36 @@ X-Embodiment, DROID) and the simulators and benchmarks (robosuite, ManiSkill, Is
 | GENESIS | [Genesis](../wiki/tools/genesis.md) | B |
 | Contact-GraspNet | [Contact-GraspNet](../wiki/learning/models/contact-graspnet.md) | B |
 | GraspNet-1Billion | [GraspNet-1Billion](../wiki/learning/datasets/graspnet-1billion.md) | B |
+| GR00T N1 | [Isaac GR00T](../wiki/learning/models/gr00t.md) | A |
+| Octo | [Octo](../wiki/learning/models/octo.md) | B |
+| RT-1 | [RT-1 (Robotics Transformer 1)](../wiki/learning/models/rt-1.md) | B |
+| π0 | [π0 family (openpi - π0, π0-FAST, π0.5)](../wiki/learning/models/pi0.md) | A |
+| OpenVLA | [OpenVLA (and OpenVLA-OFT)](../wiki/learning/models/openvla.md) | B |
+| RT-2 | [RT-2 (Robotics Transformer 2)](../wiki/learning/models/rt-2.md) | B |
+| SmolVLA | [SmolVLA](../wiki/learning/models/smolvla.md) | B |
+| ACT | [ACT (Action Chunking with Transformers)](../wiki/learning/policies/act.md) | A |
+| RDT-1B | [RDT (RDT-1B and RDT2)](../wiki/learning/models/rdt.md) | B |
+| Diffusion Policy | [Diffusion Policy](../wiki/learning/policies/diffusion-policy.md) | A |
+| ManiSkill | [ManiSkill](../wiki/learning/frameworks/maniskill.md) | A |
+| SIMPLER | [SimplerEnv (SIMPLER)](../wiki/learning/benchmarks/simpler-env.md) | B |
+| LIBERO | [LIBERO](../wiki/learning/benchmarks/libero.md) | B |
+| Robomimic | [robomimic](../wiki/learning/frameworks/robomimic.md) | B |
+| RLBench | [RLBench](../wiki/learning/benchmarks/rlbench.md) | B |
+| Isaac Lab | [Isaac Lab](../wiki/learning/frameworks/isaac-lab.md) | A |
+| RoboCasa | [RoboCasa (RoboCasa365)](../wiki/learning/benchmarks/robocasa.md) | B |
+| robosuite | [robosuite](../wiki/learning/frameworks/robosuite.md) | A |
+| DROID | [DROID](../wiki/learning/datasets/droid.md) | A |
+| Open X-Embodiment | [Open X-Embodiment](../wiki/learning/datasets/open-x-embodiment.md) | A |
+| BridgeData V2 | [BridgeData V2](../wiki/learning/datasets/bridgedata-v2.md) | B |
+| Robot Learning: A Tutorial (code: LeRobot) | [LeRobot](../wiki/learning/frameworks/lerobot.md) | A |
+| ManiSkill2 | [ManiSkill](../wiki/learning/frameworks/maniskill.md) | A |
+| CALVIN | [CALVIN](../wiki/learning/benchmarks/calvin.md) | B |
+| BEHAVIOR-1K | [BEHAVIOR-1K (with OmniGibson)](../wiki/learning/benchmarks/behavior-1k.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| GR00T N1 | `learning/gr00t` | A | learning | NVIDIA's open foundation model for humanoids and other robots; Apache-2.0 code, commercially usable weights, very active |
-| Octo | `learning/octo` | B | learning | Open generalist policy trained on Open X-Embodiment; a frequent baseline, repo quiet since 2024 |
-| RT-1 | `learning/rt-1` | B | learning | Google's landmark Robotics Transformer and dataset; still a baseline and part of Open X-Embodiment |
-| π0 | `learning/pi0` | A | learning | Physical Intelligence's flow-matching VLA; openpi ships π0, π0-FAST and π0.5 weights with fine-tuning code |
-| OpenVLA | `learning/openvla` | B | learning | Reference open-source VLA, widely fine-tuned and compared; MIT, repo quiet since March 2025 |
-| RT-2 | `learning/rt-2` | B | learning | Introduced the VLA: a web-trained vision-language model that outputs actions; closed, no code |
-| SmolVLA | `learning/smolvla` | B | learning | Hugging Face's small VLA in LeRobot, aimed at affordable arms and modest GPUs |
-| ACT | `learning/act` | A | learning | Action-chunking transformer from ALOHA; a common first policy for low-cost arms through LeRobot |
-| RDT-1B | `learning/rdt` | B | learning | Open diffusion foundation model for bimanual arms; MIT, maintained, with RDT2 as its successor |
-| Diffusion Policy | `learning/diffusion-policy` | A | learning | The standard visuomotor diffusion policy; reference repo quiet since 2024, maintained in LeRobot |
-| ManiSkill | `learning/maniskill` | A | learning | GPU-parallel manipulation simulator and benchmark, now ManiSkill3; Apache-2.0, active |
-| SIMPLER | `learning/simpler-env` | B | learning | Simulated evaluation matched to real Google Robot and WidowX setups; widely reported for VLAs |
-| LIBERO | `learning/libero` | B | learning | Standard VLA fine-tuning benchmark with many LIBERO-* offshoots; repo quiet since March 2025 |
-| Robomimic | `learning/robomimic` | B | learning | Imitation-learning framework and datasets on robosuite; MIT, maintained |
-| RLBench | `learning/rlbench` | B | learning | Historic CoppeliaSim benchmark used by PerAct and RVT; non-commercial research licence |
-| Isaac Lab | `learning/isaac-lab` | A | learning | NVIDIA's GPU-parallel RL and imitation framework on Isaac Sim; BSD-3-Clause, very active |
-| RoboCasa | `learning/robocasa` | B | learning | Large household-kitchen simulation on robosuite for generalist policies; MIT, active |
-| robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation framework under robomimic, RoboCasa and many benchmarks; MIT, maintained |
-| DROID | `learning/droid` | A | learning | Large in-the-wild Franka teleoperation dataset with a reproducible robot platform; openpi trains on it |
-| Open X-Embodiment | `learning/open-x-embodiment` | A | learning | Pooled multi-robot dataset, CC-BY-4.0, behind RT-X, Octo and OpenVLA |
-| BridgeData V2 | `learning/bridgedata-v2` | B | learning | WidowX dataset across many toy-kitchen scenes, part of Open X-Embodiment; basis of SIMPLER's WidowX tasks |
-| Robot Learning: A Tutorial (code: LeRobot) | `learning/lerobot` | A | learning | Hugging Face's robot-learning library: datasets, ACT, Diffusion Policy, SmolVLA, SO-101 support |
-| ManiSkill2 | `learning/maniskill` | A | learning | GPU-parallel SAPIEN simulator and benchmark for manipulation learning; fast, active and Apache-2.0 |
-| CALVIN | `learning/calvin` | B | learning | Long-horizon, language-conditioned manipulation benchmark in PyBullet; a standard test for language policies and VLAs |
-| BEHAVIOR-1K | `learning/behavior-1k` | B | learning | Same project as BEHAVIOR-1K: its repo now holds both the OmniGibson simulator and the benchmark |
 
 ## Index only
 

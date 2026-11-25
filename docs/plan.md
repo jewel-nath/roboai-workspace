@@ -1,11 +1,11 @@
 # RoboAI Workspace — Plan
 
 Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-11-18; Phase 4
-under way.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
+done, 2026-11-25.** This plan replaces the old "Agentic Robotics" layout. Phase 0 built the structure,
 templates, frontmatter and source registry; Phase 1 built the scripts and commands that keep them
-consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 has triaged
-its lists and written six of its seven batches: ROS 2 core and tooling, simulation,
-perception and SLAM, navigation, manipulation, and operations and architecture
+consistent; Phase 3 wrote the Robot Atlas's 79 pages (17 profiles, 62 cards). Phase 4 triaged
+its lists and wrote all seven batches: ROS 2 core and tooling, simulation, perception and
+SLAM, navigation, manipulation, operations and architecture, and learning
 ([progress](#phase-4-plan)). The [roadmap](#12-roadmap) says what comes next.
 
 ## Contents
@@ -435,7 +435,7 @@ repo from `orbibot-workspace` to `orbibot` is optional.
 | **1. Tooling** ✅ 2026-11-17 | `/ingest`, `/new-project`, `/promote`, `/compare`, `/review-sources`; `check_sources.py`; benchmark setup; index generator; lint and CI | Research and reviews produce consistent, checked output |
 | **2. OrbiBot** — deferred 2026-11-17 | Move it into `projects/`; general skills, calculators, Atlas profiles; its registry entries. Legacy re-filing moved to Phases 4–5 | OrbiBot works from `projects/orbibot` and its general knowledge is in the wiki |
 | **3. Robot Atlas** ✅ 2026-11-18 | The robot entries of awesome-robot-descriptions, robotics-projects, ros-mobile-robot and social-robots | Every robot entry triaged; tier A/B profiles with generated comparison tables |
-| **4. Software and learning** | robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; ROS 2 from its official docs; re-file the 21 legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills ([Phase 4 plan](#phase-4-plan)) | Every Phase 4 list triaged; software and learning pages with a decision guide per topic; those legacy skills re-filed |
+| **4. Software and learning** ✅ 2026-11-25 | robotics-libraries, robotic-tooling, robot-learning, foundation models, datasets, robotics-3D, mobile-robotics, manipulation, the general awesome-robotics list, and the non-robot sections of the Phase 3 lists; ROS 2 from its official docs; re-file the 21 legacy ROS 2, simulation, perception, navigation, manipulation, learning and operations skills ([Phase 4 plan](#phase-4-plan)) | Every Phase 4 list triaged; software and learning pages with a decision guide per topic; those legacy skills re-filed |
 | **5. Gaps** | Parts catalog, PCB, firmware and MCU, FreeCAD and KiCad skills, CAD-to-MuJoCo, known-good combinations; re-file the legacy firmware and control skills | The areas the awesome lists miss are covered; `legacy/` is empty |
 | **6. Playbooks** | The idea-to-robot lifecycle with a checklist per stage | A new project can follow it end to end |
 | **7. Distribution** | Claude Code plugin, docs site, contributor guide | Others can install and contribute |
@@ -494,6 +494,7 @@ and ROS Index instead of a list (see Decisions).
 | Navigation | 2026-11-24 | 6 pages (Nav2 and BehaviorTree.CPP profiles; grid_map, linorobot2, Autoware and PythonRobotics cards), the [planner and controller guide](../wiki/guides/choose-a-nav2-planner-and-controller.md), 2 skills re-filed |
 | Manipulation | 2026-11-25 | 8 pages (MoveIt 2, OMPL, Drake and Pinocchio profiles; cuRobo, Robotics Toolbox for Python, Contact-GraspNet and GraspNet-1Billion cards), the [arm motion planner guide](../wiki/guides/choose-an-arm-motion-planner.md), 2 skills re-filed |
 | Operations and architecture | 2026-11-25 | 4 cards (Docker, jetson-containers, Open-RMF, SROS2), the [deployment guide](../wiki/guides/choose-a-deployment-method.md), 4 skills re-filed |
+| Learning | 2026-11-25 | 28 pages (9 profiles, 19 cards: policies, VLA models, datasets, frameworks, benchmarks in `wiki/learning/`, and TensorRT), the [policy guide](../wiki/guides/choose-a-robot-learning-policy.md), 2 skills re-filed |
 
 ## 13. Decisions
 

@@ -5,7 +5,7 @@ registry: awesome-robot-learning
 url: https://github.com/RayYoh/Awesome-Robot-Learning
 commit: "41eb274"
 read_on: 2026-11-18
-counts: {entries: 56, pages: 2, waiting: 10, index_only: 35, deferred: 0, rejected: 9}
+counts: {entries: 56, pages: 12, waiting: 0, index_only: 35, deferred: 0, rejected: 9}
 ---
 
 # Awesome Robot Learning: what it gives RoboAI
@@ -48,21 +48,21 @@ and four 2026 additions that promote their authors' own projects.
 |---|---|---|
 | mujoco_menagerie | [MuJoCo](../wiki/tools/mujoco.md) | A |
 | Genesis | [Genesis](../wiki/tools/genesis.md) | B |
+| Omniverse Isaac Orbit | [Isaac Lab](../wiki/learning/frameworks/isaac-lab.md) | A |
+| OmniGibson | [BEHAVIOR-1K (with OmniGibson)](../wiki/learning/benchmarks/behavior-1k.md) | B |
+| robosuite | [robosuite](../wiki/learning/frameworks/robosuite.md) | A |
+| RoboCasa | [RoboCasa (RoboCasa365)](../wiki/learning/benchmarks/robocasa.md) | B |
+| ManiSkill3 | [ManiSkill](../wiki/learning/frameworks/maniskill.md) | A |
+| Calvin | [CALVIN](../wiki/learning/benchmarks/calvin.md) | B |
+| RLBench | [RLBench](../wiki/learning/benchmarks/rlbench.md) | B |
+| LeRobot | [LeRobot](../wiki/learning/frameworks/lerobot.md) | A |
+| Open X-Embodiment | [Open X-Embodiment](../wiki/learning/datasets/open-x-embodiment.md) | A |
+| SimplerEnv | [SimplerEnv (SIMPLER)](../wiki/learning/benchmarks/simpler-env.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Omniverse Isaac Orbit | `learning/isaac-lab` | A | learning | NVIDIA's GPU robot-learning framework on Isaac Sim (Orbit, renamed); the main route for RL locomotion and sim-to-real |
-| OmniGibson | `learning/behavior-1k` | B | learning | Same project as BEHAVIOR-1K: its repo now holds both the OmniGibson simulator and the benchmark |
-| robosuite | `learning/robosuite` | A | learning | MuJoCo manipulation framework that robomimic, LIBERO and RoboCasa build on; maintained and MIT-licensed |
-| RoboCasa | `learning/robocasa` | B | learning | Large robosuite-based kitchen simulation with tasks and assets for training generalist policies; active |
-| ManiSkill3 | `learning/maniskill` | A | learning | GPU-parallel SAPIEN simulator and benchmark for manipulation learning; fast, active and Apache-2.0 |
-| Calvin | `learning/calvin` | B | learning | Long-horizon, language-conditioned manipulation benchmark in PyBullet; a standard test for language policies and VLAs |
-| RLBench | `learning/rlbench` | B | learning | CoppeliaSim manipulation benchmark behind PerAct, RVT and most 3D policies; licence allows non-commercial research only |
-| LeRobot | `learning/lerobot` | A | learning | Hugging Face's library of datasets, policies (ACT, Diffusion Policy, pi0) and low-cost arm support; the default hobby stack |
-| Open X-Embodiment | `learning/open-x-embodiment` | A | learning | Pooled multi-robot dataset and RT-X models; the pretraining mix behind Octo, OpenVLA and most open VLAs |
-| SimplerEnv | `learning/simpler-env` | B | learning | Simulated evaluation matched to real Google Robot and WidowX setups; widely reported for VLAs |
 
 ## Index only
 
