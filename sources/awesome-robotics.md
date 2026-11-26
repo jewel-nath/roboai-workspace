@@ -5,7 +5,7 @@ registry: awesome-robotics
 url: https://github.com/kiloreux/awesome-robotics
 commit: "067f76e"
 read_on: 2026-11-18
-counts: {entries: 147, pages: 7, waiting: 0, index_only: 106, deferred: 1, rejected: 33}
+counts: {entries: 147, pages: 7, waiting: 0, index_only: 107, deferred: 0, rejected: 33}
 ---
 
 # Awesome Robotics: what it gives RoboAI
@@ -47,7 +47,13 @@ resources (Linorobot and PythonRobotics), and a reading list worth keeping as in
   2026 (see the [Fetch](../wiki/robots/fetch.md) page). The README holds no prompt-like text.
   MRPT's repo carries an `agents.md` with coding rules for its own contributors; it was read as
   data and not followed. Unity Robotics Hub's README now advertises Unity's paid Simulation Pro.
-- **Left for Phase 5:** g2core (motion-control firmware).
+- **Left for Phase 5 (triaged 2026-11-26):** g2core (motion-control firmware).
+- **Phase 5 re-triage (2026-11-26):** g2core was partial-cloned from `synthetos/g2` (default
+  branch `edge-preview`; 679 stars). Its last commit, 2026-11-15, only links synthetos.com in the
+  README; the code is unchanged since 2023-07-20, and the `edge` branch since 2021-11-05. The
+  licence is GPL-2.0 with the BeRTOS exception for component files. It is 9-axis motion-control
+  firmware for the Arduino Due, aimed first at CNC machines, 3D printers and lasers (its README
+  also names robotics); with its code quiet for three years, it is index only.
 
 ## Pages made
 
@@ -176,12 +182,12 @@ resources (Linorobot and PythonRobotics), and a reading list worth keeping as in
 | Awesome Robotics (ahundt) | Another general robotics list, research-leaning | — | — |
 | Awesome Robotics Libraries | A Phase 4 source with its own triage note | — | — |
 | Awesome RoboCupJunior Soccer | Resources for RoboCupJunior Soccer teams | — | — |
+| g2core | Motion-control firmware for CNC machines, 3D printers, lasers and robots on the Arduino Due; code quiet since July 2023 | 2026-11-15 | GPL-2.0 with BeRTOS exception |
 
 ## Deferred
 
 | Entry | What it is | Phase |
 |---|---|---|
-| g2core | Motion-control firmware for CNC machines and robots on Arduino Due-class boards | 5 |
 
 ## Rejected
 

@@ -578,7 +578,24 @@ MuJoCo, FreeCAD or STM32 and RP2040 boards; those come from their official docs.
    same rules for pages, guides and skills: the length limits, `evidence: researched` and an
    empty `version.tested` until we run it.
 
-**Progress.** Nothing written yet; each batch adds a row here, as in Phase 4.
+**Progress.**
+
+| Step | Done | Result |
+|---|---|---|
+| Triage | 2026-11-26 | The 121 deferred rows decided and the eight new lists read (1,270 rows); 43 pages wait across seven batches (firmware 10, control 5, actuators 4, sensors 3, CAD 7, PCB 9, CAD-to-sim 5), plus the pages below |
+
+**Pages with no list row.** Written from official docs and the Atlas survey, as ROS 2 was in
+Phase 4. Robot counts are Atlas pages whose `stack` names the part, on 2026-11-26.
+
+| Batch | From docs | Parts from the Atlas |
+|---|---|---|
+| Firmware and MCU | ESP-IDF, Arduino, PlatformIO | ESP32-S3 (4 robots; the classic ESP32 in 4 more), Arduino Mega 2560 (3), RP2040 (2), Teensy 4.1 and an STM32 Nucleo board (the guide compares them; the Atlas has older Teensys and several STM32 chips) |
+| Control and optimisation | The concept pages in the batch table | — |
+| Actuators and motor control | Torque-sizing concept and calculator | Dynamixel X-series (XL330 in 6, XL430 in 4, XM430 in 7, XC330 in 3), Feetech STS3215 (3), U2D2 (4), Waveshare bus servo adapter (4), T-Motor Antigravity 4004 (2), hobby PWM servos (6, mixed models: one card or a concept page) |
+| Sensors, compute and power | Power-budget, battery-runtime and wire-gauge concepts and calculators | BNO055 (3), BNO08x (5), OAK-D (2); the Raspberry Pi page decides whether to split by model (Pi 4 in 3, Zero 2 W in 2, CM4 in 2, Pi 5 in 1) |
+| CAD | `mcp/freecad.md`, after comparing freecad-mcp with freecad-mcp-bridge and ClaudeCodeWB | — |
+| PCB and electronics | The KiCad MCP comparison (step 4); kicad-happy reviewed as a source for `pcb-kicad` | — |
+| MuJoCo and CAD-to-sim | freecad.cross and RobotCAD (read from their repos), mjlab; the missing Menagerie models added to four Atlas pages' `sim_models` | — |
 
 ## 13. Decisions
 

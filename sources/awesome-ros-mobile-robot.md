@@ -5,7 +5,7 @@ registry: awesome-ros-mobile-robot
 url: https://github.com/shannon112/awesome-ros-mobile-robot
 commit: "a405fbf"
 read_on: 2026-11-17
-counts: {entries: 185, pages: 30, waiting: 0, index_only: 119, deferred: 11, rejected: 25}
+counts: {entries: 191, pages: 30, waiting: 4, index_only: 128, deferred: 0, rejected: 29}
 ---
 
 # awesome-ros-mobile-robot: what it gives RoboAI
@@ -22,19 +22,47 @@ projects; its real weight is the software sections, which Phase 4 reads.
 - **Phase 4** read the header links and sections 0, 1 and 3 to 11 on 2026-11-18, at the same
   commit, and decided the robots.ros.org row Phase 3 deferred. Page candidates were checked with
   shallow git clones (last commit, licence) and every link with an HTTP request. The sensors in
-  section 3 and the Razor IMU guides in section 4 are parts, deferred to Phase 5. Paper-only
-  groups (surveys, tutorials, the mapping backbones, the navigation research) and bullets that
-  only name methods are one row each. Moved on 2026-11-18: the Gazebo releases page, the
-  torchvision models page, `ydlidar_ros`, the MultiSense S7 docs and the TUM RGB-D site (now
-  cvg.cit.tum.de); ceres-solver.org did not resolve, though its repo is active. Dead links are in
-  Rejected. Nothing in the README addresses agents.
-- The processing-unit and motor-vendor bullets are parts, deferred to Phase 5. The wheel
-  configuration images were skipped.
+  section 3 and the Razor IMU guides in section 4 are parts, deferred to Phase 5 (triaged
+  2026-11-26). Paper-only groups (surveys, tutorials, the mapping backbones, the navigation
+  research) and bullets that only name methods are one row each. Moved on 2026-11-18: the Gazebo
+  releases page, the torchvision models page, `ydlidar_ros`, the MultiSense S7 docs and the TUM
+  RGB-D site (now cvg.cit.tum.de); ceres-solver.org did not resolve, though its repo is active.
+  Dead links are in Rejected. Nothing in the README addresses agents.
+- The processing-unit and motor-vendor bullets are parts, deferred to Phase 5 (triaged
+  2026-11-26). The wheel configuration images were skipped.
 - Open designs were checked with shallow git clones; commercial robots were judged by how often
   builders meet them. Robots also listed in awesome-robot-descriptions share its page slugs.
 - Dead on 2026-11-17: both Clearpath Husky manipulation guides. f1tenth.org now redirects to
   roboracer.ai (the project's new name; its docs and GitHub still say F1TENTH). The Techman link is
   an unofficial ROS 1 driver.
+- **Phase 5 re-triage (2026-11-26):** the 11 deferred rows were decided at the same list commit.
+  Parts follow the parts rule: the `stack` of every Atlas page was grepped for each name. Group
+  rows split where products got different decisions, so 11 rows became 17 and `entries` rose by
+  6 (processing units, RGB-D cameras and scanning devices became three rows each). Raspberry Pi
+  (13 robots) and Jetson (9, six of them on Orin modules) wait for the sensors batch under
+  proposed slugs: `raspberry-pi` is a line page (Pi 4 in four robots, Pi 3 and Zero 2 W in two
+  each, Pi 5 and CM4 in one), which the batch may split by model; `nvidia-jetson-orin` covers the
+  current modules, while the list names the older TX1, TX2, Nano and Xavier. The RealSense link
+  now redirects to `realsenseai/realsense-ros` (2026-11-15, Apache-2.0): the D400 cameras are sold
+  by RealSense, Inc. at realsenseai.com, under the Intel RealSense marks by licence, and
+  intelrealsense.com no longer responds. Four makers appear in two robots but not as one current
+  model, so they stay index only: Hokuyo (F1TENTH's UST-10LX, PR2's UTM-30LX; one protocol and
+  driver, two series), MicroStrain (AutoRally's 3DM-GX5-25, ODRI Solo's 3DM-CX5-25; the list
+  names the old 3DM-GX2), Maxon (different motors in PR2 and the Shadow Hand) and Kinect v1 (PR2,
+  InMoov; discontinued). ZED, RPLIDAR, SICK, Livox and ReSpeaker are in one robot each; Unitree
+  H1's page says only "3D lidar", so Livox may have a second user (not confirmed). Status found
+  by HTTP request: SparkFun's Razor IMU M0 page now redirects to another product; Microsoft
+  archived the Azure Kinect SDK on 2024-08-22 and its ROS driver on 2024-07-26; realsenseai.com
+  lists neither the T265 nor the L515; structure.io sells only the iPad-mounted Structure Sensor 3
+  for healthcare; www.kaarta.com does not respond and kaarta.com shows a 2023 placeholder page;
+  velodynelidar.com redirects to Ouster and nerian.com to an LMI support page; the MultiSense S7
+  docs link returns 404 and `ydlidar_ros` is gone (YDLIDAR's `ydlidar_ros2_driver`: 2025-04-09);
+  ceres-solver.org resolves again. Driver last commits, from partial clones: urg_node 2025-05-23,
+  rplidar_ros 2024-05-20, sick_scan_xd 2026-10-22, velodyne 2026-10-23, livox_ros_driver2
+  2026-09-21, loam_livox 2019-12-25, openni2_camera 2025-05-22, iai_kinect2 2018-07-03,
+  zed-ros2-wrapper 2026-11-20, microstrain_inertial 2026-11-18, razor_imu_9dof 2022-09-19. Group
+  rows leave Last commit and Licence empty because they span several drivers. Outcome: 4
+  waiting, 9 index only, 4 rejected.
 
 ## Pages made
 
@@ -75,6 +103,10 @@ projects; its real weight is the software sections, which Phase 4 reads.
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
+| Processing Unit (SBC/IPC): Raspberry Pi | parts/compute/raspberry-pi | A | sensors | The most common robot computer in the Atlas: 13 robots, from TurtleBot3 to Pupper v3 |
+| Processing Unit (SBC/IPC): NVIDIA Jetson TX1, TX2, Nano, Xavier | parts/compute/nvidia-jetson-orin | A | sensors | The onboard GPU computer of 9 Atlas robots, six on Orin modules; the list names older generations |
+| RGB-D Camera: Intel RealSense D455, D435, D435i, D415 | parts/sensors/intel-realsense-d400 | A | sensors | The depth camera of 9 Atlas robots; realsense-ros, its ROS 2 driver, goes on this page |
+| Ceres Solver Library | software/ceres-solver | B | control | Nonlinear least squares for calibration and system identification; the solver inside VINS-Fusion, Cartographer and SLAM Toolbox |
 
 ## Index only
 
@@ -199,22 +231,20 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "ROS.Taiwan", "ROS.Taipei" | Taiwanese ROS user groups on Facebook | — | — |
 | "ROScon" | Yearly ROS developer conference | — | — |
 | "ROS Summer School(CN)" | Chinese ROS summer school | — | — |
+| Processing Unit (SBC/IPC): BeagleBone Black, Odroid XU4 and N2, Asus Tinker Board, ADLINK Neuron | Other single-board computers and an ADLINK industrial PC; no Atlas robot uses them | — | — |
+| Motor & Controller & Encoder: Elmo, RLS, Faulhaber, Maxon, Dexmart | Makers named without links: servo drives (Elmo), magnetic encoders (RLS), precision DC motors (Faulhaber, Maxon), motors and drives (Dexmart) | — | — |
+| RGB-D Camera: Microsoft Kinect v1 and v2, Asus Xtion | Discontinued depth cameras of the 2010s; Kinect v1 is on the PR2 and InMoov pages; only openni2_camera has a ROS 2 branch | — | — |
+| Stereo Camera: Stereolabs ZED, Carnegie Robotics MultiSense S7, e-con Tara, Nerian SP1 | Stereo depth cameras; only ZED is in the Atlas (optional on NanoSaur); the S7 docs link is 404 and the Tara link an unofficial 2017 driver | — | — |
+| Laser Rangefinder: Hokuyo URG and UTM, YDLIDAR, RPLIDAR, SICK | 2D lidars and their ROS drivers; Hokuyo is on F1TENTH and PR2 (two series), RPLIDAR on TurtleBot 4, SICK on Fetch | — | — |
+| LIDAR: Velodyne, Livox | 3D lidars; Velodyne's site redirects to Ouster; Livox's MID-360 is on Unitree G1; the Livox link is the loam_livox SLAM code (2019) | — | — |
+| IMU: Xsens, MicroStrain 3DM-GX2, SparkFun 9DOF Razor IMU M0 | Industrial IMUs and a retired hobby board; MicroStrain's newer 5-series is on AutoRally and ODRI Solo; the linked drivers are ROS 1 | — | — |
+| 3D Scanning & Novel Sensing Device: Azure Kinect DK, Intel RealSense T265 and L515 | Discontinued depth and tracking cameras; Microsoft archived the Azure Kinect SDK in 2024 | — | — |
+| Microphone Array: ReSpeaker Mic Array v2.0 | Seeed's USB 4-mic array with on-board voice processing (XMOS XVF3000); on the Stretch page | 2025-08-11 (usb_4_mic_array) | Apache-2.0 (usb_4_mic_array) |
 
 ## Deferred
 
 | Entry | What it is | Phase |
 |---|---|---|
-| Processing Unit (SBC/IPC): Raspberry Pi, BeagleBone Black, Odroid, Tinker Board, Jetson, ADLINK Neuron | Robot computers | 5 |
-| Motor & Controller & Encoder: Elmo, RLS, Faulhaber, Maxon, Dexmart | Motor and encoder vendors | 5 |
-| RGB-D Camera: Kinect v1 and v2, Asus Xtion, Intel RealSense D400, Occipital Structure | RGB-D cameras and their ROS drivers | 5 |
-| Stereo Camera: Stereolabs ZED, Carnegie Robotics MultiSense S7, e-Con Tara, Nerian SP1 | Stereo cameras and their ROS drivers | 5 |
-| Laser Rangefinder: Hokuyo URG and UTM, YDLIDAR, RPLIDAR, SICK | 2D lidars and their ROS drivers | 5 |
-| LIDAR: Velodyne, Livox | 3D lidars; the Livox link is the loam_livox SLAM package | 5 |
-| IMU: Xsens, MicroStrain 3DM-GX2, SparkFun 9DOF Razor IMU M0 | IMUs and their ROS drivers | 5 |
-| 3D Scanning & Novel Sensing Device: Kaarta, Matterport, Azure Kinect DK, RealSense T265 and L515 | Scanners and depth or tracking cameras, several discontinued | 5 |
-| Microphone Array: ReSpeaker Mic Array v2.0 | USB microphone array | 5 |
-| IMU (Sparkfun Razer 9dof-razor-imu-m0) Calibration (4 guides) | Calibration guides for the Razor IMU | 5 |
-| Ceres Solver Library | Non-linear least-squares solver, with the other optimisation libraries | 5 |
 
 ## Rejected
 
@@ -233,7 +263,7 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "VINET" | Unofficial reimplementation with no licence, inactive since 2018 | 2026-11-18 |
 | "The KITTI Vision Benchmark & Dataset" | Duplicate of KITTI above | 2026-11-18 |
 | "ORB-SLAM2" | Duplicate: the same repo as ORB-SLAM above | 2026-11-18 |
-| "Kaarta" (3D LiDAR SLAM) | Duplicate of Kaarta in the sensing section, deferred to Phase 5 | 2026-11-18 |
+| "Kaarta" (3D LiDAR SLAM) | Duplicate of Kaarta in the sensing section, deferred to Phase 5 (triaged 2026-11-26) | 2026-11-18 |
 | "BLAM" | Abandoned: no commit since 2016, and newer lidar SLAM covers it | 2026-11-18 |
 | "Cartographer" (3D LiDAR SLAM) | Duplicate of Cartographer above | 2026-11-18 |
 | "Compress PDF Online" | A generic PDF tool, not robotics | 2026-11-18 |
@@ -245,3 +275,7 @@ projects; its real weight is the software sections, which Phase 4 reads.
 | "Open Source Robotics Corporation (OSRC)" | Duplicate: the same link as OSRF | 2026-11-18 |
 | "ROSDevCon" | A one-off 2019 online event; the domain redirects to its old page | 2026-11-18 |
 | "ROS Summer School(TW)" | Dead link: taoyuan-ros.com.tw no longer resolves | 2026-11-18 |
+| RGB-D Camera: Occipital Structure Sensor/Core | The line now serves healthcare: structure.io sells only the iPad-mounted Structure Sensor 3, no robot model | 2026-11-26 |
+| 3D Scanning & Novel Sensing Device: Kaarta | Dead link: www.kaarta.com does not respond, and kaarta.com shows a 2023 placeholder page | 2026-11-26 |
+| 3D Scanning & Novel Sensing Device: Matterport | A building and real-estate capture service, not a robot part | 2026-11-26 |
+| IMU (Sparkfun Razer 9dof-razor-imu-m0) Calibration (4 guides) | Guides for a retired board: SparkFun's Razor IMU M0 page now redirects to another product, and the AHRS firmware wiki dates from 2016 | 2026-11-26 |

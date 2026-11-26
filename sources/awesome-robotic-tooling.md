@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 40, waiting: 0, index_only: 577, deferred: 71, rejected: 250}
+counts: {entries: 938, pages: 40, waiting: 17, index_only: 624, deferred: 0, rejected: 257}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -23,6 +23,43 @@ rejected.
 - Read at commit `dc73ead` (2023-04-30) on 2026-11-18. The repository moved from protontypes to
   Ly0n; the old URL redirects. The list was split between two agents at the section "Localization
   and State Estimation"; each part's notes follow.
+- **Phase 5 re-triage (2026-11-26):** the 71 rows deferred to Phase 5 were decided; the list was
+  not re-read, so `commit` and `read_on` stay. Each entry's link was loaded on github.com (to
+  follow renames and look for the archived banner) and its repo fetched as a blobless shallow
+  clone for the last commit and the licence file; ROS repos without one were read from
+  `package.xml`. Index rows show the newest commit of the entry's repo, or of its ROS 2 branch
+  where that is newer (ublox). **Moved:** PX4/Firmware to PX4/PX4-Autopilot, madcowswe/ODrive to
+  odriverobotics/ODrive, xesscorp/kicad-3rd-party-tools to devbisme, formatc1702/WireViz to
+  wireviz/WireViz, UAVCAN/libuavcan to OpenCyphal-Garage/libcyphal, eerimoq/cantools to
+  cantools/cantools, christiansandberg/canopen to canopen-python/canopen,
+  mayataka/autogenu-jupyter to ohtsukalab, JWhitleyAStuff/decanstructor to JWhitleyWork,
+  ouster_example to ouster-sdk, and ngspice.sourceforge.net to ngspice.sourceforge.io.
+  **Archived:** intel/ros2_intel_realsense. **Page candidates** (last commit, licence): PX4
+  2026-11-25, BSD-3-Clause; ArduPilot 2026-11-25, GPL-3.0; phobos 2026-07-14, BSD-3-Clause;
+  solidworks_urdf_exporter 2026-09-25, MIT (its newest release, 1.6.1, targets SolidWorks 2021);
+  FreeCAD 2026-11-25, LGPL-2.1; KiCad 2026-11-25 (GitLab and the GitHub mirror at the same
+  commit), GPL-3.0; OpenSCAD 2026-11-25, GPL-2.0; WireViz 2026-10-25, GPL-3.0; CasADi
+  2026-11-25, LGPL-3.0; python-can 2026-11-23, LGPL-3.0; can-utils 2026-10-14, GPL-2.0-only or
+  BSD-3-Clause per file; CANopenNode 2026-07-10, Apache-2.0; micro_ros_arduino 2025-09-30
+  (release 2.0.8, Kilted), Apache-2.0. ros_canopen is ROS 1 (its default branch targets Melodic),
+  so its row carries the `software/ros2-canopen` page, checked at ros-industrial/ros2_canopen
+  (2026-11-06; Apache-2.0 and LGPL-3.0 packages, with a CiA 402 driver and a ros2_control
+  interface). **Parts:** OpenCR's repo last changed on 2023-08-01 (Apache-2.0), but ROBOTIS's
+  shop still lists the OpenCR1.0 board and three Atlas robots use it. ODrive's open firmware
+  (2026-01-20, MIT) covers only the ODrive v3.x, which its README marks not recommended for new
+  designs; the S1, Pro and Micro on sale run closed firmware, so the page must say which models
+  it covers. **Index only although the plan names them:** PcbDraw and ngspice, helpers the KiCad
+  page can cover; SOES, an EtherCAT slave stack, where builders mostly need a master. **Vendor
+  drivers:** RealSense earns a part page, so the archived ROS 2 wrapper names it; the BNO055 is
+  in three Atlas stacks (iCub, Kayra, Open Duck Mini), so bosch_imu_driver names
+  `parts/sensors/bosch-bno055`. No other sensor line in these rows is in two Atlas robots (the
+  two SICK robots use TiM571 scanners, not safety scanners). ROS 1-only drivers and tools with no
+  commit since 2022 or earlier are rejected, except rosserial (the standard ROS 1 link to MCUs,
+  used by the BCN3D Moveo) and bosch_imu_driver (kept for the BNO055 page). **Outcome:** 17
+  waiting, 47 index only, 7 rejected; "awesome CAN" is iDoka/awesome-canbus, ingested as its own
+  source. PX4, ArduPilot, FreeCAD, KiCad, LibrePCB, F Prime and vxworks7-ros2-build ship
+  `AGENTS.md` or `CLAUDE.md` files for their own contributors; they were not read or followed.
+  Nothing else in the fetched files was addressed to agents.
 
 ### Communication and Coordination to Sensor Processing
 
@@ -50,7 +87,7 @@ rejected.
   document tools, git clients, diagram editors, aircraft, energy and satellite tools); they are
   rejected as off topic. General C++ and Python build, test, lint, debug and profiling tools stay
   as index rows for the operations batch. CAD, EDA, firmware (PX4, ArduPilot, F Prime), motor and
-  battery electronics and FPGA boards are deferred to Phase 5.
+  battery electronics and FPGA boards are deferred to Phase 5 (triaged 2026-11-26).
 - Robots: astrobee (not in the Atlas) and open-source-rover (the JPL Open Source Rover page).
   CHAMP, deferred here by the Phase 3 notes, is index only: no commit since July 2024.
 - Dead on 2026-11-18: fkromer/awesome-ros2, emmjaykay/stanford_self_driving_car_code,
@@ -98,10 +135,10 @@ rejected.
   the `ros2/cartographer_ros` fork 2025-05-24, Apache-2.0). **Archived:** `osrf/rmf_core`
   (2021-07-22; Open-RMF continues it) and `foxglove/studio` (2024-03-11; Foxglove is closed
   source since, and BMW's Lichtblick fork of the last MPL-2.0 code is active).
-- **Deferred to Phase 5:** CAN tools, microcontroller and RTOS entries (rosserial, micro-ROS for
-  Arduino, ros2arduino, VxWorks), EtherCAT, FPGA, MPC and optimisation solvers, and
-  vendor-specific sensor drivers, which belong with their parts. micro-ROS itself stays a ROS 2
-  page, since the brief names its slug.
+- **Deferred to Phase 5 (triaged 2026-11-26):** CAN tools, microcontroller and RTOS entries
+  (rosserial, micro-ROS for Arduino, ros2arduino, VxWorks), EtherCAT, FPGA, MPC and optimisation
+  solvers, and vendor-specific sensor drivers, which belong with their parts. micro-ROS itself
+  stays a ROS 2 page, since the brief names its slug.
 - **Rejected as off-topic:** consumer car diagnostics and hacking (OBD, UDS, Tesla, opendbc),
   EV charging, satellites and orbits, GIS editing and publishing, music audio, personal dotfiles.
   Generic Linux, container, network and security tools are index only; so are the driving
@@ -159,6 +196,23 @@ rejected.
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
+| PX4 | `software/px4` | B | firmware | One of the two main open autopilots for drones and other vehicles; MAVROS links it to ROS |
+| ArduPilot | `software/ardupilot` | B | firmware | The other main open autopilot, for copters, planes, rovers and boats; ground and water robots run it too |
+| phobos | `tools/phobos` | B | cad-to-sim | Blender add-on that builds URDF and SDF models from meshes; one of the open CAD-to-sim routes |
+| solidworks_urdf_exporter | `tools/solidworks-urdf-exporter` | B | cad-to-sim | SolidWorks add-in, kept under the ROS org, that exports assemblies to URDF; seven Atlas robots publish SolidWorks CAD |
+| FreeCAD | `tools/freecad` | A | cad | Open parametric CAD and this workspace's first-class CAD tool, scriptable headless with `freecadcmd` |
+| kicad | `tools/kicad` | A | pcb | Open schematic and PCB suite, first-class here; seven Atlas robot pages name KiCad files |
+| openscad | `tools/openscad` | B | cad | The classic script-based solid CAD tool, documented here; common for parametric printed parts |
+| WireViz | `tools/wireviz` | B | pcb | Draws cable and harness diagrams with a cable BOM from YAML, so a robot's wiring lives in git |
+| ODrive | `parts/drivers/odrive-robotics-odrive` | B | actuators | Open BLDC motor controller behind Stanford Doggo; the actuator guide compares it with other BLDC drives |
+| casADi | `software/casadi` | A | control | Symbolic modelling and automatic differentiation for MPC and trajectory optimisation, with Ipopt and other solvers |
+| OpenCR | `parts/mcu/robotis-opencr` | B | firmware | ROBOTIS's open controller board, used by TurtleBot3, OpenManipulator-X and ROBOTIS OP3 |
+| micro-ROS for Arduino | `software/micro-ros` | A | firmware | Prebuilt micro-ROS library for Arduino boards such as Teensy, Portenta and OpenCR |
+| python-can | `software/python-can` | B | firmware | The common Python interface to CAN adapters; host scripts for CAN motors and sensors start here |
+| CANopenNode | `software/canopennode` | B | firmware | Widely used open CANopen stack for MCUs, for building your own CANopen joint or sensor node |
+| can-utils | `tools/can-utils` | B | firmware | candump, cansend and the rest: the first tools to bring up and debug a SocketCAN bus |
+| ros_canopen | `software/ros2-canopen` | B | firmware | CANopen motor drives (CiA 402) in ROS 2 through ros2_control; ros2_canopen is this framework's ROS 2 line |
+| micro-ros | `software/micro-ros` | A | firmware | ROS 2 on microcontrollers: the standard way to put an MCU on a ROS 2 graph |
 
 ## Index only
 
@@ -741,82 +795,58 @@ rejected.
 | holicity | City-scale 3D structure dataset | — | — |
 | Objectron | Google object-centric videos with 3D boxes and AR poses | — | — |
 | ONCE dataset | Large driving dataset with 2D and 3D annotations | — | — |
+| F Prime | NASA JPL component framework for embedded flight software | 2026-11-24 | Apache-2.0 |
+| PcbDraw | Renders KiCad boards as 2D drawings for pinout diagrams; a KiCad helper | 2026-10-09 | MIT |
+| kicad-3rd-party-tools | List of tools that extend KiCad; moved from xesscorp to devbisme | 2026-05-15 | — |
+| LibrePCB | Open schematic and PCB editor; KiCad is the first-class EDA tool here | 2026-11-25 | GPL-3.0 |
+| ngspice | Open SPICE circuit simulator; KiCad's schematic editor runs it, so the KiCad page covers it | 2026-11-22 | BSD-3-Clause, some files other |
+| riscv | RISC-V open instruction set, found in MCUs such as the ESP32-C series; the link is riscv.org | — | — |
+| Horizon | Open PCB design suite with integrated part management | 2026-11-17 | GPL-3.0 |
+| foxBMS | Fraunhofer IISB open battery-management platform; foxBMS 1 is unsupported, foxbms-2 continues it | 2024-04-05 | — |
+| PYNQ | Python framework for AMD/Xilinx Zynq FPGA boards | 2026-09-29 | BSD-3-Clause |
+| mpcc | Model predictive contouring control for autonomous racing; research code in C++ and MATLAB | 2021-11-11 | Apache-2.0 |
+| ACADO Toolkit | Automatic control and dynamic optimisation with C code generation for MPC; inactive since 2023 | 2023-12-06 | LGPL-3.0 |
+| control-toolbox | ETH ADRL C++ library for optimal control, estimation and MPC; inactive since 2021 | 2021-07-05 | BSD-2-Clause |
+| OpEn | Embedded nonconvex optimisation solver in Rust with code generation | 2026-03-31 | MIT OR Apache-2.0 |
+| autogenu-jupyter | C/GMRES nonlinear MPC solvers with a code generator; moved to ohtsukalab | 2026-09-09 | MIT |
+| vxworks7-ros2-build | Builds ROS 2 for Wind River's commercial VxWorks 7 RTOS | 2026-11-21 | Apache-2.0 |
+| qemu-xilinx | AMD/Xilinx fork of QEMU that models its SoC and FPGA platforms | 2026-10-20 | GPL-2.0 |
+| rosserial | ROS 1 serial link for MCUs such as Arduino; micro-ROS (`software/micro-ros`) replaces it | 2021-06-16 | BSD |
+| fusesoc | Package manager and build tool for FPGA and ASIC cores | 2026-11-25 | BSD-2-Clause |
+| SOES | EtherCAT slave stack in C, for building EtherCAT devices; SOEM is its master-side sibling | 2026-11-19 | GPL-2.0 with linking exception |
+| ros_ethercat | Shadow Robot's ROS 1 EtherCAT main loop; ROS 2 users have ICube's ethercat_driver_ros2 | 2024-05-02 | BSD-2-Clause |
+| awesome CAN | Awesome list of CAN tools and hardware; ingested as its own source, `sources/awesome-canbus.md` | 2026-11-17 | CC0-1.0 |
+| libuavcan | UAVCAN (now Cyphal) C++ stack, now libcyphal, which its README calls a work in progress | 2025-12-17 | MIT |
+| cantools | Python CAN tools: DBC parsing, message encoding and a bus monitor | 2026-11-20 | MIT |
+| CANdevStudio | Qt GUI to simulate and analyse CAN traffic | 2024-05-01 | MPL-2.0 |
+| kvaser_interface | AutonomouStuff ROS and ROS 2 driver for Kvaser CAN adapters; inactive since 2022 | 2022-08-23 | MIT |
+| canmatrix | Converts between CAN database formats (DBC, ARXML, KCD and more) | 2026-11-24 | BSD-2-Clause |
+| canopen | Python CANopen library for talking to CANopen drives and nodes; moved to canopen-python | 2026-06-28 | MIT |
+| SavvyCAN | Qt GUI to capture, analyse and replay CAN frames | 2026-11-16 | MIT |
+| flirpy | Python library for FLIR thermal cameras such as the Boson and Tau 2 | 2026-11-24 | MIT |
+| nerian_stereo | ROS 1 driver for Nerian SceneScan and Scarlet stereo sensors; its ros2 branch dates from 2018 | 2024-01-23 | MIT |
+| pymmw | Python scripts for the TI IWR1443 mmWave radar board; inactive since 2021 | 2021-11-11 | MIT |
+| ros2_intel_realsense | Archived ROS 2 RealSense wrapper; realsense-ros replaces it, for `parts/sensors/intel-realsense-d400` | 2023-01-06 | Apache-2.0 |
+| ouster_example | Ouster lidar SDK in C++ and Python, renamed ouster-sdk | 2026-11-20 | BSD-3-Clause |
+| ros2_ouster_drivers | Community ROS 2 driver for Ouster lidars; its README sends new users to ouster-ros | 2024-06-18 | Apache-2.0 |
+| livox_ros_driver | ROS 1 driver for older Livox lidars; livox_ros_driver2 serves the Mid-360 and HAP | 2023-02-28 | MIT |
+| velodyne | ROS and ROS 2 driver for Velodyne lidars | 2026-10-23 | BSD-3-Clause |
+| ublox | ROS driver for u-blox GNSS receivers, with a ROS 2 branch | 2025-09-26 | BSD-3-Clause |
+| novatel_gps_driver | SwRI ROS 2 driver for NovAtel GNSS receivers | 2026-10-30 | BSD-3-Clause |
+| pylon-ros-camera | Basler's official ROS 2 driver for its GigE and USB3 cameras | 2026-10-22 | BSD-3-Clause |
+| ethz_piksi_ros | ETH ROS 1 drivers and tools for the Swift Navigation Piksi RTK GNSS | 2023-04-18 | BSD-3-Clause |
+| sick_safetyscanners | SICK's ROS 1 driver for microScan3 and nanoScan3 safety scanners; sick_safetyscanners2 serves ROS 2 | 2024-06-19 | Apache-2.0 |
+| bosch_imu_driver | ROS 1 UART driver for the Bosch BNO055 IMU; for `parts/sensors/bosch-bno055` (to be written) | 2021-02-06 | BSD-3-Clause |
+| ifm3d | ifm library and tools for its O3R, O3D and O3X 3D time-of-flight cameras | 2026-11-23 | Apache-2.0 |
+| cepton_sdk_redist | Cepton lidar SDK with ROS 1 support; inactive since 2023 | 2023-07-20 | BSD-3-Clause |
+| ros_astra_camera | Orbbec's ROS 1 driver for its Astra 3D cameras; OrbbecSDK_ROS2 serves ROS 2 | 2025-06-05 | Apache-2.0 |
+| blickfeld-scanner-lib | Library for Blickfeld Cube lidars; inactive since 2023 | 2023-01-17 | BSD-3-Clause |
+| TauLidarCamera | Host API for the Onion Tau time-of-flight camera; inactive since 2023 | 2023-08-23 | MIT |
 
 ## Deferred
 
 | Entry | What it is | Phase |
 |---|---|---|
-| PX4 | Open flight-control firmware for drones and other vehicles | 5 |
-| ArduPilot | Open autopilot firmware for copters, planes, rovers and boats | 5 |
-| F Prime | NASA framework for embedded flight software | 5 |
-| phobos | Blender add-on for building URDF and SDF robot models | 5 |
-| solidworks_urdf_exporter | SolidWorks add-in that exports URDF | 5 |
-| FreeCAD | Open parametric 3D CAD | 5 |
-| kicad | Open electronics design suite | 5 |
-| PcbDraw | Renders KiCad boards as 2D drawings | 5 |
-| kicad-3rd-party-tools | List of tools that extend KiCad | 5 |
-| LibrePCB | Open PCB design tool | 5 |
-| openscad | Script-based solid 3D CAD | 5 |
-| ngspice | Open SPICE circuit simulator | 5 |
-| riscv | RISC-V open instruction set, used in MCUs | 5 |
-| WireViz | Documents cables, harnesses and connector pinouts | 5 |
-| Horizon | Open PCB design suite | 5 |
-| foxBMS | Open battery-management system hardware and software | 5 |
-| ODrive | Open BLDC motor controller for robotics | 5 |
-| PYNQ | Python framework for AMD/Xilinx Zynq FPGA boards | 5 |
-| mpcc | Model predictive contouring control for autonomous racing | 5 |
-| casADi | Symbolic framework for numerical optimisation and optimal control | 5 |
-| ACADO Toolkit | Toolkit for automatic control and dynamic optimisation | 5 |
-| control-toolbox | ETH C++ library for control, estimation and optimisation | 5 |
-| OpEn | Embedded nonconvex optimisation solver with code generation | 5 |
-| autogenu-jupyter | C/GMRES nonlinear MPC solvers with a code generator | 5 |
-| ilqr | Iterative LQR with auto-differentiated dynamics | 5 |
-| vxworks7-ros2-build | Builds ROS 2 for the VxWorks 7 RTOS | 5 |
-| qemu-xilinx | QEMU fork that models Xilinx SoC and FPGA platforms | 5 |
-| rosserial | ROS 1 protocol for microcontrollers such as Arduino | 5 |
-| fusesoc | Package manager and build tool for FPGA and ASIC cores | 5 |
-| OpenCR | ROBOTIS open controller board for ROS robots | 5 |
-| ros2arduino | ROBOTIS library linking Arduino boards to ROS 2 over XRCE-DDS | 5 |
-| micro-ROS for Arduino | micro-ROS library for Arduino boards | 5 |
-| SOES | EtherCAT slave stack in C | 5 |
-| ros_ethercat | ROS 1 EtherCAT main loop from Shadow Robot | 5 |
-| awesome CAN | Awesome list of CAN bus tools and hardware | 5 |
-| libuavcan | UAVCAN (now Cyphal) protocol library for CAN | 5 |
-| python-can | Python CAN bus interface library | 5 |
-| CANopenNode | CANopen protocol stack for embedded devices | 5 |
-| cantools | Python CAN tools: DBC parsing, encoding and monitoring | 5 |
-| CANdevStudio | CAN simulation and analysis GUI | 5 |
-| can-utils | Linux SocketCAN command-line utilities | 5 |
-| ros_canopen | ROS CANopen driver framework; ros2_canopen serves ROS 2 | 5 |
-| decanstructor | ROS CAN analysis tool | 5 |
-| kvaser_interface | ROS access to Kvaser CAN interfaces | 5 |
-| canmatrix | Converts between CAN database formats | 5 |
-| canopen | Python CANopen implementation | 5 |
-| SavvyCAN | Qt tool to capture and analyse CAN frames | 5 |
-| flirpy | Python library for FLIR thermal cameras | 5 |
-| nerian_stereo | ROS driver for Nerian stereo sensors | 5 |
-| pymmw | Python scripts for the TI IWR1443 mmWave radar | 5 |
-| ti_mmwave_rospkg | ROS driver for TI mmWave radar | 5 |
-| ros2_intel_realsense | Old ROS 2 RealSense wrapper; realsense-ros replaces it | 5 |
-| ouster_example | Ouster lidar sample code, now the ouster-sdk | 5 |
-| ros2_ouster_drivers | Community ROS 2 driver for Ouster lidars | 5 |
-| livox_ros_driver | ROS driver for Livox lidars; livox_ros_driver2 serves newer models | 5 |
-| velodyne | ROS driver for Velodyne lidars | 5 |
-| ublox | ROS driver for u-blox GNSS receivers | 5 |
-| pointgrey_camera_driver | ROS driver for Point Grey FlyCapture cameras | 5 |
-| novatel_gps_driver | ROS driver for NovAtel GNSS receivers | 5 |
-| pylon-ros-camera | Basler's ROS driver for its GigE and USB3 cameras | 5 |
-| ethz_piksi_ros | ROS drivers for the Swift Navigation Piksi RTK GPS | 5 |
-| sick_safetyscanners | ROS driver for SICK safety laser scanners | 5 |
-| bosch_imu_driver | ROS driver for the Bosch BNO055 IMU over UART | 5 |
-| oxford_gps_eth | ROS driver for OxTS GNSS/INS units over Ethernet | 5 |
-| ifm3d | Library for ifm 3D time-of-flight cameras | 5 |
-| cepton_sdk_redist | SDK and ROS support for Cepton lidars | 5 |
-| jetson_csi_cam | ROS package for CSI cameras on old Jetson boards | 5 |
-| ros_astra_camera | ROS driver for Orbbec 3D cameras | 5 |
-| blickfeld-scanner-lib | Library for Blickfeld lidars | 5 |
-| TauLidarCamera | Host API for the Onion Tau time-of-flight camera | 5 |
-| micro-ros | ROS 2 on microcontrollers; its skill belongs to the firmware work | 5 |
 
 ## Rejected
 
@@ -1072,3 +1102,10 @@ rejected.
 | Lyft Level 5 Dataset | Dead link: the site does not answer; Lyft sold Level 5 in 2021 | 2026-11-18 |
 | UTD19 | Urban traffic loop-detector data; off-topic | 2026-11-18 |
 | ASTYX HIRES2019 DATASET | Dead link: the linked blog does not answer | 2026-11-18 |
+| ilqr | Abandoned: a small Python iLQR library, no commit since 2019 | 2026-11-26 |
+| ros2arduino | Abandoned: no commit since 2020; micro-ROS for Arduino replaces it | 2026-11-26 |
+| decanstructor | Abandoned: a ROS 1 CAN analysis tool, no commit since 2022 | 2026-11-26 |
+| ti_mmwave_rospkg | Abandoned: a ROS 1 TI mmWave radar driver, no commit since 2019; no licence file, only a `package.xml` tag | 2026-11-26 |
+| pointgrey_camera_driver | Outdated: ROS 1 driver for FLIR's older FlyCapture SDK, no commit since 2022; flir_camera_driver (Spinnaker) serves ROS 2 | 2026-11-26 |
+| oxford_gps_eth | Abandoned: a ROS 1 driver, no commit since 2020; OxTS publishes oxts_ros2_driver | 2026-11-26 |
+| jetson_csi_cam | Abandoned: ROS 1 CSI camera package for Jetson TK1, TX1 and TX2, no commit since 2019 | 2026-11-26 |

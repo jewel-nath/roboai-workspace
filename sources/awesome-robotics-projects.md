@@ -5,7 +5,7 @@ registry: awesome-robotics-projects
 url: https://github.com/mjyc/awesome-robotics-projects
 commit: "9943f0e"
 read_on: 2026-11-17
-counts: {entries: 195, pages: 34, waiting: 0, index_only: 127, deferred: 1, rejected: 33}
+counts: {entries: 195, pages: 34, waiting: 0, index_only: 128, deferred: 0, rejected: 33}
 ---
 
 # Awesome Robotics Projects: what it gives RoboAI
@@ -38,6 +38,10 @@ software sections belong to Phase 4.
 - Dead or moved on 2026-11-17: LHF connect's domain now serves spam; poppy-project.org and the
   K-Scale sites no longer resolve; `osrf/rmf_demos` moved to `open-rmf/rmf_demos`. K-Scale Labs
   shut down in November 2025, so K-Bot can no longer be bought.
+- **Phase 5 re-triage (2026-11-26):** adafruit, the one row deferred to Phase 5, was checked at
+  its link (adafruit.com loads). It is a maker and shop of hobby electronics, with CircuitPython
+  and the Learn guides; one Atlas robot, NanoSaur, uses its motor FeatherWing. A vendor is not a
+  part, so it is index only, next to the other hardware communities.
 
 ## Pages made
 
@@ -160,6 +164,7 @@ software sections belong to Phase 4.
 | hackaday and hackaday.io | Hardware news blog and project-hosting community | — | — |
 | hackster.io | Community of hardware project tutorials | — | — |
 | instructables | Step-by-step maker project guides | — | — |
+| adafruit | Hobby electronics maker and shop with CircuitPython and its Learn guides; NanoSaur uses its motor FeatherWing | — | — |
 | BARS | Bay Area Robotics Symposium; the link is the 2021 edition | — | — |
 | MODEX | Supply-chain and warehouse automation trade show | — | — |
 | Robotics Summit & Expo | Robotics industry conference and expo | — | — |
@@ -219,7 +224,6 @@ software sections belong to Phase 4.
 
 | Entry | What it is | Phase |
 |---|---|---|
-| adafruit | Electronics vendor with tutorials | 5 |
 
 ## Rejected
 

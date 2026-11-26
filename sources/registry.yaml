@@ -321,6 +321,136 @@ sources:
       - {date: 2026-11-18, event: ingested, note: Phase 4 software and learning}
       - {date: 2026-11-18, event: rebaselined, note: upstream state recorded as the new baseline}
 
+  # ---- gaps: lists read in Phase 5 (baselines read from the repo pages, not the API) ----
+
+  - id: awesome-embedded-software
+    url: https://github.com/iDoka/awesome-embedded-software
+    kind: research-source
+    area: firmware
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "1954dd7", commit_date: 2026-11-17, release: , stars: 1155, archived: false}
+    used_in: [sources/awesome-embedded-software.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: Microcontroller firmware libraries - RTOSes, storage, protocols, DSP, crypto, GUI, USB and CAN stacks, bootloaders and compilers; it leaves out Linux and single-board computers.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: awesome-canbus
+    url: https://github.com/iDoka/awesome-canbus
+    kind: research-source
+    area: firmware
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "4e53b31", commit_date: 2026-11-17, release: , stars: 3585, archived: false}
+    used_in: [sources/awesome-canbus.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: CAN bus tools, DBC tools, protocol libraries and USB-CAN, MCU, SBC and FPGA hardware, written for car reverse engineering; for robots its SocketCAN, Python, DBC and open-adapter parts matter.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: awesome-kicad
+    url: https://github.com/joanbono/awesome-kicad
+    kind: research-source
+    area: pcb
+    relation: referenced
+    status: in-use
+    license: GPL-3.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "57a3635", commit_date: 2026-11-25, release: , stars: 653, archived: false}
+    used_in: [sources/awesome-kicad.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: KiCad add-ons, libraries, tools and tutorials; also published as a third-party KiCad PCM repository. Linked, never copied.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: kicad-pcm-index
+    url: https://gitlab.com/kicad/addons/metadata
+    kind: research-source
+    area: pcb
+    relation: referenced
+    status: in-use
+    license: GPL-3.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "00a8f3c", commit_date: 2026-11-15, release: , stars: 16, archived: false}
+    used_in: [sources/kicad-pcm-index.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: Metadata of KiCad's official Plugin and Content Manager - 150 packages (115 plugins, 17 libraries, 18 colour themes). On GitLab, so the source check flags it to be checked by hand.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: freecad-addons-index
+    url: https://github.com/FreeCAD/Addons
+    kind: research-source
+    area: cad
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "467ab72", commit_date: 2026-11-19, release: , stars: 22, archived: false}
+    used_in: [sources/freecad-addons-index.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: The Addon Manager index for FreeCAD 1.0 and later (Data/Index.json, 182 addons); data CC0-1.0, code LGPL-2.1. FreeCAD/FreeCAD-addons is the older index for FreeCAD before 1.0.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: cool-code-cad
+    url: https://github.com/kylegrover/cool-code-cad
+    kind: research-source
+    area: cad
+    relation: referenced
+    status: in-use
+    license: CC0-1.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "d065e6f", commit_date: 2026-09-06, release: , stars: 1, archived: false}
+    used_in: [sources/cool-code-cad.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: A field guide to code CAD (B-rep, CSG, SDF), kernels, CAM, slicers, G-code tools and CNC firmware; one maintainer, its data in data.js.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: mujoco-menagerie
+    url: https://github.com/google-deepmind/mujoco_menagerie
+    kind: research-source
+    area: sim
+    relation: referenced
+    status: in-use
+    license: Apache-2.0
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "eea4c74", commit_date: 2026-11-23, release: v2026.11.3, stars: 4420, archived: false}
+    used_in: [sources/mujoco-menagerie.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: DeepMind's curated MJCF robot models (73 in its gallery). Each model folder has its own licence (Apache-2.0, BSD-3-Clause, MIT, BSD-2-Clause, BSD-3-Clause-Clear); Apache-2.0 here is the repo's own tooling.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
+  - id: list-of-robot-electronics
+    url: https://github.com/cajt/list_of_robot_electronics
+    kind: research-source
+    area: pcb
+    relation: referenced
+    status: in-use
+    license: BSD-2-Clause
+    pinned: {version: , commit: }
+    baseline: {as_of: 2026-11-26, commit: "e26414b", commit_date: 2025-07-26, release: , stars: 472, archived: false}
+    used_in: [sources/list-of-robot-electronics.md]
+    benchmark:
+    last_checked: 2026-11-26
+    notes: Open robot electronics - motor drivers, actuators, BMS, FPGA, bus systems and sensors - plus open robot projects; mostly hardware from 2011 to 2021.
+    history:
+      - {date: 2026-11-26, event: ingested, note: Phase 5 gaps}
+
   # ---- video: reviewed 2026-11-12 (plan section 10) ----
 
   - id: explainroo

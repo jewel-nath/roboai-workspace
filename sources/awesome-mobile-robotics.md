@@ -5,7 +5,7 @@ registry: awesome-mobile-robotics
 url: https://github.com/mathiasmantelli/awesome-mobile-robotics
 commit: "03a0871"
 read_on: 2026-11-18
-counts: {entries: 533, pages: 23, waiting: 0, index_only: 438, deferred: 4, rejected: 68}
+counts: {entries: 533, pages: 23, waiting: 0, index_only: 441, deferred: 0, rejected: 69}
 ---
 
 # Awesome Mobile Robotics: what it gives RoboAI
@@ -44,8 +44,8 @@ tools. 23 of 533 entries earn a page.
   BehaviorTree.CPP. OpenCV appears only as two install guides for Ubuntu 16.04 and 18.04, which
   are rejected; OpenCV itself comes from other lists.
 - Courses, books, podcasts, conferences, journals, companies and labs are index only. Parts and
-  sensor vendors and one trajectory-optimisation repo are deferred to Phase 5. Twenty entries are
-  duplicates within the list.
+  sensor vendors and one trajectory-optimisation repo are deferred to Phase 5 (triaged
+  2026-11-26). Twenty entries are duplicates within the list.
 - Dead or moved on 2026-11-18: cpp.bw.org, peekabot.org, the MORSE site and the Neurorobotics
   Platform's bare IP address no longer load; paperswithcode.com redirects to Hugging Face Papers;
   the "Robótica Educacional" entry links donkeycar.com, which now redirects to diyrobocars.com;
@@ -55,6 +55,15 @@ tools. 23 of 533 entries earn a page.
   generic AI, video, website and SEO tools at the end of Misc read like advertisements. Eleven
   links carry a `__s=` tracking parameter and two Amazon links carry affiliate tags. The README
   gives the author's email address; it is not copied here.
+- **Phase 5 re-triage (2026-11-26):** the four rows deferred to Phase 5 were checked at their
+  links; the entries read the same at the list's newer head, `2c4381c` (2026-11-24).
+  `mayataka/mini_pupper_trajopt` was partial-cloned: last commit 2022-01-02, Apache-2.0, about 40
+  stars. The three company sites were read by HTTP request: Soft Robotics says it sold its mGrip
+  gripper business to the Schmalz Group in August 2024 and now presents itself as Oxipital AI
+  (vision inspection); AutonomouStuff still lists drive-by-wire and sensor products; Zivid sells
+  the Zivid 2+ and Zivid 3 cameras and keeps `zivid-ros` (2026-09-16, BSD-3-Clause). No Atlas
+  robot uses any of them, so the three companies are index only and the Mini Pupper repo is
+  rejected.
 
 ## Pages made
 
@@ -531,15 +540,14 @@ tools. 23 of 533 entries earn a page.
 | Robot Hacking Manual | Notes and papers on robot cybersecurity | — | — |
 | Black in Robotics | Community organisation for Black roboticists | — | — |
 | Awesome Robotic Deliberation | Awesome list on ROS 2 deliberation, such as behaviour trees | — | — |
+| Soft Robotics | Soft gripper maker; sold its mGrip gripper line to the Schmalz Group in 2024 and became Oxipital AI | — | — |
+| AutonomousStuff | Vendor of drive-by-wire kits, autonomy sensors and integration for vehicles | — | — |
+| ZiVID | Industrial 3D colour cameras for bin picking, with a ROS driver (zivid-ros) | — | — |
 
 ## Deferred
 
 | Entry | What it is | Phase |
 |---|---|---|
-| Mini Pupper Trajectory Optimization | Trajectory optimisation for the Mini Pupper quadruped | 5 |
-| Soft Robotics | Soft robotic gripper maker | 5 |
-| AutonomousStuff | Vendor of autonomy sensors and drive-by-wire kits | 5 |
-| ZiVID | Industrial 3D camera maker | 5 |
 
 ## Rejected
 
@@ -613,3 +621,4 @@ tools. 23 of 533 entries earn a page.
 | Pixverse | Off topic: AI video tool | 2026-11-18 |
 | Durable | Off topic: AI website builder; reads like an advertisement | 2026-11-18 |
 | Seona | Advertisement: an AI SEO assistant | 2026-11-18 |
+| Mini Pupper Trajectory Optimization | Small research demo (about 40 stars) for a robot not in the Atlas, inactive since January 2022 | 2026-11-26 |
