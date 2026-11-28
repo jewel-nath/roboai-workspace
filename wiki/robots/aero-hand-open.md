@@ -11,7 +11,7 @@ year: 2025
 license: {hardware: CC-BY-NC-SA-4.0, software: Apache-2.0, docs: CC-BY-NC-SA-4.0}
 links: {repo: "https://github.com/Chestnut-Robotics/aero-hand-open", docs: "https://docs.tetheria.ai/", cad: "https://cad.onshape.com/documents/afc7e0ca7eb6d412ec8771f8/w/bc4d7e45e17e23d622d2bad2/e/c711982b7882da925263fb55", paper: "https://arxiv.org/abs/2608.28578", site: "https://chestnut.bot"}
 specs: {dof: 7, payload_kg: , reach_mm: , mass_kg: 0.374, size_mm: "198 x 95 x 53.5", speed_mps: , runtime_h: }
-stack: {actuators: "7 x Feetech HLS3606M serial-bus servos pulling Kevlar/Vectran tendons", mcu: "Seeed XIAO ESP32-S3 on a custom KiCad carrier board", compute: "host PC over USB-C", sensors: ["servo encoders (7)"], sim_models: ["MJCF (MuJoCo Menagerie, tetheria_aero_hand_open)", "MJCF (chestnut-robotics/aero-open-sim)", "MJCF (MuJoCo Playground, aero_hand environments)", "URDF (repo, ros2/src/aero_hand_open_description)"], ros2: official}
+stack: {actuators: "7 x Feetech HLS3606M serial-bus servos pulling Kevlar/Vectran tendons", mcu: [espressif-esp32-s3, "Seeed XIAO ESP32-S3 on a custom KiCad carrier board"], compute: "host PC over USB-C", sensors: ["servo encoders (7)"], sim_models: ["MJCF (MuJoCo Menagerie, tetheria_aero_hand_open)", "MJCF (chestnut-robotics/aero-open-sim)", "MJCF (MuJoCo Playground, aero_hand environments)", "URDF (repo, ros2/src/aero_hand_open_description)"], ros2: official}
 cost: {type: bom, usd: 316.48, as_of: 2026-11-17, source: "https://github.com/Chestnut-Robotics/aero-hand-open/blob/main/hardware/Assembly/BOM.csv"}
 build: {difficulty: 3, hours: , print_hours: 13}
 maturity: {last_commit: 2026-09-15, stars: 1107, active: true}

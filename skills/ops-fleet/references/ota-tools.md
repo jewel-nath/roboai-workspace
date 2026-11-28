@@ -54,6 +54,6 @@ docs and pricing page; prices change, so re-check before choosing.
 - **Keep a path back for configuration.** Files under `/etc/my_robot/` and data partitions
   survive slot switches only if they live on a partition outside the slots; plan the layout so
   calibration and identity are not lost on update.
-- **Same version everywhere you test.** The OS image, the ROS release and the firmware (Phase 5
-  skills) each carry a version; record all three in the health report.
+- **Same version everywhere you test.** The OS image, the ROS release and the firmware
+  ([fw-mcu](../../fw-mcu/SKILL.md)) each carry a version; record all three in the health report.
 - **Paid tiers count devices**: spares, test benches and simulators that register count too.

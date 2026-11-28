@@ -192,7 +192,7 @@ Before reporting the bringup done:
   [sim-gazebo](../sim-gazebo/SKILL.md), [ops-docker-ci](../ops-docker-ci/SKILL.md),
   [ros2-web-bridge](../ros2-web-bridge/SKILL.md) (remote monitoring), [ops-fleet](../ops-fleet/SKILL.md),
   [arch-safety](../arch-safety/SKILL.md), [arch-robot-architecture](../arch-robot-architecture/SKILL.md).
-  Later: firmware and micro-ROS (Phase 5).
+  The MCU side: [fw-mcu](../fw-mcu/SKILL.md), [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md).
 - Wiki: [ROS 2](../../wiki/tools/ros2.md), [colcon](../../wiki/tools/colcon.md),
   [ros2_control](../../wiki/software/ros2-control.md), [Nav2](../../wiki/software/nav2.md),
   [robot_localization](../../wiki/software/robot-localization.md), [tf2](../../wiki/software/tf2.md),

@@ -156,7 +156,8 @@ Recipes are in the [ros2-core](../../skills/ros2-core/SKILL.md) skill. Ground ru
 
 - **ROS 1:** only to maintain old robots. **No framework:** a Python script over serial, or
   LeRobot for learning-first arms; simpler, but you write drivers, logging and viewers yourself.
-- **micro-ROS** puts ROS 2 nodes on microcontrollers; **dora-rs** is a Rust dataflow framework.
+- **[micro-ROS](../software/micro-ros.md)** puts ROS 2 nodes on microcontrollers; **dora-rs** is
+  a Rust dataflow framework.
 - Choices inside ROS 2: middleware ([Fast DDS](../software/fast-dds.md),
   [Cyclone DDS](../software/cyclone-dds.md), [Zenoh](../software/rmw-zenoh.md)), web bridge
   ([rosbridge_suite](../software/rosbridge-suite.md)), viewers ([Foxglove](foxglove.md),

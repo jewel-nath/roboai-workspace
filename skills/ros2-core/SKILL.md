@@ -175,6 +175,6 @@ Before reporting the work done:
 - Skills: [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [ros2-control](../ros2-control/SKILL.md), [ros2-web-bridge](../ros2-web-bridge/SKILL.md),
   [ops-docker-ci](../ops-docker-ci/SKILL.md), [ops-bringup](../ops-bringup/SKILL.md),
-  [nav-nav2](../nav-nav2/SKILL.md); later `fw-rtos-micro-ros`.
+  [nav-nav2](../nav-nav2/SKILL.md), [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md).
 - Upstream: docs.ros.org/en/jazzy (Concepts: QoS, executors, parameters; Tutorials: client
   libraries, launch, custom interfaces).

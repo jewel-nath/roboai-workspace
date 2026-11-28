@@ -5,7 +5,7 @@ registry: awesome-robotic-tooling
 url: https://github.com/Ly0n/awesome-robotic-tooling
 commit: "dc73ead"
 read_on: 2026-11-18
-counts: {entries: 938, pages: 40, waiting: 17, index_only: 624, deferred: 0, rejected: 257}
+counts: {entries: 938, pages: 49, waiting: 8, index_only: 624, deferred: 0, rejected: 257}
 ---
 
 # awesome-robotic-tooling: what it gives RoboAI
@@ -191,13 +191,20 @@ rejected.
 | ros2_dds_security | [SROS2](../wiki/software/sros2.md) | B |
 | gym | [Gymnasium](../wiki/learning/frameworks/gymnasium.md) | B |
 | TensorRT | [TensorRT](../wiki/software/tensorrt.md) | B |
+| PX4 | [PX4](../wiki/software/px4.md) | B |
+| ArduPilot | [ArduPilot](../wiki/software/ardupilot.md) | B |
+| OpenCR | [ROBOTIS OpenCR 1.0](../wiki/parts/mcu/robotis-opencr.md) | B |
+| micro-ROS for Arduino | [micro-ROS](../wiki/software/micro-ros.md) | A |
+| python-can | [python-can](../wiki/software/python-can.md) | B |
+| CANopenNode | [CANopenNode](../wiki/software/canopennode.md) | B |
+| can-utils | [can-utils and SocketCAN](../wiki/tools/can-utils.md) | B |
+| ros_canopen | [ros2_canopen](../wiki/software/ros2-canopen.md) | B |
+| micro-ros | [micro-ROS](../wiki/software/micro-ros.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| PX4 | `software/px4` | B | firmware | One of the two main open autopilots for drones and other vehicles; MAVROS links it to ROS |
-| ArduPilot | `software/ardupilot` | B | firmware | The other main open autopilot, for copters, planes, rovers and boats; ground and water robots run it too |
 | phobos | `tools/phobos` | B | cad-to-sim | Blender add-on that builds URDF and SDF models from meshes; one of the open CAD-to-sim routes |
 | solidworks_urdf_exporter | `tools/solidworks-urdf-exporter` | B | cad-to-sim | SolidWorks add-in, kept under the ROS org, that exports assemblies to URDF; seven Atlas robots publish SolidWorks CAD |
 | FreeCAD | `tools/freecad` | A | cad | Open parametric CAD and this workspace's first-class CAD tool, scriptable headless with `freecadcmd` |
@@ -206,13 +213,6 @@ rejected.
 | WireViz | `tools/wireviz` | B | pcb | Draws cable and harness diagrams with a cable BOM from YAML, so a robot's wiring lives in git |
 | ODrive | `parts/drivers/odrive-robotics-odrive` | B | actuators | Open BLDC motor controller behind Stanford Doggo; the actuator guide compares it with other BLDC drives |
 | casADi | `software/casadi` | A | control | Symbolic modelling and automatic differentiation for MPC and trajectory optimisation, with Ipopt and other solvers |
-| OpenCR | `parts/mcu/robotis-opencr` | B | firmware | ROBOTIS's open controller board, used by TurtleBot3, OpenManipulator-X and ROBOTIS OP3 |
-| micro-ROS for Arduino | `software/micro-ros` | A | firmware | Prebuilt micro-ROS library for Arduino boards such as Teensy, Portenta and OpenCR |
-| python-can | `software/python-can` | B | firmware | The common Python interface to CAN adapters; host scripts for CAN motors and sensors start here |
-| CANopenNode | `software/canopennode` | B | firmware | Widely used open CANopen stack for MCUs, for building your own CANopen joint or sensor node |
-| can-utils | `tools/can-utils` | B | firmware | candump, cansend and the rest: the first tools to bring up and debug a SocketCAN bus |
-| ros_canopen | `software/ros2-canopen` | B | firmware | CANopen motor drives (CiA 402) in ROS 2 through ros2_control; ros2_canopen is this framework's ROS 2 line |
-| micro-ros | `software/micro-ros` | A | firmware | ROS 2 on microcontrollers: the standard way to put an MCU on a ROS 2 graph |
 
 ## Index only
 

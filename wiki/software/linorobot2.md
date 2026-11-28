@@ -80,6 +80,7 @@ the EKF fuses them into `odom` and TF `odom → base_footprint` [1][3]. Wait for
 
 [TurtleBot3](../robots/turtlebot3.md) as a bought base, or [Nav2](nav2.md) with your own
 [ros2_control](ros2-control.md) driver; [skills/nav-nav2](../../skills/nav-nav2/SKILL.md) helps.
+Its firmware side builds on [micro-ROS](micro-ros.md) and [PlatformIO](../tools/platformio.md).
 
 ## Sources
 

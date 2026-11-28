@@ -11,7 +11,7 @@ year: 2026
 license: {hardware: Apache-2.0, software: Apache-2.0, docs: Apache-2.0}
 links: {repo: https://github.com/dorianborian/sesame-robot, docs: https://github.com/dorianborian/sesame-robot/tree/main/docs, cad: https://github.com/dorianborian/sesame-robot/tree/main/hardware/cad, paper: , site: https://www.doriantodd.com/sesame}
 specs: {dof: 8, payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "8x MG90S 180-degree metal-gear micro servos (PWM)", mcu: "ESP32-S2 (Lolin S2 Mini) or ESP32-S3 (Sesame Distro Board V3.1)", compute: , sensors: [], sim_models: ["URDF (Sesame Simulator, one-for-all)", "MJCF (lukehollis/sesame-ml)", "URDF (lukehollis/sesame-ml)"], ros2: none}
+stack: {actuators: "8x MG90S 180-degree metal-gear micro servos (PWM)", mcu: [espressif-esp32-s3, "ESP32-S2 (Lolin S2 Mini) or ESP32-S3 (Sesame Distro Board V3.1)"], compute: , sensors: [], sim_models: ["URDF (Sesame Simulator, one-for-all)", "MJCF (lukehollis/sesame-ml)", "URDF (lukehollis/sesame-ml)"], ros2: none}
 cost: {type: bom, usd: 60, as_of: 2026-11-17, source: https://github.com/dorianborian/sesame-robot}
 build: {difficulty: 3, hours: , print_hours: }
 maturity: {last_commit: 2026-11-08, stars: 5086, active: true}

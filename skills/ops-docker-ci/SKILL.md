@@ -211,7 +211,7 @@ credential; workflows set `permissions:` explicitly.
   [ros2-web-bridge](../ros2-web-bridge/SKILL.md) (rosbridge in a container),
   [ros2-control](../ros2-control/SKILL.md) (driver containers), [sim-gazebo](../sim-gazebo/SKILL.md),
   [ops-bringup](../ops-bringup/SKILL.md) (systemd on the robot), [ops-fleet](../ops-fleet/SKILL.md)
-  (rollouts to many robots); later micro-ROS (agent container).
+  (rollouts to many robots), [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md) (agent container).
 - Wiki: [Docker](../../wiki/tools/docker.md), [ROS 2](../../wiki/tools/ros2.md), [colcon](../../wiki/tools/colcon.md),
   [Pixi](../../wiki/tools/pixi.md) (environments without Docker),
   [Fast DDS](../../wiki/software/fast-dds.md), [Cyclone DDS](../../wiki/software/cyclone-dds.md),

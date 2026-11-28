@@ -1,13 +1,14 @@
 # RoboAI Workspace — Plan
 
 Status: **Phases 0 and 1 done, 2026-11-17; Phase 2 deferred; Phase 3 done, 2026-11-18; Phase 4
-done, 2026-11-25; Phase 5 planned, 2026-11-26.** This plan replaces the old "Agentic Robotics"
-layout. Phase 0 built the structure, templates, frontmatter and source registry; Phase 1 built
-the scripts and commands that keep them consistent; Phase 3 wrote the Robot Atlas's 79 pages (17
-profiles, 62 cards). Phase 4 triaged its lists and wrote all seven batches: ROS 2 core and
-tooling, simulation, perception and SLAM, navigation, manipulation, operations and architecture,
-and learning ([progress](#phase-4-plan)). The [Phase 5 plan](#phase-5-plan) covers firmware, parts, control,
-CAD, PCB and CAD-to-sim. The [roadmap](#12-roadmap) says what comes after.
+done, 2026-11-25; Phase 5 under way since 2026-11-26.** This plan replaces the old "Agentic
+Robotics" layout. Phase 0 built the structure, templates, frontmatter and source registry;
+Phase 1 built the scripts and commands that keep them consistent; Phase 3 wrote the Robot
+Atlas's 79 pages (17 profiles, 62 cards). Phase 4 triaged its lists and wrote all seven batches:
+ROS 2 core and tooling, simulation, perception and SLAM, navigation, manipulation, operations
+and architecture, and learning ([progress](#phase-4-plan)). The [Phase 5 plan](#phase-5-plan)
+covers firmware, parts, control, CAD, PCB and CAD-to-sim; its triage and firmware batch are
+done. The [roadmap](#12-roadmap) says what comes after.
 
 ## Contents
 
@@ -583,6 +584,7 @@ MuJoCo, FreeCAD or STM32 and RP2040 boards; those come from their official docs.
 | Step | Done | Result |
 |---|---|---|
 | Triage | 2026-11-26 | The 121 deferred rows decided and the eight new lists read (1,270 rows); 43 pages wait across seven batches (firmware 10, control 5, actuators 4, sensors 3, CAD 7, PCB 9, CAD-to-sim 5), plus the pages below |
+| Firmware and MCU | 2026-11-27 | 12 tool pages (micro-ROS, FreeRTOS, Zephyr, ESP-IDF, Arduino, PlatformIO, PX4, ArduPilot, can-utils, python-can, CANopenNode, ros2_canopen), the first 6 part pages (ESP32-S3, RP2040, Teensy 4.1, Nucleo-F446RE, Arduino Mega 2560, OpenCR) linked from 11 Atlas robots, the [MCU and firmware guide](../wiki/guides/choose-an-mcu-and-firmware-stack.md), 3 skills re-filed |
 
 **Pages with no list row.** Written from official docs and the Atlas survey, as ROS 2 was in
 Phase 4. Robot counts are Atlas pages whose `stack` names the part, on 2026-11-26.

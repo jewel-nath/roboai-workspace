@@ -14,8 +14,9 @@ perception (24 pages, a SLAM guide, three re-filed skills), navigation (6 pages,
 controller guide, two re-filed skills), manipulation (8 pages, an arm motion planner guide,
 two re-filed skills), operations (4 pages, a deployment guide, four re-filed skills) and
 learning (28 pages, a policy guide, two re-filed skills). Phase 5 (firmware, parts, control,
-CAD, PCB and CAD-to-sim) is planned in [docs/plan.md](docs/plan.md#phase-5-plan). Content
-arrives phase by phase (see the roadmap in the plan). The rest of the old skill library waits in
+CAD, PCB and CAD-to-sim) is under way, as [docs/plan.md](docs/plan.md#phase-5-plan) sets out:
+its lists are triaged and the firmware batch is written (12 tool pages, the first 6 part pages,
+an MCU and firmware guide, three re-filed skills). Content arrives phase by phase (see the roadmap in the plan). The rest of the old skill library waits in
 `legacy/`.
 
 ## Map

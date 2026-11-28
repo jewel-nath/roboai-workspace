@@ -74,9 +74,10 @@ updated from each incoming packet, and TCP defaults to port 5760 [3]. An agent c
 
 ## Alternatives
 
-PX4: build Micro-XRCE-DDS-Agent (v2.4.3 for Jazzy) and run `MicroXRCEAgent udp4 -p 8888` [6].
-ArduPilot: `ros2 run micro_ros_agent micro_ros_agent` with the AP_DDS client [8]. Web access to
-MAVROS topics: [rosbridge_suite](rosbridge-suite.md).
+[PX4](px4.md): build Micro-XRCE-DDS-Agent (v2.4.3 for Jazzy) and run
+`MicroXRCEAgent udp4 -p 8888` [6]. [ArduPilot](ardupilot.md): run
+`ros2 run micro_ros_agent micro_ros_agent` with the AP_DDS client [8]. Web access to MAVROS
+topics: [rosbridge_suite](rosbridge-suite.md).
 
 ## Sources
 

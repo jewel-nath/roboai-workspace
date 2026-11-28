@@ -61,10 +61,10 @@ it.
 | `grasping-force-control` | 953 | Humble | — | `skills/manip-grasping` | re-filed 2026-11-25 |
 | `control-systems` | 788 | — | — | `skills/control-systems` + `wiki/concepts/` | re-file; owns PID |
 | `realtime-motor-control` | 909 | Humble | — | `skills/fw-motor-control` | re-file; PID → link to `control-systems` |
-| `microcontrollers` | 886 | — | — | `skills/fw-mcu` | re-file |
+| `microcontrollers` | 886 | — | — | `skills/fw-mcu` | re-filed 2026-11-27 |
 | `gpio-i2c-spi` | 1265 | — | — | `skills/fw-peripherals` | re-file, neutral example |
-| `serial-can-protocols` | 1141 | Humble | — | `skills/fw-serial-can` | re-file |
-| `rtos-micro-ros` | 1140 | Jazzy | — | `skills/fw-rtos-micro-ros` | re-file, neutral example |
+| `serial-can-protocols` | 1141 | Humble | — | `skills/fw-serial-can` | re-filed 2026-11-27 |
+| `rtos-micro-ros` | 1140 | Jazzy | — | `skills/fw-rtos-micro-ros` | re-filed 2026-11-27 |
 | `sensor-actuator-drivers` | 1267 | Jazzy | — | `skills/fw-drivers` | re-file; PID → link |
 | `learning-robotics` | 1131 | — | — | `skills/learn-robot-learning` | re-filed 2026-11-25 |
 | `edge-ml-deployment` | 1080 | Jazzy | — | `skills/learn-edge-deployment` | re-filed 2026-11-25 |

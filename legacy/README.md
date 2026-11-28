@@ -95,15 +95,15 @@ Status as of March 2026, when the skills were last updated:
 ### Hardware Interfaces
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [serial-can-protocols](skills/serial-can-protocols/SKILL.md) | UART, RS485, CAN 2.0, CANopen, J1939, EtherCAT | ✅ |
+| [serial-can-protocols](../skills/fw-serial-can/SKILL.md) (re-filed as `fw-serial-can`) | UART, RS485, CAN 2.0, CANopen, J1939, EtherCAT | ✅ |
 | [gpio-i2c-spi](skills/gpio-i2c-spi/SKILL.md) | GPIO, PWM, interrupts, I2C, SPI protocols on Linux/RPi | ✅ |
 | [sensor-actuator-drivers](skills/sensor-actuator-drivers/SKILL.md) | Custom ROS2 driver development: IMU, encoder, motor, servo | ✅ |
 
 ### Embedded Systems
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [microcontrollers](skills/microcontrollers/SKILL.md) | STM32, ESP32, nRF52, HAL patterns, DMA, interrupts, bootloaders | ✅ |
-| [rtos-micro-ros](skills/rtos-micro-ros/SKILL.md) | FreeRTOS task scheduling, micro-ROS on STM32/ESP32, real-time patterns | ✅ |
+| [microcontrollers](../skills/fw-mcu/SKILL.md) (re-filed as `fw-mcu`) | STM32, ESP32, nRF52, HAL patterns, DMA, interrupts, bootloaders | ✅ |
+| [rtos-micro-ros](../skills/fw-rtos-micro-ros/SKILL.md) (re-filed as `fw-rtos-micro-ros`) | FreeRTOS task scheduling, micro-ROS on STM32/ESP32, real-time patterns | ✅ |
 
 ### AI & Learning
 | Skill | Description | Status |

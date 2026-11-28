@@ -200,8 +200,8 @@ Before reporting a fleet setup done:
   [arch-safety](../arch-safety/SKILL.md), [arch-robot-architecture](../arch-robot-architecture/SKILL.md),
   [ros2-core](../ros2-core/SKILL.md), [ros2-web-bridge](../ros2-web-bridge/SKILL.md),
   [nav-nav2](../nav-nav2/SKILL.md), [sim-to-real](../sim-to-real/SKILL.md),
-  [learn-edge-deployment](../learn-edge-deployment/SKILL.md) (models on Jetson); later the Phase 5
-  firmware skills (firmware updates).
+  [learn-edge-deployment](../learn-edge-deployment/SKILL.md) (models on Jetson), [fw-mcu](../fw-mcu/SKILL.md)
+  (building and flashing firmware).
 - Wiki: [Open-RMF](../../wiki/software/open-rmf.md), [SROS 2](../../wiki/software/sros2.md),
   [rmw_zenoh](../../wiki/software/rmw-zenoh.md), [Fast DDS](../../wiki/software/fast-dds.md),
   [Cyclone DDS](../../wiki/software/cyclone-dds.md), [Foxglove](../../wiki/tools/foxglove.md),

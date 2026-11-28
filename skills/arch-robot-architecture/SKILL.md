@@ -72,8 +72,9 @@ ros2 launch my_robot_bringup robot.launch.py hardware:=mock map:=$HOME/maps/my_m
    Link them with a ros2_control hardware interface speaking a small serial, CAN or EtherCAT protocol to the MCU
    when standard controllers should drive the joints ([ros2-control](../ros2-control/SKILL.md)); or with
    micro-ROS (rclc on the MCU; the agent has no Jazzy apt package, build its `jazzy` branch) when the MCU should
-   publish sensors or take `cmd_vel` itself, as [linorobot2](../../wiki/software/linorobot2.md) does. Firmware,
-   micro-ROS and motor control are Phase 5 (`fw-mcu`, `fw-serial-can`, `fw-rtos-micro-ros`, `fw-motor-control`).
+   publish sensors or take `cmd_vel` itself, as [linorobot2](../../wiki/software/linorobot2.md) does. Firmware:
+   [fw-mcu](../fw-mcu/SKILL.md), [fw-serial-can](../fw-serial-can/SKILL.md),
+   [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md); motor control comes later (`fw-motor-control`).
    *Check:* with the wheels off the ground, cutting the computer's link stops the motors on the MCU's timeout.
 
 3. **Lay out the packages** (Quick start). Definitions alone in `my_robot_interfaces`; launch and config, no nodes,
@@ -212,7 +213,8 @@ Before reporting an architecture done:
   [rosbridge_suite](../../wiki/software/rosbridge-suite.md), [Foxglove](../../wiki/tools/foxglove.md),
   [Open-RMF](../../wiki/software/open-rmf.md), [choose a middleware](../../wiki/guides/choose-a-ros2-middleware.md).
 - Skills: those named above, plus [manip-moveit2](../manip-moveit2/SKILL.md), [sim-gazebo](../sim-gazebo/SKILL.md),
-  [ops-docker-ci](../ops-docker-ci/SKILL.md); Phase 5 `fw-` skills. Stage 2 of the [playbooks](../../playbooks/README.md).
+  [ops-docker-ci](../ops-docker-ci/SKILL.md), [fw-mcu](../fw-mcu/SKILL.md), [fw-serial-can](../fw-serial-can/SKILL.md),
+  [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md). Stage 2 of the [playbooks](../../playbooks/README.md).
 - Upstream: docs.ros.org/en/jazzy (composition, launch for large projects, node arguments), REP 105, REP 144,
   `navigation2`, `launch_ros`, `rclcpp`, `ros2_controllers` `jazzy` branches, behaviortree.dev, the YASMIN, SMACC2
   and FlexBE repositories, `ros/rosdistro`.

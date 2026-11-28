@@ -11,7 +11,7 @@ year: 2017
 license: {hardware: , software: Apache-2.0, docs: CC-BY-4.0}
 links: {repo: "https://github.com/ROBOTIS-GIT/open_manipulator", docs: "https://emanual.robotis.com/docs/en/platform/openmanipulator_x/overview/", cad: "https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/6f08aa8ac3d3e5b3054f7782", paper: , site: "https://robotis.us/openmanipulator-x-rm-x52-tnm"}
 specs: {dof: 5, payload_kg: 0.5, reach_mm: 380, mass_kg: 0.7, size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "Dynamixel XM430-W350-T smart servos (5)", mcu: "none on the arm; OpenCR board or a U2D2 adapter with power hub, sold separately", compute: "host PC, or OpenCR alone for simple control", sensors: ["servo encoders"], sim_models: ["URDF and Gazebo (open_manipulator_description)", "MJCF (open_manipulator_description, since 2026-09)", "URDF and SRDF (robot_descriptions, open_manipulator_x_description)"], ros2: official}
+stack: {actuators: "Dynamixel XM430-W350-T smart servos (5)", mcu: [robotis-opencr, "none on the arm; OpenCR board or a U2D2 adapter with power hub, sold separately"], compute: "host PC, or OpenCR alone for simple control", sensors: ["servo encoders"], sim_models: ["URDF and Gazebo (open_manipulator_description)", "MJCF (open_manipulator_description, since 2026-09)", "URDF and SRDF (robot_descriptions, open_manipulator_x_description)"], ros2: official}
 cost: {type: retail, usd: 1629.09, as_of: 2026-11-18, source: "https://robotis.us/openmanipulator-x-rm-x52-tnm"}
 build: {difficulty: , hours: , print_hours: }
 maturity: {last_commit: 2026-11-18, stars: 679, active: true}

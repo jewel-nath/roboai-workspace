@@ -156,9 +156,10 @@ torque, range, pose, GPS, battery, magnetometer, any state interface); a chainab
 ## Alternatives
 
 - A plain driver node that takes commands and publishes `/joint_states` and [tf2](tf2.md)
-  frames: simpler for one actuator, but no controller reuse. micro-ROS when the loop closes on an
-  MCU.
-- [MAVROS](mavros.md) for PX4 and ArduPilot vehicles, whose autopilot runs the control loops.
+  frames: simpler for one actuator, but no controller reuse. [micro-ROS](micro-ros.md) when the
+  loop closes on an MCU.
+- [MAVROS](mavros.md) for [PX4](px4.md) and [ArduPilot](ardupilot.md) vehicles, whose autopilot
+  runs the control loops.
 - gazebo_ros2_control, the Gazebo Classic counterpart, is released for Humble but not for Jazzy,
   Kilted or Lyrical [14].
 

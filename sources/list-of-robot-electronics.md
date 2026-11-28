@@ -5,7 +5,7 @@ registry: list-of-robot-electronics
 url: https://github.com/cajt/list_of_robot_electronics
 commit: "e26414b"
 read_on: 2026-11-26
-counts: {entries: 66, pages: 0, waiting: 5, index_only: 39, deferred: 0, rejected: 22}
+counts: {entries: 66, pages: 1, waiting: 4, index_only: 39, deferred: 0, rejected: 22}
 ---
 
 # A list of robot electronics: what it gives RoboAI
@@ -60,6 +60,7 @@ robots.
 
 | Entry | Page | Tier |
 |---|---|---|
+| CANopenNode | [CANopenNode](../wiki/software/canopennode.md) | B |
 
 ## Waiting for a page
 
@@ -69,7 +70,6 @@ robots.
 | ODrive | `parts/drivers/odrive-robotics-odrive` | B | actuators | The common BLDC controller of open legged robots (Stanford Doggo); the actuator guide compares it |
 | Simple FOC | `software/simplefoc` | B | actuators | Maintained MIT Arduino library for field-oriented control on cheap boards; the low-cost end of the guide's BLDC comparison |
 | Moteus | `parts/drivers/mjbots-moteus` | B | actuators | Maintained Apache-2.0 joint controller for quasi-direct-drive legs, used by Upkie; the actuator guide compares it |
-| CANopenNode | `software/canopennode` | B | firmware | Maintained Apache-2.0 CANopen stack for microcontrollers; the firmware batch's CANopen device side |
 
 ## Index only
 

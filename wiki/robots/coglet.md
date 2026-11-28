@@ -11,7 +11,7 @@ year: 2026
 license: {hardware: CC-BY-NC-4.0, software: CC-BY-NC-4.0 AND MIT, docs: CC-BY-NC-4.0}
 links: {repo: https://github.com/will-cogley/Coglet, docs: https://nmrobots.com/pages/coglet, cad: https://github.com/will-cogley/Coglet/tree/main/3D%20Printing%20Files, paper: , site: https://nmrobots.com/collections/coglet}
 specs: {dof: 9, payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "9 micro servos, 9 g metal-gear PWM (Kpower M0090 in the parts list; TiankongRC TS90MD sold in the kit)", mcu: "CogNog board: ESP32-S3 for AI, audio, vision and Wi-Fi; RP2040 for motion; PCA9685 PWM servo driver", compute: "Grove Vision AI V2 for on-board face tracking; voice and LLM through the XiaoZhi cloud service or a local NMWorkbench server", sensors: [GC0308 camera (ESP32-S3), OV5647 camera in the eye (Grove Vision AI V2), I2S MEMS microphone], sim_models: [], ros2: none}
+stack: {actuators: "9 micro servos, 9 g metal-gear PWM (Kpower M0090 in the parts list; TiankongRC TS90MD sold in the kit)", mcu: [espressif-esp32-s3, raspberry-pi-rp2040, "CogNog board: ESP32-S3 for AI, audio, vision and Wi-Fi; RP2040 for motion; PCA9685 PWM servo driver"], compute: "Grove Vision AI V2 for on-board face tracking; voice and LLM through the XiaoZhi cloud service or a local NMWorkbench server", sensors: [GC0308 camera (ESP32-S3), OV5647 camera in the eye (Grove Vision AI V2), I2S MEMS microphone], sim_models: [], ros2: none}
 cost: {type: kit, usd: 189.38, as_of: 2026-11-17, source: https://nmrobots.com/products/coglet-2}
 build: {difficulty: 3, hours: , print_hours: }
 maturity: {last_commit: 2026-11-14, stars: 448, active: true}

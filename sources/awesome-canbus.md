@@ -5,7 +5,7 @@ registry: awesome-canbus
 url: https://github.com/iDoka/awesome-canbus
 commit: "4e53b31"
 read_on: 2026-11-26
-counts: {entries: 255, pages: 0, waiting: 3, index_only: 56, deferred: 0, rejected: 196}
+counts: {entries: 255, pages: 3, waiting: 0, index_only: 56, deferred: 0, rejected: 196}
 ---
 
 # Awesome CAN Bus: what it gives RoboAI
@@ -71,14 +71,14 @@ unlicensed or dead. The list holds no CANopen stack and no ROS 2 bridge.
 
 | Entry | Page | Tier |
 |---|---|---|
+| Linux CAN Utils | [can-utils and SocketCAN](../wiki/tools/can-utils.md) | B |
+| SocketCAN | [can-utils and SocketCAN](../wiki/tools/can-utils.md) | B |
+| python-can | [python-can](../wiki/software/python-can.md) | B |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| Linux CAN Utils | `tools/can-utils` | B | firmware | The standard SocketCAN command-line tools (candump, cansend, slcand) for bringing up and debugging a robot CAN bus on Linux |
-| SocketCAN | `tools/can-utils` | B | firmware | The kernel CAN layer the can-utils page explains: interfaces, bit rates, CAN FD; its main source |
-| python-can | `software/python-can` | B | firmware | The standard Python CAN library: one API over SocketCAN and USB adapters, with logging, replay and CAN FD |
 
 ## Index only
 

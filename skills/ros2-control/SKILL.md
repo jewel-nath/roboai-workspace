@@ -194,5 +194,8 @@ commands as step 4. The Gazebo side as a whole comes in a later simulation skill
 - Skills: [ros2-core](../ros2-core/SKILL.md),
   [ros2-robot-description](../ros2-robot-description/SKILL.md),
   [ros2-web-bridge](../ros2-web-bridge/SKILL.md), [ops-docker-ci](../ops-docker-ci/SKILL.md).
-  Later: Gazebo simulation, Nav2, MoveIt 2, micro-ROS, control and firmware skills.
+  Also [sim-gazebo](../sim-gazebo/SKILL.md), [nav-nav2](../nav-nav2/SKILL.md),
+  [manip-moveit2](../manip-moveit2/SKILL.md), [fw-serial-can](../fw-serial-can/SKILL.md) (the board side of a
+  serial or CAN hardware interface), [fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md); later the control
+  and motor-control skills.
 - Upstream: control.ros.org (Jazzy docs, migration guides), ros2_control_demos `jazzy` branch.

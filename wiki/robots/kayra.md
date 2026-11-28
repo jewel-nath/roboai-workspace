@@ -11,7 +11,7 @@ year: 2022
 license: {hardware: BSD-3-Clause, software: BSD-3-Clause, docs: BSD-3-Clause}
 links: {repo: "https://github.com/assadollahi/kayra", docs: "https://github.com/assadollahi/kayra/blob/main/WIRING.md", cad: "https://github.com/assadollahi/kayra/tree/main/FCStd", paper: , site: }
 specs: {dof: 16, payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "16 hobby servos; the 2023 parts list names DS3235MG (35 kg·cm class) for the main joints and CS-929MG for the small ones", mcu: "Pimoroni Servo 2040 (RP2040) running MicroPython", compute: "host PC over USB serial; optional ESP32-CAM in the head over Wi-Fi", sensors: ["BNO055 IMU", "ESP32-CAM camera (optional)"], sim_models: ["MJCF (kayra repo, mujoco/kayraLowerBody.xml: legs, 8 actuated servos)"], ros2: none}
+stack: {actuators: "16 hobby servos; the 2023 parts list names DS3235MG (35 kg·cm class) for the main joints and CS-929MG for the small ones", mcu: [raspberry-pi-rp2040, "Pimoroni Servo 2040 (RP2040) running MicroPython"], compute: "host PC over USB serial; optional ESP32-CAM in the head over Wi-Fi", sensors: ["BNO055 IMU", "ESP32-CAM camera (optional)"], sim_models: ["MJCF (kayra repo, mujoco/kayraLowerBody.xml: legs, 8 actuated servos)"], ros2: none}
 cost: {type: , usd: , as_of: , source: }
 build: {difficulty: 3, hours: 2, print_hours: 20}
 maturity: {last_commit: 2026-09-13, stars: 62, active: true}

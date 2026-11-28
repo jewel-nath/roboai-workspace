@@ -38,8 +38,9 @@ Elsewhere: arm force guard and grasp limits in [manip-grasping](../manip-graspin
 powered runs of a learned policy in [sim-to-real](../sim-to-real/SKILL.md); web bridge exposure in
 [ros2-web-bridge](../ros2-web-bridge/references/secure-access.md); systemd units and boot order in
 [ops-bringup](../ops-bringup/SKILL.md); networks and fleets in [ops-fleet](../ops-fleet/SKILL.md); the
-overall node layout in [arch-robot-architecture](../arch-robot-architecture/SKILL.md); drive firmware,
-motor control and firmware watchdogs in the later `fw-` skills (Phase 5).
+overall node layout in [arch-robot-architecture](../arch-robot-architecture/SKILL.md); firmware
+watchdogs and command timeouts in [fw-mcu](../fw-mcu/SKILL.md) and
+[fw-rtos-micro-ros](../fw-rtos-micro-ros/SKILL.md); motor control in the later `fw-motor-control`.
 
 ## The layers
 

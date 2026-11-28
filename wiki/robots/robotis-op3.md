@@ -11,7 +11,7 @@ year: 2017
 license: {hardware: , software: Apache-2.0, docs: }
 links: {repo: "https://github.com/ROBOTIS-GIT/ROBOTIS-OP3", docs: "https://emanual.robotis.com/docs/en/platform/op3/introduction/", cad: "https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3", paper: , site: }
 specs: {dof: 20, payload_kg: , reach_mm: , mass_kg: 3.5, size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "Dynamixel XM430-W350-R servos", mcu: "OpenCR sub-controller", compute: "Intel NUC with Core i3, 8 GB DDR4, 250 GB SSD (2025 version)", sensors: ["Logitech C920 HD Pro webcam (1920 x 1080)", "3-axis gyroscope, accelerometer and magnetometer"], sim_models: ["URDF/Xacro (ROBOTIS-OP3-Common: op3_description)", "Gazebo Classic (ROBOTIS-OP3-Common: op3_gazebo, ROS 1 branch)", "MJCF (MuJoCo Menagerie: robotis_op3)"], ros2: official}
+stack: {actuators: "Dynamixel XM430-W350-R servos", mcu: [robotis-opencr, "OpenCR sub-controller"], compute: "Intel NUC with Core i3, 8 GB DDR4, 250 GB SSD (2025 version)", sensors: ["Logitech C920 HD Pro webcam (1920 x 1080)", "3-axis gyroscope, accelerometer and magnetometer"], sim_models: ["URDF/Xacro (ROBOTIS-OP3-Common: op3_description)", "Gazebo Classic (ROBOTIS-OP3-Common: op3_gazebo, ROS 1 branch)", "MJCF (MuJoCo Menagerie: robotis_op3)"], ros2: official}
 cost: {type: , usd: , as_of: , source: }
 build: {difficulty: , hours: , print_hours: }
 maturity: {last_commit: 2024-12-13, stars: 165, active: false}

@@ -22,6 +22,8 @@ Video tools go in `video/` once the video track starts.
 <!-- index:start -->
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
+| [can-utils and SocketCAN](can-utils.md) | tool | firmware | documented | (GPL-2.0-only OR BSD-3-Clause) AND GPL-2.0-only AND LGPL-2.0-only | — | cli | 2026-11-27 |
+| [PlatformIO](platformio.md) | tool | firmware | documented | Apache-2.0 | — | cli | 2026-11-27 |
 | [CloudCompare](cloudcompare.md) | tool | perception | documented | GPL-2.0-or-later | — | cli | 2026-11-23 |
 | [colcon](colcon.md) | tool | ros2 | documented | Apache-2.0 | — | cli | 2026-11-18 |
 | [Docker](docker.md) | tool | ros2 | documented | Apache-2.0 | — | cli | 2026-11-25 |

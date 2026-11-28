@@ -11,7 +11,7 @@ year: 2016
 license: {hardware: CC-BY-SA-4.0, software: CC-BY-SA-4.0 AND Apache-2.0, docs: CC-BY-SA-4.0}
 links: {repo: "https://github.com/AngelLM/Thor", docs: "http://thor.angel-lm.com/documentation/", cad: "https://github.com/AngelLM/Thor/tree/main/freecad-src", paper: , site: "http://thor.angel-lm.com/"}
 specs: {dof: 7, payload_kg: 0.75, reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "7 NEMA 17 stepper motors (one 40 mm; three 34 mm with 5:1 reduction on axes 2 and 3; three 34 mm on axes 4 to 6) through printed gears and GT2 belts, plus an MG995 servo gripper", mcu: "Arduino Mega with the Thor ControlPCB and 8 A4988 drivers (GRBL 0.9j fork), or a Fly Super8Pro board (RepRapFirmware)", compute: "host PC sending G-code over USB serial (Asgard GUI or ROS 2)", sensors: ["4 optical endstops and a micro endstop for homing"], sim_models: ["URDF, MoveIt 2 config and Gazebo launch (Thor-ROS, ROS 2 Humble)"], ros2: official}
+stack: {actuators: "7 NEMA 17 stepper motors (one 40 mm; three 34 mm with 5:1 reduction on axes 2 and 3; three 34 mm on axes 4 to 6) through printed gears and GT2 belts, plus an MG995 servo gripper", mcu: [arduino-mega-2560, "Arduino Mega with the Thor ControlPCB and 8 A4988 drivers (GRBL 0.9j fork), or a Fly Super8Pro board (RepRapFirmware)"], compute: "host PC sending G-code over USB serial (Asgard GUI or ROS 2)", sensors: ["4 optical endstops and a micro endstop for homing"], sim_models: ["URDF, MoveIt 2 config and Gazebo launch (Thor-ROS, ROS 2 Humble)"], ros2: official}
 cost: {type: , usd: , as_of: , source: }
 build: {difficulty: 3, hours: 10, print_hours: 200}
 maturity: {last_commit: 2025-05-09, stars: 1653, active: false}

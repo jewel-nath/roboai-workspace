@@ -5,7 +5,7 @@ registry: awesome-embedded-software
 url: https://github.com/iDoka/awesome-embedded-software
 commit: "1954dd7"
 read_on: 2026-11-26
-counts: {entries: 268, pages: 0, waiting: 3, index_only: 141, deferred: 0, rejected: 124}
+counts: {entries: 268, pages: 3, waiting: 0, index_only: 141, deferred: 0, rejected: 124}
 ---
 
 # Awesome Embedded Resources for Developers: what it gives RoboAI
@@ -76,14 +76,14 @@ topic.
 
 | Entry | Page | Tier |
 |---|---|---|
+| micro-ROS | [micro-ROS](../wiki/software/micro-ros.md) | A |
+| FreeRTOS | [FreeRTOS](../wiki/software/freertos.md) | A |
+| Zephyr | [Zephyr](../wiki/software/zephyr.md) | A |
 
 ## Waiting for a page
 
 | Entry | Page | Tier | Batch | Why it matters |
 |---|---|---|---|---|
-| micro-ROS | software/micro-ros | A | firmware | ROS 2 on MCUs: the standard route from firmware to ROS 2; micro_ros_setup supports Jazzy |
-| FreeRTOS | software/freertos | A | firmware | The common MCU RTOS: ESP-IDF builds on it, and micro-ROS's STM32 and ESP32 ports run on it |
-| Zephyr | software/zephyr | A | firmware | Linux Foundation RTOS with wide board support and a micro-ROS module |
 
 ## Index only
 

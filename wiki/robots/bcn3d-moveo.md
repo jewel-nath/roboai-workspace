@@ -11,7 +11,7 @@ year: 2016
 license: {hardware: MIT, software: GPL-3.0-or-later, docs: MIT}
 links: {repo: "https://github.com/BCN3D/BCN3D-Moveo", docs: "https://github.com/BCN3D/BCN3D-Moveo/tree/master/USER%20MANUAL", cad: "https://github.com/BCN3D/BCN3D-Moveo/tree/master/CAD%20files", paper: , site: }
 specs: {dof: 6, payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "6 stepper motors (NEMA 17, one with a 5:1 planetary gearbox; 2 x NEMA 23; one smaller 35 mm motor) on T5 belts, plus a 13 kg·cm hobby servo for the gripper", mcu: "Arduino Mega 2560 with a RAMPS 1.4 shield and 6 x TB6560 stepper drivers", compute: "host PC sending G-code over USB", sensors: [], sim_models: ["URDF and MoveIt config (community moveo_ros, ROS 1)"], ros2: none}
+stack: {actuators: "6 stepper motors (NEMA 17, one with a 5:1 planetary gearbox; 2 x NEMA 23; one smaller 35 mm motor) on T5 belts, plus a 13 kg·cm hobby servo for the gripper", mcu: [arduino-mega-2560, "Arduino Mega 2560 with a RAMPS 1.4 shield and 6 x TB6560 stepper drivers"], compute: "host PC sending G-code over USB", sensors: [], sim_models: ["URDF and MoveIt config (community moveo_ros, ROS 1)"], ros2: none}
 cost: {type: , usd: , as_of: , source: }
 build: {difficulty: 3, hours: , print_hours: }
 maturity: {last_commit: 2016-10-03, stars: 2025, active: false}

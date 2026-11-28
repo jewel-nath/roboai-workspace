@@ -155,14 +155,14 @@ limit and lists the pages it skipped.
 
 | Source | Read on | Entries | Pages | Waiting | Index only | Deferred | Rejected |
 |---|---|---|---|---|---|---|---|
-| [Awesome CAN Bus](awesome-canbus.md) | 2026-11-26 | 255 | 0 | 3 | 56 | 0 | 196 |
+| [Awesome CAN Bus](awesome-canbus.md) | 2026-11-26 | 255 | 3 | 0 | 56 | 0 | 196 |
 | [awesome-claude-video-skills](awesome-claude-video-skills.md) | 2026-11-19 | 526 | 0 | 0 | 64 | 7 | 455 |
-| [Awesome Embedded Resources for Developers](awesome-embedded-software.md) | 2026-11-26 | 268 | 0 | 3 | 141 | 0 | 124 |
+| [Awesome Embedded Resources for Developers](awesome-embedded-software.md) | 2026-11-26 | 268 | 3 | 0 | 141 | 0 | 124 |
 | [Awesome Kicad](awesome-kicad.md) | 2026-11-26 | 87 | 0 | 11 | 46 | 0 | 30 |
 | [Awesome Mobile Robotics](awesome-mobile-robotics.md) | 2026-11-18 | 533 | 23 | 0 | 441 | 0 | 69 |
 | [Awesome Robot Descriptions](awesome-robot-descriptions.md) | 2026-11-17 | 161 | 54 | 0 | 54 | 0 | 4 |
 | [Awesome Robot Learning](awesome-robot-learning.md) | 2026-11-18 | 56 | 12 | 0 | 35 | 0 | 9 |
-| [awesome-robotic-tooling](awesome-robotic-tooling.md) | 2026-11-18 | 938 | 40 | 17 | 624 | 0 | 257 |
+| [awesome-robotic-tooling](awesome-robotic-tooling.md) | 2026-11-18 | 938 | 49 | 8 | 624 | 0 | 257 |
 | [Awesome Robotics 3D](awesome-robotics-3d.md) | 2026-11-18 | 32 | 5 | 0 | 25 | 0 | 2 |
 | [Awesome Robotics Datasets](awesome-robotics-datasets.md) | 2026-11-18 | 77 | 2 | 0 | 52 | 0 | 23 |
 | [Awesome Robotics Foundation Models](awesome-robotics-foundation-models.md) | 2026-11-18 | 42 | 8 | 0 | 33 | 0 | 1 |
@@ -175,6 +175,6 @@ limit and lists the pages it skipped.
 | [Cool Code CAD](cool-code-cad.md) | 2026-11-26 | 205 | 0 | 4 | 86 | 0 | 115 |
 | [FreeCAD Addon Index](freecad-addons-index.md) | 2026-11-26 | 182 | 0 | 5 | 88 | 0 | 89 |
 | [Official KiCad Addon Metadata Repository](kicad-pcm-index.md) | 2026-11-26 | 133 | 0 | 3 | 98 | 0 | 32 |
-| [A list of resources, projects and products useful for robot electronics](list-of-robot-electronics.md) | 2026-11-26 | 66 | 0 | 5 | 39 | 0 | 22 |
+| [A list of resources, projects and products useful for robot electronics](list-of-robot-electronics.md) | 2026-11-26 | 66 | 1 | 4 | 39 | 0 | 22 |
 | [MuJoCo Menagerie](mujoco-menagerie.md) | 2026-11-26 | 74 | 0 | 1 | 73 | 0 | 0 |
 <!-- index:end -->

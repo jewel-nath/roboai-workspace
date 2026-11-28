@@ -11,7 +11,7 @@ year: 2017
 license: {hardware: , software: Apache-2.0, docs: CC-BY-4.0}
 links: {repo: https://github.com/ROBOTIS-GIT/turtlebot3, docs: https://docs.robotis.com/docs/systems/turtlebot3/overview/, cad: https://cad.onshape.com/documents/2586c4659ef3e7078e91168b/w/14abf4cb615429a14a2732cc/e/9ae9841864e78c02c4966c5e, paper: , site: https://www.turtlebot.com/}
 specs: {dof: 2, payload_kg: 15, reach_mm: , mass_kg: 1, size_mm: "138 x 178 x 192", speed_mps: 0.22, runtime_h: 2.5}
-stack: {actuators: DYNAMIXEL XL430-W250 smart servos (Burger) or XM430-W210 (Waffle Pi), mcu: OpenCR1.0 (STM32F7 Cortex-M7), compute: Raspberry Pi 4, sensors: [LDS-03 360-degree 2D lidar, 3-axis gyroscope and accelerometer on OpenCR, Raspberry Pi Camera v2.1 (Waffle Pi only)], sim_models: [URDF (turtlebot3 repo), SDF for Gazebo Sim (turtlebot3_simulations repo)], ros2: official}
+stack: {actuators: DYNAMIXEL XL430-W250 smart servos (Burger) or XM430-W210 (Waffle Pi), mcu: [robotis-opencr, "OpenCR1.0 (STM32F7 Cortex-M7)"], compute: Raspberry Pi 4, sensors: [LDS-03 360-degree 2D lidar, 3-axis gyroscope and accelerometer on OpenCR, Raspberry Pi Camera v2.1 (Waffle Pi only)], sim_models: [URDF (turtlebot3 repo), SDF for Gazebo Sim (turtlebot3_simulations repo)], ros2: official}
 cost: {type: kit, usd: 783.50, as_of: 2026-11-17, source: https://robotis.us/products/turtlebot-3-burger-rpi4-4gb-us}
 build: {difficulty: 1, hours: , print_hours: }
 maturity: {last_commit: 2026-11-12, stars: 2107, active: true}

@@ -11,7 +11,7 @@ year: 2012
 license: {hardware: CC-BY-NC-3.0, software: Apache-2.0, docs: }
 links: {repo: "https://github.com/MyRobotLab/InMoov2", docs: "https://inmoov.fr/default-hardware-map/", cad: "https://inmoov.fr/inmoov-stl-parts-viewer/", paper: , site: "https://inmoov.fr"}
 specs: {dof: , payload_kg: , reach_mm: , mass_kg: , size_mm: , speed_mps: , runtime_h: }
-stack: {actuators: "hobby servos: HK15298B (fingers, jaw, neck), MG996R (wrists), Hitec HS-805BB (shoulders, arms, head, stomach), DS929HV (eyes)", mcu: "2 x Arduino Mega with Nervo servo boards", compute: "PC running MyRobotLab; the maker's current build uses an Intel NUC (8th-gen i7)", sensors: ["Kinect 360 or OAK-D-Lite depth camera", "webcam in the head", "PIR sensor", "2 x HC-SR04 ultrasonic sensors", "finger pressure sensors"], sim_models: ["InMoov2 simulator in MyRobotLab (WebXR)", "URDF/xacro with ros2_control and Gazebo (community inmoov_urdf, ROS 2 Jazzy)"], ros2: community}
+stack: {actuators: "hobby servos: HK15298B (fingers, jaw, neck), MG996R (wrists), Hitec HS-805BB (shoulders, arms, head, stomach), DS929HV (eyes)", mcu: [arduino-mega-2560, "2 x Arduino Mega with Nervo servo boards"], compute: "PC running MyRobotLab; the maker's current build uses an Intel NUC (8th-gen i7)", sensors: ["Kinect 360 or OAK-D-Lite depth camera", "webcam in the head", "PIR sensor", "2 x HC-SR04 ultrasonic sensors", "finger pressure sensors"], sim_models: ["InMoov2 simulator in MyRobotLab (WebXR)", "URDF/xacro with ros2_control and Gazebo (community inmoov_urdf, ROS 2 Jazzy)"], ros2: community}
 cost: {type: , usd: , as_of: , source: }
 build: {difficulty: 3, hours: , print_hours: }
 maturity: {last_commit: 2026-06-11, stars: 37, active: true}

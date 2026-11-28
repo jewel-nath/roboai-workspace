@@ -15,6 +15,16 @@ motion planning, perception, control. Template: [templates/tool.md](../../templa
 | Name | Kind | Area | Support | Licence | Tested | Agent access | Verified |
 |---|---|---|---|---|---|---|---|
 | [ros2_control](ros2-control.md) | framework | control | — | Apache-2.0 | — | script | 2026-11-18 |
+| [Arduino](arduino.md) | framework | firmware | — | LGPL-2.1-or-later | — | cli | 2026-11-27 |
+| [ArduPilot](ardupilot.md) | framework | firmware | — | GPL-3.0-or-later | — | cli | 2026-11-27 |
+| [CANopenNode](canopennode.md) | library | firmware | — | Apache-2.0 | — | cli | 2026-11-27 |
+| [ESP-IDF](esp-idf.md) | framework | firmware | — | Apache-2.0 | — | cli | 2026-11-27 |
+| [FreeRTOS](freertos.md) | library | firmware | — | MIT | — | cli | 2026-11-27 |
+| [micro-ROS](micro-ros.md) | framework | firmware | — | Apache-2.0 | — | cli | 2026-11-27 |
+| [PX4](px4.md) | framework | firmware | — | BSD-3-Clause | — | cli | 2026-11-27 |
+| [python-can](python-can.md) | library | firmware | — | LGPL-3.0-only | — | script | 2026-11-27 |
+| [ros2_canopen](ros2-canopen.md) | library | firmware | — | Apache-2.0 AND LGPL-3.0-only | — | cli | 2026-11-27 |
+| [Zephyr](zephyr.md) | framework | firmware | — | Apache-2.0 | — | cli | 2026-11-27 |
 | [TensorRT](tensorrt.md) | library | learning | — | Apache-2.0 | — | cli | 2026-11-25 |
 | [cuRobo](curobo.md) | library | manip | — | Apache-2.0 | — | script | 2026-11-25 |
 | [Drake](drake.md) | library | manip | — | BSD-3-Clause | — | script | 2026-11-25 |
